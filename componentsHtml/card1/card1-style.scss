@@ -1,0 +1,97 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+
+.card {
+    font-family: archivo;
+    background-color: #ffffff;
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 6px -3px rgba(0, 0, 0, 0.1);
+    
+    .img-area {
+        position: relative;
+        background-color: #8a2be2;
+        height: 300px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .icon-container-play {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: solid 1.5px #ff00c3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .i {
+                color: #ff00c3;
+                font-size: 24px;
+            }
+        }
+        .icon-container-fire {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: solid 1.5px #ff00c3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .i {
+                color: #ff00c3;
+                font-size: 10%;
+            }
+        }
+        
+    }
+
+    .text-area {
+
+        color: $gray-3;
+        padding-inline: 8px;
+        padding-bottom: 5px;
+        p {
+            margin: 4px;
+        } 
+        .text1 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+
+            margin-top: 10px;
+        }
+
+        .text2 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+
+            color: $gray-5;
+        }
+
+        .text3 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+        }
+    }
+
+}

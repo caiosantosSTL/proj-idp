@@ -1,0 +1,244 @@
+@import "../colors";
+
+@import "../btn-style";
+@import "../sizes";
+
+
+
+@mixin section-complaint{
+    
+    .section-complaint {
+        font-family: archivo;
+        color: $gray-5;
+        background-color: $section;
+
+        padding-top: 64px;
+        padding-bottom: 64px;
+    
+        .container-complaint {
+            max-width: 1500px;
+            margin: 0 auto;
+            .title {
+                @include desktop-h2;
+            }
+    
+            .text-area {
+                @include desktop-h4;
+            }
+    
+            .btn-complaint {
+                display: block;
+                @include btn-pink-large;
+                max-width: 300px;
+            }
+    
+            .form-complaint {
+                .title {
+                    @include desktop-h4;
+                    color: $gray-3;
+    
+                }
+    
+                .form-area {
+                    display: flex;
+                    flex-direction: column;
+                    //margin: 10px;
+                    gap: 10px;
+    
+                    .input-bar {
+                        display: flex;
+                        justify-content: space-around;
+                        align-content: center;
+                        max-width: auto;
+                        padding: 2px;
+                        background-color: $white;
+                        border-radius: 6px;
+                        border: 1px solid $gray-5;
+                        gap: 5px;
+    
+                        .input-text {
+                            width: 100%;
+                            padding: 12px 20px;
+                            margin: 8px 0;
+                            border: 1px;
+                            font-family: archivo;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+    
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+    
+                    }
+    
+                    .btn-area {
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        gap: 16px;
+                        padding-top: 10px;
+    
+                        .btn-submit {
+                            display: flex;
+                            width: 205px;
+                            //padding: 16px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            border-radius: 6px;
+                            background-color: $primary-pink;
+                            color: $section;
+                            cursor: pointer;
+    
+                            .desktop-btn {
+                                /* Fonts Web/Button */
+    
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px;
+                                /* 133.333% */
+                            }
+                        }
+    
+                        .btn-submit-cancel {
+                            display: flex;
+                            width: 205px;
+                            //padding: 16px;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 10px;
+                            border-radius: 6px;
+                            background-color: $section;
+                            border: 1px solid var(--color-gray-04, #7A7786);
+                            cursor: pointer;
+                            
+                            .desktop-btn {
+                                /* Fonts Web/Button */
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 24px;
+                                /* 133.333% */
+                                color: $gray-5;
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+    
+            .btn-complete {
+                display: flex;
+                padding: 16px;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 16px;
+                margin-top: 10px;
+                //align-self: stretch;
+                border-radius: 6px;
+                background-color: $primary-pink;
+                
+                .icon{
+                    margin: 0;
+                    padding: 0;
+                }
+                .desktop-btn {
+                    /* Fonts Web/Button */
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    /* 133.333% */
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin section-complaint-dark{
+    
+    .section-complaint {
+        background-color: $dark-1;
+    
+        .container-complaint {
+
+            .title {
+
+                color: $white;
+            }
+    
+            .text-area {
+
+                color: $section;
+            }
+    
+            .btn-complaint {
+
+            }
+    
+            .form-complaint {
+                .title {
+
+                    color: $white;
+    
+                }
+    
+                .form-area {
+    
+                    .input-bar {
+
+    
+                        .input-text {
+    
+                            &:focus {
+                                
+                            }
+                        }
+    
+                    }
+    
+                    .btn-area {
+    
+                        .btn-submit {
+
+    
+                            .desktop-btn {
+
+                            }
+                        }
+    
+                        .btn-submit-cancel {
+                            
+                            .desktop-btn {
+
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+    
+            .btn-complete {
+
+                
+                .icon{
+
+                }
+                .desktop-btn {
+
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,170 @@
+@import "../colors";
+@import "../fonts";
+@import "../sizes";
+
+@mixin section-hero{
+    .section-hero {
+        font-family: archivo;
+        background-image: url("https://images.pexels.com/photos/1166209/pexels-photo-1166209.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-repeat: no-repeat;
+        background-size: cover;
+        .top-container{
+            width: 100%;
+            backdrop-filter: blur(30px);
+            .top-bar {
+                display: flex;
+                max-width: 1500px;
+                margin: 0 auto;
+                flex-direction: row;
+                gap: 10px;
+                //background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com 50% de opacidade (fundo transparente) */
+                
+        
+                .menu {
+                    margin: 0;
+                    padding: 0;
+        
+                    p {
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: $white;
+        
+                        span {
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px;
+                            color: $primary-pink;
+        
+                        }
+                    }
+        
+                }
+        
+        
+            }
+
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 1500px;
+            margin: 0 auto;
+            gap: 10px;
+    
+    
+            padding-bottom: 48px;
+            //background-color: yellowgreen;
+            height: 600px;
+    
+            width: auto;
+    
+    
+            .text-area {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                //position: relative;
+    
+                .text-box {
+                    display: flex;
+                    flex-direction: column;
+                    align-self: flex-end;
+                    @media (min-width: $max_mobile) {
+                        text-align: center;
+                    }
+                    @media (min-width: $max_tablet) {
+                        text-align: start;
+                    }
+                    padding: 6px;
+                    width: 100%;
+                    max-width: 600px;
+                    height: auto;
+                    //background-color: red;
+                    backdrop-filter: blur(30px);
+                    //background-color: $black;
+                    //opacity: 0.22;
+    
+    
+                    .desktop-h1 {
+                        
+                        @media (min-width: $max_mobile) {
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+                        @media (min-width: $max_tablet) {
+                            font-size: 48px;
+                            line-height: 56px;
+                        }
+                        
+                        font-style: normal;
+                        font-weight: 600;
+                        
+                        letter-spacing: -0.48px;
+                        margin: 0;
+                        padding: 0;
+                        hyphens: auto;
+                        color: $white;
+                        
+                        .detail {
+                            background-color: $primary-pink;
+                            display: inline-block;
+                            padding: 8px;
+                            align-items: start;
+                            gap: 10px;
+                            width: auto;
+                        }
+                    }
+    
+                    .desktop-h3 {
+                        /* Fonts Web/H3 */
+                        
+                        @media (min-width: $max_mobile) {
+                            
+                            font-size: 16px;
+                            line-height: 24px;
+                        }
+                        @media (min-width: $max_tablet) {
+                            
+                            font-size: 24px;
+                            line-height: 32px;
+                        }
+
+                        font-style: normal;
+                        font-weight: 400;
+                        /* 133.333% */
+                        margin: 0;
+                        padding: 0;
+                        color: $white;
+                    }
+    
+    
+                }
+    
+                .s {
+                    height: 100%;
+                    width: 60%;
+                    background-color: green;
+                    padding: 10px;
+    
+                    display: flex;
+                    flex-direction: column;
+                    //width: 40%;
+                    min-height: 300px;
+                    //background-color: red;
+                    backdrop-filter: blur(20px);
+                    @include desktop-h1;
+                    @include desktop-h3;
+                }
+    
+            }
+    
+        }
+    
+    
+    }
+
+}

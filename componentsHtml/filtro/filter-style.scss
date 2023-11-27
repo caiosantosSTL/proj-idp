@@ -1,0 +1,384 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/btn-style";
+@import "../_partials/sizes";
+
+@mixin filter-container{
+    .filter-container {
+        font-family: archivo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: $gray-4;
+        padding: 5px;
+    
+    
+        @media (min-width: $max_mobile) {
+            .filter-list {
+                background-color: $white;
+                height: auto;
+                width: auto;
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                gap: 35px;
+    
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    //background-color: green;
+                    height: 50px;
+                    width: 100%;
+                    padding: 0;
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+    
+                    p {
+                        margin-left: 10px;
+                        padding: 0;
+                    }
+                }
+    
+                .item-area {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 20px;
+                    width: 100%;
+    
+                    .item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        height: 60px;
+                        gap: 15px;
+                        margin-top: 5px;
+                        margin-inline: 20px;
+                        margin-bottom: 10px;
+                        padding-inline: 10px;
+                        border-bottom: 1px solid $gray-6;
+    
+                        &:hover {
+                            background-color: $primary-pink;
+                            cursor: pointer;
+                            color: $white;
+    
+                            svg {
+                                path {
+    
+                                    fill: $white;
+    
+                                }
+                            }
+                        }
+    
+                        p {
+                            margin: 0;
+                            padding: 0;
+    
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+    
+                        .icon {
+                            margin: 0;
+                            padding: 0;
+                            color: $primary-pink;
+    
+                            &:hover {
+                                color: $white;
+                            }
+    
+                        }
+    
+    
+    
+                    }
+                }
+    
+                .area-btn {
+                    width: 100%;
+                    padding-inline: 10px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+    
+                    .btn-pink,
+                    .btn-border-gray {
+                        margin-inline: 15px
+                    }
+    
+                    @include btn-border-gray-large;
+                    @include btn-pink-large;
+    
+                }
+            }
+    
+            .filter-bar {
+                display: none;
+            }
+        }
+    
+        @media (min-width: $max_tablet) {
+            .filter-list {
+                display: none;
+            }
+    
+            .filter-bar {
+    
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: $white;
+                border-radius: 100px;
+                box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);
+                gap: 10px;
+                width: 90%;
+                padding-inline: 25px;
+    
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-align: center;
+                    gap: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+    
+                    &:hover {
+    
+                        background-color: $primary-pink;
+                        cursor: pointer;
+                        border-radius: 50px;
+                        color: $white;
+                        svg {
+                            path {
+    
+                                fill: $white;
+    
+                            }
+                        }
+                    }
+    
+                    .icon {
+                        margin: 0;
+                        padding: 0;
+    
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+    
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+@mixin filter-container-dark{
+    .filter-container {
+        font-family: archivo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: $gray-4;
+        padding: 5px;
+    
+    
+        @media (min-width: $max_mobile) {
+            .filter-list {
+                background-color: $dark-1;
+                height: auto;
+                width: auto;
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                gap: 35px;
+    
+                .title {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    //background-color: green;
+                    height: 50px;
+                    width: 100%;
+                    padding: 0;
+                    border-top-right-radius: 8px;
+                    border-top-left-radius: 8px;
+    
+                    p {
+                        margin-left: 10px;
+                        padding: 0;
+                    }
+                }
+    
+                .item-area {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 20px;
+                    width: 100%;
+    
+                    .item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: start;
+                        align-items: center;
+                        height: 60px;
+                        gap: 15px;
+                        margin-top: 5px;
+                        margin-inline: 20px;
+                        margin-bottom: 10px;
+                        padding-inline: 10px;
+                        border-bottom: 1px solid $gray-6;
+    
+                        &:hover {
+                            background-color: $primary-pink;
+                            cursor: pointer;
+                            color: $white;
+    
+                            svg {
+                                path {
+    
+                                    fill: $white;
+    
+                                }
+                            }
+                        }
+    
+                        p {
+                            margin: 0;
+                            padding: 0;
+                            color: $white;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+    
+                        .icon {
+                            margin: 0;
+                            padding: 0;
+                            color: $primary-pink;
+    
+                            &:hover {
+                                color: $white;
+                            }
+    
+                        }
+    
+    
+    
+                    }
+                }
+    
+                .area-btn {
+                    width: 100%;
+                    padding-inline: 10px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: $white;
+    
+                    .btn-pink,
+                    .btn-border-gray {
+                        margin-inline: 15px
+                    }
+    
+                    @include btn-border-gray-large;
+                    @include btn-pink-large;
+    
+                }
+            }
+    
+            .filter-bar {
+                display: none;
+            }
+        }
+    
+        @media (min-width: $max_tablet) {
+            .filter-list {
+                display: none;
+            }
+    
+            .filter-bar {
+    
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: $white;
+                border-radius: 100px;
+                box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);
+                gap: 10px;
+                width: 90%;
+                padding-inline: 25px;
+    
+                .item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    text-align: center;
+                    gap: 15px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    padding: 10px;
+    
+                    &:hover {
+    
+                        background-color: $primary-pink;
+                        cursor: pointer;
+                        border-radius: 50px;
+                        color: $white;
+                        svg {
+                            path {
+    
+                                fill: $white;
+    
+                            }
+                        }
+                    }
+    
+                    .icon {
+                        margin: 0;
+                        padding: 0;
+    
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+    
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+    
+        }
+    }
+
+}
+
+
+@include filter-container;

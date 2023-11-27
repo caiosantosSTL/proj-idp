@@ -1,0 +1,75 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+
+.card-dropdown {
+    font-family: archivo;
+    background-color: #ffffff;
+    height: auto;
+    width: auto;
+    border-radius: 10px;
+    border: 1px solid $gray-5;
+    box-shadow: 0px 10px 6px -3px rgba(0, 0, 0, 0.1);
+    .container{
+        padding-inline: 24px;
+        .area-top {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            
+    
+            .title {
+                display: flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                gap: 16px;
+                align-items: center;
+    
+                .number {
+                    color: $primary-pink;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 32px;
+                    margin: 0;
+                    padding: 0;
+                }
+    
+                .text-title {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    margin: 0;
+                    padding: 0;
+                    color: $gray-4;
+                }
+            }
+    
+            .btn {
+                cursor: pointer;
+                padding: 5px;
+    
+                i {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    
+        .area-text {
+            display: none;
+            border-top: 1px solid $gray-6;
+            p {
+                @include mobile-h4;
+                color: $gray-4;
+                padding-top: 24px;
+                padding-bottom: 24px;
+            }
+        }
+
+    }
+
+}

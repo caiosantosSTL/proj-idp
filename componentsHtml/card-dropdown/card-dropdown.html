@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="../dist/styles-card-dropdown.css">
+
+<body>
+    <div class="card-dropdown">
+        <div class="container">
+            <div class="area-top">
+                <div class="title">
+                    <p class="number">01</p>
+                    <p class="text-title">Texto principal</p>
+                </div>
+
+                <div class="btn">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                        </svg>
+                    </i>
+                </div>
+            </div>
+            <div class="area-text">
+                <p class="mobile-h4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        document.querySelector('.btn').addEventListener('click', () => {
+            var areaText = document.querySelector('.area-text');
+            if (areaText.style.display === 'none' || areaText.style.display === '') {
+                areaText.style.display = 'block';
+            } else {
+                areaText.style.display = 'none';
+            }
+        });
+
+    </script>
+</body>

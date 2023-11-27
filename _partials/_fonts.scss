@@ -1,0 +1,161 @@
+@font-face {
+    font-family: archivo;
+    src: url("../_partials/Archivo/Archivo-VariableFont_wdth\,wght.ttf");
+}
+
+@mixin text1 {
+    .text1 { 
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+
+        margin-top: 10px;
+    }
+
+}
+
+@mixin text2 {
+    .text2 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        color: $gray-5;
+    }
+
+}
+
+@mixin text3 {
+    .text3 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+    }
+}
+
+// desktop -----------------------
+
+@mixin desktop-h1 {
+    .desktop-h1 {
+
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: -0.48px;
+    }
+
+}
+
+@mixin desktop-h2 {
+
+    .desktop-h2 {
+
+            font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
+
+@mixin desktop-h3 {
+
+    .desktop-h3 {
+        /* Fonts Web/H3 */
+
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        /* 133.333% */
+    }
+}
+
+@mixin desktop-h4 {
+
+    .desktop-h4 {
+        /* Fonts Web/H4 */
+
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+@mixin desktop-btn {
+
+    .desktop-btn {
+        /* Fonts Web/Button */
+
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        /* 133.333% */
+    }
+}
+
+// mobile -----------------------
+@mixin mobile-h1 {
+
+    .mobile-h1 {
+        /* Fonts Mobile/H1 */
+
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        /* 125% */
+    }
+}
+
+@mixin mobile-h2 {
+
+    .mobile-h2 {
+        /* Fonts Mobile/H2 */
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 32px;
+        /* 133.333% */
+    }
+}
+
+@mixin mobile-h3 {
+
+    .mobile-h3 {
+        /* Fonts Mobile/H3 */
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 133.333% */
+    }
+}
+
+@mixin mobile-h4 {
+
+    .mobile-h4 {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 120% */
+    }
+}
+
+@mixin mobile-text {
+
+    .mobile-text {
+        /* Fonts Mobile/Text */
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+    }
+}

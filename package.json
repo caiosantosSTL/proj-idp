@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "init": "^0.1.2",
+    "sass": "^1.69.5"
+  },
+  "name": "ilhap4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass-index": "sass --watch src/index-style.scss dist/styles-index.css",
+    "sass-profile": "sass --watch src/profilepage-style.scss dist/styles-profilepage.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

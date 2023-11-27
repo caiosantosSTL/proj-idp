@@ -1,0 +1,546 @@
+@import "../colors";
+
+@import "../sizes";
+
+@mixin section-mainchat{
+    .section-mainchat {
+        font-family: archivo;
+        background-color: $white;
+
+        padding-top: 64px;
+        padding-bottom: 64px;
+    
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            width: 100%;
+            .title {
+                .desktop-h2 {
+    
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    color: $gray-3;
+                }
+            }
+    
+            .text {
+                .desktop-h4 {
+                    /* Fonts Web/H4 */
+    
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $gray-5;
+                }
+            }
+    
+            .comment-area {
+    
+                .title {
+                    .desktop-h2 {
+    
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        color: $gray-3;
+                    }
+                }
+                .input-btn{
+    /*                 display: flex;
+                    flex-direction: row; */
+                    display: grid;
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: 1fr; 
+                    }
+                    @media (min-width: $max_tablet) {
+                         
+                        grid-template-columns: 3fr 1fr;
+                    }
+                    gap: 8px;
+                    .text-input{
+                        border-radius: 8px;
+                        height: auto;
+                        //width: 80%;
+                        margin: 0; 
+                        padding: 16px;
+                        font-size: medium;
+                        border: 1px solid var(--color-gray-05, #C6C5CE);
+                        &:focus{
+                            outline: none;
+                        }
+    
+                    }
+                    .btn-pink{
+                        background-color: $primary-pink;
+                        border-radius: 8px;
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        .desktop-btn {
+                            /* Fonts Web/Button */
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px;
+                            /* 133.333% */
+                            margin: 0;
+                            padding: 0;
+                            text-align: center;
+                            color: $white;
+                        }
+                    }
+                }
+                .commentaries{
+                    .title{
+                        .desktop-h2 {
+    
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            color: $gray-3;
+                        }
+                    }
+                    .filter{
+                        display: grid;
+                        @media (min-width: $max_mobile) {
+                            grid-template-columns: 2fr 1fr;
+                        }
+                        @media (min-width: $max_tablet) {
+                            grid-template-columns: 4fr 1fr;
+                        }
+                        .btn-filter-area{
+                            display: flex;
+                            flex-direction: row;
+                            gap: 6px;
+                            .btn-data{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                width: 100%;
+                                gap: 6px;
+                                padding: 8px;
+                                border-radius: 8px;
+                                border: 1px solid $gray-5;
+                                cursor: pointer;
+                            }
+                            .btn-like{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                gap: 6px;
+                                padding: 8px;
+                                border-radius: 8px;
+                                border: 1px solid $gray-5;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .commentaries-cards{
+                        .comment-card {
+                            display: flex;
+                            flex-direction: column;
+                            background-color: $section;
+                            margin: 8px;
+                            padding: 6px;
+                            border-radius: 8px;
+                            gap: 6px;
+    
+                            .name-time {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+    
+                                .mobile-h3 {
+                                    /* Fonts Mobile/H3 */
+                                    font-size: 18px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    /* 133.333% */
+                                    margin: 0;
+                                    padding: 0;
+                                    color: $gray-5;
+                                }
+    
+                                .mini-text2 {
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 16px;
+                                    margin: 0;
+                                    padding: 0;
+                                    color: $gray-5;
+                                }
+                            }
+    
+                            .content {
+                                .mobile-h4 {
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    /* 120% */
+                                    margin: 0;
+                                    padding: 0;
+                                    color: $gray-3;
+                                }
+                            }
+    
+                            .like-answer {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 16px;
+    
+                                .like {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 6px;
+                                    margin: 0;
+                                    padding: 0;
+    
+                                    .mobile-h3 {
+                                        /* Fonts Mobile/H3 */
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        /* 133.333% */
+                                        color: $gray-5;
+                                    }
+                                }
+    
+                                .answer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 6px;
+                                    margin: 0;
+                                    padding: 0;
+    
+                                    .mobile-h3 {
+                                        /* Fonts Mobile/H3 */
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        /* 133.333% */
+                                        color: $gray-5;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+    
+                        }
+
+                        .comment-card-res {
+                            display: flex;
+                            flex-direction: column;
+                            background-color: $section;
+                            margin: 8px;
+                            padding: 6px;
+                            border-radius: 8px;
+                            gap: 6px;
+
+                            .name-time {
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+
+                                .icon-name {
+                                    display: flex;
+                                    flex-direction: row;
+                                    gap: 8px;
+                                    .icon-response {
+                                        display: flex;
+                                        align-items: start;
+                                        padding-inline: 8px;
+
+                                    }
+
+                                    .mobile-h3 {
+                                        /* Fonts Mobile/H3 */
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        /* 133.333% */
+                                        margin: 0;
+                                        padding: 0;
+                                        color: $gray-5;
+                                    }
+                                }
+
+                                .mini-text2 {
+                                    font-size: 14px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 16px;
+                                    margin: 0;
+                                    padding: 0;
+                                    color: $gray-5;
+                                }
+                            }
+
+                            .content {
+                                .mobile-h4 {
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    /* 120% */
+                                    margin: 0;
+                                    padding: 0;
+                                    color: $gray-3;
+                                }
+                            }
+
+                            .like-answer {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 16px;
+
+                                .like {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 6px;
+                                    margin: 0;
+                                    padding: 0;
+                                    
+
+                                    .mobile-h3 {
+                                        /* Fonts Mobile/H3 */
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        /* 133.333% */
+                                        color: $gray-5;
+                                    }
+                                }
+
+                                .answer {
+                                    display: flex;
+                                    flex-direction: row;
+                                    align-items: center;
+                                    gap: 6px;
+                                    margin: 0;
+                                    padding: 0;
+                                    
+
+                                    .mobile-h3 {
+                                        /* Fonts Mobile/H3 */
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 24px;
+                                        /* 133.333% */
+                                        color: $gray-5;
+                                        cursor: pointer;
+                                    }
+                                }
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@mixin section-mainchat-dark{
+    .section-mainchat {
+        background-color: $dark-2;
+    
+        .container {
+
+            .title {
+                .desktop-h2 {
+                    color: $white;
+                }
+            }
+    
+            .text {
+                .desktop-h4 {
+
+                    color: $section;
+                }
+            }
+    
+            .comment-area {
+    
+                .title {
+                    .desktop-h2 {
+                        color: $white;
+                    }
+                }
+                .input-btn{
+
+                    .text-input{
+
+                        border: 1px solid $white;
+                        color: $white;
+                        background-color: $dark-1;
+                        &:focus{
+                            
+                        }
+    
+                    }
+                    .btn-pink{
+
+                        .desktop-btn {
+
+                        }
+                    }
+                }
+                .commentaries{
+                    .title{
+                        .desktop-h2 {
+                            color: $white;
+                        }
+                    }
+                    .filter{
+
+                        color: $white;
+                        .btn-filter-area{
+
+                            color: $white;
+                            .btn-data{
+
+                                border: 1px solid $white;
+
+                            }
+                            .btn-like{
+
+                                border: 1px solid $white;
+
+                            }
+                        }
+                    }
+                    .commentaries-cards{
+                        .comment-card {
+
+                            background-color: $dark-3;
+    
+                            .name-time {
+    
+                                .mobile-h3 {
+                                    color: $section;
+                                }
+    
+                                .mini-text2 {
+
+                                    color: $section;
+                                }
+                            }
+    
+                            .content {
+                                .mobile-h4 {
+
+                                    color: $section;
+                                }
+                            }
+    
+                            .like-answer {
+
+    
+                                .like {
+
+    
+                                    .mobile-h3 {
+
+                                        color: $section;
+                                    }
+                                }
+    
+                                .answer {
+    
+                                    .mobile-h3 {
+
+                                        color: $section;
+                                    }
+                                }
+                            }
+    
+                        }
+
+                        .comment-card-res {
+
+                            background-color: $dark-3;
+    
+                            .name-time {
+
+                                .icon-name {
+
+                                    .icon-response {
+                                        svg{
+                                            path{
+                                                fill: $white;
+                                            }
+                                        }
+                                    }
+
+                                    .mobile-h3 {
+
+                                        color: $section;
+                                    }
+                                }
+    
+                                .mini-text2 {
+
+                                    color: $section;
+                                }
+                            }
+    
+                            .content {
+                                .mobile-h4 {
+
+                                    color: $section;
+                                }
+                            }
+    
+                            .like-answer {
+
+    
+                                .like {
+
+    
+                                    .mobile-h3 {
+
+                                        color: $section;
+                                    }
+                                }
+    
+                                .answer {
+    
+                                    .mobile-h3 {
+
+                                        color: $section;
+                                    }
+                                }
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include section-mainchat;

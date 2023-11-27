@@ -1,0 +1,207 @@
+/* @import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/sizes"; */
+
+
+@mixin section-newsletter{
+    .section-newsletter {
+        background-color: $white;
+        font-family: archivo;
+        margin-top: 80px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            display: grid;
+            @media (min-width: $max_tablet) {
+                grid-template-columns: repeat(1, auto);
+            }
+            @media (min-width: $max_desktop) {
+                
+                grid-template-columns: repeat(2, auto);
+            }
+            //justify-content: center;
+            gap: 16px;
+    
+            .text-area {
+                //background-color: rgb(42, 115, 179);
+                @media (min-width: $max_mobile) {
+                    width: 100%;
+                }
+                @media (min-width: $max_tablet) {
+                    width: 100%;
+                    //max-width: 500px;
+                    
+                }
+                .desktop-h2 {
+    
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 40px;
+                    color: $primary-pink;
+                }
+    
+                .desktop-h4 {
+                    /* Fonts Web/H4 */
+    
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $gray-4;
+                }
+    
+                .mini-text {
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    color: $gray-5;
+                }
+                .icon-text{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                    .mini-text {
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 16px;
+                    }
+                }
+            }
+    
+            .input-area {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                @media (min-width: $max_mobile) {
+                    width: 100%;
+                }
+                @media (min-width: $max_tablet) {
+                    
+                    width: 100%;
+                    //max-width: 500px;
+                }
+                //background-color: rgb(139, 190, 235);
+                gap: 10px;
+                .input-bar {
+                    display: flex;
+                    justify-content: space-around;
+                    align-content: center;
+                    width: 100%;
+                    padding: 2px;
+                    background-color: $white;
+                    border-radius: 6px;
+                    border: 1px solid $gray-5;
+                    gap: 5px;
+    
+                    .input-text {
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        border: 1px;
+                        font-family: archivo;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+    
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+    
+                }
+    
+                .btn-submit {
+                    display: flex;
+                    
+                    //width: 205px;
+                    width: 100%;
+                    //padding: 16px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 6px;
+                    background-color: $primary-pink;
+                    color: $section;
+    
+                    .desktop-btn {
+                        /* Fonts Web/Button */
+    
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        /* 133.333% */
+                    }
+                }
+    
+    
+            }
+        }
+    }
+
+}
+
+@mixin section-newsletter-dark{
+    .section-newsletter {
+        background-color: $dark-2;
+    
+        .container {
+
+            .text-area {
+
+                .desktop-h2 {
+
+                }
+    
+                .desktop-h4 {
+                    color: $section;
+                }
+    
+                .mini-text {
+                    color: $section;
+                }
+                .icon-text{
+
+                    .mini-text {
+
+                    }
+                }
+            }
+    
+            .input-area {
+
+                .input-bar {
+    
+                    .input-text {
+    
+                        &:focus {
+                            
+                        }
+                    }
+    
+                }
+    
+                .btn-submit {
+    
+                    .desktop-btn {
+
+                    }
+                }
+    
+    
+            }
+        }
+    }
+
+}
+
+//@include section-newsletter();

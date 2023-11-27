@@ -1,0 +1,150 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/sizes";
+
+
+@mixin section-info{
+    .section-info{
+        background-color: $white;
+        font-family: archivo;
+        @media (min-width: $max_mobile) {
+            padding-inline: 16px;
+        }
+    
+        @media (min-width: $max_tablet) {
+            padding-inline: 112px;
+        }
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+    
+            .title{
+                display: flex;
+                @media (min-width: $max_mobile) {
+                    flex-direction: column;
+                }
+                @media (min-width: $max_tablet) {
+                    
+                    flex-direction: row;
+                }
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                
+                .icon{
+                    
+                }
+                .mobile-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 120% */
+                    color: $gray-3;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .subtitle{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                .mobile-text {
+                    /* Fonts Mobile/Text */
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 150% */
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@mixin section-info-dark{
+    .section-info{
+        background-color: $dark-2;
+        font-family: archivo;
+        @media (min-width: $max_mobile) {
+            padding-inline: 16px;
+        }
+    
+        @media (min-width: $max_tablet) {
+            padding-inline: 112px;
+        }
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+    
+            .title{
+                display: flex;
+                @media (min-width: $max_mobile) {
+                    flex-direction: column;
+                }
+                @media (min-width: $max_tablet) {
+                    
+                    flex-direction: row;
+                }
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 10px;
+                
+                .icon{
+                    
+                }
+                .mobile-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 120% */
+                    color: $white;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .subtitle{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+                .mobile-text {
+                    /* Fonts Mobile/Text */
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 150% */
+                    color: $section;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}
+
+@include section-info;

@@ -1,0 +1,109 @@
+@import "../colors";
+
+@import "../sizes";
+
+
+@mixin out-search-bar-dark{
+    .out-search-bar {
+        background-color: $dark-1;
+
+
+        .search-bar-out {
+
+    
+            .btn-b {
+
+            }
+    
+            .area-location-input {
+    
+                .btn-location {
+
+                }
+    
+                .input-text {
+
+                }
+    
+                .input-text:focus {
+                    
+                }
+            }
+    
+        }
+    }
+
+}
+
+@mixin out-search-bar{
+    .out-search-bar {
+        @media (min-width: $max_mobile) {
+            display: block;
+        }
+    
+        @media (min-width: $max_desktop) {
+            display: none;
+        }
+        position: fixed;
+        z-index: 1;
+    
+        background-color: $white;
+
+        max-width: 1500px;
+        margin: 0 auto;
+        width: 100%;
+        top: 90px;
+        left: 0;
+    
+        //background-color: $white;
+        .search-bar-out {
+            display: flex;
+    
+            flex-direction: row;
+            border: 1px solid $gray-6;
+            border-radius: 5px;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+    
+            .btn-b {
+                //background-color: $gray-4;
+                border-radius: 0;
+                padding: 16px;
+                max-width: 20px;
+                cursor: pointer;
+                color: $gray-5;
+            }
+    
+            .area-location-input {
+                display: flex;
+                align-items: start;
+                width: 100%;
+    
+                .btn-location {
+                    border-radius: 0;
+                    padding: 16px;
+                    max-width: 20px;
+                    cursor: pointer;
+                    color: $gray-5;
+                }
+    
+                .input-text {
+                    //max-width: 500px;
+                    min-width: 200px;
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    //background-color: red;
+                }
+    
+                .input-text:focus {
+                    outline: none;
+                }
+            }
+    
+        }
+    }
+
+}

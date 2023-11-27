@@ -1,0 +1,116 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/sizes";
+@import "../_partials/btn-style";
+
+//compontens
+@import "../_partials/components/section-bar-style";
+@import "../_partials/components/out-search-bar";
+@import "../_partials/components/section-spacetop-style";
+@import "../_partials/components/section-hero2-style";
+@import "../_partials/components/section-fixedbar-style";
+@import "../_partials/components/section-price-style";
+@import "../_partials/components/section-notification-style";
+@import "../_partials/components/section-about-style";
+@import "../_partials/components/section-about2-style";
+@import "../_partials/components/section-info-style";
+@import "../_partials/components/legal-notice-style";
+@import "../_partials/components/section-gofans-style";
+@import "../_partials/components/section-mainchat-style";
+@import "../_partials/components/section-banner-style";
+@import "../_partials/components/section-tags-style";
+@import "../_partials/components/section-seemore-style";
+@import "../_partials/components/section-complaint-style";
+@import "../_partials/components/section1-style";
+@import "../_partials/components/section-security-style";
+@import "../_partials/components/section-gallery-style";
+@import "../_partials/components/section-homephoto-style";
+@import "../_partials/components/section-homephoto2-style";
+
+@import "../_partials/components/footer-style";
+@import "../_partials/components/top-btn-style";
+@import "../_partials/components/whatsapp-btn";
+@import "../_partials/components/phone-btn";
+
+
+*{
+    transition: background-color 0.5s;
+
+}
+
+section{
+    @media (min-width: $max_mobile) {
+        margin-inline: 8px;
+    }
+    @media (min-width: $max_tablet) {
+        margin: 0;
+    } 
+}
+
+body {
+    padding: 0;
+
+    margin: 0;
+    
+    @include section-hero2;
+    
+    @include space-top;
+    @include section-bar;
+    @include out-search-bar;
+    @include section-fixedbar;
+    @include section-info;
+    @include section-notification;
+    @include section-price;
+    @include section-about;
+    @include section-about2;
+    @include section-legalnotice;
+    @include section-gofans;
+    @include section-mainchat;
+    @include section-banner;
+    @include section-tags;
+    @include section-seemore;
+    @include section-complaint;
+    @include section-text1;
+    @include section-security;
+    @include section-gallery;
+    @include section-homephoto;
+    @include section-homephoto2;
+    @include whatsapp-btn;
+    @include phone-btn;
+
+    @include footer;
+    @include top-btn;
+}
+
+.dark {
+    background-color: $dark-2;
+
+    @include section-hero2;
+
+    @include space-top;
+    @include section-bar-dark;
+    @include out-search-bar-dark;
+    @include section-fixedbar-dark;
+    @include section-info-dark;
+    @include section-notification-dark;
+    @include section-price-dark;
+    @include section-about-dark;
+    @include section-about2-dark;
+    @include section-legalnotice;
+    @include section-gofans-dark;
+    @include section-mainchat-dark;
+    @include section-banner-dark;
+    @include section-tags-dark;
+    @include section-seemore-dark;
+    @include section-complaint-dark;
+    @include section-text1-dark;
+    @include section-security-dark;
+    @include section-gallery-dark;
+    @include section-homephoto-dark;
+    @include section-homephoto2-dark;
+    @include whatsapp-btn;
+    @include phone-btn;
+
+    @include footer-dark;
+    @include top-btn;
+}

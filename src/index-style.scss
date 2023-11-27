@@ -1,0 +1,98 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/sizes";
+@import "../_partials/btn-style";
+
+//compontens
+@import "../_partials/components/section-bar-style";
+@import "../_partials/components/out-search-bar";
+@import "../_partials/components/section-spacetop-style";   
+@import "../_partials/components/modal-carousel-style";
+@import "../_partials/components/section-space-style";
+@import "../_partials/components/section-hero-style";
+@import "../_partials/components/section-tags-style";
+@import "../_partials/components/section-horiz-card-style";
+@import "../_partials/components/section-general-style";
+@import "../_partials/components/section-seemore-style";
+@import "../_partials/components/section-recent-style";
+@import "../_partials/components/section1-style";
+@import "../_partials/components/section2-style";
+@import "../_partials/components/section-commentary-style";
+@import "../_partials/components/section-homevideo-style";
+@import "../_partials/components/section-quest-style";
+@import "../_partials/components/section-newsletter-style";
+@import "../_partials/components/section-bestpic-style";
+@import "../_partials/components/section-blog-style";
+@import "../_partials/components/footer-style";
+@import "../_partials/components/top-btn-style";
+
+
+
+*{
+    transition: background-color 0.5s;
+}
+
+section{
+    @media (min-width: $max_mobile) {
+        margin-inline: 8px;
+    }
+    @media (min-width: $max_tablet) {
+        margin: 0;
+    }
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    @include section-space;
+    @include section-hero;
+    
+    @include section-bar;
+    @include out-search-bar;
+    @include section-modalcarousel;
+    @include section-tags;
+    @include section-commentary;
+    @include section-hc;
+    @include section-general;
+    @include section-seemore;
+    @include section-recent;
+    @include section-text1;
+    @include section-questions;
+    @include section-homevideo;
+    @include section-newsletter;
+    @include section-bestpic;
+    @include section-text2;
+    @include section-blog;
+
+
+    @include footer;
+    @include top-btn;
+}
+
+.dark {
+    background-color: $dark-2;
+    @include section-space-dark1;
+    @include section-space-dark2;
+    @include section-hero;
+    
+    @include section-bar-dark;
+    @include out-search-bar-dark;
+    @include section-modalcarousel-dark;
+    @include section-tags-dark;
+    @include section-commentary-dark;
+    @include section-general-dark;
+    @include section-hc-dark;
+    @include section-text1-dark;
+    @include section-seemore-dark;
+    @include section-recent-dark;
+    @include section-questions-dark;
+    @include section-homevideo-dark;
+    @include section-newsletter-dark;
+    @include section-bestpic-dark;
+    @include section-text2;
+    @include section-blog-dark;
+
+
+    @include footer-dark;
+    @include top-btn;
+}

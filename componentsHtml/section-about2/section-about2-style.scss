@@ -1,0 +1,453 @@
+@import "../_partials/colors";
+@import "../_partials/fonts";
+@import "../_partials/sizes";
+
+@mixin section-about2{
+    .section-about2 {
+        background-color: $section;
+        font-family: archivo;
+        //background-color: #877dad;
+        @media (min-width: $max_tablet){
+            padding-inline: 6px;
+        }
+        @media (min-width: $max_desktop){
+            
+            padding-inline: 112px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    
+        
+            .profile-area {
+    
+                display: grid;
+                @media (min-width: $max_tablet){
+                    grid-template-columns: repeat(1, auto);
+                }
+                @media (min-width: $max_desktop){
+                    grid-template-columns: repeat(2, auto);
+                    //width: 100%;
+                }
+                gap: 16px;
+                .photo-area {
+                    //background-color: rgb(222, 113, 113);
+    
+                    @media (min-width: $max_tablet) {
+                        
+                        max-width: 100%;
+                    }
+                    @media (min-width: $max_desktop) {
+                        
+                        max-width: 600px;
+                    }
+                    width: 100%;
+                    height: auto;
+                    .photo {
+                        width: 100%;
+                        //max-width: 400px;
+                        height: 600px;
+                        background-color: red;
+                    }
+    
+                    .desktop-h2 {
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        color: $gray-3;
+                    }
+    
+                    .text-detail {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: $gray-3;
+    
+                        span {
+                            color: $primary-pink;
+                        }
+                    }
+                }
+    
+                .profile-text-area {
+    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-left: 1px solid rgb(178, 178, 178);
+                    //max-width: 200px;
+                    width: 100%;
+                    min-width: 80px;
+                    padding-left: 16px;
+                    .about-me {
+                        
+                        .desktop-h2 {
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            color: $gray-3;
+                        }
+    
+                        .grid-attributes {
+                            display: grid;
+    
+                            @media (min-width: $max_mobile) {
+                                grid-template-columns: repeat(2, auto);
+                            }
+    
+                            @media (min-width: $max_tablet) {
+    
+                                grid-template-columns: repeat(3, auto);
+                            }
+    
+                            .item {
+                                display: flex;
+                                width: 200px;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                //gap: 8px;
+                                
+    
+                                .desktop-h3 {
+                                    /* Fonts Web/H3 */
+    
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 32px;
+                                    /* 133.333% */
+                                    color: $gray-5;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+    
+                                .desktop-h4 {
+                                    /* Fonts Web/H4 */
+    
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    color: $gray-3;
+                                    
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .about-service {
+                        display: flex;
+                        flex-direction: column;
+                        .desktop-h2 {
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            color: $gray-3;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .detail {
+                            width: auto;
+                            .desktop-h3 {
+                                /* Fonts Web/H3 */
+    
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 32px;
+                                /* 133.333% */
+                                color: $gray-5;
+                                
+                            }
+                            .desktop-h4 {
+                                /* Fonts Web/H4 */
+    
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: $gray-3;
+                                
+                            }
+                        }
+    
+                        .grid-time {
+                            display: grid;
+                            @media (min-width: $max_mobile){
+                                grid-template-columns: repeat(2, auto);
+                            }
+                            @media (min-width: $max_tablet){
+                                
+                                grid-template-columns: repeat(4, auto);
+                            }
+    
+                            .time {
+                                .desktop-h3 {
+                                    /* Fonts Web/H3 */
+        
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 32px;
+                                    /* 133.333% */
+                                    color: $gray-5;
+                                }
+                                .desktop-h4 {
+                                    /* Fonts Web/H4 */
+        
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    color: $gray-3;
+                                }
+                                .mobile-text {
+                                    /* Fonts Mobile/Text */
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    /* 150% */
+                                    color: $gray-5;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+
+}
+
+@mixin section-about2-dark{
+    .section-about2 {
+        background-color: $dark-3;
+        font-family: archivo;
+        //background-color: #877dad;
+        @media (min-width: $max_tablet){
+            padding-inline: 6px;
+        }
+        @media (min-width: $max_desktop){
+            
+            padding-inline: 112px;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    
+        
+            .profile-area {
+    
+                display: grid;
+                @media (min-width: $max_tablet){
+                    grid-template-columns: repeat(1, auto);
+                }
+                @media (min-width: $max_desktop){
+                    grid-template-columns: repeat(2, auto);
+                    //width: 100%;
+                }
+                gap: 16px;
+                .photo-area {
+                    //background-color: rgb(222, 113, 113);
+    
+                    @media (min-width: $max_tablet) {
+                        
+                        max-width: 100%;
+                    }
+                    @media (min-width: $max_desktop) {
+                        
+                        max-width: 600px;
+                    }
+                    width: 100%;
+                    height: auto;
+                    .photo {
+                        width: 100%;
+                        //max-width: 400px;
+                        height: 600px;
+                        background-color: red;
+                    }
+    
+                    .desktop-h2 {
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 40px;
+                        color: $white;
+                    }
+    
+                    .text-detail {
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 24px;
+                        color: $section;
+    
+                        span {
+                            color: $primary-pink;
+                        }
+                    }
+                }
+    
+                .profile-text-area {
+    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    border-left: 1px solid rgb(178, 178, 178);
+                    //max-width: 200px;
+                    width: 100%;
+                    min-width: 80px;
+                    padding-left: 16px;
+                    .about-me {
+                        
+                        .desktop-h2 {
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            color: $white;
+                        }
+    
+                        .grid-attributes {
+                            display: grid;
+    
+                            @media (min-width: $max_mobile) {
+                                grid-template-columns: repeat(2, auto);
+                            }
+    
+                            @media (min-width: $max_tablet) {
+    
+                                grid-template-columns: repeat(3, auto);
+                            }
+    
+                            .item {
+                                display: flex;
+                                width: 200px;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                //gap: 8px;
+                                
+    
+                                .desktop-h3 {
+                                    /* Fonts Web/H3 */
+    
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 32px;
+                                    /* 133.333% */
+                                    color: $section;
+                                    margin: 0;
+                                    padding: 0;
+                                }
+    
+                                .desktop-h4 {
+                                    /* Fonts Web/H4 */
+    
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    color: $section;
+                                    
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    .about-service {
+                        display: flex;
+                        flex-direction: column;
+                        .desktop-h2 {
+                            font-size: 32px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 40px;
+                            color: $white;
+                            margin: 0;
+                            padding: 0;
+                        }
+                        .detail {
+                            width: auto;
+                            .desktop-h3 {
+                                /* Fonts Web/H3 */
+    
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 32px;
+                                /* 133.333% */
+                                color: $section;
+                                
+                            }
+                            .desktop-h4 {
+                                /* Fonts Web/H4 */
+    
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 24px;
+                                color: $section;
+                                
+                            }
+                        }
+    
+                        .grid-time {
+                            display: grid;
+                            @media (min-width: $max_mobile){
+                                grid-template-columns: repeat(2, auto);
+                            }
+                            @media (min-width: $max_tablet){
+                                
+                                grid-template-columns: repeat(4, auto);
+                            }
+    
+                            .time {
+                                .desktop-h3 {
+                                    /* Fonts Web/H3 */
+        
+                                    font-size: 24px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 32px;
+                                    /* 133.333% */
+                                    color: $white;
+                                }
+                                .desktop-h4 {
+                                    /* Fonts Web/H4 */
+        
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    color: $section;
+                                }
+                                .mobile-text {
+                                    /* Fonts Mobile/Text */
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 24px;
+                                    /* 150% */
+                                    color: $section;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+        
+    }
+
+}
+
+@include section-about2;
