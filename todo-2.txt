@@ -1,0 +1,116 @@
+@font-face {
+                font-family: 'PT Sans', 'Arial Narrow', sans-serif;
+                font-display: swap;
+                font-style: normal;
+                font-weight: 300
+            }
+
+            .font-normal {
+                font-family: 'PT Sans', 'Arial Narrow', sans-serif;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 300
+            }
+
+            .font-bold {
+                font-family: 'PT Sans', 'Arial Narrow', sans-serif;
+                font-style: normal;
+                font-display: swap;
+                font-weight: 700
+            }
+
+            .uppercase {
+                text-transform: uppercase
+            }
+
+            .text-left {
+                text-align: left
+            }
+
+            .text-right {
+                text-align: right
+            }
+
+            .text-justify {
+                text-align: justify
+            }
+
+            .text-center {
+                text-align: center
+            }
+
+            .h-underline:hover,.text-decoration {
+                text-decoration: underline
+            }
+
+            .font-10 {
+                font-size: 10px
+            }
+
+            .font-12 {
+                font-size: 12px
+            }
+
+            .font-13 {
+                font-size: 13px
+            }
+
+            .font-14 {
+                font-size: 14px
+            }
+
+            .font-16 {
+                font-size: 16px
+            }
+
+            .font-18 {
+                font-size: 18px
+            }
+
+            .font-20 {
+                font-size: 20px
+            }
+
+            .font-22 {
+                font-size: 22px
+            }
+
+            .font-24 {
+                font-size: 24px
+            }
+
+            .font-26 {
+                font-size: 26px
+            }
+
+            .font-28 {
+                font-size: 28px
+            }
+
+            .font-30 {
+                font-size: 30px
+            }
+
+            .pre-line {
+                white-space: pre-line
+            }
+
+================
+
+            html {
+                box-sizing: border-box;
+                -ms-overflow-style: scrollbar
+            }
+
+            ,::after,*::before {
+                box-sizing: inherit
+            }
+
+================
+
+m-0{
+margin:0
+}
+p-0{
+padding:0
+}
