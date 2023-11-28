@@ -25,7 +25,7 @@
 @import "../_partials/components/section-security-style";
 @import "../_partials/components/section-gallery-style";
 @import "../_partials/components/section-homephoto-style";
-//@import "../_partials/components/section-homephoto2-style";
+@import "../_partials/components/section-homephoto2-style";
 
 @import "../_partials/components/footer-style";
 @import "../_partials/components/top-btn-style";
@@ -74,7 +74,7 @@ body {
     @include section-security;
     @include section-gallery;
     @include section-homephoto;
-    //@include section-homephoto2;
+    @include section-homephoto2;
     @include whatsapp-btn;
     @include phone-btn;
 
@@ -107,7 +107,7 @@ body {
     @include section-security-dark;
     @include section-gallery-dark;
     @include section-homephoto-dark;
-    //@include section-homephoto2-dark; 
+    @include section-homephoto2-dark; 
     @include whatsapp-btn;
     @include phone-btn;
 
