@@ -154,11 +154,12 @@
                         flex-direction: column;
                         width: 100%;
                         gap: 16px;
+                        margin-top: 8px;
 
                         .input-name,
                         .input-comment {
                             padding: 16px;
-                            width: 100%;
+                            width: auto;
                             border-radius: 6px;
                             border: 1px solid var(--color-gray-05, #C6C5CE);
                             // ==
@@ -732,7 +733,6 @@
         background-color: $white;
         padding-top: 64px;
         padding-bottom: 64px;
-    
         .container {
             max-width: 1500px;
             margin: 0 auto;
