@@ -156,9 +156,7 @@
         .modal-container {
             .modal-body {
                 background-color: $gray-2;
-
-                .modal-header {
-                   
+                .modal-header {                   
                     .modal-title {
                         color: $white;
                         border-bottom: 1px solid $gray-4;
@@ -168,7 +166,6 @@
 
                     }
                 }
-
             }
         }
     }

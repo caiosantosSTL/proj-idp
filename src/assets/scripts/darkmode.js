@@ -24,7 +24,6 @@ function SetDarkComponents(){
     var LogoPathElement = document.getElementById('logo');
     var LogoFooterPathElement = document.getElementById('logo-footer');
     
-    console.log(LogoPathElement)
     // Realiza um toggle no valor do atributo 'd'
     var newLogo = darkModeOn 
     ? 'assets/images/LogosColorDark.svg' 

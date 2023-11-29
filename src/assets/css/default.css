@@ -304,7 +304,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 }
 
 .left-0 {
-  right: 0;
+  left: 0;
 }
 
 .m-auto {
@@ -764,6 +764,18 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   width: 100%;
 }
 
+.col-25 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-33 {
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33.3%;
+}
+
 .col-50 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -776,7 +788,38 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   max-width: 100%;
 }
 
+@media (min-width: 0px) {
+  .col-sm-25 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-sm-33 {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+  .col-sm-50 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-100 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+}
 @media (min-width: 768px) {
+  .col-md-25 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-33 {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
   .col-md-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
@@ -788,15 +831,26 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     max-width: 100%;
   }
 }
-@media (min-width: 0px) {
-  .col-sm-50 {
+@media (min-width: 1200px) {
+  .col-lg-25 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-33 {
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+  }
+  .col-lg-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
-  .col-sm-100 {
+  .col-lg-100 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 .container {
@@ -1044,14 +1098,6 @@ header .use-location a {
   fill: #fff;
 }
 
-.dark .top-btn {
-  background-color: #fff;
-  color: #fff;
-}
-.dark .top-btn svg path {
-  fill: #EC148E;
-}
-
 .destaque {
   width: 100%;
 }
@@ -1063,6 +1109,98 @@ header .use-location a {
   width: 100%;
   display: block;
   content: " ";
+}
+
+@media (max-width: 768px) {
+  .main-list .p-15 {
+    padding: 10px;
+  }
+}
+.main-list .card-profile {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0;
+}
+.main-list .card-profile .card-image .stars {
+  border-radius: 0px 0px 4px 4px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  color: gold;
+  font-size: 16px;
+  z-index: 2;
+  width: 110px;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+.main-list .card-profile .card-image .selo {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  bottom: 5px;
+}
+.main-list .card-profile .card-image .selo.hot {
+  left: 5px;
+}
+.main-list .card-profile .card-image .selo.cam {
+  right: 5px;
+}
+.main-list .card-profile .card-image .selo > svg {
+  z-index: 2;
+}
+.main-list .card-profile .card-image .selo > div {
+  margin-left: -15px;
+  z-index: 0;
+  font-size: 14px;
+}
+.main-list .card-profile .card-image .selo > div > span {
+  width: 72px;
+  padding-left: 18px;
+  padding-right: 5px;
+  line-height: 20px;
+}
+.main-list .card-profile .card-image .selo > div > strong {
+  width: 64px;
+  padding-left: 18px;
+  padding-right: 5px;
+  line-height: 20px;
+}
+.main-list .card-profile .card-image::before {
+  padding-top: 138.2142857143%;
+  width: 100%;
+  display: block;
+  content: " ";
+}
+.main-list .card-profile .card-description {
+  gap: 5px;
+  align-items: flex-start;
+  padding: 8px;
+}
+@media (max-width: 768px) {
+  .main-list .card-profile .card-description .fs-18 {
+    font-size: 14px;
+  }
+  .main-list .card-profile .card-description .fs-24 {
+    font-size: 20px;
+  }
+}
+
+.dark .top-btn {
+  background-color: #fff;
+  color: #fff;
+}
+.dark .top-btn svg path {
+  fill: #EC148E;
+}
+.dark .card-profile {
+  background-color: #1C1B23;
+}
+.dark .card-profile .card-description .gray-3 {
+  color: #fff;
+}
+.dark .card-profile .card-description .gray-5 {
+  color: #C6C5CE;
 }
 
 footer {
@@ -1138,6 +1276,9 @@ footer .copyright {
 }
 .dark footer .fw-bold {
   color: #fff;
+}
+.dark footer .footer-nav {
+  border-top: 1px solid #524F5F;
 }
 
 body {
