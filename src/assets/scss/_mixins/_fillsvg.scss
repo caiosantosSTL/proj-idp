@@ -1,0 +1,7 @@
+@mixin fill_svg($color: $white) {
+    svg {
+        path {
+            fill: $color;
+        }
+    }
+}

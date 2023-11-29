@@ -1,0 +1,51 @@
+
+// VARIABLES
+@import "_variables/colors";
+@import "_variables/sizes";
+
+
+// MIXINS
+@import "_mixins/fillsvg";
+
+
+// PARTIALS
+@import "_partials/reboot";
+@import "_partials/fonts";
+@import "_partials/displays";
+@import "_partials/sizes";
+@import "_partials/positions";
+@import "_partials/buttons";
+@import "_partials/modal";
+@import "_partials/forms";
+@import "_partials/cols";
+
+
+// COMPONENTS
+@import "_components/container";
+@import "_components/header";
+@import "_components/content";
+@import "_components/footer";
+
+
+body {
+
+    // FONTE PADRÃO PARA TODA PÁGINA
+    font-family: 'Archivo', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+
+    padding: 0;
+    margin: 0;
+
+    section{
+        @media (min-width: $max_mobile) {
+            margin-inline: 8px;
+        }
+        @media (min-width: $max_tablet) {
+            margin: 0;
+        }
+    }    
+}
+
+

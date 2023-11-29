@@ -1,0 +1,62 @@
+/*
+
+UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
+
+@font-face {
+    font-family: archivo;
+    src: url("../_font/archivo-font.ttf");        
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;1,100&display=swap');
+
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-16{
+    font-size: 16px;
+}
+
+.fs-18{
+    font-size: 18px;
+}
+
+.fs-20{
+    font-size: 20px;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fs-32{
+    font-size: 32px;
+}
+
+.fs-48{
+    font-size: 48px;
+}
+
+.fw-bold{
+    font-weight: 600;
+}
+
+
+.lineheigth-24 {
+    line-height: 24px;
+}
+
+.lineheigth-32 {
+    line-height: 32px;
+}
+
+.lineheigth-40 {
+    line-height: 40px;
+}
+
+.lineheigth-56 {
+    line-height: 56px;
+}

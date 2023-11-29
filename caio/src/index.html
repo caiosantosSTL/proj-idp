@@ -1,0 +1,2300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/styles-index.css">
+    <link rel="icon" href="assets/favicon.svg" type="image/x-icon">
+    <title>Index</title>
+</head>
+
+<body class="">
+    <!-- bar space top -->
+    <section class="space-top">
+    </section>
+
+    <!-- bar menu -->
+    <section class="section-bar">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img class="img" src="assets/LogosColor.svg" alt="">
+                </div>
+                <div class="logo-dark">
+                    <img class="img" src="assets/LogosColorDark.svg" alt="">
+                </div>
+
+                <div class="search-bar">
+                    <div class="btn-location" id="btn-modalcity-id" onclick="openCity()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                        </svg>
+                    </div>
+                    <input class="input-text" type="text" placeholder="Selecione a cidade que deseja">
+                    <div id="btn-mstate-id" class="btn-b" onclick="openState()">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path
+                                    d="M7.40512 8.57999L11.9951 13.17L16.5851 8.57999L17.9951 9.99999L11.9951 16L5.99512 9.99999L7.40512 8.57999Z"
+                                    fill="#524F5F" />
+                            </svg>
+                        </i>
+                    </div>
+                </div>
+
+                <div class="group-a">
+                    <div class="icons-btn">
+                        <div class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M14 12.6667V13.3333H2V12.6667L3.33333 11.3333V7.33334C3.33333 5.26668 4.68667 3.44668 6.66667 2.86001C6.66667 2.79334 6.66667 2.73334 6.66667 2.66668C6.66667 2.31305 6.80714 1.97392 7.05719 1.72387C7.30724 1.47382 7.64638 1.33334 8 1.33334C8.35362 1.33334 8.69276 1.47382 8.94281 1.72387C9.19286 1.97392 9.33333 2.31305 9.33333 2.66668C9.33333 2.73334 9.33333 2.79334 9.33333 2.86001C11.3133 3.44668 12.6667 5.26668 12.6667 7.33334V11.3333L14 12.6667ZM9.33333 14C9.33333 14.3536 9.19286 14.6928 8.94281 14.9428C8.69276 15.1929 8.35362 15.3333 8 15.3333C7.64638 15.3333 7.30724 15.1929 7.05719 14.9428C6.80714 14.6928 6.66667 14.3536 6.66667 14"
+                                    fill="#3F3C4A" />
+                            </svg>
+
+                        </div>
+                        <div class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M7.9998 14L10.3998 10.8C9.73314 10.3 8.8998 10 7.9998 10C7.0998 10 6.26647 10.3 5.5998 10.8L7.9998 14ZM7.9998 2C5.2998 2 2.80647 2.89333 0.799805 4.4L1.9998 6C3.66647 4.74667 5.74647 4 7.9998 4C10.2531 4 12.3331 4.74667 13.9998 6L15.1998 4.4C13.1931 2.89333 10.6998 2 7.9998 2ZM7.9998 6C6.1998 6 4.5398 6.59333 3.1998 7.6L4.3998 9.2C5.3998 8.44667 6.64647 8 7.9998 8C9.35314 8 10.5998 8.44667 11.5998 9.2L12.7998 7.6C11.4598 6.59333 9.7998 6 7.9998 6Z"
+                                    fill="#3F3C4A" />
+                            </svg>
+
+                        </div>
+                        <div id="toggleSvg" id="modo-toggle" onclick="darkMode()" class="btn bdark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M2.36699 12.7267L3.30699 13.6667L4.50699 12.4733L3.56033 11.5267M8.00033 3.99999C5.79366 3.99999 4.00033 5.79332 4.00033 7.99999C4.00033 10.2067 5.79366 12 8.00033 12C10.207 12 12.0003 10.2067 12.0003 7.99999C12.0003 5.78666 10.207 3.99999 8.00033 3.99999ZM13.3337 8.66666H15.3337V7.33332H13.3337M11.4937 12.4733L12.6937 13.6667L13.6337 12.7267L12.4403 11.5267M13.6337 3.33332L12.6937 2.39999L11.4937 3.59332L12.4403 4.53999M8.66699 0.666656H7.33366V2.66666H8.66699M4.50699 3.59332L3.30699 2.39999L2.36699 3.33332L3.56033 4.53999L4.50699 3.59332ZM0.666992 8.66666H2.66699V7.33332H0.666992M8.66699 13.3333H7.33366V15.3333H8.66699"
+                                    fill="#EC148E" />
+                            </svg>
+                            <script src="scripts/darkmode.js"></script>
+                            <script src="scripts/changeLogo.js"></script>
+
+                        </div>
+                    </div>
+                    <div class="dropdown" id="btn-dropdown-id">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3F3C4A" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        
+        <!-- modal state -->
+        <div id="modal-state-id" class="modal-state">
+            <div class="container">
+                <div class="modalstate-container">
+                    <div class="area-top">
+                        <div class="area-title">
+                            <div class="select-title">
+                                <p class="mobile-h3">Selecione o <span>estado</span> desejado</p>
+                            </div>
+                            <div class="close-mstate" onclick="closeState()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="area-bottom">
+                        <div>Acre – AC <span>(0)</span> </div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+                        <div>Acre – AC <span>(0)</span></div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <script src="scripts/modalState.js"></script>
+        </div>
+
+        <!-- modal city -->
+        <div class="modal-city" id="modal-city-id">
+            <div class="container">
+                <div class="modalcity-container">
+                    <div class="area-top">
+                        <div class="area-title">
+                            <div class="select-title">
+                                <p class="mobile-h3">Selecione a <span>cidade</span></p>
+                            </div>
+                            <div class="close-mcity" onclick="closeCity()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+
+                        <div class="area-search">
+
+                            <div class="search-bar">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </div>
+
+                                <input class="input-text" type="text" placeholder="Busque por cidade ou estado">
+
+                            </div>
+                            <div class="location">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M12 8C13.0609 8 14.0783 8.42143 14.8284 9.17157C15.5786 9.92172 16 10.9391 16 12C16 13.0609 15.5786 14.0783 14.8284 14.8284C14.0783 15.5786 13.0609 16 12 16C10.9391 16 9.92172 15.5786 9.17157 14.8284C8.42143 14.0783 8 13.0609 8 12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8ZM3.05 13H1V11H3.05C3.5 6.83 6.83 3.5 11 3.05V1H13V3.05C17.17 3.5 20.5 6.83 20.95 11H23V13H20.95C20.5 17.17 17.17 20.5 13 20.95V23H11V20.95C6.83 20.5 3.5 17.17 3.05 13ZM12 5C10.1435 5 8.36301 5.7375 7.05025 7.05025C5.7375 8.36301 5 10.1435 5 12C5 13.8565 5.7375 15.637 7.05025 16.9497C8.36301 18.2625 10.1435 19 12 19C13.8565 19 15.637 18.2625 16.9497 16.9497C18.2625 15.637 19 13.8565 19 12C19 10.1435 18.2625 8.36301 16.9497 7.05025C15.637 5.7375 13.8565 5 12 5Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <div class="location-text">
+                                    <p>Usar minha localizacao </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="area-bottom">
+                        <div class="area-btn large-btn">
+
+                            <div class="btn-border-gray">
+                                <p>Limpar Filtro</p>
+                            </div>
+                            <div class="btn-pink large-btn">
+                                <p>Buscar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script src="scripts/modalCity.js"></script>
+        </div>
+
+        <!-- modal menu -->
+        <div class="modal-menu" id="modal-menu-id">
+            <div class="container">
+                <div class="modalmenu-container">
+                    <div class="area-top">
+                        <div class="area-title">
+                            <div class="select-title">
+                                <p class="mobile-h3">Menu <span>principal</span></p>
+                            </div>
+                            <div class="close-mmenu">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="area-menu">
+                        <div class="menu-items">
+                            <div class="menu-btn">
+                                <div class="navegation">
+                                    <p class="desktop-btn">Navege por</p>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+
+                                </div>
+                                <div class="institutional">
+                                    <p class="desktop-btn">Institucional</p>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                    <div>sjdffks</div>
+                                </div>
+                                <div class="help">
+                                    <p class="desktop-btn">Ajuda</p>
+                                    <div>sjdffks</div>
+                                </div>
+                            </div>
+                            <div class="icon-network">
+                                <div class="i">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                    </svg>
+                                </div>
+                                <div class="i">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </div>
+                                <div class="i">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </div>
+                                <div class="i">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </div>
+                                <div class="text">
+                                    <p>Acompanhe nas redes</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="btn-area">
+                            <div class="container">
+                                <div class="text">
+                                    <p class="mobile-h2">Faça parte do nosso time de acompanhates!</p>
+                                </div>
+                                <div class="btn">
+                                    <div class="btn-pink">
+                                        <p>Torne-se anunciante</p>
+                                    </div>
+                                    <div class="btn-pink">
+                                        <p>Login</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                const closeMmenu = document.querySelector('.close-mmenu');
+                const modalMenu = document.getElementById('modal-menu-id');
+                const openMmenu = document.getElementById('btn-dropdown-id');
+
+                //close modal
+                closeMmenu.addEventListener("click", function () {
+                    modalMenu.style.display = "none";
+                });
+                //open modal
+                openMmenu.addEventListener("click", function () {
+                    modalMenu.style.display = "flex";
+                });
+            </script>
+        </div>
+
+
+    </section>
+
+    <!-- out seach bar -->
+    <div class="out-search-bar">
+        <div class="search-bar-out">
+            <div class="area-location-input">
+                <div class="btn-location" onclick="openCity()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg>
+                    <script src="scripts/modalCity.js"></script>
+                </div>
+                <input class="input-text" type="text" placeholder="Selecione a cidade que deseja">
+
+            </div>
+            <div class="btn-b" onclick="openState()">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M7.40512 8.57999L11.9951 13.17L16.5851 8.57999L17.9951 9.99999L11.9951 16L5.99512 9.99999L7.40512 8.57999Z"
+                            fill="#524F5F" />
+                    </svg>
+                </i>
+                <script src="scripts/modalState.js"></script>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Section hero 1 -->
+    <section class="section-hero">
+        <div class="top-container">
+            <section class="top-bar">
+                <div class="menu">
+                    <p>Pagina inicial > <span class="desktop-btn">Espirito Santo</span></p>
+                </div>
+            </section>
+
+        </div>
+        <div class="container">
+            <div class="text-area">
+
+                <div class="text-box">
+                    <p class="desktop-h1">Encontre as melhores acompanhantes do</p>
+                    <div class="desktop-h1">
+                        <div class="detail">Espírito Santo</div>
+                    </div>
+                    <p class="desktop-h3">Descubra as mais belas garotas de programa do Espírito Santo.</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Tags 1 -->
+    <section class="section-tags">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h4">Busque por bairros do ES</p>
+            </div>
+            <div class="tags-area">
+                <div class="tag">
+                    <p class="mini-text">Praia da costa</p>
+                </div>
+                <div class="tag">
+                    <p class="mini-text">Centro</p>
+                </div>
+                <div class="tag">
+                    <p class="mini-text">Bairro da penha</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- horiz card -->
+    <section class="horiz-card">
+        <div class="container-hc">
+            <div class="text-area">
+                <p class="desktop-h2">Acompanhantes em destaque na região Sul</p>
+                <p class="desktop-h4">Acompanhantes em destaque na região metropolitana na região Sul</p>
+            </div>
+            <div class="card-area">
+                <div class="card-horizontal">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="bottom-container">
+                        <div class="text-name">
+                            <p>Lorent</p>
+                        </div>
+                        <div class="location-container">
+                            <div class="i">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </div>
+                            <p>Location</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="bottom-container">
+                        <div class="text-name">
+                            <p>Lorent</p>
+                        </div>
+                        <div class="location-container">
+                            <div class="i">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </div>
+                            <p>Location</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="bottom-container">
+                        <div class="text-name">
+                            <p>Lorent</p>
+                        </div>
+                        <div class="location-container">
+                            <div class="i">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </div>
+                            <p>Location</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-horizontal">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="bottom-container">
+                        <div class="text-name">
+                            <p>Lorent</p>
+                        </div>
+                        <div class="location-container">
+                            <div class="i">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </div>
+                            <p>Location</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- carousel -->
+    <section class="section-modalcarousel">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">Últimas acompanhantes que postergaram no feed na região Metropolitana</p>
+            </div>
+            <div class="icon-area">
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1441441247730-d09529166668?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1457449940276-e8deed18bfff?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1602661287394-ccf02e1a0893?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjA4fHxwcm9maWxlfGVufDB8fDB8fHww"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1624801211248-dc84473d001a?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+
+                <div class="icon-card">
+                    <div class="image">
+                        <img src="https://plus.unsplash.com/premium_photo-1665657351427-efdfbf01fb81?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="name">
+                        <p class="mobile-text">Antonella</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal area -->
+        <div id="modal-carousel-id" class="modal-carousel">
+            <div class="container">
+
+
+                <div class="modalcard back">
+                    <div class="container-card">
+                        <div class="picture">
+                            <img class="backPic"
+                                src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="top">
+                            <div class="area-profile">
+                                <div class="image-profile">
+                                    pic
+                                </div>
+                                <div class="name">
+                                    <p class="mini-text">Antonella</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="bottom">
+                            <div class="box">
+                                <div class="comment">
+                                    <input class="inputx" type="text" placeholder="Deixe um comentário">
+                                </div>
+                                <div class="share">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"
+                                            viewBox="0 0 18 15" fill="none">
+                                            <path
+                                                d="M18 6.9998L11 -0.000198364V3.9998C4 4.9998 1 9.9998 0 14.9998C2.5 11.4998 6 9.8998 11 9.8998V13.9998L18 6.9998Z"
+                                                fill="white" />
+                                        </svg>
+                                    </i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modalcard current">
+                    <div class="container-card">
+                        <div class="picture">
+                            <img class="currentPic"
+                                src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="top">
+                            <div class="area-profile">
+                                <div class="image-profile">
+                                    pic
+                                </div>
+                                <div class="name">
+                                    <p class="mini-text">Antonella</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="bottom">
+                            <div class="box">
+                                <div class="comment">
+                                    <input class="inputx" type="text" placeholder="Deixe um comentário">
+                                </div>
+                                <div class="share">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"
+                                            viewBox="0 0 18 15" fill="none">
+                                            <path
+                                                d="M18 6.9998L11 -0.000198364V3.9998C4 4.9998 1 9.9998 0 14.9998C2.5 11.4998 6 9.8998 11 9.8998V13.9998L18 6.9998Z"
+                                                fill="white" />
+                                        </svg>
+                                    </i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modalcard next">
+                    <div class="container-card">
+                        <div class="picture">
+                            <img class="nextPic"
+                                src="https://images.unsplash.com/photo-1436891620584-47fd0e565afb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="top">
+                            <div class="area-profile">
+                                <div class="image-profile">
+                                    pic
+                                </div>
+                                <div class="name">
+                                    <p class="mini-text">Antonella</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="bottom">
+                            <div class="box">
+                                <div class="comment">
+                                    <input class="inputx" type="text" placeholder="Deixe um comentário">
+                                </div>
+                                <div class="share">
+                                    <i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15"
+                                            viewBox="0 0 18 15" fill="none">
+                                            <path
+                                                d="M18 6.9998L11 -0.000198364V3.9998C4 4.9998 1 9.9998 0 14.9998C2.5 11.4998 6 9.8998 11 9.8998V13.9998L18 6.9998Z"
+                                                fill="white" />
+                                        </svg>
+                                    </i>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="items-absolute">
+                <div class="close">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path
+                                d="M22.4335 20L31.6668 29.2333V31.6667H29.2335L20.0002 22.4333L10.7668 31.6667H8.3335V29.2333L17.5668 20L8.3335 10.7667V8.33334H10.7668L20.0002 17.5667L29.2335 8.33334H31.6668V10.7667L22.4335 20Z"
+                                fill="white" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="backBtn">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M2.6665 16C2.6665 12.4638 4.07126 9.07239 6.57175 6.57191C9.07223 4.07142 12.4636 2.66666 15.9998 2.66666C17.7508 2.66666 19.4846 3.01154 21.1023 3.6816C22.72 4.35167 24.1898 5.33379 25.4279 6.57191C26.666 7.81002 27.6482 9.27988 28.3182 10.8976C28.9883 12.5152 29.3332 14.249 29.3332 16C29.3332 19.5362 27.9284 22.9276 25.4279 25.4281C22.9274 27.9286 19.5361 29.3333 15.9998 29.3333C14.2489 29.3333 12.5151 28.9885 10.8974 28.3184C9.27972 27.6483 7.80986 26.6662 6.57175 25.4281C4.07126 22.9276 2.6665 19.5362 2.6665 16ZM23.9998 14.6667H13.3332L17.9998 10L16.1065 8.10666L8.21317 16L16.1065 23.8933L17.9998 22L13.3332 17.3333H23.9998V14.6667Z"
+                                fill="#F1F0F5" />
+                        </svg>
+                    </i>
+                </div>
+                <div class="nextBtn">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path
+                                d="M29.3332 16C29.3332 19.5362 27.9284 22.9276 25.4279 25.4281C22.9274 27.9286 19.5361 29.3333 15.9998 29.3333C14.2489 29.3333 12.5151 28.9885 10.8974 28.3184C9.27972 27.6483 7.80986 26.6662 6.57175 25.4281C4.07126 22.9276 2.6665 19.5362 2.6665 16C2.6665 12.4638 4.07126 9.07239 6.57175 6.57191C9.07223 4.07142 12.4636 2.66666 15.9998 2.66666C17.7508 2.66666 19.4846 3.01154 21.1023 3.6816C22.72 4.35167 24.1898 5.33379 25.4279 6.57191C26.666 7.81002 27.6482 9.27988 28.3182 10.8976C28.9883 12.5152 29.3332 14.249 29.3332 16ZM7.99984 17.3333H18.6665L13.9998 22L15.8932 23.8933L23.7865 16L15.8932 8.10666L13.9998 10L18.6665 14.6667H7.99984V17.3333Z"
+                                fill="#F1F0F5" />
+                        </svg>
+                    </i>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // get each image
+            const images = document.querySelectorAll('.icon-card .image img');
+            // get modal and its pictures inside
+            const modal = document.getElementById('modal-carousel-id');
+            const backImg = document.querySelector('.backPic');
+            const currentImg = document.querySelector('.currentPic');
+            const nextImg = document.querySelector('.nextPic');
+            const btnClose = document.querySelector(".close");
+
+            //btn
+            const nextBtn = document.querySelector('.nextBtn');
+            const backBtn = document.querySelector('.backBtn');
+
+            //current index
+            let currentIndex = 0;
+
+            // lets add a event click in each image from galery
+            images.forEach((pic, index) => {
+                pic.addEventListener('click', () => {
+                    //open modal, from none to block
+                    modal.style.display = 'block';
+
+                    //update pics from modal
+                    backImg.src = images[(index - 1 + images.length) % images.length].src;
+                    currentImg.src = pic.src;
+                    nextImg.src = images[(index + 1) % images.length].src;
+
+                    //update current pic index
+                    currentIndex = index;
+                });
+            });
+
+            // add event click to navegate
+            backImg.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateImagesSlide();
+            });
+
+            nextImg.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateImagesSlide();
+            });
+
+            // btn next back
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateImagesSlide();
+            });
+            backBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + images.length) % images.length;
+                updateImagesSlide();
+            });
+
+
+            function updateImagesSlide(event) {
+                backImg.src = images[(currentIndex - 1 + images.length) % images.length].src;
+                currentImg.src = images[currentIndex].src;
+                nextImg.src = images[(currentIndex + 1) % images.length].src;
+            }
+
+            // close modal
+            btnClose.addEventListener("click", function () {
+                modal.style.display = "none";
+            });
+            // close esc
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    modal.style.display = 'none';
+                }
+            })
+
+            //navigate using keyboard arrows
+
+        </script>
+    </section>
+
+
+    <!-- general -->
+    <section class="section-general">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">Todas acompanhantes na região Metropolitana</p>
+                <p class="desktop-h4">Todas as acompanhantes em destaque na região metropolitana na grande vitória.</p>
+            </div>
+            <div class="filter-area">
+                <div class="filter-container">
+                    <div class="filter-bar">
+                        <div class="item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M12.875 17.27L19.055 21L17.415 13.97L22.875 9.24L15.685 8.62L12.875 2L10.065 8.62L2.875 9.24L8.325 13.97L6.695 21L12.875 17.27Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </div>
+                            <p>Destaques</p>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M20.125 17C20.6983 17 21.1817 17.2 21.575 17.6C21.9683 18 22.1617 18.4667 22.155 19L14.125 22L7.12501 20V11H9.07501L16.345 13.69C16.865 13.8967 17.125 14.27 17.125 14.81C17.125 15.1233 17.0117 15.3967 16.785 15.63C16.5583 15.8633 16.2717 15.9867 15.925 16H13.125L11.375 15.33L11.045 16.27L13.125 17H20.125ZM16.125 3.23C16.8317 2.41 17.7317 2 18.825 2C19.7317 2 20.4983 2.33333 21.125 3C21.7517 3.66667 22.085 4.43333 22.125 5.3C22.125 5.98667 21.7917 6.80667 21.125 7.76C20.4583 8.71333 19.8017 9.51 19.155 10.15C18.5083 10.79 17.4983 11.74 16.125 13C14.7383 11.74 13.7183 10.79 13.065 10.15C12.4117 9.51 11.755 8.71333 11.095 7.76C10.435 6.80667 10.1117 5.98667 10.125 5.3C10.125 4.39333 10.4483 3.62667 11.095 3C11.7417 2.37333 12.5217 2.04 13.435 2C14.5017 2 15.3983 2.41 16.125 3.23ZM1.10901 11H5.12501V22H1.10901V11Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </div>
+                            <p>Destaques</p>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M22.5 7H20.5V2H18.5V4.34L12.5 6.91L6.5 4.34V2H4.5V7H2.5V9H4.55C4.8 11.25 6.69 13 9 13C10.42 13 11.68 12.33 12.5 11.3C13.33 12.33 14.58 13 16 13C18.31 13 20.2 11.25 20.45 9H22.5V7ZM9 11C7.62 11 6.5 9.88 6.5 8.5V6.5L11.5 8.65C11.4 9.96 10.33 11 9 11ZM18.5 8.5C18.5 9.88 17.38 11 16 11C14.67 11 13.6 9.96 13.5 8.65L18.5 6.5V8.5ZM2.5 15V17H3.5C6.47 17 8.93 19.17 9.41 22H15.59C16.07 19.17 18.53 17 21.5 17H22.5V15H2.5ZM14.09 20H10.91C10.44 18.84 9.71 17.82 8.79 17H16.21C15.29 17.82 14.56 18.84 14.09 20Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </div>
+                            <p>Destaques</p>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.965 11.77L20.435 18.1L14.875 14.74L9.315 18.1L10.775 11.77L5.875 7.5L12.345 6.96L14.875 1L17.405 6.96L23.875 7.5L18.965 11.77ZM2.875 12.43C3.065 12.43 3.255 12.37 3.425 12.26L6.625 10.15L5.055 8.79L2.325 10.59C1.864 10.89 1.736 11.5 2.035 12C2.235 12.27 2.555 12.43 2.875 12.43ZM2.035 21.55C2.235 21.84 2.555 22 2.875 22C3.065 22 3.255 21.95 3.425 21.84L7.535 19.13L7.875 17.76L8.185 16.31L2.325 20.16C1.864 20.47 1.736 21.09 2.035 21.55ZM2.325 15.38C1.864 15.68 1.736 16.3 2.035 16.76C2.235 17.06 2.555 17.21 2.875 17.21C3.065 17.21 3.255 17.16 3.425 17.05L8.845 13.5L9.115 12.31L8.195 11.5L2.325 15.38Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </div>
+                            <p>Destaques</p>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none">
+                                    <path
+                                        d="M23.625 12L21.185 9.22004L21.525 5.54004L17.915 4.72004L16.025 1.54004L12.625 3.00004L9.225 1.54004L7.335 4.72004L3.725 5.53004L4.065 9.21004L1.625 12L4.065 14.78L3.725 18.47L7.335 19.29L9.225 22.47L12.625 21L16.025 22.46L17.915 19.28L21.525 18.46L21.185 14.78L23.625 12ZM13.625 17H11.625V15H13.625V17ZM13.625 13H11.625V7.00004H13.625V13Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </div>
+                            <p>Destaques</p>
+                        </div>
+                    </div>
+
+
+                    <div class="btn-filter" onclick="openList()">
+                        <div class="text-icon">
+                            <p class="desktop-btn">Filtrar por categoria</p>
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path d="M6 13H18V11H6M3 6V8H21V6M10 18H14V16H10V18Z" fill="#EC148E" />
+                                </svg>
+                            </i>
+                        </div>
+                        <script>
+                            function openList() {
+                                const list = document.querySelector("#filter-list-id");
+                                if (list.style.display === "none") {
+                                    list.style.display = "block";
+                                } else {
+                                    list.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+
+                    <div class="filter-list" style="display: none;" id="filter-list-id">
+                        <div class="title">
+                            <p>Filtrar por:</p>
+                        </div>
+                        <div class="item-area">
+                            <div class="item">
+
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M12.875 17.27L19.055 21L17.415 13.97L22.875 9.24L15.685 8.62L12.875 2L10.065 8.62L2.875 9.24L8.325 13.97L6.695 21L12.875 17.27Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <p>Destaques</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M20.125 17C20.6983 17 21.1817 17.2 21.575 17.6C21.9683 18 22.1617 18.4667 22.155 19L14.125 22L7.12501 20V11H9.07501L16.345 13.69C16.865 13.8967 17.125 14.27 17.125 14.81C17.125 15.1233 17.0117 15.3967 16.785 15.63C16.5583 15.8633 16.2717 15.9867 15.925 16H13.125L11.375 15.33L11.045 16.27L13.125 17H20.125ZM16.125 3.23C16.8317 2.41 17.7317 2 18.825 2C19.7317 2 20.4983 2.33333 21.125 3C21.7517 3.66667 22.085 4.43333 22.125 5.3C22.125 5.98667 21.7917 6.80667 21.125 7.76C20.4583 8.71333 19.8017 9.51 19.155 10.15C18.5083 10.79 17.4983 11.74 16.125 13C14.7383 11.74 13.7183 10.79 13.065 10.15C12.4117 9.51 11.755 8.71333 11.095 7.76C10.435 6.80667 10.1117 5.98667 10.125 5.3C10.125 4.39333 10.4483 3.62667 11.095 3C11.7417 2.37333 12.5217 2.04 13.435 2C14.5017 2 15.3983 2.41 16.125 3.23ZM1.10901 11H5.12501V22H1.10901V11Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <p>Destaques</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M22.5 7H20.5V2H18.5V4.34L12.5 6.91L6.5 4.34V2H4.5V7H2.5V9H4.55C4.8 11.25 6.69 13 9 13C10.42 13 11.68 12.33 12.5 11.3C13.33 12.33 14.58 13 16 13C18.31 13 20.2 11.25 20.45 9H22.5V7ZM9 11C7.62 11 6.5 9.88 6.5 8.5V6.5L11.5 8.65C11.4 9.96 10.33 11 9 11ZM18.5 8.5C18.5 9.88 17.38 11 16 11C14.67 11 13.6 9.96 13.5 8.65L18.5 6.5V8.5ZM2.5 15V17H3.5C6.47 17 8.93 19.17 9.41 22H15.59C16.07 19.17 18.53 17 21.5 17H22.5V15H2.5ZM14.09 20H10.91C10.44 18.84 9.71 17.82 8.79 17H16.21C15.29 17.82 14.56 18.84 14.09 20Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <p>Destaques</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M18.965 11.77L20.435 18.1L14.875 14.74L9.315 18.1L10.775 11.77L5.875 7.5L12.345 6.96L14.875 1L17.405 6.96L23.875 7.5L18.965 11.77ZM2.875 12.43C3.065 12.43 3.255 12.37 3.425 12.26L6.625 10.15L5.055 8.79L2.325 10.59C1.864 10.89 1.736 11.5 2.035 12C2.235 12.27 2.555 12.43 2.875 12.43ZM2.035 21.55C2.235 21.84 2.555 22 2.875 22C3.065 22 3.255 21.95 3.425 21.84L7.535 19.13L7.875 17.76L8.185 16.31L2.325 20.16C1.864 20.47 1.736 21.09 2.035 21.55ZM2.325 15.38C1.864 15.68 1.736 16.3 2.035 16.76C2.235 17.06 2.555 17.21 2.875 17.21C3.065 17.21 3.255 17.16 3.425 17.05L8.845 13.5L9.115 12.31L8.195 11.5L2.325 15.38Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <p>Destaques</p>
+                            </div>
+                            <div class="item">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M23.625 12L21.185 9.22004L21.525 5.54004L17.915 4.72004L16.025 1.54004L12.625 3.00004L9.225 1.54004L7.335 4.72004L3.725 5.53004L4.065 9.21004L1.625 12L4.065 14.78L3.725 18.47L7.335 19.29L9.225 22.47L12.625 21L16.025 22.46L17.915 19.28L21.525 18.46L21.185 14.78L23.625 12ZM13.625 17H11.625V15H13.625V17ZM13.625 13H11.625V7.00004H13.625V13Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </div>
+                                <p>Destaques</p>
+                            </div>
+
+                        </div>
+
+
+                        <div class="area-btn large-btn">
+                            <div class="btn-pink large-btn">
+                                <p>Buscar</p>
+                            </div>
+
+                            <div class="btn-border-gray">
+                                <p>Limpar Filtro</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cards-area">
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="../dist/assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="../dist/assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="../dist/assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="../dist/assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="../dist/assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="../dist/assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="../dist/assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="../dist/assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- more content -->
+    <section class="section-seemore">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">Massagistas e terapeutas profissionais na região metropolitana da grande vitória
+                </p>
+            </div>
+            <div class="cards-area">
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-premium">
+                            <p class="mini-text-premium">Premium</p>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-stars">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M8 11.5135L12.12 14.0002L11.0267 9.3135L14.6667 6.16016L9.87333 5.74683L8 1.3335L6.12667 5.74683L1.33333 6.16016L4.96667 9.3135L3.88 14.0002L8 11.5135Z"
+                                    fill="#FF9900" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                fill="none">
+                                <path
+                                    d="M8 11.5135L12.12 14.0002L11.0267 9.3135L14.6667 6.16016L9.87333 5.74683L8 1.3335L6.12667 5.74683L1.33333 6.16016L4.96667 9.3135L3.88 14.0002L8 11.5135Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+                        <p class="text2"></p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">233 - 242</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section text 1 -->
+    <section class="section-text1">
+        <div class="container-s1">
+            <p class="text-large">Faça parte do nosso time de acompanhates!</p>
+            <p class="text-info">O Ilha do Prazer é um dos mais conhecidos site de acompanhantes e garotas de programa
+                do
+                Brasil.</p>
+            <div class="btn-pink">
+                <p>Quero ser anunciante</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- comments -->
+    <section class="section-commentary">
+        <div class="container">
+            <div class="title-area">
+                <div class="title">
+                    <p class="desktop-h2">Comentários recentes</p>
+                </div>
+                <div class="subtitle">
+                    <p class="desktop-h4">Veja o que os usuários estão falando sobre nossas acompanhantes</p>
+                </div>
+            </div>
+            <div class="comment-area">
+
+
+                <div class="card-comment">
+                    <div class="area-profile">
+                        <div class="profile-photo">
+
+                        </div>
+                        <div class="text-area">
+                            <p class="text-name">Nayara Lima</p>
+                            <p class="mobile-h3">Castelo, ES</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="desktop-h4">Amet, leo turpis facilisi nam fusce nunc molestie.</div>
+                        <div class="author">
+                            <div class="text-posted">Postado por</div>
+                            <div class="mobile-h3">Paulo</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-comment">
+                    <div class="area-profile">
+                        <div class="profile-photo">
+
+                        </div>
+                        <div class="text-area">
+                            <p class="text-name">Nayara Lima</p>
+                            <p class="mobile-h3">Castelo, ES</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="desktop-h4">Amet, leo turpis facilisi nam fusce nunc molestie.</div>
+                        <div class="author">
+                            <div class="text-posted">Postado por</div>
+                            <div class="mobile-h3">Paulo</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-comment">
+                    <div class="area-profile">
+                        <div class="profile-photo">
+
+                        </div>
+                        <div class="text-area">
+                            <p class="text-name">Nayara Lima</p>
+                            <p class="mobile-h3">Castelo, ES</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="desktop-h4">Amet, leo turpis facilisi nam fusce nunc molestie.</div>
+                        <div class="author">
+                            <div class="text-posted">Postado por</div>
+                            <div class="mobile-h3">Paulo</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-comment">
+                    <div class="area-profile">
+                        <div class="profile-photo">
+
+                        </div>
+                        <div class="text-area">
+                            <p class="text-name">Nayara Lima</p>
+                            <p class="mobile-h3">Castelo, ES</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="desktop-h4">Amet, leo turpis facilisi nam fusce nunc molestie.</div>
+                        <div class="author">
+                            <div class="text-posted">Postado por</div>
+                            <div class="mobile-h3">Paulo</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-comment">
+                    <div class="area-profile">
+                        <div class="profile-photo">
+
+                        </div>
+                        <div class="text-area">
+                            <p class="text-name">Nayara Lima</p>
+                            <p class="mobile-h3">Castelo, ES</p>
+                        </div>
+                    </div>
+                    <div class="comment-box">
+                        <div class="desktop-h4">Amet, leo turpis facilisi nam fusce nunc molestie.</div>
+                        <div class="author">
+                            <div class="text-posted">Postado por</div>
+                            <div class="mobile-h3">Paulo</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <script src="scripts/slideCommentary.js"></script>
+            </div>
+        </div>
+        <div class="btn-area">
+            <div class="btn-next" onclick="next()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+            </div>
+            <div class="btn-back" onclick="back()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Videos feed -->
+    <section class="section-homevideo">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">Vídeos do Feed IDP </p>
+            </div>
+            <div class="text-area">
+                <p class="desktop-h4">
+                    As deliciosas garotas de programa também podem postar vídeos picantes para os fãs de conteúdo
+                    amador.
+                    Assista, participe comentando e curtindo, e não deixe de ligar para acompanhante que te deixou mais
+                    excitado
+                </p>
+            </div>
+            <div class="cards-area">
+
+                <div class="card-video">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="play-icon">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none">
+                                <path
+                                    d="M26.6667 43.9997V19.9997L42.6667 31.9997M32 5.33301C28.4981 5.33301 25.0305 6.02276 21.7951 7.36289C18.5598 8.70301 15.6201 10.6673 13.1439 13.1435C8.14289 18.1445 5.33337 24.9272 5.33337 31.9997C5.33337 39.0721 8.14289 45.8549 13.1439 50.8559C15.6201 53.3321 18.5598 55.2963 21.7951 56.6365C25.0305 57.9766 28.4981 58.6663 32 58.6663C39.0725 58.6663 45.8553 55.8568 50.8562 50.8559C55.8572 45.8549 58.6667 39.0721 58.6667 31.9997C58.6667 28.4978 57.977 25.0301 56.6368 21.7948C55.2967 18.5594 53.3325 15.6197 50.8562 13.1435C48.38 10.6673 45.4403 8.70301 42.2049 7.36289C38.9696 6.02276 35.502 5.33301 32 5.33301Z"
+                                    fill="white" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="text-box">
+                        <p class="desktop-h4">Aurora</p>
+                        <p class="mobile-h3">Vitória- ES</p>
+                        <p class="mini-text">Texto/ descrição da imagem</p>
+                    </div>
+                </div>
+
+                <div class="card-video">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="play-icon">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none">
+                                <path
+                                    d="M26.6667 43.9997V19.9997L42.6667 31.9997M32 5.33301C28.4981 5.33301 25.0305 6.02276 21.7951 7.36289C18.5598 8.70301 15.6201 10.6673 13.1439 13.1435C8.14289 18.1445 5.33337 24.9272 5.33337 31.9997C5.33337 39.0721 8.14289 45.8549 13.1439 50.8559C15.6201 53.3321 18.5598 55.2963 21.7951 56.6365C25.0305 57.9766 28.4981 58.6663 32 58.6663C39.0725 58.6663 45.8553 55.8568 50.8562 50.8559C55.8572 45.8549 58.6667 39.0721 58.6667 31.9997C58.6667 28.4978 57.977 25.0301 56.6368 21.7948C55.2967 18.5594 53.3325 15.6197 50.8562 13.1435C48.38 10.6673 45.4403 8.70301 42.2049 7.36289C38.9696 6.02276 35.502 5.33301 32 5.33301Z"
+                                    fill="white" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="text-box">
+                        <p class="desktop-h4">Aurora</p>
+                        <p class="mobile-h3">Vitória- ES</p>
+                        <p class="mini-text">Texto/ descrição da imagem</p>
+                    </div>
+                </div>
+
+                <div class="card-video">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="play-icon">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none">
+                                <path
+                                    d="M26.6667 43.9997V19.9997L42.6667 31.9997M32 5.33301C28.4981 5.33301 25.0305 6.02276 21.7951 7.36289C18.5598 8.70301 15.6201 10.6673 13.1439 13.1435C8.14289 18.1445 5.33337 24.9272 5.33337 31.9997C5.33337 39.0721 8.14289 45.8549 13.1439 50.8559C15.6201 53.3321 18.5598 55.2963 21.7951 56.6365C25.0305 57.9766 28.4981 58.6663 32 58.6663C39.0725 58.6663 45.8553 55.8568 50.8562 50.8559C55.8572 45.8549 58.6667 39.0721 58.6667 31.9997C58.6667 28.4978 57.977 25.0301 56.6368 21.7948C55.2967 18.5594 53.3325 15.6197 50.8562 13.1435C48.38 10.6673 45.4403 8.70301 42.2049 7.36289C38.9696 6.02276 35.502 5.33301 32 5.33301Z"
+                                    fill="white" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="text-box">
+                        <p class="desktop-h4">Aurora</p>
+                        <p class="mobile-h3">Vitória- ES</p>
+                        <p class="mini-text">Texto/ descrição da imagem</p>
+                    </div>
+                </div>
+
+                <div class="card-video">
+                    <div class="image">
+                        <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="play-icon">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                fill="none">
+                                <path
+                                    d="M26.6667 43.9997V19.9997L42.6667 31.9997M32 5.33301C28.4981 5.33301 25.0305 6.02276 21.7951 7.36289C18.5598 8.70301 15.6201 10.6673 13.1439 13.1435C8.14289 18.1445 5.33337 24.9272 5.33337 31.9997C5.33337 39.0721 8.14289 45.8549 13.1439 50.8559C15.6201 53.3321 18.5598 55.2963 21.7951 56.6365C25.0305 57.9766 28.4981 58.6663 32 58.6663C39.0725 58.6663 45.8553 55.8568 50.8562 50.8559C55.8572 45.8549 58.6667 39.0721 58.6667 31.9997C58.6667 28.4978 57.977 25.0301 56.6368 21.7948C55.2967 18.5594 53.3325 15.6197 50.8562 13.1435C48.38 10.6673 45.4403 8.70301 42.2049 7.36289C38.9696 6.02276 35.502 5.33301 32 5.33301Z"
+                                    fill="white" />
+                            </svg>
+                        </i>
+                    </div>
+                    <div class="text-box">
+                        <p class="desktop-h4">Aurora</p>
+                        <p class="mobile-h3">Vitória- ES</p>
+                        <p class="mini-text">Texto/ descrição da imagem</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-seemore">
+                <div class="btn-pink">
+                    <p class="desktop-btn">Ver todos os Videos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- recent section -->
+    <section class="section-recent">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">As mais recentes atualização ES</p>
+            </div>
+            <div class="subtitle">
+                <p class="desktop-h4">As mais novas acompanhantes do Ilha do prazer </p>
+            </div>
+            <div class="cards-area">
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">Nova modelo</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">Nova modelo</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">Nova modelo</p>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                        <div class="icon-container-play">
+                            <div class="i">
+                                <img src="assets/icon2.svg" alt="">
+
+                            </div>
+                        </div>
+                        <div class="icon-container-fire">
+                            <div class="i">
+                                <img src="assets/icon1.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <p class="text1">Lorem ipsum dolor sit</p>
+                        <p class="text2">ipsum </p>
+                        <p class="text2">aute irure</p>
+                        <p class="text3">Nova modelo</p>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section share friend -->
+    <section class="section-text2">
+        <div class="container-s2">
+            <div class="logo-area">
+                <img class="i" style="display: block;" src="assets/Logos.svg" alt="">
+            </div>
+            <div class="text-area">
+                <p class="text-large">Indique este site a um amigo</p>
+                <p class="text-info">
+                    Indique este site a um amigo, e convide ele a vir conhecer o prazer desta ilha!
+                </p>
+                <div class="icons">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-share-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-send-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section best pics -->
+    <section class="section-bestpic">
+        <div class="container">
+            <div class="title">
+                <p class="desktop-h2">Veja as garotas que estão sendo mais visitadas no Ilha do prazer ES</p>
+            </div>
+            <div class="pics-area">
+                <div class="best-day">
+                    <div class="title">
+                        <p class="bd-title">Mais visitada do <span>dia</span> no ES</p>
+                    </div>
+                    <div class="subtitle">
+                        <p class="desktop-btn">Com <span>575</span> visitas, a mais visitada do dia é:</p>
+                    </div>
+                    <div class="card-photo-area">
+                        <div class="card">
+                            <div class="img-area">
+                                <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                    alt="">
+
+                            </div>
+                            <div class="text-area">
+                                <p class="text1">Lorem ipsum dolor sit</p>
+                                <p class="text2">ipsum </p>
+                                <p class="text-box">
+                                    Olá! Tudo bem? Meu nome Vanessa Souza.Sou uma belíssima acompanhante de luxo e estou
+                                    disponível para homens seletos que gostam de curtir bons momentos. ...
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-update">
+                        <p class="mobile-text">Última atualização às 16/10/2023, 07:00:54</p>
+                    </div>
+                </div>
+                <div class="best-month">
+                    <div class="title">
+                        <p class="bd-title">Mais visitada do <span>mes</span> no ES</p>
+                    </div>
+                    <div class="subtitle">
+                        <p class="desktop-btn">As acompanhantes mais visitadas do mes em todo o ES</p>
+                    </div>
+                    <div class="grid-photo">
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699742894283-5071eeec08aa?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1647203581686-31f66ffcbf83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="https://images.unsplash.com/photo-1699828446033-83745366bfcc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNjJ8fHxlbnwwfHx8fHw%3D"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section blog -->
+    <section class="section-blog">
+        <div class="container-blog">
+            <div class="title-area">
+                <p class="desktop-h2">Acompanhe o Blog do Ilha do Prazer </p>
+            </div>
+            <div class="cards-area" id="cards-blog-area-id">
+                <div class="card-blog" >
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="text-area">
+                        <p class="desktop-btn">Lorem ipsum dolor sit</p>
+                        <p class="desktop-h4">Et et in ultrices faucibus element Et et in ultrices faucibus element </p>
+
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="text-area">
+                        <p class="desktop-btn">Lorem ipsum dolor sit</p>
+                        <p class="desktop-h4">Et et in ultrices faucibus element Et et in ultrices faucibus element </p>
+
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="text-area">
+                        <p class="desktop-btn">Lorem ipsum dolor sit</p>
+                        <p class="desktop-h4">Et et in ultrices faucibus element Et et in ultrices faucibus element </p>
+
+                    </div>
+                </div>
+
+                <div class="card-blog">
+                    <div class="img-area">
+                        <img src="https://images.pexels.com/photos/5930024/pexels-photo-5930024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="">
+                    </div>
+                    <div class="text-area">
+                        <p class="desktop-btn">Lorem ipsum dolor sit</p>
+                        <p class="desktop-h4">Et et in ultrices faucibus element Et et in ultrices faucibus element </p>
+
+                    </div>
+                </div>
+
+                <script src="scripts/slideBlog.js"></script>
+            </div>
+        </div>
+        <div class="btn-area">
+            <div class="btn-next" onclick="next2()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+            </div>
+            <div class="btn-back" onclick="back2()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                  </svg>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Questions section -->
+    <section class="section-questions">
+        <div class="container-questions">
+            <div class="text-area">
+                <p class="desktop-btn">Tire sua duvida</p>
+                <p class="desktop-h2">Lorem ipsum dolor, sit amet</p>
+                <p class="desktop-h4"> Lorem ipsum dolor, sit amet dolor, sit amet dolor, sit amet</p>
+                <div class="icon-text-area">
+                    <div class="item">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M20 5C29.1666 5 36.6666 10.9667 36.6666 18.3333C36.6666 25.7 29.1666 31.6667 20 31.6667C17.9333 31.6667 15.95 31.3667 14.1166 30.8333C9.24998 35 3.33331 35 3.33331 35C7.21665 31.1167 7.83331 28.5 7.91665 27.5C5.08331 25.1167 3.33331 21.8833 3.33331 18.3333C3.33331 10.9667 10.8333 5 20 5ZM28.3333 20V16.6667H25V20H28.3333ZM21.6666 20V16.6667H18.3333V20H21.6666ZM15 20V16.6667H11.6666V20H15Z"
+                                    fill="#EC148E" />
+                            </svg>
+                        </i>
+                        <div class="list-text">
+                            <p class="desktop-h4">Denuncias</p>
+                            <p class="text-detail">Envie uma mensagem para nosso time</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M38.3334 19.9997L34.2667 15.3664L34.8334 9.23307L28.8167 7.86641L25.6667 2.56641L20 4.99974L14.3334 2.56641L11.1834 7.86641L5.16669 9.21641L5.73335 15.3497L1.66669 19.9997L5.73335 24.6331L5.16669 30.7831L11.1834 32.1497L14.3334 37.4497L20 34.9997L25.6667 37.4331L28.8167 32.1331L34.8334 30.7664L34.2667 24.6331L38.3334 19.9997ZM16.6667 28.3331L10 21.6664L12.35 19.3164L16.6667 23.6164L27.65 12.6331L30 14.9997L16.6667 28.3331Z"
+                                    fill="#EC148E" />
+                            </svg>
+                        </i>
+                        <div class="list-text">
+                            <p class="desktop-h4">Denuncias</p>
+                            <p class="text-detail">Envie uma mensagem para nosso time</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                fill="none">
+                                <path
+                                    d="M16.6667 28.3327L10 21.666L12.35 19.316L16.6667 23.616L27.65 12.6327L30 14.9993M20 1.66602L5 8.33268V18.3327C5 27.5827 11.4 36.2327 20 38.3327C28.6 36.2327 35 27.5827 35 18.3327V8.33268L20 1.66602Z"
+                                    fill="#EC148E" />
+                            </svg>
+                        </i>
+                        <div class="list-text">
+                            <p class="desktop-h4">Denuncias</p>
+                            <p class="text-detail">Envie uma mensagem para nosso time</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="list-dropdown-area">
+
+                <div class="card-dropdown">
+                    <div class="container">
+                        <div class="area-top">
+                            <div class="title">
+                                <p class="number">01</p>
+                                <p class="text-title">Texto principal</p>
+                            </div>
+
+                            <div class="btn" onclick="dropdownQuestion2('area-text1'); openIcon('icon-plus1', 'icon-minus1');">
+                                <i class="icon-plus1" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <i class="icon-minus1" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="area-text1" style="display: none;">
+                            <p class="mobile-h4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer too
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card-dropdown">
+                    <div class="container">
+                        <div class="area-top">
+                            <div class="title">
+                                <p class="number">02</p>
+                                <p class="text-title">Texto principal</p>
+                            </div>
+
+                            <div class="btn" onclick="dropdownQuestion2('area-text2'); openIcon('icon-plus2', 'icon-minus2');">
+                                <i class="icon-plus2" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <i class="icon-minus2" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="area-text2" style="display: none;">
+                            <p class="mobile-h4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer too
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-dropdown">
+                    <div class="container">
+                        <div class="area-top">
+                            <div class="title">
+                                <p class="number">03</p>
+                                <p class="text-title">Texto principal</p>
+                            </div>
+
+                            <div class="btn" onclick="dropdownQuestion2('area-text3'); openIcon('icon-plus3', 'icon-minus3');">
+                                <i class="icon-plus3" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <i class="icon-minus3" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="area-text3" style="display: none;">
+                            <p class="mobile-h4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer too
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-dropdown">
+                    <div class="container">
+                        <div class="area-top">
+                            <div class="title">
+                                <p class="number">04</p>
+                                <p class="text-title">Texto principal</p>
+                            </div>
+
+                            <div class="btn" onclick="dropdownQuestion2('area-text4'); openIcon('icon-plus4', 'icon-minus4');">
+                                <i class="icon-plus4" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <i class="icon-minus4" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="area-text4" style="display: none;">
+                            <p class="mobile-h4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer too
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card-dropdown">
+                    <div class="container">
+                        <div class="area-top">
+                            <div class="title">
+                                <p class="number">05</p>
+                                <p class="text-title">Texto principal</p>
+                            </div>
+
+                            <div class="btn" onclick="dropdownQuestion2('area-text5'); openIcon('icon-plus5', 'icon-minus5');">
+                                <i class="icon-plus5" style="display: block;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <i class="icon-minus5" style="display: none;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                    </svg>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="area-text5" style="display: none;">
+                            <p class="mobile-h4">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer too
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <script src="scripts/questionDropdown.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section newspaper -->
+    <section class="section-newsletter">
+        <div class="container">
+            <div class="text-area ">
+                <p class="desktop-h2">Newsletter</p>
+                <p class="desktop-h4">
+                    Cadastre-se e receba informações, promoções e
+                    novidades sobre as anunciantes.
+                </p>
+                <p class="mini-text">
+                    Ao enviar seus dados, você autoriza o Ilha do Prazer a
+                    enviar informações e declara estar ciente da
+                    Política de Privacidade
+                </p>
+                <div class="icon-text">
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26" fill="none">
+                            <path opacity="0.6"
+                                d="M10.1754 1.72202L3.37762 4.74328C1.932 5.38578 0.983662 6.82478 1.05688 8.40506C1.42564 16.3643 3.65542 19.6595 9.73095 23.6856C10.9838 24.5158 12.6176 24.5177 13.87 23.6866C19.9701 19.6388 22.1121 16.2897 22.5247 8.4257C22.6082 6.83489 21.6583 5.38145 20.2026 4.73447L13.4246 1.72202C12.3903 1.26235 11.2097 1.26235 10.1754 1.72202Z"
+                                stroke="#EC148E" stroke-width="2" stroke-linejoin="round" />
+                            <path
+                                d="M8.20007 12.9996L10.4529 14.8019C10.8708 15.1362 11.4778 15.0822 11.8302 14.6795L15.4001 10.5996"
+                                stroke="#EC148E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    <p class="mini-text">Seus dados estão seguros</p>
+                </div>
+            </div>
+            <div class="input-area">
+                <div class="input-bar">
+                    <input class="input-text" type="text" placeholder="Seu nome">
+
+                </div>
+                <div class="input-bar">
+                    <input class="input-text" type="text" placeholder="Seu e-mail">
+
+                </div>
+                <div class="btn-submit">
+                    <p class="desktop-btn">Enviar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <i>
+                        <img src="assets/LogosColor.svg" alt="">
+                    </i>
+                </div>
+                <div class="logo-dark">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="176" height="64" viewBox="0 0 176 64"
+                            fill="none">
+                            <g clip-path="url(#clip0_543_5740)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M60.0383 64C50.9021 62.5761 52.3862 35.7226 85.6361 38.8742C85.8695 38.8962 86.103 38.9369 86.3409 38.9452C92.7942 39.1669 90.1111 36.4085 86.7036 34.2353C86.3585 34.015 85.9592 33.8325 85.5635 33.5897C77.8373 28.8543 71.6372 27.0487 71.0054 35.9265C70.607 40.8159 61.9806 27.8396 70.9048 14.8864L70.9079 14.8819C76.1509 20.8357 80.9727 27.105 87.287 32.2554C89.3658 33.9509 91.6489 35.015 91.9118 38.0795C92.2701 42.254 89.2118 44.2672 85.9901 45.9046C76.5638 50.7735 67.8365 56.8588 60.0383 64ZM64.7705 29.6402C61.6151 24.1918 58.3961 17.2158 58.1381 14.56C57.6602 7.86296 62.701 6.84283 66.8489 10.4814C67.9599 11.6176 69.0351 12.7809 70.0896 13.9596C69.8555 14.2639 69.6272 14.5746 69.4046 14.8918C66.359 19.2208 64.7408 24.3709 64.7705 29.6402ZM70.0896 13.9596L70.9079 14.8819L71.0107 14.7327C72.4573 12.6651 74.251 10.8564 76.3147 9.38432C77.4896 11.12 78.9231 15.5006 77.2621 18.6245C80.3758 16.1922 80.7277 12.6279 79.9423 9.76016C81.8723 10.8324 83.9965 12.6623 84.6131 15.0254C85.2803 11.0957 83.0332 8.18705 80.4464 6.59607C81.8506 5.52927 83.9537 4.92243 85.6031 4.17354C83.6232 4.5944 81.7049 5.25934 79.8933 6.1527C78.9325 3.19595 76.4749 0.171548 72.251 0C74.468 1.08123 75.8462 3.50846 76.5134 5.59253C73.8301 4.24437 70.2211 3.85092 67.1681 6.35636C70.2383 5.49881 73.7951 7.22598 75.577 8.66793C73.4934 10.1553 71.6443 11.9385 70.0896 13.9596Z"
+                                    fill="url(#paint0_linear_543_5740)" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M1.05421 41.1722V28.4629H0V41.1722H1.05421ZM42.2404 41.1722H43.2765V25.0625L42.2404 25.5735V31.2138L42.1523 31.2147C39.4273 31.2425 36.3407 32.0361 35.0203 34.6387C34.6289 35.4272 34.4299 36.295 34.4392 37.173C34.4392 39.3064 35.6325 41.1722 37.9647 41.1722C38.8808 41.1483 39.7669 40.8454 40.5016 40.3051C41.2363 39.7649 41.7836 39.0137 42.0685 38.1545L42.2404 37.7135V41.1722ZM42.2404 31.4805V35.7165C42.2924 36.9642 41.8861 38.1884 41.0961 39.1642C40.7962 39.5161 40.4233 39.8006 40.0027 39.9986C39.5821 40.1966 39.1234 40.3035 38.6574 40.3121C38.4857 40.3122 38.3143 40.2969 38.1454 40.2665C36.3549 39.9444 35.6212 38.2295 35.6212 36.5977C35.6212 32.8857 38.8541 31.5222 42.1503 31.4816L42.2404 31.4805ZM51.1748 31.1779C50.4908 31.1543 49.8092 31.27 49.1726 31.518C48.536 31.7659 47.9581 32.1408 47.475 32.619C46.9919 33.0973 46.614 33.6687 46.3649 34.2976C46.1158 34.9265 46.0009 35.5993 46.0273 36.2739C45.9981 36.9382 46.1096 37.6012 46.3545 38.2206C46.5995 38.84 46.9725 39.4023 47.45 39.8715C47.9274 40.3408 48.4987 40.7069 49.1275 40.9463C49.7562 41.1857 50.4287 41.2933 51.1019 41.2621C51.7853 41.2893 52.4669 41.1765 53.1039 40.931C53.7409 40.6854 54.3195 40.3123 54.8031 39.8352C55.2867 39.3581 55.6649 38.7874 55.9138 38.159C56.1627 37.5306 56.277 36.8581 56.2494 36.184C56.2775 35.5192 56.1655 34.8558 55.9204 34.2359C55.6753 33.616 55.3025 33.053 54.8256 32.5825C54.3486 32.112 53.7779 31.7443 53.1495 31.5025C52.5211 31.2607 51.8487 31.1502 51.1748 31.1779ZM51.6485 40.9233C48.7854 40.9233 47.2092 38.1073 47.2092 35.5726C47.2092 33.4886 48.2793 31.5166 50.6282 31.5166C53.501 31.5166 55.0679 34.3467 55.0679 36.8853C55.0679 38.9724 53.9958 40.9233 51.6485 40.9233ZM4.33357 25.5731V41.1722H5.38778V25.0634L4.33357 25.5731ZM15.8484 41.1722H16.8843L16.9028 34.1704C16.9073 32.5048 16.093 31.1779 14.2705 31.1779C13.3538 31.2379 12.4665 31.5219 11.6886 32.0043C10.9107 32.4866 10.2667 33.1522 9.81436 33.9411L9.64845 34.2225V25.0634L8.59444 25.5731V41.1722H9.64845V34.8472L9.65484 34.8313C10.3001 33.2703 11.9832 31.6785 13.7783 31.6785C15.2734 31.6785 15.8484 32.8505 15.8484 34.1702V41.1722ZM27.3633 41.1722H28.3996V31.3398H27.4256C24.6375 31.3398 21.4086 32.1276 20.0948 34.8257C19.7367 35.5765 19.5547 36.3973 19.5624 37.227C19.5624 39.376 20.8017 41.2621 23.1423 41.2621C24.0487 41.2355 24.9246 40.9327 25.6496 40.3953C26.3746 39.8579 26.9131 39.1123 27.1914 38.2609L27.3633 37.8191V41.1722ZM27.3633 31.6066V35.8244C27.4169 37.0743 27.0106 38.3012 26.2192 39.2788C25.9186 39.6295 25.5455 39.9127 25.1249 40.1095C24.7043 40.3063 24.2459 40.4121 23.7805 40.4199C23.5964 40.42 23.4128 40.4028 23.2322 40.3683C21.4634 40.031 20.7443 38.3449 20.7443 36.7234C20.7443 33.0118 23.9771 31.648 27.2732 31.6076L27.3633 31.6066Z"
+                                    fill="white" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M98.0684 23.5705V44.6941H99.8654V35.0338H105.873C106.658 35.0491 107.437 34.9068 108.165 34.6157C108.892 34.3245 109.551 33.8906 110.103 33.3401C110.655 32.7897 111.088 32.1343 111.375 31.4139C111.662 30.6934 111.798 29.9228 111.774 29.149C111.72 27.6442 111.074 26.2193 109.972 25.1775C108.87 24.1356 107.399 23.5591 105.873 23.5705H98.0684ZM99.8654 34.5429V24.0616H105.359C108.17 24.0616 110.007 26.7224 110.007 29.3021C110.007 31.7474 108.436 34.2228 105.823 34.5439L99.8654 34.5429ZM116.035 28.0861L114.238 28.9552V44.6941H116.035V36.9052C116.035 34.8945 116.529 32.8129 118.004 31.344C118.55 30.8065 119.199 30.3814 119.913 30.0934C120.627 29.8055 121.393 29.6606 122.164 29.667H122.292V27.9046L122.146 27.925C119.256 28.3285 117.171 30.3602 116.208 33.0069L116.035 33.4815V28.0861ZM134.337 44.6941V39.2267L134.165 39.7052C133.703 41.0373 132.896 42.2274 131.825 43.1576C130.59 44.2278 129.006 44.8258 127.362 44.843C126.662 44.845 125.967 44.7265 125.308 44.4928C122.549 43.5044 121.401 40.8672 121.401 38.1277C121.388 36.7484 121.691 35.384 122.286 34.1359C124.47 29.6523 129.832 28.3411 134.465 28.3411H136.104V44.6941H134.337ZM134.337 28.8322L134.247 28.8332C128.786 28.8909 123.41 31.1373 123.41 37.2929C123.41 39.9705 124.596 42.7562 127.517 43.3133C127.815 43.3699 128.117 43.3983 128.42 43.398C129.189 43.3851 129.945 43.2104 130.64 42.8855C131.334 42.5606 131.95 42.0931 132.446 41.5142C133.754 39.8976 134.426 37.8688 134.337 35.802V28.8322ZM149.554 28.6807V28.3411H138.418V28.7724H147.662L138.418 44.3546V44.6941H149.07V44.2626H140.31L149.554 28.6807ZM165.678 41.795L165.226 41.4609L165.154 41.5815C164.286 43.019 160.899 43.756 159.309 43.756C158.011 43.7027 156.743 43.3574 155.601 42.7465C154.459 42.1356 153.474 41.2752 152.721 40.2311L152.664 40.1473L158.005 37.5852C160.13 36.5658 163.608 34.6408 163.608 31.9558C163.608 29.0284 160.967 27.9239 158.372 27.9239C153.343 27.9239 150.054 31.7543 150.054 36.577C150.054 41.5568 153.485 44.7835 158.493 44.7835C160.86 44.7835 164.236 43.9624 165.612 41.8938L165.678 41.795ZM152.364 39.7093C151.585 38.3753 151.168 36.8648 151.156 35.3249C151.156 31.8439 153.535 28.9512 157.194 28.9512C159.272 28.9512 161.992 29.9393 161.992 32.3732C161.992 34.9071 159.07 36.4941 157.076 37.478L152.406 39.7812L152.364 39.7093ZM169.743 28.0861L167.946 28.9552V44.6941H169.743V36.9052C169.743 34.8945 170.238 32.8129 171.712 31.344C172.258 30.8065 172.907 30.3814 173.621 30.0935C174.336 29.8055 175.101 29.6606 175.872 29.667H176V27.9046L175.854 27.925C172.965 28.3287 170.879 30.36 169.916 33.0069L169.743 33.4815V28.0861Z"
+                                    fill="url(#paint1_linear_543_5740)" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_543_5740" x1="64.4896" y1="32.9757" x2="81.8372"
+                                    y2="22.4661" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EC148E" />
+                                    <stop offset="1" stop-color="#C21F25" />
+                                </linearGradient>
+                                <linearGradient id="paint1_linear_543_5740" x1="131.173" y1="51.0379" x2="136.489"
+                                    y2="28.2775" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#EC148E" />
+                                    <stop offset="1" stop-color="#C21F25" />
+                                </linearGradient>
+                                <clipPath id="clip0_543_5740">
+                                    <rect width="176" height="64" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </i>
+                </div>
+                <div class="icon-network">
+                    <div class="i">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                    </div>
+                    <div class="i">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                    </div>
+                    <div class="i">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                    </div>
+                    <div class="i">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                    </div>
+                    <div class="text">
+                        <p>Acompanhe nas redes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="link-area">
+                <div class="ilhas-brasil">
+                    <p class="desktop-btn">Ilha do Prazer pelo Brasil</p>
+                    <div class="grid-link-1">
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                    </div>
+                    <p class="desktop-btn">Outros estados</p>
+                    <div class="grid-link-2">
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                    </div>
+                    <p class="desktop-btn">Ilha do Prazer Travestis pelo Brasil</p>
+                    <div class="grid-link-3">
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                        <div>
+                            <p>Acompanhantes MG</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                            <p>Belo Horizonte</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="institutional">
+                    <p class="desktop-btn">Institucional</p>
+                    <div class="grid-link-1">
+                        <p>Parceiros</p>
+                        <p>Torne-se anunciante</p>
+                        <p>Termos de uso</p>
+                        <p>Políticas de privacidade</p>
+                    </div>
+                </div>
+                <div class="help">
+                    <p class="desktop-btn">Ajuda</p>
+                    <div class="grid-link-1">
+                        <p>Denuncias</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-area">
+                <p>
+                    O Portal Ilha do Prazer conta com acompanhantes de luxo e garotas de programa e travestis das
+                    principais cidades do Brasil.Este portal é, única e exclusivamente, um veículo de comunicação entre
+                    pessoas e, não tem nenhum vínculo com seus anunciantes, que são os únicos responsáveis pelas
+                    informações contidas nos seus respectivos anúncios. O site Ilha do Prazer NÃO É AGÊNCIA e não assume
+                    nenhuma responsabilidade pelo conteúdo dos anúncios ou pelas respostas a qualquer um deles. Leia
+                    nossos termos de uso e politica de privacidade. Copyright© 2004 - 2023 - Ilha do Prazer - Todos os
+                    direitos reservados.
+                </p>
+                <div class="pink-bar">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Button -->
+    <div class="top-btn" id="top-btn-id" onclick="scrollToTop()">
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M13.0001 20H11.0001V8L5.50008 13.5L4.08008 12.08L12.0001 4.16L19.9201 12.08L18.5001 13.5L13.0001 8V20Z"
+                    fill="#272530" />
+            </svg>
+        </i>
+        <script src="scripts/topbutton.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+html {
+  box-sizing: border-box;  
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+* {
+  transition: background-color 0.5s;
+  outline: none;
+}
+
+a {
+  color: $gray-3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+section{
+
+    @media (min-width: $max_mobile) {
+        margin-inline: 8px;
+    }
+
+    @media (min-width: $max_tablet) {
+        margin: 0;
+    }
+}

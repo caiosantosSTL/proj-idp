@@ -1,0 +1,256 @@
+header {
+    background-color: $white;
+    z-index: 2;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    .container {
+
+        .header-content {                        
+            gap: 15px;
+            .logo {
+                min-width: 180px;                
+            }
+
+            .input-group {
+
+                min-width: 500px;
+
+                .btn-location,
+                .btn-estate {
+                    svg {
+                        vertical-align: middle;
+                    }
+                }
+
+                .btn-estate {
+                    min-width: 105px;
+                }
+
+                @media (max-width: $max_desktop) {
+                    position: fixed;
+                    justify-content: space-between;
+                    z-index: 1;
+                    margin: 5px;
+                    width: calc(100% - 12px);
+                    top: 90px;
+                    left: 0;
+                    right: 0;
+                    min-width: 365px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: visibility 0s linear 0s, opacity 0.2s linear 0s;
+                    &.show {
+                        visibility: visible;
+                        opacity: 1;
+                        
+                    }
+                    .input-text {
+                        flex-grow: 1;
+                        width: auto;
+                        max-width: none;
+                    }
+                }
+            }
+
+            .btn-group {                
+                gap: 8px;
+                align-items: center;
+
+                .icons-btn {                    
+                    width: auto;
+                    align-items: center;
+                    justify-self: center;
+                    gap: 8px;
+                    .btn-flex {                        
+                        justify-self: center;
+                        background-color: $section;
+                        border-radius: 50px;                        
+                        cursor: pointer;
+                    }
+                }
+
+                .dropdown {
+                    max-width: 40%;                    
+                    border-radius: 5px;
+                    &:hover {
+                        background-color: $gray-hover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-menu {
+    
+        .menu-section {
+            @media (min-width: $max_mobile) {
+                grid-template-columns: repeat(1, auto);
+            }
+
+            @media (min-width: $max_tablet) {
+
+                //grid-template-columns: repeat(5, auto);
+                grid-template-columns: 2fr 1fr;
+            }
+
+            .main-menu {
+                flex-grow: 1;
+                width: 100%;
+
+                @media (min-width: $max_mobile) {
+                    order: 2;
+                }
+
+                @media (min-width: $max_tablet) {
+                    order: 1;
+                }
+
+                .navigation {
+
+                    height: auto;
+                    display: grid;
+                    padding: 30px;
+                    gap: 20px;
+
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: repeat(1, auto);
+                    }
+
+                    @media (min-width: $max_tablet) {
+                        grid-template-columns: repeat(3, auto);
+
+                    }
+
+                    >div {
+                        
+                        > p {                            
+                            width: 100%;
+                            grid-column: 1 / -1;
+                            color: $gray-3;                            
+                        }
+
+                        >div {                            
+                            color: $gray-4;
+                        }
+                    }
+
+                    .main-navigation {
+                        display: grid;
+
+                        @media (min-width: $max_mobile) {
+                            grid-template-columns: repeat(1, auto);
+                        }
+
+                        @media (min-width: $max_tablet) {
+                            grid-template-columns: repeat(2, auto);
+                        }
+                    }
+                }                
+            }
+
+            .menu-options {
+                
+                background-color: $section;
+                text-align: center;
+                border-bottom-right-radius: 8px;
+                height: auto;                
+                align-items: center;
+                order: 2;                            
+
+                @media (min-width: $max_mobile) {
+                    order: 1;
+                }
+
+                > div {
+                    flex-direction: column;                    
+                    width: 80%;
+                    padding: 16px;
+                }
+            }
+        }
+
+    }
+
+
+    .use-location {
+        padding: 8px 16px;
+
+        svg {
+            max-width: 20px;
+        }
+
+        a {
+            padding-left: 16px;
+            display: inline-block;
+            color: $primary-pink;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.dark {
+    header {
+        background-color: $dark-bar-secondary;
+
+        .container {
+            .btn {
+                background-color: $gray-3;
+            }
+
+            .btn-group {
+                .icons-btn {
+                    .btn-flex {
+                        background-color: $gray-3;
+                        @include fill_svg();
+                    }
+                }
+
+                .dropdown {
+                    &:hover {
+                        background-color: $gray-hover;
+                    }
+                    @include fill_svg();
+                }
+            }
+        }       
+
+        .modal-menu {
+            .main-menu {
+
+                .navigation {
+
+                    >div {
+                        >p {
+                            color: $white;
+                        }
+
+                        >div {
+                            color: $gray-6;
+                        }
+                    }
+
+                }               
+            }
+
+            .menu-options {
+                background-color: $gray-1;
+
+                p {
+                    color: $gray-6;
+                }
+            }
+        }
+
+
+
+        .use-location {
+
+            @include fill_svg();
+
+            a {
+                color: $white;
+            }
+        }
+    }
+}
