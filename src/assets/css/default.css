@@ -1365,13 +1365,14 @@ header .use-location a {
   gap: 8px;
 }
 
-.card-dropdown .area-top {
+.list-dropdown-area {
+  gap: 8px;
+}
+.list-dropdown-area .card-dropdown .area-top {
   background-color: #fff;
   padding: 24px;
   gap: 16px;
   border-radius: 6px;
-  margin-top: 8px;
-  margin-bottom: 8px;
 }
 
 .dark .section-questions {
