@@ -1365,18 +1365,65 @@ header .use-location a {
   gap: 8px;
 }
 
-.list-dropdown-area {
+.section-questions .icon-text-area {
+  gap: 16px;
+}
+.section-questions .icon-text-area .item {
+  gap: 32px;
+}
+.section-questions .icon-text-area .item i {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.section-questions .list-dropdown-area {
   gap: 8px;
 }
-.list-dropdown-area .card-dropdown .area-top {
+.section-questions .list-dropdown-area .card-dropdown {
+  border-radius: 6px;
   background-color: #fff;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-top {
   padding: 24px;
   gap: 16px;
-  border-radius: 6px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-top .title {
+  display: flex;
+  gap: 16px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-top .title .text-title {
+  display: flex;
+  align-items: center;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-top .btn-dd:hover {
+  cursor: pointer;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-text1 > p {
+  padding-inline: 26px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-text2 > p {
+  padding-inline: 26px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-text3 > p {
+  padding-inline: 26px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-text4 > p {
+  padding-inline: 26px;
+}
+.section-questions .list-dropdown-area .card-dropdown .area-text5 > p {
+  padding-inline: 26px;
 }
 
 .dark .section-questions {
   background-color: #3F3C4A;
+}
+.dark .section-questions .card-dropdown {
+  background-color: #1C1B23;
+}
+
+.dark .text-white {
+  color: #fff;
 }
 
 footer {
