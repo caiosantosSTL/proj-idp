@@ -18,12 +18,15 @@
 @import "_partials/modal";
 @import "_partials/forms";
 @import "_partials/cols";
+@import "_partials/cols-caio";
 
 
 // COMPONENTS
 @import "_components/container";
 @import "_components/header";
 @import "_components/content";
+@import "_components/newsletter.scss";
+@import "_components/questions";
 @import "_components/footer";
 
 

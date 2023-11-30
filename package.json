@@ -9,6 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "sass-index": "sass --watch src/index-style.scss dist/styles-index.css",
+    "sass-default": "sass --watch src/assets/scss/default.scss src/assets/css/default.css",
     "sass-profile": "sass --watch src/profilepage-style.scss dist/styles-profilepage.css"
   },
   "keywords": [],
