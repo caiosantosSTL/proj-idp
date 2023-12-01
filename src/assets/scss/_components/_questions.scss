@@ -1,6 +1,17 @@
 .section-questions{
-    .icon-text-area{
+    padding-top: 64px;
+    padding-bottom: 64px;
 
+    .text-area{
+
+        .text-box{
+            max-width: 440px;
+            max-height: 190px;
+        }
+    }
+    .icon-text-area{
+        max-width: 350px;
+        max-height: 190px;
         gap: 16px;
         .item{
             gap: 32px;
