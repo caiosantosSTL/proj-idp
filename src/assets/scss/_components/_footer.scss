@@ -1,9 +1,11 @@
 footer {
     background-color: $section;
     margin-top: 80px;
+
     .bar-footer-logo{
         padding: 20px 0;
     }
+
     @media (max-width: $max_tablet) {
         .bar-footer-logo{            
             flex-direction: column;
@@ -20,6 +22,7 @@ footer {
         display: grid;
         border-top: 1px solid $gray-6;
         color: $gray-5;
+        
         
         @media (min-width: $max_mobile) {
             grid-template-columns: repeat(1, auto);
@@ -49,11 +52,13 @@ footer {
                 grid-column: 1/4;
             }
 
+          
+
             > div {
                 
                 height: auto;
                 display: grid;                
-
+                
                 @media (min-width: $max_mobile) {
                     grid-template-columns: repeat(2, auto);
                 }

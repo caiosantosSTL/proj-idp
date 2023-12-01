@@ -2,8 +2,7 @@
 
 
 //close modal
-function closeModal(name) {
-    console.log()
+function closeModal(name) {    
     const modalElement = document.getElementById(name);    
     modalElement.className =  modalElement.className.replace(' show', '');    
     var backDropModal = document.getElementsByClassName('modal-backdrop');

@@ -21,6 +21,7 @@
 
 
 // COMPONENTS
+@import "_components/svg";
 @import "_components/container";
 @import "_components/header";
 @import "_components/content";
@@ -31,7 +32,7 @@ body {
 
     // FONTE PADRÃO PARA TODA PÁGINA
     font-family: 'Archivo', sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     line-height: normal;
 

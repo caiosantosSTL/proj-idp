@@ -9,7 +9,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,600;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;600&display=swap');
 
 
 .fs-14{
@@ -38,6 +38,19 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 .fs-48{
     font-size: 48px;
+}
+
+
+.fw-light{
+    font-weight: 100;
+}
+
+.fw-normal{
+    font-weight: 200;
+}
+
+.fw-semibold{
+    font-weight: 400;
 }
 
 .fw-bold{
