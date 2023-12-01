@@ -941,36 +941,6 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     max-width: 100%;
   }
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.justify-content-start {
-  justify-content: start;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.justify-content-space-between {
-  justify-content: space-between;
-}
-
-.flex-direction-column {
-  flex-direction: column;
-}
-
-.flex-direction-row {
-  flex-direction: row;
-}
-
-.col {
-  position: relative;
-  width: 100%;
-}
-
 @media only screen and (min-width: 0px) {
   /* For mobile phones: */
   [class*=col-] {
@@ -1441,10 +1411,39 @@ header .use-location a {
   color: #C6C5CE;
 }
 
+.section-newsletter {
+  gap: 32px;
+}
 .section-newsletter .text-area {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .section-newsletter .text-area {
+    margin-bottom: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-newsletter .text-area {
+    width: 384px;
+    margin-right: 16px;
+  }
+}
+.section-newsletter .text-area .icon-text {
   gap: 8px;
+}
+.section-newsletter .text-area .icon-text > p {
+  align-self: center;
+}
+.section-newsletter .input-area {
+  gap: 24px;
+}
+@media (min-width: 1200px) {
+  .section-newsletter .input-area {
+    width: 384px;
+    margin-left: 16px;
+  }
 }
 
 .section-questions .icon-text-area {
