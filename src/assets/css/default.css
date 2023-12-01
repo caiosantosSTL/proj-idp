@@ -140,7 +140,7 @@
 }
 
 .bg-gradient {
-  background-color: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
+  background-image: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
 }
 
 .bg-font-color {
@@ -1502,6 +1502,51 @@ header .use-location a {
 }
 .dark .section-questions .card-dropdown {
   background-color: #1C1B23;
+}
+
+.section-share {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.section-share .logo-area {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-share .logo-area .i {
+  width: 65%;
+  height: auto;
+}
+.section-share .text-area {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .section-share .text-area {
+    max-width: 500px;
+  }
+}
+.section-share .text-area .icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+@media (min-width: 0px) {
+  .section-share .text-area .icons {
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) {
+  .section-share .text-area .icons {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .section-share .text-area .icons {
+    justify-content: start;
+  }
 }
 
 footer {
