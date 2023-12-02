@@ -1935,6 +1935,217 @@ footer .copyright {
   background-color: #524F5F;
 }
 
+.section-modalcarousel {
+  margin-top: 80px;
+}
+.section-modalcarousel .container .title .desktop-h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  color: #3F3C4A;
+}
+.section-modalcarousel .container .icon-area {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-y: scroll;
+  height: 200px;
+}
+@media (min-width: 0px) {
+  .section-modalcarousel .container .icon-area {
+    justify-content: start;
+  }
+}
+@media (min-width: 768px) {
+  .section-modalcarousel .container .icon-area {
+    justify-content: space-around;
+  }
+}
+.section-modalcarousel .container .icon-area .icon-card {
+  height: 100px;
+  width: 100px;
+}
+.section-modalcarousel .container .icon-area .icon-card .image {
+  border-radius: 100px;
+  border: 4px solid #EC148E;
+  width: 100%;
+  height: 100%;
+  background-color: #b53535;
+  cursor: pointer;
+}
+.section-modalcarousel .container .icon-area .icon-card .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.section-modalcarousel .modal-carousel {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.section-modalcarousel .modal-carousel .back {
+  filter: blur(8px);
+  cursor: pointer;
+  transform: scale(0.8);
+}
+@media (min-width: 0px) {
+  .section-modalcarousel .modal-carousel .back {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .section-modalcarousel .modal-carousel .back {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .section-modalcarousel .modal-carousel .back {
+    display: block;
+  }
+}
+.section-modalcarousel .modal-carousel .next {
+  filter: blur(8px);
+  cursor: pointer;
+  transform: scale(0.8);
+}
+@media (min-width: 0px) {
+  .section-modalcarousel .modal-carousel .next {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .section-modalcarousel .modal-carousel .next {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .section-modalcarousel .modal-carousel .next {
+    display: block;
+  }
+}
+.section-modalcarousel .modal-carousel .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding-top: 112px;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card {
+  max-width: 350px;
+  height: 650px;
+  position: relative;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .picture {
+  height: 100%;
+  width: 100%;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .picture img {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .top .area-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .top .area-profile .image-profile {
+  height: 70px;
+  width: 70px;
+  background-color: #222222;
+  border-radius: 8px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left: 6px;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .top .name .mini-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom .box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 6px;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom .box .comment {
+  display: flex;
+  align-items: center;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom .box .comment .inputx {
+  padding: 6px;
+  border-radius: 10px;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom .box .comment .inputx:focus {
+  outline: none;
+}
+.section-modalcarousel .modal-carousel .container .modalcard .container-card .bottom .box .share {
+  border-radius: 6px;
+  border: 1px solid #fff;
+  padding: 12px;
+  cursor: pointer;
+}
+.section-modalcarousel .modal-carousel .items-absolute .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.section-modalcarousel .modal-carousel .items-absolute .backBtn {
+  position: absolute;
+  top: 435px;
+  left: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.section-modalcarousel .modal-carousel .items-absolute .nextBtn {
+  position: absolute;
+  top: 435px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dark .section-modalcarousel .container .title .desktop-h2 {
+  color: #fff;
+}
+.dark .section-modalcarousel .container .icon-area .icon-card .name .mobile-text {
+  color: #F1F0F5;
+}
 body {
   font-family: "Archivo", sans-serif;
   font-weight: 200;
