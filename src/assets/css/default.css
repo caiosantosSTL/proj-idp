@@ -32,7 +32,7 @@
 }
 
 .gray-hover {
-  color: rgb(135, 135, 135);
+  color: #878787;
 }
 
 .section {
@@ -104,7 +104,7 @@
 }
 
 .bg-gray-hover {
-  background-color: rgb(135, 135, 135);
+  background-color: #878787;
 }
 
 .bg-section {
@@ -635,6 +635,42 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   padding-bottom: 64px;
 }
 
+.gap-2 {
+  gap: 2px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.gap-6 {
+  gap: 6px;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+.gap-12 {
+  gap: 12px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
 .btn {
   height: 50px;
   min-width: 120px;
@@ -994,16 +1030,19 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     flex: 0 0 25%;
     max-width: 25%;
   }
+
   .col-sm-33 {
     -ms-flex: 0 0 33.3%;
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
+
   .col-sm-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .col-sm-100 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1015,16 +1054,19 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     flex: 0 0 25%;
     max-width: 25%;
   }
+
   .col-md-33 {
     -ms-flex: 0 0 33.3%;
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
+
   .col-md-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .col-md-100 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1037,16 +1079,19 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     flex: 0 0 25%;
     max-width: 25%;
   }
+
   .col-lg-33 {
     -ms-flex: 0 0 33.3%;
     flex: 0 0 33.3%;
     max-width: 33.3%;
   }
+
   .col-lg-50 {
     -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
   }
+
   .col-lg-100 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -1063,36 +1108,47 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   .col-sm-1 {
     width: 8.33%;
   }
+
   .col-sm-2 {
     width: 16.66%;
   }
+
   .col-sm-3 {
     width: 25%;
   }
+
   .col-sm-4 {
     width: 33.33%;
   }
+
   .col-sm-5 {
     width: 41.66%;
   }
+
   .col-sm-6 {
     width: 50%;
   }
+
   .col-sm-7 {
     width: 58.33%;
   }
+
   .col-sm-8 {
     width: 66.66%;
   }
+
   .col-sm-9 {
     width: 75%;
   }
+
   .col-sm-10 {
     width: 83.33%;
   }
+
   .col-sm-11 {
     width: 91.66%;
   }
+
   .col-sm-12 {
     width: 100%;
   }
@@ -1101,36 +1157,47 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   .col-md-1 {
     width: 8.33%;
   }
+
   .col-md-2 {
     width: 16.66%;
   }
+
   .col-md-3 {
     width: 25%;
   }
+
   .col-md-4 {
     width: 33.33%;
   }
+
   .col-md-5 {
     width: 41.66%;
   }
+
   .col-md-6 {
     width: 50%;
   }
+
   .col-md-7 {
     width: 58.33%;
   }
+
   .col-md-8 {
     width: 66.66%;
   }
+
   .col-md-9 {
     width: 75%;
   }
+
   .col-md-10 {
     width: 83.33%;
   }
+
   .col-md-11 {
     width: 91.66%;
   }
+
   .col-md-12 {
     width: 100%;
   }
@@ -1139,36 +1206,47 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   .col-lg-1 {
     width: 8.33%;
   }
+
   .col-lg-2 {
     width: 16.66%;
   }
+
   .col-lg-3 {
     width: 25%;
   }
+
   .col-lg-4 {
     width: 33.33%;
   }
+
   .col-lg-5 {
     width: 41.66%;
   }
+
   .col-lg-6 {
     width: 50%;
   }
+
   .col-lg-7 {
     width: 58.33%;
   }
+
   .col-lg-8 {
     width: 66.66%;
   }
+
   .col-lg-9 {
     width: 75%;
   }
+
   .col-lg-10 {
     width: 83.33%;
   }
+
   .col-lg-11 {
     width: 91.66%;
   }
+
   .col-lg-12 {
     width: 100%;
   }
@@ -1293,7 +1371,7 @@ header .container .header-content .btn-group .dropdown {
   border-radius: 5px;
 }
 header .container .header-content .btn-group .dropdown:hover {
-  background-color: rgb(135, 135, 135);
+  background-color: #878787;
   cursor: pointer;
 }
 header .modal-menu .modal .modal-container .modal-body {
@@ -1445,7 +1523,7 @@ header .use-location a {
   fill: #fff;
 }
 .dark header .container .btn-group .dropdown:hover {
-  background-color: rgb(135, 135, 135);
+  background-color: #878787;
 }
 .dark header .container .btn-group .dropdown svg path {
   fill: #fff;
@@ -1726,17 +1804,12 @@ footer .copyright {
   }
 }
 
-.section-questions .text-area {
-  gap: 24px;
-}
 .section-questions .text-area .text-box {
   max-width: 440px;
   max-height: 190px;
 }
 .section-questions .icon-text-area {
   max-width: 350px;
-  max-height: 190px;
-  gap: 16px;
 }
 .section-questions .icon-text-area .item {
   gap: 32px;
@@ -1746,9 +1819,6 @@ footer .copyright {
   padding: 0;
   display: flex;
   align-items: center;
-}
-.section-questions .list-dropdown-area {
-  gap: 8px;
 }
 .section-questions .list-dropdown-area .card-dropdown {
   border-radius: 6px;
@@ -1833,18 +1903,36 @@ footer .copyright {
   }
 }
 
-.section-jointext .block-container {
+.section-jointext .text-box {
   max-width: 466px;
-  text-align: center;
-  gap: 16px;
 }
-.section-jointext .block-container .btn-area {
+.section-jointext .text-box .btn-area {
   max-width: 226px;
   align-self: center;
 }
 
 .dark .section-jointext {
   background-color: #3F3C4A;
+}
+
+.section-tags {
+  margin-top: 80px;
+}
+.section-tags .container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  gap: 12px;
+}
+.section-tags .container .tags-area .tag {
+  flex: 0 1 auto;
+  border-radius: 100px;
+  padding: 6px;
+}
+
+.dark .section-tags .container .tags-area .tag {
+  background-color: #524F5F;
 }
 
 body {
