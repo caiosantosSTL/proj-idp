@@ -140,7 +140,7 @@
 }
 
 .bg-gradient {
-  background-color: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
+  background: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
 }
 
 .bg-font-color {
@@ -245,6 +245,150 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 .lineheigth-56 {
   line-height: 56px;
+}
+
+.desktop-h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.48px;
+}
+
+.desktop-h2 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.desktop-h3 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.desktop-h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.desktop-btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.mobile-h1 {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.mobile-h2 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.mobile-h3 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.mobile-h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.mobile-text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.mini-text1 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.dark .text-white {
+  color: #fff;
+}
+
+.text-h1 {
+  font-style: normal;
+}
+@media (min-width: 0px) {
+  .text-h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .text-h1 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: -0.48px;
+  }
+}
+
+.text-h2 {
+  font-style: normal;
+}
+@media (min-width: 0px) {
+  .text-h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .text-h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+.text-h3 {
+  font-style: normal;
+}
+@media (min-width: 0px) {
+  .text-h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+@media (min-width: 768px) {
+  .text-h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+  }
+}
+
+.text-h4 {
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .d-none {
@@ -483,17 +627,23 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   padding-bottom: 15px;
 }
 
+.pt-64 {
+  padding-top: 64px;
+}
+
+.pb-64 {
+  padding-bottom: 64px;
+}
+
 .btn {
   height: 50px;
   min-width: 120px;
   color: #fff;
   border-radius: 6px;
   border: 1.5px solid #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  display: inline-block;
   cursor: pointer;
+  padding: 10px;
 }
 .btn > span,
 .btn > div,
@@ -505,6 +655,17 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+}
+
+.btn-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn-block {
+  display: block;
 }
 
 .btn-area {
@@ -767,6 +928,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 .dark .input-group .input-text {
   color: #fff;
   background-color: #1C1B23;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .row {
@@ -1561,10 +1726,6 @@ footer .copyright {
   }
 }
 
-.section-questions {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
 .section-questions .text-area {
   gap: 24px;
 }
@@ -1631,10 +1792,6 @@ footer .copyright {
   background-color: #1C1B23;
 }
 
-.section-share {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
 .section-share .logo-area {
   max-height: 100%;
   max-width: 100%;
@@ -1676,10 +1833,6 @@ footer .copyright {
   }
 }
 
-.section-jointext {
-  padding-top: 64px;
-  padding-bottom: 64px;
-}
 .section-jointext .block-container {
   max-width: 466px;
   text-align: center;

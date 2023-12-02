@@ -1,15 +1,12 @@
-.btn {
+.btn{
     height: 50px;
     min-width: 120px;
     color: $white;
     border-radius: 6px;
     border: 1.5px solid $white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    display: inline-block;
     cursor: pointer;
-
+    padding: 10px;
     >span,
     >div,
     >p {
@@ -22,6 +19,17 @@
         line-height: 150%;
     }
 }
+
+.btn-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.btn-block {
+    display: block;
+}
+
 
 .btn-area {
     display: flex;
