@@ -1,0 +1,22 @@
+
+.section-jointext{
+    padding-top: 64px;
+    padding-bottom: 64px;
+    .block-container{
+        max-width: 466px;
+        text-align: center;
+        gap: 16px;
+        
+        .btn-area{
+            max-width: 226px;
+            align-self: center;
+        }
+
+    }
+}
+
+.dark{
+    .section-jointext{
+        background-color: $gray-3;
+    }
+}

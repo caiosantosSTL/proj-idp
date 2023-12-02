@@ -1,0 +1,40 @@
+.section-share{
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .logo-area{
+        max-height: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .i{
+            width: 65%;
+            height: auto;
+        }
+    }
+    .text-area{
+        @media (min-width: $max_desktop) {
+            
+            max-width: 500px;
+        }
+        text-align: center;
+
+        .icons{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            @media (min-width: $max_mobile){
+                justify-content: center;
+            }
+            @media (min-width: $max_tablet){
+                justify-content: center;
+            }
+            @media (min-width: $max_desktop){
+                justify-content: start;
+
+            }
+        }
+    }
+}

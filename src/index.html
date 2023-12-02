@@ -13,894 +13,367 @@
 
     <title>Index</title>
 
+
+
 </head>
 
 <body>
 
-    <header class="position-fixed w-100 top-0 left-0 right-0">
-
-        <div class="container d-flex flex-direction-column p-10">
-
-            <div class="header-content d-flex justify-content-space-between flex-direction-row p-50">
-
-                <div class="d-block logo">
-                    <img id="logo" class="w-100" src="assets/images/LogosColor.svg" alt="">
-                </div>
-
-                <div id="searchbar" class="input-group">
-
-                    <div class="input-prepend btn-location" id="btn-modalcity-id" onclick="openModal('modal-city-id')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
-                        </svg>
-                    </div>
-
-                    <input class="input-text" type="text" placeholder="Selecione a cidade que deseja">
-
-                    <div id="btn-mstate-id" class="input-append btn-estate" onclick="openModal('modal-state-id')">
-                        <div>
-                            <span class="d-inline-block fw-bold fs-18 lineheigth-40 estate">
-                                ES
-                            </span>
-
-                            <i class="d-inline-block lineheigth-40">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none">
-                                    <path
-                                        d="M7.40512 8.57999L11.9951 13.17L16.5851 8.57999L17.9951 9.99999L11.9951 16L5.99512 9.99999L7.40512 8.57999Z"
-                                        fill="#524F5F" />
-                                </svg>
-                            </i>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="d-flex m-0 p-0 btn-group flex-direction-row">
-
-                    <div class="d-flex icons-btn flex-direction-row justify-content-center">
-
-                        <div class="btn-flex p-5 justify-content-center ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M14 12.6667V13.3333H2V12.6667L3.33333 11.3333V7.33334C3.33333 5.26668 4.68667 3.44668 6.66667 2.86001C6.66667 2.79334 6.66667 2.73334 6.66667 2.66668C6.66667 2.31305 6.80714 1.97392 7.05719 1.72387C7.30724 1.47382 7.64638 1.33334 8 1.33334C8.35362 1.33334 8.69276 1.47382 8.94281 1.72387C9.19286 1.97392 9.33333 2.31305 9.33333 2.66668C9.33333 2.73334 9.33333 2.79334 9.33333 2.86001C11.3133 3.44668 12.6667 5.26668 12.6667 7.33334V11.3333L14 12.6667ZM9.33333 14C9.33333 14.3536 9.19286 14.6928 8.94281 14.9428C8.69276 15.1929 8.35362 15.3333 8 15.3333C7.64638 15.3333 7.30724 15.1929 7.05719 14.9428C6.80714 14.6928 6.66667 14.3536 6.66667 14"
-                                    fill="#3F3C4A" />
-                            </svg>
-                        </div>
-
-                        <div class="btn-flex p-5 justify-content-center ">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M7.9998 14L10.3998 10.8C9.73314 10.3 8.8998 10 7.9998 10C7.0998 10 6.26647 10.3 5.5998 10.8L7.9998 14ZM7.9998 2C5.2998 2 2.80647 2.89333 0.799805 4.4L1.9998 6C3.66647 4.74667 5.74647 4 7.9998 4C10.2531 4 12.3331 4.74667 13.9998 6L15.1998 4.4C13.1931 2.89333 10.6998 2 7.9998 2ZM7.9998 6C6.1998 6 4.5398 6.59333 3.1998 7.6L4.3998 9.2C5.3998 8.44667 6.64647 8 7.9998 8C9.35314 8 10.5998 8.44667 11.5998 9.2L12.7998 7.6C11.4598 6.59333 9.7998 6 7.9998 6Z"
-                                    fill="#3F3C4A" />
-                            </svg>
-
-                        </div>
-                        <div id="toggleSvg" id="modo-toggle" onclick="darkMode()"
-                            class="btn-flex p-5 justify-content-center  bdark">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
-                                fill="none">
-                                <path
-                                    d="M2.36699 12.7267L3.30699 13.6667L4.50699 12.4733L3.56033 11.5267M8.00033 3.99999C5.79366 3.99999 4.00033 5.79332 4.00033 7.99999C4.00033 10.2067 5.79366 12 8.00033 12C10.207 12 12.0003 10.2067 12.0003 7.99999C12.0003 5.78666 10.207 3.99999 8.00033 3.99999ZM13.3337 8.66666H15.3337V7.33332H13.3337M11.4937 12.4733L12.6937 13.6667L13.6337 12.7267L12.4403 11.5267M13.6337 3.33332L12.6937 2.39999L11.4937 3.59332L12.4403 4.53999M8.66699 0.666656H7.33366V2.66666H8.66699M4.50699 3.59332L3.30699 2.39999L2.36699 3.33332L3.56033 4.53999L4.50699 3.59332ZM0.666992 8.66666H2.66699V7.33332H0.666992M8.66699 13.3333H7.33366V15.3333H8.66699"
-                                    fill="#EC148E" />
-                            </svg>
-                            <script src="scripts/darkmode.js"></script>
-                            <script src="scripts/changeLogo.js"></script>
-
-                        </div>
-                    </div>
-                    <div class="dropdown p-50" id="btn-dropdown-id" onclick="openModal('modal-menu-id')">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                            <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="#3F3C4A" />
-                        </svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- modal state -->
-        <div class="modal modal-menu" id="modal-state-id">
-            <div class="modal-container">
-                <div class="modal-body">
-                    <div class="modal-header">
-
-                        <div class="modal-title">
-
-                            <p class="fs-18 lineheigth-24">Selecione o <span class="fw-bold primary-pink">estado</span>
-                                desejado</p>
-
-
-                            <div class="modal-close" onclick="closeModal('modal-state-id')">
-                                <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
-                                            fill="#7A7786" />
-                                    </svg>
-                                </i>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-section">
-
-                        <div class="p-15">
-
-                            <div class="modal-section-grid nav">
-
-                                <div><a href="#">Acre - AC <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Alagoas - AL <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Amapá - AP <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Amazonas - AM <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Bahia - BA <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Ceará - CE <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Distrito Federal- DF <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Espírito Santo - ES <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Goiás - GO <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Maranhão - MA <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Mato Grosso - MT <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Mato Grosso do Sul - MS <span class="primary-pink fw-bold">(0)</span></a>
-                                </div>
-                                <div><a href="#">Minas Gerais - MG <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Pará - PA <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Paraíba - PB <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Paraná - PR <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Pernambuco - PE <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Piauí - PI <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Rio de Janeiro - RJ <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Rio Grande do Norte - RN <span class="primary-pink fw-bold">(0)</span></a>
-                                </div>
-                                <div><a href="#">Rio Grande do Sul - RS <span class="primary-pink fw-bold">(0)</span></a>
-                                </div>
-                                <div><a href="#">Rondônia - RO <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Roraima - RR <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Santa Catarina - SC <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">São Paulo - SP <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Sergipe - SE <span class="primary-pink fw-bold">(0)</span></a></div>
-                                <div><a href="#">Tocantins - TO <span class="primary-pink fw-bold">(0)</span></a></div>
-    
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <!-- modal city -->
-        <div class="modal modal-menu" id="modal-city-id">
-            <div class="modal-container">
-                <div class="modal-body">
-                    <div class="modal-header">
-                        <div class="modal-title">
-
-                            <p class="fs-18 lineheigth-24">Selecione a <span class="fw-bold primary-pink">cidade</span>
-                            </p>
-
-                            <div class="modal-close" onclick="closeModal('modal-city-id')">
-                                <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
-                                            fill="#7A7786" />
-                                    </svg>
-                                </i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="modal-section p-15">
-                        <div class="p-15">
-
-                            <div class="input-group">
-                                <div class="input-prepend">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M12 11.5C11.337 11.5 10.7011 11.2366 10.2322 10.7678C9.76339 10.2989 9.5 9.66304 9.5 9C9.5 8.33696 9.76339 7.70107 10.2322 7.23223C10.7011 6.76339 11.337 6.5 12 6.5C12.663 6.5 13.2989 6.76339 13.7678 7.23223C14.2366 7.70107 14.5 8.33696 14.5 9C14.5 9.3283 14.4353 9.65339 14.3097 9.95671C14.1841 10.26 13.9999 10.5356 13.7678 10.7678C13.5356 10.9999 13.26 11.1841 12.9567 11.3097C12.6534 11.4353 12.3283 11.5 12 11.5ZM12 2C10.1435 2 8.36301 2.7375 7.05025 4.05025C5.7375 5.36301 5 7.14348 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 7.14348 18.2625 5.36301 16.9497 4.05025C15.637 2.7375 13.8565 2 12 2Z"
-                                            fill="#7A7786" />
-                                    </svg>
-                                </div>
-                                <input class="input-text" type="text" placeholder="Busque por cidade ou estado">
-                            </div>
-                            <div class="use-location">
-                                <div class="d-flex">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M12 8C13.0609 8 14.0783 8.42143 14.8284 9.17157C15.5786 9.92172 16 10.9391 16 12C16 13.0609 15.5786 14.0783 14.8284 14.8284C14.0783 15.5786 13.0609 16 12 16C10.9391 16 9.92172 15.5786 9.17157 14.8284C8.42143 14.0783 8 13.0609 8 12C8 10.9391 8.42143 9.92172 9.17157 9.17157C9.92172 8.42143 10.9391 8 12 8ZM3.05 13H1V11H3.05C3.5 6.83 6.83 3.5 11 3.05V1H13V3.05C17.17 3.5 20.5 6.83 20.95 11H23V13H20.95C20.5 17.17 17.17 20.5 13 20.95V23H11V20.95C6.83 20.5 3.5 17.17 3.05 13ZM12 5C10.1435 5 8.36301 5.7375 7.05025 7.05025C5.7375 8.36301 5 10.1435 5 12C5 13.8565 5.7375 15.637 7.05025 16.9497C8.36301 18.2625 10.1435 19 12 19C13.8565 19 15.637 18.2625 16.9497 16.9497C18.2625 15.637 19 13.8565 19 12C19 10.1435 18.2625 8.36301 16.9497 7.05025C15.637 5.7375 13.8565 5 12 5Z"
-                                            fill="#EC148E" />
-                                    </svg>
-                                    <a href="#" class="primary-pink">Usar minha localização</a>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    
-                    <div class="modal-footer">
-                        <div class="d-flex">
-
-                            <a href="#" class="btn btn-border-gray">
-                                <p>Limpar Filtro</p>
-                            </a>
-
-                            <a href="#" class="btn btn-pink">
-                                <p>Buscar</p>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- modal menu -->
-        <div class="modal modal-menu modal-lg" id="modal-menu-id">
-            <div class="modal-container">
-                <div class="modal-body">
-                    <div class="modal-header">
-                        <div class="modal-title">
-
-                            <p class="fs-18 lineheigth-24">Menu <span class="fw-bold primary-pink">Principal</span></p>
-
-                            <div class="modal-close" onclick="closeModal('modal-menu-id'); CloseModalSubMenu();">
-                                <i>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M13.46 12L19 17.54V19H17.54L12 13.46L6.46 19H5V17.54L10.54 12L5 6.46V5H6.46L12 10.54L17.54 5H19V6.46L13.46 12Z"
-                                            fill="#7A7786" />
-                                    </svg>
-                                </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="modal-section">
-                        <div>
-                            <div class="d-grid menu-section">
-                                <!--MENU-->
-                                <div class="main-menu nav">
-
-                                    <div class="main-menu-view d-block h-auto w-100">
-
-                                        <div id="main-nav" class="navigation main-nav">
-
-                                            <div class="d-grid nav-main-grid">                                             
-
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Navegue por</div>
-                                                    <div class="d-grid nav-sub-grid">
-                                                        <div>
-                                                            <a href="#" class="d-block pt-10 pb-10 fw-semibold">Acompanhantes</a>
-                                                            <a href="#" class="d-block pt-10 pb-10 fw-semibold">Travestis</a>
-                                                            <a href="#" class="d-block pt-10 pb-10" onclick="openSubmenu('regioes')">Regiões <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/></svg></span></a>
-                                                            <a href="#" class="d-block pt-10 pb-10" onclick="openSubmenu('idades')">Idades <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/></svg></span></a>
-                                                            <a href="#" class="d-block pt-10 pb-10" onclick="openSubmenu('caches')">Cachês <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/></svg></span></a>
-                                                            <a href="#" class="d-block pt-10 pb-10" onclick="openSubmenu('tipos-fisicos')">Tipos Físicos <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.707 12.707-4 4a1 1 0 0 1-1.414-1.414L12.586 12 9.293 8.707a1 1 0 1 1 1.414-1.414l4 4a1 1 0 0 1 0 1.414z"/></svg></span></a>
-                                                        </div>
-    
-                                                        <div>
-                                                            <a href="#" class="d-block pt-10 pb-10">Massagistas</a>
-                                                            <a href="#" class="d-block pt-10 pb-10">Clinicas e Privês</a>
-                                                            <a href="#" class="d-block pt-10 pb-10">Mapa</a>
-                                                            <a href="#" class="d-block pt-10 pb-10">Mapa e Localização</a>
-                                                            <a href="#" class="d-block pt-10 pb-10">As Mais Visitadas</a>
-                                                            <a href="#" class="d-block pt-10 pb-10">Lives e Show Sexy</a>
-                                                        </div>
-                                                    </div>                                                
-                                                </div>
-
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Institucional
-                                                    </div>
-                                                    <a href="#" class="d-block pt-10 pb-10">Parceiros</a>
-                                                    <a href="#" class="d-block pt-10 pb-10">Torne-se anunciante</a>
-                                                    <a href="#" class="d-block pt-10 pb-10">Termos de uso</a>
-                                                    <a href="#" class="d-block pt-10 pb-10">Políticas de privacidade</a>
-                                                </div>
-
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Ajuda</div>
-                                                    <a href="#" class="d-block pt-10 pb-10">Denuncias</a>
-                                                    <a href="#" class="d-block pt-10 pb-10">Uso da Plataforma</a>
-                                                    <a href="#" class="d-block pt-10 pb-10">Como Anúnciar</a>
-                                                </div>
-
-                                            </div>
-                                        </div>
-
-
-                                        <div id="sub-nav" class="navigation sub-nav hide">
-                                            
-                                            <div id="regioes">
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Navegue por
-                                                        <strong class="primary-pink">Regiões</strong></div>
-                                                    
-                                                        <div class="d-grid nav-sub-grid">
-                                                        
-                                                        <a href="#" class="d-block pt-10 pb-10">Região Metropolitana da Grande
-                                                            Vitória</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Região Sul</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Região Norte e Central</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="idades">
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Navegue por
-                                                        <strong class="primary-pink">Idades</strong></div>
-                                                    <div class="d-grid nav-sub-grid">
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes de 18 a 20 anos</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes de 21 a 23 anos</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes de 24 a 26 anos</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes de 27 a 29 anos</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes com mais de 30 anos</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="caches">
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Navegue por
-                                                        <strong class="primary-pink">Cachês</strong></div>
-                                                    <div class="d-grid nav-sub-grid">
-
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 100,00 a R$ 149,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 150,00 a R$ 199,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 200,00 a R$ 249,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 250,00 a R$ 299,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 300,00 a R$ 349,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 350,00 a R$ 399,00</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Cachê de R$ 400,00 ou mais</a>                           
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div id="tipos-fisicos">
-                                                <div>
-                                                    <div class="fw-bold m-0 p-0 lineheigth-24 mb-10 menu-title">Navegue por
-                                                        <strong class="primary-pink">Tipos Físicos</strong></div>
-                                                    <div class="d-grid nav-sub-grid">
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Loiras</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Morenas</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Ruivas</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Mulatas</a>
-                                                        <a href="#" class="d-block pt-10 pb-10">Acompanhantes Negras</a>   
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="w-100  back-navigation">
-                                                <a href="#" class="d-flex pt-15 pb-15 btn-back"
-                                                    onclick="closeSubMenu()">
-                                                    <svg version="1.1" id="icons_1_" xmlns="http://www.w3.org/2000/svg"
-                                                        x="0" y="0" viewBox="0 0 128 128"
-                                                        style="enable-background:new 0 0 128 128" xml:space="preserve">                                                    
-                                                        <g id="row2_1_">
-                                                            <g id="_x31__4_">
-                                                                <path class="st2"
-                                                                    d="M64 .3C28.7.3 0 28.8 0 64s28.7 63.7 64 63.7 64-28.5 64-63.7S99.3.3 64 .3zm0 121C32.2 121.3 6.4 95.7 6.4 64 6.4 32.3 32.2 6.7 64 6.7s57.6 25.7 57.6 57.3c0 31.7-25.8 57.3-57.6 57.3zm1.3-82.8L41.6 64l23.6 25.5h13.5L54.4 64l24.4-25.5H65.3z"
-                                                                    id="left_3_" />
-                                                            </g>
-                                                        </g>
-                                                    </svg>
-                                                    <span class="pt-10 pb-18 pl-10 d-block fw-bold fs-18 lineheigth-24">
-                                                        Voltar
-                                                    </span>
-                                                </a>
-                                            </div> 
-                                                                                                                            
-                                        </div>                                                                                                                  
-
-                                    </div>
-
-                                    
-
-                                    <div class="d-flex flex-direction-row social-bar">
-
-                                        <div class="primary-pink">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                                            </svg>
-                                        </div>
-
-                                        <div class="primary-pink">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                                            </svg>
-                                        </div>
-
-                                        <div class="primary-pink">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                                            </svg>
-                                        </div>
-
-                                        <div class="primary-pink">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                                            </svg>
-                                        </div>
-
-                                        <div class="primary-pink">
-                                            Acompanhe nas redes
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="d-flex menu-options flex-direction-column justify-content-center">
-                                    <div class="d-flex">
-                                        <div>
-                                            <p class="fs-24 fw-bold lineheigth-32">Faça parte do nosso time de
-                                                acompanhates!</p>
-                                        </div>
-                                        <div class="btn-rows">
-                                            <div class="btn btn-pink">
-                                                <span>Torne-se anunciante</span>
-                                            </div>
-
-                                            <div class="btn btn-pink">
-                                                <span>Login</span>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </header>
+    <section class="include" href="/componentes/header.html"></section>
 
     <section class="container main-container">
 
-        <!--DESTAQUES-->
-        <div class="row mt-15 mb-15 card-list-default ">
 
+        <section class="include" href="/componentes/destaques.html"></section>
 
-            <div class="col-100 col-md-50  p-15">
-                <a class="card-destaque d-block p-5 w-100" href="#"
-                    title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque" rel="nofollow">
-                    <div class="card-image position-relative">
-                        <img class=" w-100 h-100 position-absolute top-0 left-0 right-0" width="628" height="301"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/mariana-bianchi-490311/acompanhante-mariana-bianchi-destaque-1031913.jpg"
-                            title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque"
-                            alt="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque">
+        <section class="include" href="/componentes/lista_profissional.html"></section>
+
+        <!-- Section join -->
+        <section class="section-jointext bg-section">
+            <div class="block-container column container">
+                <p class="text-h1 gray-3 text-white m-0 p-0">Faça parte do nosso time de acompanhates!</p>
+                <p class="text-h4 gray-5 text-white m-0 p-0">O Ilha do Prazer é um dos mais conhecidos site de
+                    acompanhantes e garotas de programa
+                    do
+                    Brasil.</p>
+                <div class="btn-area column">
+                    <div class="btn btn-pink">
+                        <p class="desktop-btn text-white m-0 p-0">Quero ser anunciante</p>
                     </div>
-                    <div class="d-flex justify-content-space-between pt-5 pb-5">
-                        <span class="fs-20 lineheigth-24">Mariana Bianchi</span>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section share friend -->
+        <section class="section-share bg-gradient">
+            <div class="container-share row container">
+                <div class="logo-area col-lg-6">
+                    <img class="i" style="display: block;" src="assets/images/Logos.svg" alt="">
+                </div>
+                <div class="text-area col-lg-6">
+                    <p class="desktop-h2 white">Indique este site a um amigo</p>
+                    <p class="desktop-h4 white">
+                        Indique este site a um amigo, e convide ele a vir conhecer o prazer desta ilha!
+                    </p>
+                    <div class="icons row white">
                         <div>
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                class="bi bi-share-fill" viewBox="0 0 16 16">
                                 <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
-                                </path>
+                                    d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
                             </svg>
-
-
-                            <span class="fs-20 lineheigth-24 fw-light">Vila Velha</span>
                         </div>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="col-100 col-md-50  p-15">
-                <a class="card-destaque d-block p-5 w-100" href="#"
-                    title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque" rel="nofollow">
-                    <div class="card-image position-relative">
-                        <img class=" w-100 h-100 position-absolute top-0 left-0 right-0" width="628" height="301"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/mariana-bianchi-490311/acompanhante-mariana-bianchi-destaque-1031913.jpg"
-                            title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque"
-                            alt="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque">
-                    </div>
-                    <div class="d-flex justify-content-space-between pt-5 pb-5">
-                        <span class="fs-20 lineheigth-24">Mariana Bianchi</span>
                         <div>
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                class="bi bi-send-fill" viewBox="0 0 16 16">
                                 <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
-                                </path>
+                                    d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                             </svg>
-
-
-                            <span class="fs-20 lineheigth-24 fw-light">Vila Velha</span>
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
+        </section>
 
-            <div class="col-100 col-md-50  p-15">
-                <a class="card-destaque d-block p-5 w-100" href="#"
-                    title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque" rel="nofollow">
-                    <div class="card-image position-relative">
-                        <img class=" w-100 h-100 position-absolute top-0 left-0 right-0" width="628" height="301"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/mariana-bianchi-490311/acompanhante-mariana-bianchi-destaque-1031913.jpg"
-                            title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque"
-                            alt="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque">
+        <!-- Questions section -->
+        <section class="section-questions bg-section">
+            <div class="container-questions row container">
+                <div class="text-area col-lg-6 main-container column justify-content-space-between">
+                    <div class="text-box">
+                        <p class="fs-18 lineheigth-24 primary-pink fw-bold">Tire sua duvida</p>
+                        <p class="text-white fs-32 lineheigth-40 gray-3 fw-bold">Lorem ipsum dolor, sit amet</p>
+                        <p class="text-white fs-20 lineheigth-24 gray-4"> Lorem ipsum dolor, sit amet dolor, sit amet
+                            dolor, sit amet</p>
+
                     </div>
-                    <div class="d-flex justify-content-space-between pt-5 pb-5">
-                        <span class="fs-20 lineheigth-24">Mariana Bianchi</span>
-                        <div>
+                    <div class="icon-text-area column">
+                        <div class="item row">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <path
+                                        d="M20 5C29.1666 5 36.6666 10.9667 36.6666 18.3333C36.6666 25.7 29.1666 31.6667 20 31.6667C17.9333 31.6667 15.95 31.3667 14.1166 30.8333C9.24998 35 3.33331 35 3.33331 35C7.21665 31.1167 7.83331 28.5 7.91665 27.5C5.08331 25.1167 3.33331 21.8833 3.33331 18.3333C3.33331 10.9667 10.8333 5 20 5ZM28.3333 20V16.6667H25V20H28.3333ZM21.6666 20V16.6667H18.3333V20H21.6666ZM15 20V16.6667H11.6666V20H15Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </i>
+                            <div class="list-text">
+                                <p class="text-white gray-3 fs-20 m-0 p-0">Denuncias</p>
+                                <p class="text-white gray-5 fs-16 m-0 p-0">Envie uma mensagem para nosso time</p>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <path
+                                        d="M38.3334 19.9997L34.2667 15.3664L34.8334 9.23307L28.8167 7.86641L25.6667 2.56641L20 4.99974L14.3334 2.56641L11.1834 7.86641L5.16669 9.21641L5.73335 15.3497L1.66669 19.9997L5.73335 24.6331L5.16669 30.7831L11.1834 32.1497L14.3334 37.4497L20 34.9997L25.6667 37.4331L28.8167 32.1331L34.8334 30.7664L34.2667 24.6331L38.3334 19.9997ZM16.6667 28.3331L10 21.6664L12.35 19.3164L16.6667 23.6164L27.65 12.6331L30 14.9997L16.6667 28.3331Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </i>
+                            <div class="list-text">
+                                <p class="text-white gray-3 fs-20 m-0 p-0">Denuncias</p>
+                                <p class="text-white gray-5 fs-16 m-0 p-0">Envie uma mensagem para nosso time</p>
+                            </div>
+                        </div>
+                        <div class="item row">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    fill="none">
+                                    <path
+                                        d="M16.6667 28.3327L10 21.666L12.35 19.316L16.6667 23.616L27.65 12.6327L30 14.9993M20 1.66602L5 8.33268V18.3327C5 27.5827 11.4 36.2327 20 38.3327C28.6 36.2327 35 27.5827 35 18.3327V8.33268L20 1.66602Z"
+                                        fill="#EC148E" />
+                                </svg>
+                            </i>
+                            <div class="list-text">
+                                <p class="text-white gray-3 fs-20 m-0 p-0">Denuncias</p>
+                                <p class="text-white gray-5 fs-16 m-0 p-0">Envie uma mensagem para nosso time</p>
+                            </div>
+                        </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    </div>
+                </div>
+                <div class="list-dropdown-area col-lg-6 main-container column">
+
+                    <div class="card-dropdown">
+                        <div class="container">
+                            <div class="area-top row justify-content-space-between">
+                                <div class="title row">
+                                    <p class="number fs-24 fw-bold primary-pink m-0 p-0">01</p>
+                                    <p class="text-title text-white m-0 p-0 gray-4 fs-20">Texto principal</p>
+                                </div>
+
+                                <div class="btn-dd m-0 p-0"
+                                    onclick="dropdownQuestion2('area-text1'); openIcon('icon-plus1', 'icon-minus1');">
+                                    <i class="icon-plus1" style="display: block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                    <i class="icon-minus1" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="area-text1" style="display: none;">
+                                <p class="mobile-h4 text-white gray-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card-dropdown">
+                        <div class="container">
+                            <div class="area-top row justify-content-space-between">
+                                <div class="title row">
+                                    <p class="number fs-24 fw-bold primary-pink m-0 p-0">02</p>
+                                    <p class="text-title text-white m-0 p-0 gray-4 fs-20">Texto principal</p>
+                                </div>
+
+                                <div class="btn-dd m-0 p-0"
+                                    onclick="dropdownQuestion2('area-text2'); openIcon('icon-plus2', 'icon-minus2');">
+                                    <i class="icon-plus2" style="display: block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                    <i class="icon-minus2" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="area-text2" style="display: none;">
+                                <p class="mobile-h4 text-white gray-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-dropdown">
+                        <div class="container">
+                            <div class="area-top row justify-content-space-between">
+                                <div class="title row">
+                                    <p class="number fs-24 fw-bold primary-pink m-0 p-0">03</p>
+                                    <p class="text-title text-white m-0 p-0 gray-4 fs-20">Texto principal</p>
+                                </div>
+
+                                <div class="btn-dd m-0 p-0"
+                                    onclick="dropdownQuestion2('area-text3'); openIcon('icon-plus3', 'icon-minus3');">
+                                    <i class="icon-plus3" style="display: block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                    <i class="icon-minus3" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="area-text3" style="display: none;">
+                                <p class="mobile-h4 text-white gray-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card-dropdown">
+                        <div class="container">
+                            <div class="area-top row justify-content-space-between">
+                                <div class="title row">
+                                    <p class="number fs-24 fw-bold primary-pink m-0 p-0">04</p>
+                                    <p class="text-title text-white m-0 p-0 gray-4 fs-20">Texto principal</p>
+                                </div>
+
+                                <div class="btn-dd m-0 p-0"
+                                    onclick="dropdownQuestion2('area-text4'); openIcon('icon-plus4', 'icon-minus4');">
+                                    <i class="icon-plus4" style="display: block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                    <i class="icon-minus4" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="area-text4" style="display: none;">
+                                <p class="mobile-h4 text-white gray-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="card-dropdown">
+                        <div class="container">
+                            <div class="area-top row justify-content-space-between">
+                                <div class="title row">
+                                    <p class="number fs-24 fw-bold primary-pink m-0 p-0">05</p>
+                                    <p class="text-title text-white m-0 p-0 gray-4 fs-20">Texto principal</p>
+                                </div>
+
+                                <div class="btn-dd m-0 p-0"
+                                    onclick="dropdownQuestion2('area-text5'); openIcon('icon-plus5', 'icon-minus5');">
+                                    <i class="icon-plus5" style="display: block;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M19 13H13V19H11V13H5V11H11V5H13V11H19V13Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                    <i class="icon-minus5" style="display: none;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M14 2H0V0H14V2Z" fill="#7A7786" />
+                                        </svg>
+                                    </i>
+                                </div>
+                            </div>
+                            <div class="area-text5" style="display: none;">
+                                <p class="mobile-h4 text-white gray-5">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum
+                                    has been the
+                                    industry's standard dummy text ever since the 1500s, when an unknown printer too
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="section-newsletter container">
+            <div class="row main-container justify-content-center">
+                <div class="text-area col-lg-6 col-md-6 justify-content-center">
+                    <p class="p-0 m-0 desktop-h2 primary-pink">Newsletter</p>
+                    <p class="p-0 m-0 desktop-h4 gray-4 text-white">
+                        Cadastre-se e receba informações, promoções e
+                        novidades sobre as anunciantes.
+                    </p>
+                    <p class="p-0 m-0 mini-text gray-5 text-white">
+                        Ao enviar seus dados, você autoriza o Ilha do Prazer a
+                        enviar informações e declara estar ciente da
+                        Política de Privacidade
+                    </p>
+                    <div class="icon-text row">
+                        <i class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" viewBox="0 0 24 26"
+                                fill="none">
+                                <path opacity="0.6"
+                                    d="M10.1754 1.72202L3.37762 4.74328C1.932 5.38578 0.983662 6.82478 1.05688 8.40506C1.42564 16.3643 3.65542 19.6595 9.73095 23.6856C10.9838 24.5158 12.6176 24.5177 13.87 23.6866C19.9701 19.6388 22.1121 16.2897 22.5247 8.4257C22.6082 6.83489 21.6583 5.38145 20.2026 4.73447L13.4246 1.72202C12.3903 1.26235 11.2097 1.26235 10.1754 1.72202Z"
+                                    stroke="#EC148E" stroke-width="2" stroke-linejoin="round" />
                                 <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
-                                </path>
+                                    d="M8.20007 12.9996L10.4529 14.8019C10.8708 15.1362 11.4778 15.0822 11.8302 14.6795L15.4001 10.5996"
+                                    stroke="#EC148E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-
-
-                            <span class="fs-20 lineheigth-24 fw-light">Vila Velha</span>
-                        </div>
+                        </i>
+                        <p class="p-0 m-0 mini-text text-white gray-5">Seus dados estão seguros</p>
                     </div>
-                </a>
+                </div>
+                <div class="input-area column col-lg-6 col-md-6 justify-content-center">
+                    <div class="input-bar input-group">
+                        <input class="input-text" type="text" placeholder="Seu nome">
+
+                    </div>
+                    <div class="input-bar input-group">
+                        <input class="input-text" type="text" placeholder="Seu e-mail">
+
+                    </div>
+                    <div class="btn-submit btn-pink btn">
+                        <p class="desktop-btn">Enviar</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-100 col-md-50  p-15">
-                <a class="card-destaque d-block p-5 w-100" href="#"
-                    title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque" rel="nofollow">
-                    <div class="card-image position-relative">
-                        <img class=" w-100 h-100 position-absolute top-0 left-0 right-0" width="628" height="301"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/mariana-bianchi-490311/acompanhante-mariana-bianchi-destaque-1031913.jpg"
-                            title="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque"
-                            alt="Mariana Bianchi, Vila Velha ES - Oral babadinho e natural em destaque">
-                    </div>
-                    <div class="d-flex justify-content-space-between pt-5 pb-5">
-                        <span class="fs-20 lineheigth-24">Mariana Bianchi</span>
-                        <div>
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
-                                <path
-                                    d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z">
-                                </path>
-                            </svg>
-
-
-                            <span class="fs-20 lineheigth-24 fw-light">Vila Velha</span>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-
-        </div>
-
-
-
-        <!--LISTAGEM PRINCIAP-->
-        <div class="row mt-15 mb-15 card-list-default ">
-
-            <div class="col-50 col-md-33 col-lg-25 p-15">
-                <a class="d-block w-100 card-profile" href="#">
-                    <div class="card-image position-relative">
-
-                        <div class="stars left-0 right-0 top-0 position-absolute m-auto"> ★★★★★</div>
-
-                        <div class="selo hot">
-                            <i class="hot-post"></i>                            
-                        </div>
-
-                        <div class="selo cam">
-                            <i class="show-sexy"></i>                                
-                        </div>
-
-
-                        <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/rayane-marquezine-90289/acompanhante-rayane-marquezine-capa-132991.jpg"
-                            title="Rayane Marquezine, Vila Velha ES - Carioca"
-                            alt="Rayane Marquezine, Vila Velha ES - Carioca">
-                            
-                    </div>
-                    <div class="d-flex flex-direction-column card-description">
-                        <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
-                        <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
-                    </div>
-                </a>
-            </div>
-
-
-            <div class="col-50 col-md-33 col-lg-25 p-15">
-                <a class="d-block w-100 card-profile" href="#">
-                    <div class="card-image position-relative">
-
-                        <div class="stars left-0 right-0 top-0 position-absolute m-auto"> ★★★★★</div>
-
-                        <div class="selo hot">
-                            <i class="hot-post"></i>                            
-                        </div>
-
-                        <div class="selo cam">
-                            <i class="show-sexy"></i>                                
-                        </div>
-
-
-                        <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/rayane-marquezine-90289/acompanhante-rayane-marquezine-capa-132991.jpg"
-                            title="Rayane Marquezine, Vila Velha ES - Carioca"
-                            alt="Rayane Marquezine, Vila Velha ES - Carioca">
-                            
-                    </div>
-                    <div class="d-flex flex-direction-column card-description">
-                        <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
-                        <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-50 col-md-33 col-lg-25 p-15">
-                <a class="d-block w-100 card-profile" href="#">
-                    <div class="card-image position-relative">
-
-                        <div class="stars left-0 right-0 top-0 position-absolute m-auto"> ★★★★★</div>
-
-                        <div class="selo hot">
-                            <i class="hot-post"></i>                            
-                        </div>
-
-                        <div class="selo cam">
-                            <i class="show-sexy"></i>                                
-                        </div>
-
-
-                        <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/rayane-marquezine-90289/acompanhante-rayane-marquezine-capa-132991.jpg"
-                            title="Rayane Marquezine, Vila Velha ES - Carioca"
-                            alt="Rayane Marquezine, Vila Velha ES - Carioca">
-                            
-                    </div>
-                    <div class="d-flex flex-direction-column card-description">
-                        <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
-                        <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col-50 col-md-33 col-lg-25 p-15">
-                <a class="d-block w-100 card-profile" href="#">
-                    <div class="card-image position-relative">
-
-                        <div class="stars left-0 right-0 top-0 position-absolute m-auto"> ★★★★★</div>
-
-                        <div class="selo hot">
-                            <i class="hot-post"></i>                            
-                        </div>
-
-                        <div class="selo cam">
-                            <i class="show-sexy"></i>                                
-                        </div>
-
-
-                        <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
-                            src="https://static.ilhadoprazer.com.br/acompanhantes/rayane-marquezine-90289/acompanhante-rayane-marquezine-capa-132991.jpg"
-                            title="Rayane Marquezine, Vila Velha ES - Carioca"
-                            alt="Rayane Marquezine, Vila Velha ES - Carioca">
-                            
-                    </div>
-                    <div class="d-flex flex-direction-column card-description">
-                        <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
-                        <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
-                        <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-
-
+        </section>
 
 
     </section>
 
-    <footer>
 
-        <div class="container pl-10 pt-10 pr-10 pb-0">
-
-            <div class="d-flex justify-content-space-between pt-15 bar-footer-logo">
-
-                <div class="d-block logo">
-                    <img id="logo-footer" src="assets/images/LogosColor.svg" alt="">
-                </div>
-
-
-                <div class="d-flex flex-direction-row social-bar">
-
-                    <div class="primary-pink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-youtube" viewBox="0 0 16 16">
-                            <path
-                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
-                        </svg>
-                    </div>
-
-                    <div class="primary-pink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                        </svg>
-                    </div>
-
-                    <div class="primary-pink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-instagram" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                        </svg>
-                    </div>
-
-                    <div class="primary-pink">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-twitter" viewBox="0 0 16 16">
-                            <path
-                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                        </svg>
-                    </div>
-
-                    <div class="primary-pink">
-                        Acompanhe nas redes
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="footer-nav nav">
-                <div class="idp-brasil">
-                    <p class="fs-18 fw-bold lineheigth-24">Ilha do Prazer pelo Brasil</p>
-                    <div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                    </div>
-
-                    <p class="fs-18 fw-bold lineheigth-24">Outros estados</p>
-
-                    <div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                    </div>
-
-                    <p class="fs-18 fw-bold lineheigth-24">Ilha do Prazer Travestis pelo Brasil</p>
-
-                    <div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                        <div>
-                            <p class="fw-semibold">Acompanhantes MG</p>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                            <a href="#" class="d-block pt-10 pb-10">Belo Horizonte</a>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="d-flex flex-direction-column">
-                    <p class="fs-18 fw-bold lineheigth-24">Institucional</p>
-                    <div>
-                        <a href="#" class="d-block pt-10 pb-10">Parceiros</a>
-                        <a href="#" class="d-block pt-10 pb-10">Torne-se anunciante</a>
-                        <a href="#" class="d-block pt-10 pb-10">Termos de uso</a>
-                        <a href="#" class="d-block pt-10 pb-10">Políticas de privacidade</a>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-direction-column">
-                    <p class="fs-18 fw-bold lineheigth-24">Ajuda</p>
-                    <div>
-                        <a href="#" class="d-block pt-10 pb-10">Denuncias</a>
-                        <a href="#" class="d-block pt-10 pb-10">Uso da Plataforma</a>
-                        <a href="#" class="d-block pt-10 pb-10">Como Anúnciar</a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                <p class="fs-14 p-5 lineheigth-24 gray-5 copyright mb-10 pb-0">
-                    O Portal Ilha do Prazer conta com acompanhantes de luxo e garotas de programa e travestis das
-                    principais cidades do Brasil.Este portal é, única e exclusivamente, um veículo de comunicação entre
-                    pessoas e, não tem nenhum vínculo com seus anunciantes, que são os únicos responsáveis pelas
-                    informações contidas nos seus respectivos anúncios. O site Ilha do Prazer NÃO É AGÊNCIA e não assume
-                    nenhuma responsabilidade pelo conteúdo dos anúncios ou pelas respostas a qualquer um deles. Leia
-                    nossos termos de uso e politica de privacidade. Copyright© 2004 - 2023 - Ilha do Prazer - Todos os
-                    direitos reservados.
-                </p>
-            </div>
-        </div>
-
-    </footer>
+    <section class="include" href="/componentes/footer.html"></section>
 
     <!-- Top Button -->
     <div class="position-fixed " id="top-btn-id" onclick="scrollToTop()">
@@ -918,5 +391,19 @@
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/subnav.js"></script>
     <script src="assets/scripts/scroll.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <script>
+        $(function () {
+            $(".include").each((index, elem) => {
+
+                $(elem).load("http://localhost:8000" + $(elem).attr('href'));
+
+
+            })
+        });
+    </script>
+
 
 </body>
