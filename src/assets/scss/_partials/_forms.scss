@@ -31,6 +31,41 @@
     }    
 }
 
+
+.input-group-newslatter {
+    display: flex;    
+    flex-direction: row;
+    border-radius: 5px;
+    align-items: center;
+    gap: 5px;
+    background-color: $section;
+
+    .input-prepend,  .input-append{
+        padding: 2px 16px;
+        color: $gray-5;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    .input-append{             
+        > div{
+            border-left: 1px solid $gray-6;  
+            padding-left: 16px;  
+        }            
+    }
+
+    .input-text {                    
+        max-width: 500px;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        font-size: 16px;
+        background-color: $section;
+    }    
+}
+
+
 .dark {
     .input-group {
         border: 1px solid $gray-4;
