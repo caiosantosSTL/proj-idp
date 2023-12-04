@@ -16,15 +16,3 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
-
-
-section{
-
-    @media (min-width: $min_mobile) {
-        margin-inline: 8px;
-    }
-
-    @media (min-width: $min_tablet) {
-        margin: 0;
-    }
-}

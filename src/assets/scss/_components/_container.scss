@@ -1,7 +1,16 @@
 .container{
     max-width: 1500px;
     min-width: 375px;
-    margin: 0 auto;    
+    margin: 0 auto;  
+      
+    @media (min-width: $min_mobile) {
+        margin-inline: 8px;
+    }
+
+    @media (min-width: $min_tablet) {
+        margin: 0;
+    }
+
 }
 .nav {
     a {
