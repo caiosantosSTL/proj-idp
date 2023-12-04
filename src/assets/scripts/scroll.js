@@ -1,4 +1,4 @@
-const searchBar = document.getElementById('searchbar');
+
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -7,7 +7,8 @@ function scrollToTop() {
 var scrollDirection=0;
 // check if body top is greater than 20
 function toggleComponents() {
-
+  const searchBar = document.getElementById('searchbar');
+  
   let currentScroll = window.scrollY ||  document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
   var scrollUp = scrollDirection >= currentScroll || currentScroll <= 120;    
   
