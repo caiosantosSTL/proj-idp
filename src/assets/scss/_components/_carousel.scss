@@ -3,62 +3,82 @@
 .section-modalcarousel {
 
     margin-top: 80px;
+    margin-bottom: 80px;
 
-    .container {
+    .title {
 
+        .desktop-h2 {
 
-        .title {
-
-            .desktop-h2 {
-
-                font-size: 32px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 40px;
-                color: $gray-3; 
-            }
-        }
-
-        .icon-area {
-            display: flex;
-            flex-direction: row;
-            @media (min-width: $min_mobile) {
-                justify-content: start;
-            }
-            @media (min-width: $min_tablet) {
-                justify-content: space-around;
-            }
-            gap: 16px;
-            overflow-y: scroll;
-            //width: 100%;
-            height: 200px;
-
-            .icon-card {
-                height: 100px;
-                width: 100px;
-
-                .image {
-                    border-radius: 100px;
-                    border: 4px solid $primary-pink;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgb(181, 53, 53);
-                    cursor: pointer;
-
-                    img {
-                        height: 100%;
-                        width: 100%;
-                        border-radius: 50px;
-                        object-fit: cover;
-                    }
-                }
-
-                .name {
-
-                }
-            }
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+            color: $gray-3; 
         }
     }
+
+    .icon-area {
+
+        display: flex;
+        flex-direction: row;       
+        gap: 10px;
+        overflow-y: scroll;
+        width: 100%;
+        height: 185px;
+        justify-content: center;
+        
+
+        .icon-card {
+            margin: 15px;
+            height: 100px;            
+            min-width: 100px;
+            .image {
+                border-radius: 100px;
+                border: 4px solid $primary-pink;
+                width: 100%;
+                height: 100%;
+                background-color: rgb(181, 53, 53);
+                cursor: pointer;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        @media (max-width: $min_tablet) {
+            justify-content: start;
+            gap: 5px;
+            .icon-card {
+                margin: 8px;
+                height: 84px;            
+                min-width: 84px;
+            }
+        }
+
+        @media (max-width: $max_mobile) {            
+            gap: 3px;
+            .icon-card {
+                margin: 5px;
+                height: 64px;            
+                min-width: 64px;
+                .image{
+                    border: 3px solid $primary-pink;
+                }
+            }
+            .name  {
+                & > p{
+                    font-size: 14px;    
+                }
+                
+            }
+        }
+       
+    }
+
     // ---------------------------- modal part
     .modal-carousel {
         display: none;
@@ -100,7 +120,7 @@
             }
         }
 
-        .container {
+        .container-modal {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
