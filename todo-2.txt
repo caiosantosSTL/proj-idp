@@ -114,3 +114,19 @@ margin:0
 p-0{
 padding:0
 }
+
+
+
+
+==
+
+ python3 -m http.server  
+
+
+ card size
+         &::before {
+            padding-top: calc(471 / 980 * 100%);
+            width: 100%;
+            display: block;
+            content: ' ';
+        }
