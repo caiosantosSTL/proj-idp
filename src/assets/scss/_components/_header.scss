@@ -114,11 +114,11 @@ header {
 
         .menu-section {
 
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 grid-template-columns: repeat(1, auto);
             }
 
-            @media (min-width: $min_desktop) {
+            @media (min-width: $min_tablet) {
 
                 //grid-template-columns: repeat(5, auto);
                 grid-template-columns: 2fr 1fr;
@@ -133,7 +133,7 @@ header {
                 align-items: center;
                 order: 2;
 
-                @media (min-width: $max_mobile) {
+                @media (min-width: $min_mobile) {
                     order: 1;
                     border-bottom-right-radius: 0px;
                 }
@@ -150,11 +150,11 @@ header {
                 flex-grow: 1;
                 width: 100%;
 
-                @media (min-width: $max_mobile) {
+                @media (min-width: $min_mobile) {
                     order: 2;
                 }
 
-                @media (min-width: $min_desktop) {
+                @media (min-width: $min_tablet) {
                     order: 1;
                 }
 
@@ -219,11 +219,11 @@ header {
                         .nav-main-grid {
                             gap: 20px;
 
-                            @media (min-width: $max_mobile) {
+                            @media (min-width: $min_mobile) {
                                 grid-template-columns: repeat(1, auto);
                             }
 
-                            @media (min-width: $min_desktop) {
+                            @media (min-width: $min_tablet) {
                                 grid-template-columns: repeat(3, auto);
                             }
 
@@ -231,11 +231,11 @@ header {
 
                         .nav-sub-grid {
 
-                            @media (min-width: $max_mobile) {
+                            @media (min-width: $min_mobile) {
                                 grid-template-columns: repeat(1, auto);
                             }
 
-                            @media (min-width: $min_desktop) {
+                            @media (min-width: $min_tablet) {
                                 grid-template-columns: repeat(2, minmax(0, 1fr));
                             }
                         }

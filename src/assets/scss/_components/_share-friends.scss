@@ -22,10 +22,10 @@
             display: flex;
             flex-direction: row;
             gap: 15px;
-            @media (min-width: $max_mobile){
+            @media (min-width: $min_mobile){
                 justify-content: center;
             }
-            @media (min-width: $max_tablet){
+            @media (min-width: $min_tablet){
                 justify-content: center;
             }
             @media (min-width: $max_desktop){

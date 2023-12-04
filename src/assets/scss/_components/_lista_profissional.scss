@@ -1,0 +1,95 @@
+
+.card-profile{
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    overflow: hidden;
+    padding: 0;
+
+    .card-image{
+        .stars{
+            border-radius: 0px 0px 4px 4px;
+            background: rgba(255, 255, 255, 0.20);
+            backdrop-filter: blur(5px);
+            color: gold;
+            font-size: 16px;                                    
+            width: 110px;
+            text-align: center;
+            letter-spacing: .2rem;
+            z-index: 1;
+        }
+        .selo {
+            display: flex;
+            z-index: 1;
+            position: absolute;
+            bottom: 8px;
+            width: 40%;     
+            max-width: 92px;
+            >i {                
+                width: 100%;
+                height: auto;
+            }       
+            &.hot{
+                left: 8px;                
+            }
+            &.cam{
+                right: 8px;
+            }
+            > div{
+                margin-left:  -15px;
+                z-index: 0;
+                font-size: 14px;
+                > span{
+                    width: 72px;                        
+                    padding-left: 18px;
+                    padding-right: 5px;
+                    line-height: 20px;
+                    
+                }
+                > strong{
+                    width: 64px;
+                    padding-left: 18px;
+                    padding-right: 5px;
+                    line-height: 20px;
+                                         
+                }
+            }
+        }
+        &::before {
+            padding-top: calc(387 / 280 * 100%);
+            width: 100%;
+            display: block;
+            content: ' ';
+        }
+    }
+
+    .card-description{
+        gap:5px;
+        align-items: flex-start;
+        padding: 8px;
+        @media (max-width: $min_tablet) {
+            .fs-18{
+                font-size: 14px;
+            }
+            .fs-24{
+                font-size: 20px;
+            }
+        }
+    
+    }
+}
+
+
+.dark {
+    .card-profile{
+        background-color: $dark-primary;
+        .card-description{
+            .gray-3 {
+                color: $white;
+            }
+            .gray-5{
+                color: $gray-6;
+            }
+        }
+    }
+}

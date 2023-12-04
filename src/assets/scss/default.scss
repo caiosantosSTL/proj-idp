@@ -31,6 +31,10 @@
 @import "_components/header";
 @import "_components/content";
 @import "_components/footer";
+@import "_components/lista_destaque";
+@import "_components/lista_profissional";
+@import "_components/lista_profissional";
+@import "_components/_top_page";
 
 
 // COMPONENTES CAIO
@@ -55,10 +59,10 @@ body {
     margin: 0;
 
     section{
-        @media (min-width: $max_mobile) {
+        @media (min-width: $min_mobile) {
             margin-inline: 8px;
         }
-        @media (min-width: $max_tablet) {
+        @media (min-width: $min_tablet) {
             margin: 0;
         }
     }    

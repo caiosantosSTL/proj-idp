@@ -51,11 +51,11 @@
         .cards-area {
             display: grid;
 
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 grid-template-columns: repeat(1, auto);
             }
 
-            @media (min-width: $max_tablet) {
+            @media (min-width: $min_tablet) {
 
                 grid-template-columns: repeat(2, auto);
             }

@@ -6,7 +6,7 @@ footer {
         padding: 20px 0;
     }
 
-    @media (max-width: $max_tablet) {
+    @media (max-width: $min_tablet) {
         .bar-footer-logo{            
             flex-direction: column;
             justify-content: center;
@@ -24,11 +24,11 @@ footer {
         color: $gray-5;
         
         
-        @media (min-width: $max_mobile) {
+        @media (min-width: $min_mobile) {
             grid-template-columns: repeat(1, auto);
         }
 
-        @media (min-width: $max_tablet) {
+        @media (min-width: $min_tablet) {
             grid-template-columns: repeat(1, auto);
         }
 
@@ -43,11 +43,11 @@ footer {
         .idp-brasil {
             display: grid;
 
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 grid-column: 1;
             }
 
-            @media (min-width: $max_tablet) {
+            @media (min-width: $min_tablet) {
 
                 grid-column: 1/4;
             }
@@ -59,11 +59,11 @@ footer {
                 height: auto;
                 display: grid;                
                 
-                @media (min-width: $max_mobile) {
+                @media (min-width: $min_mobile) {
                     grid-template-columns: repeat(2, auto);
                 }
 
-                @media (min-width: $max_tablet) {
+                @media (min-width: $min_tablet) {
 
                     grid-template-columns: repeat(4, auto);
                 }

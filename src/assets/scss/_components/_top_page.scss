@@ -1,0 +1,33 @@
+.top-page{
+
+    background-color: $section;    
+    .box-500{
+        max-width: 600px;
+        padding: 250px 30px 30px 30px;
+    }
+
+    @media (max-width: $min_tablet) {
+        .box-500{
+            max-width: 100%;
+            text-align: center;
+            max-width: 100%;
+            text-align: center;
+            .fs-48{
+                font-size: 36px;
+            }
+        }
+    }
+
+}   
+
+.dark{
+    .top-page{
+        .dark-grey{
+            color: $white;
+        }
+        .gray-5{
+            color: $gray-6;
+        }
+        background-color: $gray-1;
+    }
+}

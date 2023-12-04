@@ -22,10 +22,10 @@
         .icon-area {
             display: flex;
             flex-direction: row;
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 justify-content: start;
             }
-            @media (min-width: $max_tablet) {
+            @media (min-width: $min_tablet) {
                 justify-content: space-around;
             }
             gap: 16px;
@@ -75,10 +75,10 @@
             filter: blur(8px);
             cursor: pointer;
             transform: scale(0.8); 
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 display: none;
             }
-            @media (min-width: $max_tablet) {
+            @media (min-width: $min_tablet) {
                 display: none;
             }
             @media (min-width: $max_desktop) {
@@ -89,10 +89,10 @@
             filter: blur(8px);
             cursor: pointer;
             transform: scale(0.8);
-            @media (min-width: $max_mobile) {
+            @media (min-width: $min_mobile) {
                 display: none;
             }
-            @media (min-width: $max_tablet) {
+            @media (min-width: $min_tablet) {
                 display: none;
             }
             @media (min-width: $max_desktop) {

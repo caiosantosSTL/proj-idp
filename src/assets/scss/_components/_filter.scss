@@ -7,14 +7,14 @@
     line-height: 24px;
     color: $gray-4;
     padding: 5px;
-    @media (min-width: $max_tablet) {
+    @media (min-width: $min_tablet) {
         
         display: flex;
         justify-content: center;
     }
 
 
-    @media (min-width: $max_mobile) {
+    @media (min-width: $min_mobile) {
         .btn-filter{
             display: block;
             border: 1px solid $primary-pink;
@@ -205,7 +205,7 @@
         }
     }
 
-    @media (min-width: $max_tablet) {
+    @media (min-width: $min_tablet) {
         .filter-list {
             display: none;
         }
@@ -275,7 +275,7 @@
 .dark{
     .filter-container {
     
-        @media (min-width: $max_mobile) {
+        @media (min-width: $min_mobile) {
             .btn-filter{
 
                 .text-icon{
@@ -353,7 +353,7 @@
             }
         }
     
-        @media (min-width: $max_tablet) {
+        @media (min-width: $min_tablet) {
             .filter-list {
                 display: none;
             }

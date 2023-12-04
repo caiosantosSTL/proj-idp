@@ -39,10 +39,10 @@
 }
 
 section{
-    @media (min-width: $max_mobile) {
+    @media (min-width: $min_mobile) {
         margin-inline: 8px;
     }
-    @media (min-width: $max_tablet) {
+    @media (min-width: $min_tablet) {
         margin: 0;
     } 
 }
