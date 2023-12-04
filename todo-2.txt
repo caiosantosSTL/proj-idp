@@ -120,7 +120,9 @@ padding:0
 
 ==
 
- python3 -m http.server  
+ python3 -m http.server 
+ 
+ sass --watch scss/default.scss css/default.css  
 
 
  card size
