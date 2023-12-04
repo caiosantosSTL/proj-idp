@@ -1270,7 +1270,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   max-width: 1500px;
   min-width: 375px;
   margin: 0 auto;
-  margin-inline: 8px;
+  padding-inline: 8px;
 }
 
 .nav a {
@@ -2055,7 +2055,6 @@ footer .copyright {
 }
 
 .section-tags {
-  margin-top: 80px;
   margin-bottom: 32px;
 }
 .section-tags .container {
