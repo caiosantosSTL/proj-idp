@@ -1916,7 +1916,11 @@ footer .copyright {
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 1024px) {
+=======
+@media (max-width: 768px) {
+>>>>>>> origin/cssutility
   .section-questions .container-questions {
     gap: 24px;
   }
