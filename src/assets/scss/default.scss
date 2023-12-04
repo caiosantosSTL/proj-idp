@@ -57,15 +57,7 @@ body {
 
     padding: 0;
     margin: 0;
-
-    section{
-        @media (min-width: $min_mobile) {
-            margin-inline: 8px;
-        }
-        @media (min-width: $min_tablet) {
-            margin: 0;
-        }
-    }    
+    
 }
 
 
