@@ -1562,6 +1562,21 @@ header .use-location a {
   padding: 30px;
 }
 
+.top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #fff;
+  padding: 25px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0px 10px 6px -3px rgba(0, 0, 0, 0.1);
+}
+
 .dark .social-bar .primary-pink {
   color: #fff;
 }
