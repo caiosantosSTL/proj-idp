@@ -1,20 +1,22 @@
 .section-share{
     .logo-area{
         max-height: 100%;
-        max-width: 100%;
+        max-width: 385px;
         object-fit: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0 auto;
+        align-self: center;
         .i{
-            width: 65%;
+            //width: 65%;
+            width: 100%;
             height: auto;
         }
     }
     .text-area{
+        margin: 0 auto;
         @media (min-width: $max_desktop) {
             
             max-width: 500px;
+            text-align: start;
         }
         text-align: center;
 

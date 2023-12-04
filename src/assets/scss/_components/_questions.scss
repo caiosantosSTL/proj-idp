@@ -1,8 +1,13 @@
 .section-questions{
-    .text-area{
-        .text-box{
-            max-width: 440px;
-            max-height: 190px;
+    .container-questions{
+        @media (max-width: $max_tablet) {
+            gap: 24px;
+        }
+        .text-area{
+            .text-box{
+                max-width: 440px;
+                max-height: auto;
+            }
         }
     }
     .icon-text-area{

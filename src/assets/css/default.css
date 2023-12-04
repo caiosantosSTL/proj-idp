@@ -372,14 +372,14 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 @media (min-width: 0px) {
   .text-h3 {
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 24px;
   }
 }
 @media (min-width: 481px) {
   .text-h3 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 32px;
   }
 }
@@ -387,7 +387,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 .text-h4 {
   font-style: normal;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
 }
 
@@ -541,6 +541,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 .mt-15 {
   margin-top: 15px;
+}
+
+.mt-16 {
+  margin-top: 16px;
 }
 
 .mb-15 {
@@ -1912,9 +1916,14 @@ footer .copyright {
   }
 }
 
-.section-questions .text-area .text-box {
+@media (max-width: 1024px) {
+  .section-questions .container-questions {
+    gap: 24px;
+  }
+}
+.section-questions .container-questions .text-area .text-box {
   max-width: 440px;
-  max-height: 190px;
+  max-height: auto;
 }
 .section-questions .icon-text-area {
   max-width: 350px;
@@ -1972,22 +1981,23 @@ footer .copyright {
 
 .section-share .logo-area {
   max-height: 100%;
-  max-width: 100%;
+  max-width: 385px;
   object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  align-self: center;
 }
 .section-share .logo-area .i {
-  width: 65%;
+  width: 100%;
   height: auto;
 }
 .section-share .text-area {
+  margin: 0 auto;
   text-align: center;
 }
 @media (min-width: 1200px) {
   .section-share .text-area {
     max-width: 500px;
+    text-align: start;
   }
 }
 .section-share .text-area .icons {
