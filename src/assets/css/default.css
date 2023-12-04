@@ -1270,16 +1270,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   max-width: 1500px;
   min-width: 375px;
   margin: 0 auto;
-}
-@media (min-width: 0px) {
-  .container {
-    margin-inline: 8px;
-  }
-}
-@media (min-width: 768px) {
-  .container {
-    margin: 0;
-  }
+  margin-inline: 8px;
 }
 
 .nav a {
