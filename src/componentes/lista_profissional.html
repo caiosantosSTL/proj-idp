@@ -30,6 +30,24 @@
                     }
                 }
             </script>
+              <script>
+                // Adicione este script para controlar a visibilidade da div dinamicamente
+                window.addEventListener('resize', function () {
+                  checkWindowSize();
+                });
+            
+                function checkWindowSize() {
+                  var myDiv = document.querySelector('#filter-list-id');
+                  if (window.innerWidth <= 760) {
+                    myDiv.style.display = 'none';
+                  } else {
+                    myDiv.style.display = 'flex';
+                  }
+                }
+            
+                // Execute a função inicialmente para verificar o tamanho da tela ao carregar a página
+                checkWindowSize();
+              </script>
         </div>
 
         <!-- filter bar -->
