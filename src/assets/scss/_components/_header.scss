@@ -28,7 +28,7 @@ header {
                     min-width: 105px;
                 }
 
-                @media (max-width: $max_desktop) {
+                @media (max-width: $min_desktop) {
                     position: fixed;
                     justify-content: space-between;
                     z-index: 1;
@@ -274,7 +274,7 @@ header {
             .header-content {
                 .input-group {
 
-                    @media (max-width: $max_desktop) {
+                    @media (max-width: $min_desktop) {
                         &.show {
                             &::before {
                                 background-color: $dark-bar-secondary;

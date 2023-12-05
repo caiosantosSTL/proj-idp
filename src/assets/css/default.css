@@ -1314,7 +1314,7 @@ header .container .header-content .input-group .btn-estate svg {
 header .container .header-content .input-group .btn-estate {
   min-width: 105px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1025px) {
   header .container .header-content .input-group {
     position: fixed;
     justify-content: space-between;
@@ -1512,7 +1512,7 @@ header .use-location a {
 .dark header {
   background-color: #151419;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1025px) {
   .dark header .container .header-content .input-group.show::before {
     background-color: #151419;
   }
@@ -1872,6 +1872,11 @@ footer .copyright {
   color: #C6C5CE;
 }
 
+@media (max-width: 1025px) {
+  .breadcrumb {
+    margin-top: 170px;
+  }
+}
 .breadcrumb > ul {
   list-style: none;
 }
