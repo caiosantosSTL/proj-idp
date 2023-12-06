@@ -1,5 +1,3 @@
-
-
 .filter-containerx {
     font-size: 20px;
     font-style: normal;
@@ -7,29 +5,32 @@
     line-height: 24px;
     color: $gray-4;
     padding: 5px;
+
     @media (min-width: $min_tablet) {
-        
+
         display: flex;
         justify-content: center;
     }
 
 
     @media (min-width: $min_mobile) {
-        .btn-filter{
+        .btn-filter {
             display: block;
             border: 1px solid $primary-pink;
             border-radius: 6px;
             margin-bottom: 10px;
             cursor: pointer;
-            .text-icon{
+
+            .text-icon {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
+
                 .desktop-btn {
                     /* Fonts Web/Button */
-            
+
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -143,7 +144,7 @@
                     margin-inline: 15px
                 }
 
-                
+
                 .btn-border-gray {
 
                     height: 50px;
@@ -151,14 +152,15 @@
                     color: $gray-4;
                     border-radius: 6px;
                     border: 1.5px solid $gray-6;
-                
+
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-content: center;
                     cursor: pointer;
-                    
+
                     background-color: transparent;
+
                     p {
                         margin: 0;
                         padding: 0;
@@ -169,7 +171,7 @@
                         line-height: 150%;
                     }
                 }
-                
+
                 .btn-pink {
 
                     height: 50px;
@@ -177,14 +179,15 @@
                     color: $white;
                     border-radius: 6px;
                     border: 1.5px solid $gray-6;
-                
+
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-content: center;
                     cursor: pointer;
-                
+
                     background-color: $primary-pink;
+
                     p {
                         margin: 0;
                         padding: 0;
@@ -194,7 +197,7 @@
                         font-weight: 700;
                         line-height: 150%;
                     }
-                
+
                 }
 
             }
@@ -210,7 +213,7 @@
             display: none;
         }
 
-        .btn-filter{
+        .btn-filter {
             display: none;
         }
 
@@ -244,6 +247,7 @@
                     cursor: pointer;
                     border-radius: 50px;
                     color: $white;
+
                     svg {
                         path {
 
@@ -274,34 +278,37 @@
 
 .filter-container {
     font-size: 20px;
-    font-style: normal; 
+    font-style: normal;
     font-weight: 400;
     line-height: 24px;
     color: $gray-4;
     padding: 5px;
+
     @media (min-width: $min_tablet) {
-        
+
         display: flex;
         justify-content: center;
     }
 
 
     @media (min-width: $min_mobile) {
-        .btn-filter{
+        .btn-filter {
             display: block;
             border: 1px solid $primary-pink;
             border-radius: 6px;
             margin-bottom: 10px;
             cursor: pointer;
-            .text-icon{
+
+            .text-icon {
                 display: flex;
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
                 gap: 8px;
+
                 .desktop-btn {
                     /* Fonts Web/Button */
-            
+
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 600;
@@ -315,16 +322,17 @@
 
         .filter-bar {
             display: none;
-            .item-area{
+
+            .item-area {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
                 justify-content: start;
                 gap: 20px;
                 width: 100%;
-                .title{
-                    
-                }
+
+                .title {}
+
                 .item {
                     display: flex;
                     flex-direction: row;
@@ -335,35 +343,37 @@
                     margin-bottom: 10px;
                     padding: 10px;
                     border-radius: 0px;
+
                     @media (max-width: $min_tablet) {
-                        
+
                         border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
                     }
-    
+
                     &:hover {
-    
+
                         background-color: $primary-pink;
                         cursor: pointer;
                         border-radius: 0px;
                         color: $white;
+
                         svg {
                             path {
-    
+
                                 fill: $white;
-    
+
                             }
                         }
                     }
-    
+
                     .icon {
                         margin: 0;
                         padding: 0;
-    
+
                         &:hover {
                             color: $white;
                         }
                     }
-    
+
                     p {
                         margin: 0;
                         padding: 0;
@@ -372,33 +382,28 @@
 
                 .area-btn {
                     width: 100%;
-                    padding-inline: 10px;
                     margin-bottom: 20px;
                     display: flex;
                     flex-direction: column;
                     gap: 10px;
-    
-                    .btn-pink,
+
+
                     .btn-border-gray {
-                        margin-inline: 15px
-                    }
-    
-                    
-                    .btn-border-gray {
-    
+
                         height: 50px;
                         min-width: 120px;
                         color: $gray-4;
                         border-radius: 6px;
                         border: 1.5px solid $gray-6;
-                    
+
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-content: center;
                         cursor: pointer;
-                        
+
                         background-color: transparent;
+
                         p {
                             margin: 0;
                             padding: 0;
@@ -409,22 +414,23 @@
                             line-height: 150%;
                         }
                     }
-                    
+
                     .btn-pink {
-    
+
                         height: 50px;
                         min-width: 120px;
                         color: $white;
                         border-radius: 6px;
                         border: 1.5px solid $gray-6;
-                    
+
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-content: center;
                         cursor: pointer;
-                    
+
                         background-color: $primary-pink;
+
                         p {
                             margin: 0;
                             padding: 0;
@@ -434,9 +440,9 @@
                             font-weight: 700;
                             line-height: 150%;
                         }
-                    
+
                     }
-    
+
                 }
             }
         }
@@ -445,7 +451,7 @@
     @media (min-width: $min_tablet) {
 
 
-        .btn-filter{
+        .btn-filter {
             display: none;
         }
 
@@ -462,13 +468,14 @@
             width: 90%;
             padding-inline: 25px;
 
-            .item-area{
+            .item-area {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 gap: 20px;
                 width: 100%;
+
                 @media (min-width: $min_mobile) {
 
                     .title {
@@ -480,13 +487,14 @@
                         padding: 0;
                         border-top-right-radius: 8px;
                         border-top-left-radius: 8px;
-        
+
                         p {
                             margin-left: 10px;
                             padding: 0;
                         }
                     }
                 }
+
                 @media (min-width: $min_tablet) {
 
                     .title {
@@ -504,31 +512,32 @@
                     margin-bottom: 10px;
                     padding: 10px;
                     border-radius: 50px;
-    
+
                     &:hover {
-    
+
                         background-color: $primary-pink;
                         cursor: pointer;
                         border-radius: 50px;
                         color: $white;
+
                         svg {
                             path {
-    
+
                                 fill: $white;
-    
+
                             }
                         }
                     }
-    
+
                     .icon {
                         margin: 0;
                         padding: 0;
-    
+
                         &:hover {
                             color: $white;
                         }
                     }
-    
+
                     p {
                         margin: 0;
                         padding: 0;
@@ -543,28 +552,29 @@
                         display: flex;
                         flex-direction: column;
                         gap: 10px;
-        
+
                         .btn-pink,
                         .btn-border-gray {
                             margin-inline: 15px
                         }
-        
-                        
+
+
                         .btn-border-gray {
-        
+
                             height: 50px;
                             min-width: 120px;
                             color: $gray-4;
                             border-radius: 6px;
                             border: 1.5px solid $gray-6;
-                        
+
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-content: center;
                             cursor: pointer;
-                            
+
                             background-color: transparent;
+
                             p {
                                 margin: 0;
                                 padding: 0;
@@ -575,22 +585,23 @@
                                 line-height: 150%;
                             }
                         }
-                        
+
                         .btn-pink {
-        
+
                             height: 50px;
                             min-width: 120px;
                             color: $white;
                             border-radius: 6px;
                             border: 1.5px solid $gray-6;
-                        
+
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             align-content: center;
                             cursor: pointer;
-                        
+
                             background-color: $primary-pink;
+
                             p {
                                 margin: 0;
                                 padding: 0;
@@ -600,9 +611,9 @@
                                 font-weight: 700;
                                 line-height: 150%;
                             }
-                        
+
                         }
-        
+
                     }
                 }
 
@@ -610,7 +621,7 @@
                     .area-btn {
 
                         display: none;
-        
+
                     }
                 }
 
@@ -623,100 +634,276 @@
 }
 
 
-.dark{
+.dark {
     .filter-container {
-    
+
+        color: $white;
+
+
+        @media (min-width: $min_tablet) {
+
+            display: flex;
+            justify-content: center;
+        }
+
+
         @media (min-width: $min_mobile) {
-            .btn-filter{
+            .btn-filter {
 
-                .text-icon{
+                border: 1px solid $primary-pink;
 
-                    .desktop-btn {
 
-                    }
-                }
+                .text-icon {}
             }
-            .filter-list {
-                
- 
-    
-                .title {
 
-    
-                    p {
-                        
-                        color: $white;
-                    }
-                }
-    
+
+            .filter-bar {
+                display: none;
+
                 .item-area {
 
-    
                     .item {
 
-    
-                        p {
-                            
+
+                        @media (max-width: $min_tablet) {
+
+                            border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
+                        }
+
+                        &:hover {
+
+                            background-color: $primary-pink;
+
                             color: $white;
 
+                            svg {
+                                path {
+
+                                    fill: $white;
+
+                                }
+                            }
                         }
-    
-    
-                    }
-                }
-    
-                .area-btn {
-                    
-                    color: $white;
-    
-                    .btn-pink,
-                    .btn-border-gray {
-                        
-                    }
-    
-                    .btn-border-gray {
 
-                        color: $white;
+                        .icon {
+                            margin: 0;
+                            padding: 0;
 
-                        border: 1.5px solid $white;
+                            &:hover {
+                                color: $white;
+                            }
+                        }
 
-                    }
-                    
-                    .btn-pink {
-
-                        color: $white;
-
-                        border: 1.5px solid $white;
-                    
-                        background-color: $primary-pink;
                         p {
+                            @media (max-width: $min_tablet) {
 
-                            
+                                color: $white;
+                            }
                         }
-                    
                     }
-    
+
+                    .area-btn {
+
+
+                        .btn-border-gray {
+                            color: $gray-4;
+
+                            border: 1.5px solid $gray-6;
+
+
+                            background-color: transparent;
+
+                        }
+
+                        .btn-pink {
+
+                            color: $white;
+                            border: 1.5px solid $gray-6;
+
+                            background-color: $primary-pink;
+
+                        }
+
+                    }
                 }
             }
-    
-            .filter-bar {
-                display: none;
-            }
         }
-    
+
         @media (min-width: $min_tablet) {
-            .filter-list {
+
+
+            .btn-filter {
                 display: none;
             }
-            .btn-filter{
-                display: none;
-            }
-    
+
             .filter-bar {
+
                 display: flex;
-    
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: $white;
+                border-radius: 100px;
+                box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);
+                gap: 10px;
+                width: 90%;
+                padding-inline: 25px;
+
+                .item-area {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-around;
+                    gap: 20px;
+                    width: 100%;
+
+                    @media (min-width: $min_mobile) {
+
+                        .title {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: start;
+                            height: 50px;
+                            width: 100%;
+                            padding: 0;
+                            border-top-right-radius: 8px;
+                            border-top-left-radius: 8px;
+
+                            p {
+                                margin-left: 10px;
+                                padding: 0;
+                            }
+                        }
+                    }
+
+                    @media (min-width: $min_tablet) {
+
+                        .title {
+                            display: none;
+                        }
+                    }
+
+                    .item {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        text-align: center;
+                        gap: 15px;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        border-radius: 50px;
+                        color: $gray-3;
+
+                        &:hover {
+
+                            background-color: $primary-pink;
+                            cursor: pointer;
+                            border-radius: 50px;
+                            color: $white;
+
+                            svg {
+                                path {
+
+                                    fill: $white;
+
+                                }
+                            }
+                        }
+
+                        .icon {
+                            margin: 0;
+                            padding: 0;
+
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+
+                        p {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+
+                    @media (min-width: $min_mobile) {
+                        .area-btn {
+                            width: 100%;
+                            padding-inline: 10px;
+                            margin-bottom: 20px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+
+
+                            .btn-border-gray {
+
+                                height: 50px;
+                                min-width: 120px;
+                                color: $gray-4;
+                                border-radius: 6px;
+                                border: 1.5px solid $gray-6;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-content: center;
+                                cursor: pointer;
+
+                                background-color: transparent;
+
+                                p {
+
+                                }
+                            }
+
+                            .btn-pink {
+
+                                height: 50px;
+                                min-width: 120px;
+                                color: $white;
+                                border-radius: 6px;
+                                border: 1.5px solid $gray-6;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-content: center;
+                                cursor: pointer;
+
+                                background-color: $primary-pink;
+
+                                p {
+                                    margin: 0;
+                                    padding: 0;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 150%;
+
+                                }
+
+                            }
+
+                        }
+                    }
+
+                    @media (min-width: $min_tablet) {
+                        .area-btn {
+
+                            display: none;
+
+                        }
+                    }
+
+                }
+
+
             }
-    
+
         }
+
+
     }
 }
