@@ -2984,6 +2984,7 @@ footer .copyright {
   .dark .filter-container .filter-bar .item-area .item .icon {
     margin: 0;
     padding: 0;
+    align-self: center;
   }
   .dark .filter-container .filter-bar .item-area .item .icon:hover {
     color: #fff;
@@ -2991,6 +2992,7 @@ footer .copyright {
   .dark .filter-container .filter-bar .item-area .item p {
     margin: 0;
     padding: 0;
+    align-self: center;
   }
 }
 @media (min-width: 768px) and (min-width: 0px) {
