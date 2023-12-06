@@ -1336,10 +1336,12 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 .main-container {
   margin-top: 88px;
+  margin-bottom: 88px;
 }
 
 .main-container-p {
   padding-top: 88px;
+  padding-bottom: 88px;
 }
 
 .dark {
