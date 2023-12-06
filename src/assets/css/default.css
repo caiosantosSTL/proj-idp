@@ -640,6 +640,15 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   padding-bottom: 15px;
 }
 
+.px-24 {
+  padding-inline: 24px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .pt-64 {
   padding-top: 64px;
 }
@@ -685,14 +694,15 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 }
 
 .btn {
-  height: 50px;
   min-width: 120px;
   color: #fff;
   border-radius: 6px;
   border: 1.5px solid #fff;
   display: inline-block;
   cursor: pointer;
-  padding: 10px;
+  padding-inline: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 .btn > span,
 .btn > div,
@@ -2091,9 +2101,10 @@ footer .copyright {
 .section-jointext .text-box {
   max-width: 466px;
 }
-.section-jointext .text-box .btn-area {
-  max-width: 226px;
-  align-self: center;
+.section-jointext .text-box .btn-area .btn {
+  padding-inline: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .dark .section-jointext {
