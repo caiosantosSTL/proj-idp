@@ -3,18 +3,7 @@
 .section-homevideo {
     background-color: $white;
 
-
-    .title {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
     .cards-area {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
 
         @include homevideo-card;
     }

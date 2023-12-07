@@ -2466,16 +2466,6 @@ footer .copyright {
 .section-homevideo {
   background-color: #fff;
 }
-.section-homevideo .title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.section-homevideo .cards-area {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
 .section-homevideo .cards-area .card-video {
   margin-bottom: 10px;
 }
