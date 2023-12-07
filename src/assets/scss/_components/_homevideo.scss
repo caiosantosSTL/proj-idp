@@ -1,0 +1,51 @@
+@import "../_partials/cards";
+
+.section-homevideo {
+    background-color: $white;
+
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .cards-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        @include homevideo-card;
+    }
+
+
+    .btn-seemore {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 6px;
+        cursor: pointer;
+
+    }
+
+}
+
+
+.dark{
+    .section-homevideo {
+        background-color: $dark-secondary;
+    
+        .cards-area {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+            @include homevideo-card-dark;
+        }
+    
+    
+    }
+}

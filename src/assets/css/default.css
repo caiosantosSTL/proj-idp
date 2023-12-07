@@ -548,6 +548,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   margin-top: 24px;
 }
 
+.mb-42 {
+  margin-bottom: 42px;
+}
+
 .mt-42 {
   margin-top: 42px;
 }
@@ -2453,6 +2457,93 @@ footer .copyright {
 
 .dark .section-recent {
   background-color: #3F3C4A;
+}
+
+.section-homevideo {
+  background-color: #fff;
+}
+.section-homevideo .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-homevideo .cards-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section-homevideo .cards-area .card-video {
+  margin-bottom: 10px;
+}
+.section-homevideo .cards-area .card-video .card-container {
+  position: relative;
+  width: 95%;
+  background-color: red;
+  margin: 0 auto;
+}
+.section-homevideo .cards-area .card-video .card-container::before {
+  content: "";
+  padding-top: 165.7142857143%;
+  background-color: yellow;
+  /* (altura / largura) * 100% */
+  display: block;
+}
+.section-homevideo .cards-area .card-video .card-container .card {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+}
+.section-homevideo .cards-area .card-video .card-container .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.section-homevideo .cards-area .card-video .card-container .play-icon {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  cursor: pointer;
+}
+.section-homevideo .cards-area .card-video .card-container .text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  width: 95%;
+  margin: 6px;
+  padding: 4px;
+  border-radius: 4px;
+}
+.section-homevideo .btn-seemore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.dark .section-homevideo {
+  background-color: #272530;
+}
+.dark .section-homevideo .cards-area {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.dark .section-homevideo .cards-area .card-video .text-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #272530;
+  width: 95%;
+  margin: 6px;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 body {

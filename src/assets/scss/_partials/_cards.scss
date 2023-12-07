@@ -1,0 +1,78 @@
+// homevideo
+
+@mixin homevideo-card {
+
+    .card-video {
+        margin-bottom: 10px;
+
+        .card-container {
+            position: relative;
+            width: 95%;
+            background-color: red;
+            margin: 0 auto;
+
+            &::before {
+                content: "";
+                padding-top: calc((464 / 280) * 100%);
+                background-color: yellow;
+                /* (altura / largura) * 100% */
+                display: block;
+            }
+
+            .card {
+                position: absolute;
+                top: 0;
+                left: 0%;
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 4px;
+                    object-fit: cover;
+                }
+
+
+            }
+
+            .play-icon {
+                position: absolute;
+                top: 35%;
+                left: 40%;
+                cursor: pointer;
+            }
+
+            .text-box {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: $white;
+                width: 95%;
+                margin: 6px;
+                padding: 4px;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+
+@mixin homevideo-card-dark {
+
+    .card-video {
+
+        .text-box {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: $dark-secondary;
+            width: 95%;
+            margin: 6px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+    }
+
+}
