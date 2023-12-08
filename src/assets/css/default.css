@@ -2512,6 +2512,10 @@ footer .copyright {
   padding: 4px;
   border-radius: 4px;
 }
+.section-homevideo .title {
+  max-width: 800px;
+  margin: 0 auto;
+}
 .section-homevideo .btn-seemore {
   display: flex;
   align-items: center;
