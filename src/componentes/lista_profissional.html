@@ -8,13 +8,13 @@
 
 <div class="filter-area mt-42 mb-24">
 
-    <div class="filter-container">
+    <div class="filter-container fs-20 fw-semibold lineheigth-24 gray-4 p-5">
 
         <!-- btn filter -->
-        <div class="btn-filter d-block w-100" onclick="openList('filter-list-id')">
-            <div class="text-icon">
-                <p class="desktop-btn">Filtrar por categoria</p>
-                <i>
+        <div class="btn-filter d-block w-100 bg-white mb-10" onclick="openList('filter-list-id')">
+            <div class="text-icon d-flex justify-content-center flex-direction-row p-15">
+                <p class="fs-18 fw-bold primary-pink lineheigth-32 m-0 p-0">Filtrar por categoria</p>
+                <i class="fs-18 fw-bold primary-pink lineheigth-32 m-0 p-0">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M6 13H18V11H6M3 6V8H21V6M10 18H14V16H10V18Z" fill="#EC148E" />
                     </svg>
@@ -38,11 +38,23 @@
         </script>
 
         <!-- filter bar -->
-        <div class="filter-bar" id="filter-list-id">
-            <div class="item-area">
+        <div class="filter-bar opened" id="filter-list-id">
+            <div class="item-area w-100 p-5">
 
-                <div class="title" >
-                    <p class="text-white m-0 ml-10 p-0">Filtrar por:</p>
+                <p class="title fw-light p-10 m-0" >
+                    Filtrar por:
+                </p>
+
+                
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M20.125 17C20.6983 17 21.1817 17.2 21.575 17.6C21.9683 18 22.1617 18.4667 22.155 19L14.125 22L7.12501 20V11H9.07501L16.345 13.69C16.865 13.8967 17.125 14.27 17.125 14.81C17.125 15.1233 17.0117 15.3967 16.785 15.63C16.5583 15.8633 16.2717 15.9867 15.925 16H13.125L11.375 15.33L11.045 16.27L13.125 17H20.125ZM16.125 3.23C16.8317 2.41 17.7317 2 18.825 2C19.7317 2 20.4983 2.33333 21.125 3C21.7517 3.66667 22.085 4.43333 22.125 5.3C22.125 5.98667 21.7917 6.80667 21.125 7.76C20.4583 8.71333 19.8017 9.51 19.155 10.15C18.5083 10.79 17.4983 11.74 16.125 13C14.7383 11.74 13.7183 10.79 13.065 10.15C12.4117 9.51 11.755 8.71333 11.095 7.76C10.435 6.80667 10.1117 5.98667 10.125 5.3C10.125 4.39333 10.4483 3.62667 11.095 3C11.7417 2.37333 12.5217 2.04 13.435 2C14.5017 2 15.3983 2.41 16.125 3.23ZM1.10901 11H5.12501V22H1.10901V11Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Travestis</p>
                 </div>
 
                 <div class="item">
@@ -53,18 +65,9 @@
                                 fill="#EC148E" />
                         </svg>
                     </div>
-                    <p class="m-0 p-0">Destaques</p>
+                    <p class="m-0 p-0">Novidades</p>
                 </div>
-                <div class="item">
-                    <div class="icon p-0 m-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
-                            <path
-                                d="M20.125 17C20.6983 17 21.1817 17.2 21.575 17.6C21.9683 18 22.1617 18.4667 22.155 19L14.125 22L7.12501 20V11H9.07501L16.345 13.69C16.865 13.8967 17.125 14.27 17.125 14.81C17.125 15.1233 17.0117 15.3967 16.785 15.63C16.5583 15.8633 16.2717 15.9867 15.925 16H13.125L11.375 15.33L11.045 16.27L13.125 17H20.125ZM16.125 3.23C16.8317 2.41 17.7317 2 18.825 2C19.7317 2 20.4983 2.33333 21.125 3C21.7517 3.66667 22.085 4.43333 22.125 5.3C22.125 5.98667 21.7917 6.80667 21.125 7.76C20.4583 8.71333 19.8017 9.51 19.155 10.15C18.5083 10.79 17.4983 11.74 16.125 13C14.7383 11.74 13.7183 10.79 13.065 10.15C12.4117 9.51 11.755 8.71333 11.095 7.76C10.435 6.80667 10.1117 5.98667 10.125 5.3C10.125 4.39333 10.4483 3.62667 11.095 3C11.7417 2.37333 12.5217 2.04 13.435 2C14.5017 2 15.3983 2.41 16.125 3.23ZM1.10901 11H5.12501V22H1.10901V11Z"
-                                fill="#EC148E" />
-                        </svg>
-                    </div>
-                    <p class="m-0 p-0">Destaques</p>
-                </div>
+
                 <div class="item">
                     <div class="icon p-0 m-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -73,7 +76,7 @@
                                 fill="#EC148E" />
                         </svg>
                     </div>
-                    <p class="m-0 p-0">Destaques</p>
+                    <p class="m-0 p-0">Massagistas</p>
                 </div>
                 <div class="item">
                     <div class="icon p-0 m-0">
@@ -83,7 +86,7 @@
                                 fill="#EC148E" />
                         </svg>
                     </div>
-                    <p class="m-0 p-0">Destaques</p>
+                    <p class="m-0 p-0">Vende Conteúdo</p>
                 </div>
                 <div class="item">
                     <div class="icon p-0 m-0">
@@ -93,20 +96,10 @@
                                 fill="#EC148E" />
                         </svg>
                     </div>
-                    <p class="m-0 p-0">Destaques</p>
+                    <p class="m-0 p-0">Com Vídeos</p>
                 </div>               
-            </div>
-
-            <div class="btn btn-pink d-block w-100 btn-close-list">
-                <p class="text-white w-100 text-center" onclick="openList('filter-list-id')">Fechar</p>
-            </div>
-
+            </div>           
         </div>
-
-
-
-
-
     </div>
 </div>
 
