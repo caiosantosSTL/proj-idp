@@ -1,23 +1,191 @@
-
-
 <section class="container">
     <div class="grid grid-c4 grid-c2 grid-c1 main-container">
 
         <div class="tile-layout__item">
 
+            <div class="tile-layout__content">
+                <div class="header-area">
+                    <div class="photo-profile">
+                        <img src="https://images.unsplash.com/photo-1699164802258-19f3d460a0d7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="details-profile">
+                        <div class="name-time">
+                            <p class="mobile-h3">EmilyDuc</p>
+                            <p class="mobile-h3">Há 4 horas</p>
+
+                        </div>
+                        <p class="desktop-h4">Acompanhe meu ultimo post!</p>
+                        <div class="stars">
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M8.00016 11.5135L12.1202 14.0002L11.0268 9.3135L14.6668 6.16016L9.8735 5.74683L8.00016 1.3335L6.12683 5.74683L1.3335 6.16016L4.96683 9.3135L3.88016 14.0002L8.00016 11.5135Z"
+                                        fill="#FF9900" />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div class="layout__image-container tile-layout__image">
                 <a href="#">
-                    <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
                 </a>
             </div>
 
             <div class="tile-layout__content">
-                <h3 class="layout__title">
-                    <a data-vars-ga-category="Loop Article" data-vars-ga-action="Tile Layout Item"
-                        data-vars-ga-label="/2023/12/gnome-shell-45-2-ubuntu-23-10" class="layout__title-link"
-                        href="https://www.omgubuntu.co.uk/2023/12/gnome-shell-45-2-ubuntu-23-10">
-                        GNOME Shell 45.2 Update Rolling out to Ubuntu 23.10 </a>
-                </h3>
+                <div class="social-area">
+                    <div class="action-area">
+                        <div class="top">
+                            <div class="like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M12.6665 21.35L11.2165 20.03C6.0665 15.36 2.6665 12.27 2.6665 8.5C2.6665 5.41 5.0865 3 8.1665 3C9.9065 3 11.5765 3.81 12.6665 5.08C13.7565 3.81 15.4265 3 17.1665 3C20.2465 3 22.6665 5.41 22.6665 8.5C22.6665 12.27 19.2665 15.36 14.1165 20.03L12.6665 21.35Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </i>
+                                <p class="mini-text">(2) Curtir</p>
+                            </div>
+                            <div class="comment" onclick="openComment()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M9.5 22C9.23478 22 8.98043 21.8946 8.79289 21.7071C8.60536 21.5196 8.5 21.2652 8.5 21V18H4.5C3.96957 18 3.46086 17.7893 3.08579 17.4142C2.71071 17.0391 2.5 16.5304 2.5 16V4C2.5 2.89 3.4 2 4.5 2H20.5C21.0304 2 21.5391 2.21071 21.9142 2.58579C22.2893 2.96086 22.5 3.46957 22.5 4V16C22.5 16.5304 22.2893 17.0391 21.9142 17.4142C21.5391 17.7893 21.0304 18 20.5 18H14.4L10.7 21.71C10.5 21.9 10.25 22 10 22H9.5Z"
+                                            fill="#C6C5CE" />
+                                    </svg>
+                                </i>
+                                <p class="mini-text">Comentar</p>
+
+                                <script>
+                                    function openComment() {
+                                        var openC = document.querySelector('#open-comment-area-id');
+                                        if (openC.style.display === 'none') {
+                                            openC.style.display = 'flex'
+                                        } else {
+                                            openC.style.display = 'none'
+                                        }
+                                    }
+                                </script>
+                            </div>
+                            <div class="share">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                        fill="none">
+                                        <path
+                                            d="M21.833 12L14.833 5V9C7.83301 10 4.83301 15 3.83301 20C6.33301 16.5 9.83301 14.9 14.833 14.9V19L21.833 12Z"
+                                            fill="#C6C5CE" />
+                                    </svg>
+                                </i>
+                                <p class="mini-text">Compartilhar</p>
+                            </div>
+                        </div>
+                        <!-- comment write area -->
+                        <div id="open-comment-area-id" class="comment-write-area" style="display: none;">
+                            <input class="input-name" type="text" placeholder="Seu nome">
+                            <input class="input-comment" type="text" placeholder="Digite seu comentario">
+                            <div class="btn-area">
+                                <div class="btn-send">
+                                    <p class="desktop-btn">Enviar</p>
+                                </div>
+                                <div class="btn-cancel">
+                                    <p class="desktop-btn">Cancelar</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="comment-area">
+                            <!-- card comment -->
+                            <div class="comment-card">
+                                <div class="name-time">
+                                    <p class="mobile-h3">Jorge</p>
+                                    <p class="mini-text2">Há 3 Dias</p>
+                                </div>
+                                <div class="content">
+                                    <p class="mobile-h4">Lorem ipsum dolor sit amet ...</p>
+                                </div>
+                                <div class="like-answer">
+                                    <div class="like">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                viewBox="0 0 25 24" fill="none">
+                                                <path
+                                                    d="M12.6665 21.35L11.2165 20.03C6.0665 15.36 2.6665 12.27 2.6665 8.5C2.6665 5.41 5.0865 3 8.1665 3C9.9065 3 11.5765 3.81 12.6665 5.08C13.7565 3.81 15.4265 3 17.1665 3C20.2465 3 22.6665 5.41 22.6665 8.5C22.6665 12.27 19.2665 15.36 14.1165 20.03L12.6665 21.35Z"
+                                                    fill="#EC148E" />
+                                            </svg>
+                                        </i>
+                                        <p class="mobile-h3">40</p>
+                                    </div>
+                                    <div class="answer">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                viewBox="0 0 25 24" fill="none">
+                                                <path
+                                                    d="M9.5 22C9.23478 22 8.98043 21.8946 8.79289 21.7071C8.60536 21.5196 8.5 21.2652 8.5 21V18H4.5C3.96957 18 3.46086 17.7893 3.08579 17.4142C2.71071 17.0391 2.5 16.5304 2.5 16V4C2.5 2.89 3.4 2 4.5 2H20.5C21.0304 2 21.5391 2.21071 21.9142 2.58579C22.2893 2.96086 22.5 3.46957 22.5 4V16C22.5 16.5304 22.2893 17.0391 21.9142 17.4142C21.5391 17.7893 21.0304 18 20.5 18H14.4L10.7 21.71C10.5 21.9 10.25 22 10 22H9.5Z"
+                                                    fill="#C6C5CE" />
+                                            </svg>
+                                        </i>
+                                        <p class="mobile-h3">Responder</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- res card -->
+                            <div class="comment-card-res">
+
+                                <div class="name-time">
+                                    <div class="icon-name">
+                                        <div class="icon-response">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18"
+                                                viewBox="0 0 16 18" fill="none">
+                                                <path
+                                                    d="M16 12L10.5 17.5L9.08 16.09L12.17 13H6.5C2.91 13 0 10.09 0 6.5V0H2V6.5C2 9 4 11 6.5 11H12.17L9.09 7.91L10.5 6.5L16 12Z"
+                                                    fill="#524F5F" />
+                                            </svg>
+                                        </div>
+                                        <p class="mobile-h3">Jones</p>
+                                    </div>
+                                    <p class="mini-text2">Há 3 Dias</p>
+                                </div>
+                                <div class="content">
+                                    <p class="mobile-h4">Lorem ipsum dolor sit amet ...</p>
+                                </div>
+                                <div class="like-answer">
+                                    <div class="like">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                viewBox="0 0 25 24" fill="none">
+                                                <path
+                                                    d="M12.6665 21.35L11.2165 20.03C6.0665 15.36 2.6665 12.27 2.6665 8.5C2.6665 5.41 5.0865 3 8.1665 3C9.9065 3 11.5765 3.81 12.6665 5.08C13.7565 3.81 15.4265 3 17.1665 3C20.2465 3 22.6665 5.41 22.6665 8.5C22.6665 12.27 19.2665 15.36 14.1165 20.03L12.6665 21.35Z"
+                                                    fill="#7A7786" />
+                                            </svg>
+                                        </i>
+                                        <p class="mobile-h3">40</p>
+                                    </div>
+                                    <div class="answer">
+                                        <i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                                viewBox="0 0 25 24" fill="none">
+                                                <path
+                                                    d="M9.5 22C9.23478 22 8.98043 21.8946 8.79289 21.7071C8.60536 21.5196 8.5 21.2652 8.5 21V18H4.5C3.96957 18 3.46086 17.7893 3.08579 17.4142C2.71071 17.0391 2.5 16.5304 2.5 16V4C2.5 2.89 3.4 2 4.5 2H20.5C21.0304 2 21.5391 2.21071 21.9142 2.58579C22.2893 2.96086 22.5 3.46957 22.5 4V16C22.5 16.5304 22.2893 17.0391 21.9142 17.4142C21.5391 17.7893 21.0304 18 20.5 18H14.4L10.7 21.71C10.5 21.9 10.25 22 10 22H9.5Z"
+                                                    fill="#C6C5CE" />
+                                            </svg>
+                                        </i>
+                                        <p class="mobile-h3">Responder</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -28,7 +196,8 @@
 
             <div class="layout__image-container tile-layout__image">
                 <a href="#">
-                    <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="">
                 </a>
             </div>
 
