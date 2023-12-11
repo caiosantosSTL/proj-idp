@@ -1,52 +1,499 @@
-/*
-Error: File to import not found or unreadable: ../_partials/colors.
-       Load path: /home/caio/Documentos/projHtml/ilhaP4-2/componentsHtml/section-homephoto
-        on line 1 of /home/caio/Documentos/projHtml/ilhaP4-2/componentsHtml/section-homephoto/section-homephoto-style.scss
+@media only screen and (min-width: 0px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%; } }
+@media (min-width: 0px) {
+  .col-sm-1 {
+    width: 8.33%; }
 
-1: @import "../_partials/colors";
-2: @import "../_partials/fonts";
-3: @import "../_partials/sizes";
-4: 
-5: @mixin card-social{
-6:     .card-social {
+  .col-sm-2 {
+    width: 16.66%; }
 
-Backtrace:
-/home/caio/Documentos/projHtml/ilhaP4-2/componentsHtml/section-homephoto/section-homephoto-style.scss:1
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:44:in `import'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-/usr/share/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-/usr/share/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-/usr/share/koala/bin/sass:22:in `load'
-/usr/share/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../_partials/colors.\A        Load path: /home/caio/Documentos/projHtml/ilhaP4-2/componentsHtml/section-homephoto\A         on line 1 of /home/caio/Documentos/projHtml/ilhaP4-2/componentsHtml/section-homephoto/section-homephoto-style.scss\A \A 1: @import \"../_partials/colors\";\A 2: @import \"../_partials/fonts\";\A 3: @import \"../_partials/sizes\";\A 4: \A 5: @mixin card-social{\A 6:     .card-social {"; }
+  .col-sm-3 {
+    width: 25%; }
+
+  .col-sm-4 {
+    width: 33.33%; }
+
+  .col-sm-5 {
+    width: 41.66%; }
+
+  .col-sm-6 {
+    width: 50%; }
+
+  .col-sm-7 {
+    width: 58.33%; }
+
+  .col-sm-8 {
+    width: 66.66%; }
+
+  .col-sm-9 {
+    width: 75%; }
+
+  .col-sm-10 {
+    width: 83.33%; }
+
+  .col-sm-11 {
+    width: 91.66%; }
+
+  .col-sm-12 {
+    width: 100%; } }
+@media (min-width: 768px) {
+  .col-md-1 {
+    width: 8.33%; }
+
+  .col-md-2 {
+    width: 16.66%; }
+
+  .col-md-3 {
+    width: 25%; }
+
+  .col-md-4 {
+    width: 33.33%; }
+
+  .col-md-5 {
+    width: 41.66%; }
+
+  .col-md-6 {
+    width: 50%; }
+
+  .col-md-7 {
+    width: 58.33%; }
+
+  .col-md-8 {
+    width: 66.66%; }
+
+  .col-md-9 {
+    width: 75%; }
+
+  .col-md-10 {
+    width: 83.33%; }
+
+  .col-md-11 {
+    width: 91.66%; }
+
+  .col-md-12 {
+    width: 100%; } }
+@media (min-width: 1200px) {
+  .col-lg-1 {
+    width: 8.33%; }
+
+  .col-lg-2 {
+    width: 16.66%; }
+
+  .col-lg-3 {
+    width: 25%; }
+
+  .col-lg-4 {
+    width: 33.33%; }
+
+  .col-lg-5 {
+    width: 41.66%; }
+
+  .col-lg-6 {
+    width: 50%; }
+
+  .col-lg-7 {
+    width: 58.33%; }
+
+  .col-lg-8 {
+    width: 66.66%; }
+
+  .col-lg-9 {
+    width: 75%; }
+
+  .col-lg-10 {
+    width: 83.33%; }
+
+  .col-lg-11 {
+    width: 91.66%; }
+
+  .col-lg-12 {
+    width: 100%; } }
+* {
+  box-sizing: border-box; }
+
+.section-homephoto {
+  font-family: archivo;
+  background-color: #fff;
+  padding-top: 64px;
+  padding-bottom: 64px; }
+  .section-homephoto .container {
+    max-width: 1500px;
+    margin: 0 auto; }
+    .section-homephoto .container .text-area {
+      display: flex;
+      flex-direction: column; }
+      .section-homephoto .container .text-area .titile .desktop-h2 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 40px;
+        text-align: center;
+        color: #3F3C4A; }
+      .section-homephoto .container .text-area .subheading .desktop-h4 {
+        /* Fonts Web/H4 */
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        color: #7A7786; }
+    .section-homephoto .container .cards-area {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .section-homephoto .container .cards-area .card-photo {
+        display: block;
+        margin-bottom: 10px; }
+        .section-homephoto .container .cards-area .card-photo .card-container {
+          position: relative;
+          background-color: #fff;
+          width: 95%;
+          height: auto;
+          border-radius: 8px;
+          box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+          margin: 0 auto; }
+          .section-homephoto .container .cards-area .card-photo .card-container::before {
+            content: "";
+            width: 100%;
+            height: auto;
+            padding-top: calc((800 / 384) * 100%);
+            background-color: yellow;
+            /* (altura / largura) * 100% */
+            display: block; }
+          .section-homephoto .container .cards-area .card-photo .card-container .card {
+            background-color: #ffc7c7;
+            border-radius: 8px;
+            width: 100%;
+            height: auto;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            display: flex;
+            flex-direction: column;
+            gap: 6px; }
+            .section-homephoto .container .cards-area .card-photo .card-container .card .header-area {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              gap: 10px;
+              background-color: #fff;
+              border-radius: 8px;
+              padding: 8px; }
+              .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .photo-profile {
+                width: 150px;
+                height: 80px; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .photo-profile img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: 8px; }
+              .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .details-profile {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 6px; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .details-profile .name-time {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .details-profile .name-time .mobile-h3 {
+                    /* Fonts Mobile/H3 */
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 133.333% */
+                    color: #7A7786;
+                    margin: 0;
+                    padding: 0; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .header-area .details-profile .desktop-h4 {
+                  /* Fonts Web/H4 */
+                  font-size: 20px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 24px;
+                  margin: 0;
+                  padding: 0;
+                  color: #3F3C4A; }
+            .section-homephoto .container .cards-area .card-photo .card-container .card .photo-area {
+              width: 100%;
+              height: auto; }
+              .section-homephoto .container .cards-area .card-photo .card-container .card .photo-area img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 8px; }
+            .section-homephoto .container .cards-area .card-photo .card-container .card .social-area {
+              width: 100%;
+              height: auto;
+              display: flex;
+              flex-direction: column;
+              gap: 8px; }
+              .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area {
+                width: 100%; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top {
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap;
+                  justify-content: space-around;
+                  border-bottom: 1px solid var(--color-gray-05, #C6C5CE); }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .like {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    flex: 0 0 100px; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .like .mini-text {
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 24px; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .comment {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    flex: 0 0 100px;
+                    cursor: pointer; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .comment .mini-text {
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 24px; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .share {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 8px;
+                    flex: 0 0 100px; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .top .share .mini-text {
+                      font-size: 16px;
+                      font-style: normal;
+                      font-weight: 600;
+                      line-height: 24px; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
+                  gap: 16px;
+                  margin-top: 8px; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .input-name,
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .input-comment {
+                    padding: 16px;
+                    width: 100%;
+                    border-radius: 6px;
+                    border: 1px solid var(--color-gray-05, #C6C5CE);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .input-name:focus,
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .input-comment:focus {
+                      outline: none; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    gap: 8px; }
+                    @media (min-width: 0px) {
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area {
+                        flex-wrap: wrap; } }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-send {
+                      width: 176px;
+                      padding: 6px;
+                      gap: 10px;
+                      background-color: #EC148E;
+                      border-radius: 6px;
+                      cursor: pointer; }
+                      @media (min-width: 0px) {
+                        .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-send {
+                          width: 100%; } }
+                      @media (min-width: 768px) {
+                        .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-send {
+                          width: 176px; } }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-send .desktop-btn {
+                        color: #fff;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-align: center; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-cancel {
+                      width: 176px;
+                      padding: 6px;
+                      gap: 10px;
+                      background-color: #C6C5CE;
+                      border-radius: 6px;
+                      cursor: pointer; }
+                      @media (min-width: 0px) {
+                        .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-cancel {
+                          width: 100%; } }
+                      @media (min-width: 768px) {
+                        .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-cancel {
+                          width: 176px; } }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-write-area .btn-area .btn-cancel .desktop-btn {
+                        color: #fff;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-align: center; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card {
+                  display: flex;
+                  flex-direction: column;
+                  background-color: #F1F0F5;
+                  margin: 8px;
+                  padding: 6px;
+                  border-radius: 8px;
+                  gap: 6px; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .name-time {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .name-time .mobile-h3 {
+                      /* Fonts Mobile/H3 */
+                      font-size: 18px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 24px;
+                      /* 133.333% */
+                      margin: 0;
+                      padding: 0;
+                      color: #7A7786; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .name-time .mini-text2 {
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16px;
+                      margin: 0;
+                      padding: 0;
+                      color: #7A7786; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .content .mobile-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 120% */
+                    margin: 0;
+                    padding: 0;
+                    color: #3F3C4A; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .like-answer {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .like-answer .like {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      gap: 6px;
+                      margin: 0;
+                      padding: 0; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .like-answer .like .mobile-h3 {
+                        /* Fonts Mobile/H3 */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        /* 133.333% */
+                        color: #7A7786; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .like-answer .answer {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      gap: 6px;
+                      margin: 0;
+                      padding: 0;
+                      cursor: pointer; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card .like-answer .answer .mobile-h3 {
+                        /* Fonts Mobile/H3 */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        /* 133.333% */
+                        color: #7A7786; }
+                .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res {
+                  display: flex;
+                  flex-direction: column;
+                  background-color: #F1F0F5;
+                  margin: 8px;
+                  padding: 6px;
+                  border-radius: 8px;
+                  gap: 6px; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .name-time {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .name-time .icon-name {
+                      display: flex;
+                      flex-direction: row;
+                      gap: 8px; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .name-time .icon-name .icon-response {
+                        display: flex;
+                        align-items: start;
+                        padding-inline: 8px; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .name-time .icon-name .mobile-h3 {
+                        /* Fonts Mobile/H3 */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        /* 133.333% */
+                        margin: 0;
+                        padding: 0;
+                        color: #7A7786; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .name-time .mini-text2 {
+                      font-size: 14px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: 16px;
+                      margin: 0;
+                      padding: 0;
+                      color: #7A7786; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .content .mobile-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 120% */
+                    margin: 0;
+                    padding: 0;
+                    color: #3F3C4A; }
+                  .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .like-answer {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .like-answer .like {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      gap: 6px;
+                      margin: 0;
+                      padding: 0; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .like-answer .like .mobile-h3 {
+                        /* Fonts Mobile/H3 */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        /* 133.333% */
+                        color: #7A7786; }
+                    .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .like-answer .answer {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      gap: 6px;
+                      margin: 0;
+                      padding: 0; }
+                      .section-homephoto .container .cards-area .card-photo .card-container .card .social-area .action-area .comment-area .comment-card-res .like-answer .answer .mobile-h3 {
+                        /* Fonts Mobile/H3 */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        /* 133.333% */
+                        color: #7A7786; }
+
+/*# sourceMappingURL=section-homephoto-style.css.map */

@@ -3,10 +3,11 @@
 .tile-layout__item {
 	counter-increment: tile-item;
 	padding: 8px;
-	background-color: red;
+	background-color: $white;
 	border-radius: 8px;
     margin-bottom: 10px;
     //margin-inline: 8px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
 .tile-layout__image {
@@ -62,6 +63,38 @@ img {
 }
 
 // elements
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+
+  .titile {
+    .desktop-h2 {
+
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 40px;
+      text-align: center;
+      color: $gray-3;
+    }
+
+  }
+
+  .subheading {
+    .desktop-h4 {
+      /* Fonts Web/H4 */
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      text-align: center;
+      color: $gray-5;
+    }
+  }
+}
+
+
 
 .header-area {
     width: 100%;
