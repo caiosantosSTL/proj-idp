@@ -3126,13 +3126,13 @@ img {
   line-height: 16px;
   color: #7A7786;
 }
-.section-commentary .btn-area {
+.section-commentary .btn-area-comment {
   height: 100px;
   max-width: 200px;
   margin: 0 auto;
   position: relative;
 }
-.section-commentary .btn-area .btn-next {
+.section-commentary .btn-area-comment .btn-next {
   padding: 6px;
   text-align: center;
   max-width: 40px;
@@ -3141,10 +3141,10 @@ img {
   top: 50%;
   right: 0;
 }
-.section-commentary .btn-area .btn-next svg path {
+.section-commentary .btn-area-comment .btn-next svg path {
   fill: #3F3C4A;
 }
-.section-commentary .btn-area .btn-back {
+.section-commentary .btn-area-comment .btn-back {
   padding: 6px;
   text-align: center;
   max-width: 40px;
@@ -3153,7 +3153,7 @@ img {
   top: 50%;
   left: 0;
 }
-.section-commentary .btn-area .btn-back svg path {
+.section-commentary .btn-area-comment .btn-back svg path {
   fill: #3F3C4A;
 }
 
@@ -3166,10 +3166,10 @@ img {
 .dark .section-commentary .container .title-area .subtitle .desktop-h4 {
   color: #F1F0F5;
 }
-.dark .section-commentary .btn-area .btn-next svg path {
+.dark .section-commentary .btn-area-comment .btn-next svg path {
   fill: #fff;
 }
-.dark .section-commentary .btn-area .btn-back svg path {
+.dark .section-commentary .btn-area-comment .btn-back svg path {
   fill: #fff;
 }
 

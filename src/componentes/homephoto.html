@@ -63,7 +63,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">(2) Curtir</p>
                             </div>
-                            <div class="btn-action" onclick="openComment()">
+                            <div class="btn-action" onclick="openComment('open-comment-area-id')">
                                 <i>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                         fill="none">
@@ -74,16 +74,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">Comentar</p>
 
-                                <script>
-                                    function openComment() {
-                                        var openC = document.querySelector('#open-comment-area-id');
-                                        if (openC.style.display === 'none') {
-                                            openC.style.display = 'flex'
-                                        } else {
-                                            openC.style.display = 'none'
-                                        }
-                                    }
-                                </script>
+
                             </div>
                             <div class="btn-action">
                                 <i>
@@ -134,7 +125,7 @@
                                         </i>
                                         <p class="mobile-h3 gray-5 m-0 p-0 text-white">40</p>
                                     </div>
-                                    <div class="answer">
+                                    <div class="answer" onclick="openComment('open-res-area-id')">
                                         <i>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -147,6 +138,19 @@
                                     </div>
                                 </div>
                             </div>
+                        <!-- res write area -->
+                        <div id="open-res-area-id" class="comment-write-area" style="display: none;">
+                            <input class="input-name" type="text" placeholder="Seu nome">
+                            <input class="input-comment" type="text" placeholder="Digite seu comentario">
+                            <div class="btn-area">
+                                <div class="btn-send">
+                                    <p class="desktop-btn text-white">Enviar</p>
+                                </div>
+                                <div class="btn-cancel">
+                                    <p class="desktop-btn text-white">Cancelar</p>
+                                </div>
+                            </div>
+                        </div>
                             <!-- res card -->
                             <div class="comment-card">
 
@@ -336,6 +340,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <!-- res card -->
                             <div class="comment-card">
 
@@ -588,3 +593,14 @@
         </div>
     </div>
 </section>
+
+<script>
+    function openComment(idName) {
+        var openC = document.querySelector('#'+idName);
+        if (openC.style.display === 'none') {
+            openC.style.display = 'flex'
+        } else {
+            openC.style.display = 'none'
+        }
+    }
+</script>
