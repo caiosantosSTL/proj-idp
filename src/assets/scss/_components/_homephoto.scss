@@ -67,30 +67,15 @@ img {
 .text-area {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
 
   .titile {
-    .desktop-h2 {
-
-      font-size: 32px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 40px;
-      text-align: center;
-      color: $gray-3;
-    }
 
   }
 
   .subheading {
-    .desktop-h4 {
-      /* Fonts Web/H4 */
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px;
-      text-align: center;
-      color: $gray-5;
-    }
+
   }
 }
 
@@ -128,30 +113,10 @@ img {
         flex-direction: row;
         justify-content: space-between;
 
-        .mobile-h3 {
-          /* Fonts Mobile/H3 */
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 24px;
-          /* 133.333% */
-          color: $gray-5;
-          margin: 0;
-          padding: 0;
-        }
+
       }
 
-      .desktop-h4 {
-        /* Fonts Web/H4 */
 
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        margin: 0;
-        padding: 0;
-        color: $gray-3;
-      }
 
       .stars {}
     }
@@ -178,22 +143,8 @@ img {
         justify-content: space-around;
         border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
 
-        .like {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 8px;
-          flex: 0 0 100px;
 
-          .mini-text {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 24px;
-          }
-        }
-
-        .comment {
+        .btn-action {
           display: flex;
           flex-direction: row;
           align-items: center;
@@ -210,20 +161,6 @@ img {
           }
         }
 
-        .share {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 8px;
-          flex: 0 0 100px;
-
-          .mini-text {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 24px;
-          }
-        }
       }
 
 
@@ -318,215 +255,95 @@ img {
 
       .comment-area {
 
-        .comment-card {
-          display: flex;
-          flex-direction: column;
-          background-color: $section;
-          margin: 8px;
-          padding: 6px;
-          border-radius: 8px;
-          gap: 6px;
+        // comment card
+        // res card
 
-          .name-time {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .mobile-h3 {
-              /* Fonts Mobile/H3 */
-              font-size: 18px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-              /* 133.333% */
-              margin: 0;
-              padding: 0;
-              color: $gray-5;
-            }
-
-            .mini-text2 {
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 16px;
-              margin: 0;
-              padding: 0;
-              color: $gray-5;
-            }
-          }
-
-          .content {
-            .mobile-h4 {
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-              /* 120% */
-              margin: 0;
-              padding: 0;
-              color: $gray-3;
-            }
-          }
-
-          .like-answer {
-            display: flex;
-            flex-direction: row;
-            gap: 16px;
-
-            .like {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 6px;
-              margin: 0;
-              padding: 0;
-
-              .mobile-h3 {
-                /* Fonts Mobile/H3 */
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                /* 133.333% */
-                color: $gray-5;
-              }
-            }
-
-            .answer {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 6px;
-              margin: 0;
-              padding: 0;
-              cursor: pointer;
-
-              .mobile-h3 {
-                /* Fonts Mobile/H3 */
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                /* 133.333% */
-                color: $gray-5;
-
-              }
-            }
-          }
-
-        }
-
-        .comment-card-res {
-          display: flex;
-          flex-direction: column;
-          background-color: $section;
-          margin: 8px;
-          padding: 6px;
-          border-radius: 8px;
-          gap: 6px;
-
-          .name-time {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            .icon-name {
-              display: flex;
-              flex-direction: row;
-              gap: 8px;
-
-              .icon-response {
-                display: flex;
-                align-items: start;
-                padding-inline: 8px;
-
-              }
-
-              .mobile-h3 {
-                /* Fonts Mobile/H3 */
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                /* 133.333% */
-                margin: 0;
-                padding: 0;
-                color: $gray-5;
-              }
-            }
-
-            .mini-text2 {
-              font-size: 14px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 16px;
-              margin: 0;
-              padding: 0;
-              color: $gray-5;
-            }
-          }
-
-          .content {
-            .mobile-h4 {
-              font-size: 20px;
-              font-style: normal;
-              font-weight: 400;
-              line-height: 24px;
-              /* 120% */
-              margin: 0;
-              padding: 0;
-              color: $gray-3;
-            }
-          }
-
-          .like-answer {
-            display: flex;
-            flex-direction: row;
-            gap: 16px;
-
-            .like {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 6px;
-              margin: 0;
-              padding: 0;
-
-
-              .mobile-h3 {
-                /* Fonts Mobile/H3 */
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                /* 133.333% */
-                color: $gray-5;
-              }
-            }
-
-            .answer {
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              gap: 6px;
-              margin: 0;
-              padding: 0;
-
-              .mobile-h3 {
-                /* Fonts Mobile/H3 */
-                font-size: 18px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                /* 133.333% */
-                color: $gray-5;
-              }
-            }
-          }
-
-
-        }
       }
 
     }
   }
+
+// comment card
+  .comment-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $section;
+    margin: 8px;
+    padding-inline: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-radius: 8px;
+    gap: 6px;
+
+    .name-time {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &.icon-name {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+
+        .icon-response {
+          display: flex;
+          align-items: start;
+          padding-inline: 8px;
+
+        }
+
+      }
+
+    }
+
+    .content {
+
+    }
+
+    .like-answer {
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+
+      .like {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+
+      }
+
+      .answer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+
+      }
+    }
+
+  }
+
+  // icon name in res card
+  .name-time-res {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .icon-name {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+
+      .icon-response {
+        display: flex;
+        align-items: start;
+        padding-inline: 8px;
+
+      }
+
+    }
+
+  }
+

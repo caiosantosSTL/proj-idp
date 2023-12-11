@@ -1320,8 +1320,8 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 }
 
 @media (min-width: 1200px) {
-  .grid-c4 {
-    grid-template-columns: repeat(4, auto);
+  .grid-c3 {
+    grid-template-columns: repeat(3, auto);
   }
 }
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -2625,25 +2625,9 @@ img {
 .text-area {
   display: flex;
   flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.text-area .titile .desktop-h2 {
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 40px;
-  text-align: center;
-  color: #3F3C4A;
-}
-.text-area .subheading .desktop-h4 {
-  /* Fonts Web/H4 */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  text-align: center;
-  color: #7A7786;
-}
-
 .header-area {
   width: 100%;
   display: flex;
@@ -2674,27 +2658,6 @@ img {
   flex-direction: row;
   justify-content: space-between;
 }
-.header-area .details-profile .name-time .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  color: #7A7786;
-  margin: 0;
-  padding: 0;
-}
-.header-area .details-profile .desktop-h4 {
-  /* Fonts Web/H4 */
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  color: #3F3C4A;
-}
 .social-area {
   width: 100%;
   height: auto;
@@ -2712,20 +2675,7 @@ img {
   justify-content: space-around;
   border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
 }
-.social-area .action-area .top .like {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  flex: 0 0 100px;
-}
-.social-area .action-area .top .like .mini-text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-.social-area .action-area .top .comment {
+.social-area .action-area .top .btn-action {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -2733,20 +2683,7 @@ img {
   flex: 0 0 100px;
   cursor: pointer;
 }
-.social-area .action-area .top .comment .mini-text {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-}
-.social-area .action-area .top .share {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  flex: 0 0 100px;
-}
-.social-area .action-area .top .share .mini-text {
+.social-area .action-area .top .btn-action .mini-text {
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -2837,182 +2774,65 @@ img {
   line-height: 24px;
   text-align: center;
 }
-.social-area .action-area .comment-area .comment-card {
+.comment-card {
   display: flex;
   flex-direction: column;
   background-color: #F1F0F5;
   margin: 8px;
-  padding: 6px;
+  padding-inline: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   border-radius: 8px;
   gap: 6px;
 }
-.social-area .action-area .comment-area .comment-card .name-time {
+.comment-card .name-time {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.social-area .action-area .comment-area .comment-card .name-time .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  margin: 0;
-  padding: 0;
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card .name-time .mini-text2 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0;
-  padding: 0;
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card .content .mobile-h4 {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 120% */
-  margin: 0;
-  padding: 0;
-  color: #3F3C4A;
-}
-.social-area .action-area .comment-area .comment-card .like-answer {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-.social-area .action-area .comment-area .comment-card .like-answer .like {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
-  padding: 0;
-}
-.social-area .action-area .comment-area .comment-card .like-answer .like .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card .like-answer .answer {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-}
-.social-area .action-area .comment-area .comment-card .like-answer .answer .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card-res {
-  display: flex;
-  flex-direction: column;
-  background-color: #F1F0F5;
-  margin: 8px;
-  padding: 6px;
-  border-radius: 8px;
-  gap: 6px;
-}
-.social-area .action-area .comment-area .comment-card-res .name-time {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.social-area .action-area .comment-area .comment-card-res .name-time .icon-name {
+.comment-card .name-time.icon-name {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
-.social-area .action-area .comment-area .comment-card-res .name-time .icon-name .icon-response {
+.comment-card .name-time.icon-name .icon-response {
   display: flex;
   align-items: start;
   padding-inline: 8px;
 }
-.social-area .action-area .comment-area .comment-card-res .name-time .icon-name .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  margin: 0;
-  padding: 0;
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card-res .name-time .mini-text2 {
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  margin: 0;
-  padding: 0;
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card-res .content .mobile-h4 {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 120% */
-  margin: 0;
-  padding: 0;
-  color: #3F3C4A;
-}
-.social-area .action-area .comment-area .comment-card-res .like-answer {
+.comment-card .like-answer {
   display: flex;
   flex-direction: row;
   gap: 16px;
 }
-.social-area .action-area .comment-area .comment-card-res .like-answer .like {
+.comment-card .like-answer .like {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 6px;
-  margin: 0;
-  padding: 0;
 }
-.social-area .action-area .comment-area .comment-card-res .like-answer .like .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  color: #7A7786;
-}
-.social-area .action-area .comment-area .comment-card-res .like-answer .answer {
+.comment-card .like-answer .answer {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 6px;
-  margin: 0;
-  padding: 0;
+  cursor: pointer;
 }
-.social-area .action-area .comment-area .comment-card-res .like-answer .answer .mobile-h3 {
-  /* Fonts Mobile/H3 */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 133.333% */
-  color: #7A7786;
+
+.name-time-res {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name-time-res .icon-name {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.name-time-res .icon-name .icon-response {
+  display: flex;
+  align-items: start;
+  padding-inline: 8px;
 }
 
 body {
