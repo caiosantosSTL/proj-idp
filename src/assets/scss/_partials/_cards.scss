@@ -51,7 +51,7 @@
                 background-color: $white;
                 width: 95%;
                 margin: 6px;
-                padding: 4px;
+                padding: 8px;
                 border-radius: 4px;
             }
         }
@@ -120,6 +120,12 @@
 
 
         .stars {}
+    }
+}
+
+.dark{
+    .header-area{
+        background-color: $dark-primary;
     }
 }
 
@@ -325,6 +331,12 @@
         }
     }
 
+}
+
+.dark{
+    .comment-card{
+        background-color: $gray-3;
+    }
 }
 
 // icon name in res card

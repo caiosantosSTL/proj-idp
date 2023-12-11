@@ -8,6 +8,12 @@
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
 }
 
+.dark{
+  .tile-layout__item{
+    background-color: $dark-primary;
+  }
+}
+
 .tile-layout__image {
   margin-right: 1.5rem;
   width: 100%;

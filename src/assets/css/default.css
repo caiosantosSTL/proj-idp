@@ -1364,6 +1364,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   flex-direction: row;
   justify-content: space-between;
 }
+.dark .header-area {
+  background-color: #1C1B23;
+}
+
 .social-area {
   width: 100%;
   height: auto;
@@ -1523,6 +1527,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   align-items: center;
   gap: 6px;
   cursor: pointer;
+}
+
+.dark .comment-card {
+  background-color: #3F3C4A;
 }
 
 .name-time-res {
@@ -2720,6 +2728,10 @@ footer .copyright {
   flex-direction: row;
   justify-content: space-between;
 }
+.dark .header-area {
+  background-color: #1C1B23;
+}
+
 .social-area {
   width: 100%;
   height: auto;
@@ -2881,6 +2893,10 @@ footer .copyright {
   cursor: pointer;
 }
 
+.dark .comment-card {
+  background-color: #3F3C4A;
+}
+
 .name-time-res {
   display: flex;
   flex-direction: row;
@@ -2943,7 +2959,7 @@ footer .copyright {
   background-color: #fff;
   width: 95%;
   margin: 6px;
-  padding: 4px;
+  padding: 8px;
   border-radius: 4px;
 }
 .section-homevideo .title {
@@ -2985,6 +3001,10 @@ footer .copyright {
   border-radius: 8px;
   margin-bottom: 10px;
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.dark .tile-layout__item {
+  background-color: #1C1B23;
 }
 
 .tile-layout__image {
@@ -3043,6 +3063,116 @@ img {
   max-width: 800px;
   margin: 0 auto;
 }
+.section-commentary {
+  background-color: #F1F0F5;
+}
+.section-commentary .container-comment {
+  margin: 0 auto;
+  overflow: scroll;
+}
+@media (min-width: 0px) {
+  .section-commentary .container-comment {
+    max-width: 384px;
+  }
+}
+@media (min-width: 768px) {
+  .section-commentary .container-comment {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1025px) {
+  .section-commentary .container-comment {
+    max-width: 1152px;
+  }
+}
+.section-commentary .container-comment .comment-area {
+  gap: 16px;
+  padding-top: 26px;
+  width: 100%;
+  margin: 0 auto;
+  height: auto;
+  transition: transform 0.5s ease;
+  display: flex;
+}
+.section-commentary .container-comment .comment-area .card-comment {
+  background-color: #fff;
+  padding: 16px;
+  flex: 1 0 336px;
+  transition: transform 0.5s ease;
+}
+.section-commentary .container-comment .comment-area .card-comment .area-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.section-commentary .container-comment .comment-area .card-comment .area-profile .profile-photo {
+  background-color: #272530;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+.section-commentary .container-comment .comment-area .card-comment .area-profile .text-area .text-name {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  color: #3F3C4A;
+}
+.section-commentary .container-comment .comment-area .card-comment .comment-box .author .text-posted {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  color: #7A7786;
+}
+.section-commentary .btn-area {
+  height: 100px;
+  max-width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+.section-commentary .btn-area .btn-next {
+  padding: 6px;
+  text-align: center;
+  max-width: 40px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  right: 0;
+}
+.section-commentary .btn-area .btn-next svg path {
+  fill: #3F3C4A;
+}
+.section-commentary .btn-area .btn-back {
+  padding: 6px;
+  text-align: center;
+  max-width: 40px;
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  left: 0;
+}
+.section-commentary .btn-area .btn-back svg path {
+  fill: #3F3C4A;
+}
+
+.dark .section-commentary {
+  background-color: #3F3C4A;
+}
+.dark .section-commentary .container .title-area .title .desktop-h2 {
+  color: #fff;
+}
+.dark .section-commentary .container .title-area .subtitle .desktop-h4 {
+  color: #F1F0F5;
+}
+.dark .section-commentary .btn-area .btn-next svg path {
+  fill: #fff;
+}
+.dark .section-commentary .btn-area .btn-back svg path {
+  fill: #fff;
+}
+
 body {
   font-family: "Archivo", sans-serif;
   font-weight: 200;

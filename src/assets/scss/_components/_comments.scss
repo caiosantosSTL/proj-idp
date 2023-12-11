@@ -1,0 +1,212 @@
+
+.section-commentary {
+    background-color: $section;
+
+    .container-comment {
+        margin: 0 auto;
+        @media (min-width: $min_mobile) {
+            max-width: calc(((368px + 16px)*3) / 3);
+        }
+        @media (min-width: $min_tablet) {
+            max-width: calc(((368px + 16px)*4) / 2);
+        }
+        @media (min-width: $min_desktop) {
+            max-width: calc(((368px + 16px)*3) / 1);
+        }
+        overflow: scroll;
+        .title-area {
+
+            .title {
+
+
+            }
+
+            .subtitle {
+
+            }
+        }
+
+        .comment-area {
+            gap: 16px;
+            padding-top: 26px;
+            width: 100%;
+            margin: 0 auto;
+            height: auto;
+            
+            transition: transform 0.5s ease;
+            //background-color: yellowgreen;
+
+            display: flex;
+
+            .card-comment { 
+                background-color: $white;
+                padding: 16px;
+                flex: 1 0 336px;
+                transition: transform 0.5s ease;
+
+                .area-profile {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 16px;
+
+                    .profile-photo {
+                        background-color: $gray-2;
+                        border-radius: 50%;
+                        width: 56px;
+                        height: 56px;
+                    }
+
+                    .text-area {
+                        .text-name {
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                            color: $gray-3;
+                        }
+
+
+
+                    }
+
+                }
+
+                .comment-box {
+
+
+                    .author {
+                        .text-posted {
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 16px;
+                            color: $gray-5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .btn-area{
+        //background-color: red;
+        height: 100px;
+        max-width: 200px;
+        margin: 0 auto;
+        position: relative;
+        .btn-next{
+            padding: 6px;
+            text-align: center;
+            max-width: 40px;
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            right: 0;
+            svg{
+                path{
+                    fill: $gray-3;
+                }
+            }
+        }
+        .btn-back{
+            padding: 6px;
+            text-align: center;
+            max-width: 40px;
+            position: absolute;
+            cursor: pointer;
+            top: 50%;
+            left: 0;
+            svg{
+                path{
+                    fill: $gray-3;
+                }
+            }
+        }
+    }
+}
+
+.dark{
+    .section-commentary {
+        background-color: $gray-3;
+
+        .container {
+
+            .title-area {
+
+                .title {
+                    .desktop-h2 {
+                        color: $white;
+                        
+                    }
+    
+                }
+    
+                .subtitle {
+                    .desktop-h4 {
+
+                        color: $section;
+                        
+                    }
+                }
+            }
+    
+            .comment-area {
+
+    
+                .card-comment { 
+    
+                    .area-profile {
+    
+                        .profile-photo {
+
+                        }
+    
+                        .text-area {
+                            .text-name {
+
+                            }
+    
+                            .mobile-h3 {
+
+                            }
+    
+                        }
+    
+                    }
+    
+                    .comment-box {
+                        .desktop-h4 {
+
+                        }
+    
+                        .author {
+                            .text-posted {
+
+                            }
+                            .mobile-h3 {
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .btn-area{
+
+            .btn-next{
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+            }
+            .btn-back{
+                svg{
+                    path{
+                        fill: $white;
+                    }
+                }
+            }
+        }
+    }
+}
