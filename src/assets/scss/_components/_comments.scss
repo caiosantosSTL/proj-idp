@@ -94,14 +94,13 @@
         max-width: 200px;
         margin: 0 auto;
         position: relative;
-        .btn-next{
+        .btn-next, .btn-back{
             padding: 6px;
             text-align: center;
             max-width: 40px;
             position: absolute;
             cursor: pointer;
-            top: 50%;
-            right: 0;
+
             svg{
                 path{
                     fill: $gray-3;
@@ -109,18 +108,12 @@
             }
         }
         .btn-back{
-            padding: 6px;
-            text-align: center;
-            max-width: 40px;
-            position: absolute;
-            cursor: pointer;
             top: 50%;
             left: 0;
-            svg{
-                path{
-                    fill: $gray-3;
-                }
-            }
+        }
+        .btn-next{
+            top: 50%;
+            right: 0;
         }
     }
 }
