@@ -1,4 +1,4 @@
-// homevideo
+// homevideo -----------------
 
 @mixin homevideo-card {
 
@@ -195,18 +195,19 @@
                 }
             }
 
-            .btn-area {
+            .btn-area-comment {
                 display: flex;
                 flex-direction: row;
-
                 @media (min-width: $max_mobile) {
                     flex-wrap: wrap;
                 }
 
                 width: 100%;
+                padding-inline: 8px;
+                margin: 0;
                 gap: 8px;
 
-                .btn-send {
+                .btn-send, .btn-cancel {
                     @media (min-width: $max_mobile) {
                         width: 100%;
                     }
@@ -216,47 +217,21 @@
                     }
 
                     width: 176px;
-                    padding: 6px;
-                    gap: 10px;
+                    margin: 0;
+                    
+                    border-radius: 6px;
+                    cursor: pointer;
+
+
+                }
+
+                .btn-send{
                     background-color: $primary-pink;
-                    border-radius: 6px;
-                    cursor: pointer;
-
-                    .desktop-btn {
-                        color: $white;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: 24px;
-                        text-align: center;
-                    }
                 }
-
-                .btn-cancel {
-                    @media (min-width: $max_mobile) {
-                        width: 100%;
-                    }
-
-                    @media (min-width: $max_tablet) {
-                        width: 176px;
-                    }
-
-                    width: 176px;
-                    padding: 6px;
-                    gap: 10px;
+                .btn-cancel{
                     background-color: $gray-6;
-                    border-radius: 6px;
-                    cursor: pointer;
-
-                    .desktop-btn {
-                        color: $white;
-                        font-size: 18px;
-                        font-style: normal;
-                        font-weight: 600;
-                        line-height: 24px;
-                        text-align: center;
-                    }
                 }
+
             }
         }
 

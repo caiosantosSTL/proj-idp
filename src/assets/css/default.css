@@ -608,6 +608,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   padding-bottom: 4px;
 }
 
+.p-8 {
+  padding: 8;
+}
+
 .p-10 {
   padding: 10px;
 }
@@ -628,6 +632,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   padding-bottom: 10px;
 }
 
+.p-12 {
+  padding: 12px;
+}
+
 .p-15 {
   padding: 15px;
 }
@@ -646,6 +654,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 
 .pb-15 {
   padding-bottom: 15px;
+}
+
+.p-16 {
+  padding: 16px;
 }
 
 .px-24 {
@@ -1421,68 +1433,40 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
 .social-area .action-area .comment-write-area .input-comment:focus {
   outline: none;
 }
-.social-area .action-area .comment-write-area .btn-area {
+.social-area .action-area .comment-write-area .btn-area-comment {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-inline: 8px;
+  margin: 0;
   gap: 8px;
 }
 @media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area {
+  .social-area .action-area .comment-write-area .btn-area-comment {
     flex-wrap: wrap;
   }
 }
-.social-area .action-area .comment-write-area .btn-area .btn-send {
+.social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
   width: 176px;
-  padding: 6px;
-  gap: 10px;
+  margin: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (min-width: 480px) {
+  .social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
+    width: 176px;
+  }
+}
+.social-area .action-area .comment-write-area .btn-area-comment .btn-send {
   background-color: #EC148E;
-  border-radius: 6px;
-  cursor: pointer;
 }
-@media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-send {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-send {
-    width: 176px;
-  }
-}
-.social-area .action-area .comment-write-area .btn-area .btn-send .desktop-btn {
-  color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-}
-.social-area .action-area .comment-write-area .btn-area .btn-cancel {
-  width: 176px;
-  padding: 6px;
-  gap: 10px;
+.social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
   background-color: #C6C5CE;
-  border-radius: 6px;
-  cursor: pointer;
-}
-@media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-cancel {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-cancel {
-    width: 176px;
-  }
-}
-.social-area .action-area .comment-write-area .btn-area .btn-cancel .desktop-btn {
-  color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
 }
 .comment-card {
   display: flex;
@@ -2785,68 +2769,40 @@ footer .copyright {
 .social-area .action-area .comment-write-area .input-comment:focus {
   outline: none;
 }
-.social-area .action-area .comment-write-area .btn-area {
+.social-area .action-area .comment-write-area .btn-area-comment {
   display: flex;
   flex-direction: row;
   width: 100%;
+  padding-inline: 8px;
+  margin: 0;
   gap: 8px;
 }
 @media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area {
+  .social-area .action-area .comment-write-area .btn-area-comment {
     flex-wrap: wrap;
   }
 }
-.social-area .action-area .comment-write-area .btn-area .btn-send {
+.social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
   width: 176px;
-  padding: 6px;
-  gap: 10px;
+  margin: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (min-width: 480px) {
+  .social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
+    width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .social-area .action-area .comment-write-area .btn-area-comment .btn-send, .social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
+    width: 176px;
+  }
+}
+.social-area .action-area .comment-write-area .btn-area-comment .btn-send {
   background-color: #EC148E;
-  border-radius: 6px;
-  cursor: pointer;
 }
-@media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-send {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-send {
-    width: 176px;
-  }
-}
-.social-area .action-area .comment-write-area .btn-area .btn-send .desktop-btn {
-  color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
-}
-.social-area .action-area .comment-write-area .btn-area .btn-cancel {
-  width: 176px;
-  padding: 6px;
-  gap: 10px;
+.social-area .action-area .comment-write-area .btn-area-comment .btn-cancel {
   background-color: #C6C5CE;
-  border-radius: 6px;
-  cursor: pointer;
-}
-@media (min-width: 480px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-cancel {
-    width: 100%;
-  }
-}
-@media (min-width: 1024px) {
-  .social-area .action-area .comment-write-area .btn-area .btn-cancel {
-    width: 176px;
-  }
-}
-.social-area .action-area .comment-write-area .btn-area .btn-cancel .desktop-btn {
-  color: #fff;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  text-align: center;
 }
 .comment-card {
   display: flex;
