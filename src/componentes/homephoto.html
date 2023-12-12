@@ -11,9 +11,9 @@
     </div>
     <div class="grid grid-c3 grid-c2 grid-c1 main-container">
 
-        <div class="tile-layout__item">
+        <div class="tile-layout-item">
 
-            <div class="tile-layout__content">
+            <div class="tile-layout-content">
                 <div class="header-area">
                     <div class="photo-profile">
                         <img src="https://images.unsplash.com/photo-1699164802258-19f3d460a0d7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -41,14 +41,14 @@
                 </div>
             </div>
 
-            <div class="layout__image-container tile-layout__image">
+            <div class="layout-image-container tile-layout-image">
                 <a href="#">
                     <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </a>
             </div>
 
-            <div class="tile-layout__content">
+            <div class="tile-layout-content">
                 <div class="social-area">
                     <div class="action-area">
                         <div class="top">
@@ -204,9 +204,10 @@
 
         </div>
 
-        <div class="tile-layout__item">
 
-            <div class="tile-layout__content">
+        <div class="tile-layout-item">
+
+            <div class="tile-layout-content">
                 <div class="header-area">
                     <div class="photo-profile">
                         <img src="https://images.unsplash.com/photo-1699164802258-19f3d460a0d7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -234,14 +235,14 @@
                 </div>
             </div>
 
-            <div class="layout__image-container tile-layout__image">
+            <div class="layout-image-container tile-layout-image">
                 <a href="#">
                     <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </a>
             </div>
 
-            <div class="tile-layout__content">
+            <div class="tile-layout-content">
                 <div class="social-area">
                     <div class="action-area">
                         <div class="top">
@@ -256,7 +257,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">(2) Curtir</p>
                             </div>
-                            <div class="btn-action" onclick="openComment()">
+                            <div class="btn-action" onclick="openComment('open-comment-area-id')">
                                 <i>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                         fill="none">
@@ -267,16 +268,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">Comentar</p>
 
-                                <script>
-                                    function openComment() {
-                                        var openC = document.querySelector('#open-comment-area-id');
-                                        if (openC.style.display === 'none') {
-                                            openC.style.display = 'flex'
-                                        } else {
-                                            openC.style.display = 'none'
-                                        }
-                                    }
-                                </script>
+
                             </div>
                             <div class="btn-action">
                                 <i>
@@ -327,7 +319,7 @@
                                         </i>
                                         <p class="mobile-h3 gray-5 m-0 p-0 text-white">40</p>
                                     </div>
-                                    <div class="answer">
+                                    <div class="answer" onclick="openComment('open-res-area-id')">
                                         <i>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -340,7 +332,19 @@
                                     </div>
                                 </div>
                             </div>
-
+                        <!-- res write area -->
+                        <div id="open-res-area-id" class="comment-write-area" style="display: none;">
+                            <input class="input-name" type="text" placeholder="Seu nome">
+                            <input class="input-comment" type="text" placeholder="Digite seu comentario">
+                            <div class="btn-area">
+                                <div class="btn-send">
+                                    <p class="desktop-btn text-white">Enviar</p>
+                                </div>
+                                <div class="btn-cancel">
+                                    <p class="desktop-btn text-white">Cancelar</p>
+                                </div>
+                            </div>
+                        </div>
                             <!-- res card -->
                             <div class="comment-card">
 
@@ -395,9 +399,9 @@
         </div>
 
 
-        <div class="tile-layout__item">
+        <div class="tile-layout-item">
 
-            <div class="tile-layout__content">
+            <div class="tile-layout-content">
                 <div class="header-area">
                     <div class="photo-profile">
                         <img src="https://images.unsplash.com/photo-1699164802258-19f3d460a0d7?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -425,14 +429,14 @@
                 </div>
             </div>
 
-            <div class="layout__image-container tile-layout__image">
+            <div class="layout-image-container tile-layout-image">
                 <a href="#">
                     <img src="https://images.unsplash.com/photo-1699463701578-9970c5bec195?q=80&w=2014&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="">
                 </a>
             </div>
 
-            <div class="tile-layout__content">
+            <div class="tile-layout-content">
                 <div class="social-area">
                     <div class="action-area">
                         <div class="top">
@@ -447,7 +451,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">(2) Curtir</p>
                             </div>
-                            <div class="btn-action" onclick="openComment()">
+                            <div class="btn-action" onclick="openComment('open-comment-area-id')">
                                 <i>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                         fill="none">
@@ -458,16 +462,7 @@
                                 </i>
                                 <p class="mini-text1 gray-2 text-white">Comentar</p>
 
-                                <script>
-                                    function openComment() {
-                                        var openC = document.querySelector('#open-comment-area-id');
-                                        if (openC.style.display === 'none') {
-                                            openC.style.display = 'flex'
-                                        } else {
-                                            openC.style.display = 'none'
-                                        }
-                                    }
-                                </script>
+
                             </div>
                             <div class="btn-action">
                                 <i>
@@ -518,7 +513,7 @@
                                         </i>
                                         <p class="mobile-h3 gray-5 m-0 p-0 text-white">40</p>
                                     </div>
-                                    <div class="answer">
+                                    <div class="answer" onclick="openComment('open-res-area-id')">
                                         <i>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                 viewBox="0 0 24 24" fill="none">
@@ -531,6 +526,19 @@
                                     </div>
                                 </div>
                             </div>
+                        <!-- res write area -->
+                        <div id="open-res-area-id" class="comment-write-area" style="display: none;">
+                            <input class="input-name" type="text" placeholder="Seu nome">
+                            <input class="input-comment" type="text" placeholder="Digite seu comentario">
+                            <div class="btn-area">
+                                <div class="btn-send">
+                                    <p class="desktop-btn text-white">Enviar</p>
+                                </div>
+                                <div class="btn-cancel">
+                                    <p class="desktop-btn text-white">Cancelar</p>
+                                </div>
+                            </div>
+                        </div>
                             <!-- res card -->
                             <div class="comment-card">
 
@@ -583,6 +591,8 @@
             </div>
 
         </div>
+
+
 
 
 

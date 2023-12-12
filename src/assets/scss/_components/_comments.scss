@@ -129,82 +129,44 @@
     .section-commentary {
         background-color: $gray-3;
 
-        .container {
+    }
+}
 
-            .title-area {
+.dark{
+    .title-area {
 
-                .title {
-                    .desktop-h2 {
-                        color: $white;
-                        
-                    }
-    
-                }
-    
-                .subtitle {
-                    .desktop-h4 {
-
-                        color: $section;
-                        
-                    }
-                }
+        .title {
+            .desktop-h2 {
+                color: $white;
+                
             }
-    
-            .comment-area {
 
-    
-                .card-comment { 
-    
-                    .area-profile {
-    
-                        .profile-photo {
+        }
 
-                        }
-    
-                        .text-area {
-                            .text-name {
+        .subtitle {
+            .desktop-h4 {
 
-                            }
-    
-                            .mobile-h3 {
+                color: $section;
+                
+            }
+        }
+    }
+}
 
-                            }
-    
-                        }
-    
-                    }
-    
-                    .comment-box {
-                        .desktop-h4 {
+.dark{
+    .btn-area-comment{
 
-                        }
-    
-                        .author {
-                            .text-posted {
-
-                            }
-                            .mobile-h3 {
-
-                            }
-                        }
-                    }
+        .btn-next{
+            svg{
+                path{
+                    fill: $white;
                 }
             }
         }
-        .btn-area-comment{
-
-            .btn-next{
-                svg{
-                    path{
-                        fill: $white;
-                    }
-                }
-            }
-            .btn-back{
-                svg{
-                    path{
-                        fill: $white;
-                    }
+        .btn-back{
+            svg{
+                path{
+                    fill: $white;
                 }
             }
         }
