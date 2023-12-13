@@ -147,6 +147,10 @@
   background-color: #4E4B59;
 }
 
+.bg-premium-gold {
+  background-color: #F90;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -1994,6 +1998,20 @@ footer .copyright {
   letter-spacing: 0.2rem;
   z-index: 1;
 }
+.card-profile .card-image .premium {
+  border-radius: 0px 0px 4px 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 110px;
+  min-height: 24px;
+  padding-inline: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .card-profile .card-image .selo {
   display: flex;
   z-index: 1;
@@ -2076,6 +2094,20 @@ footer .copyright {
   text-align: center;
   letter-spacing: 0.2rem;
   z-index: 1;
+}
+.card-profile .card-image .premium {
+  border-radius: 0px 0px 4px 4px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 110px;
+  min-height: 24px;
+  padding-inline: 8px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card-profile .card-image .selo {
   display: flex;
@@ -3131,7 +3163,6 @@ img {
 
 .section-bestpic {
   background-color: #fff;
-  font-family: archivo;
 }
 .section-bestpic .container .main-title {
   display: flex;
@@ -3249,14 +3280,26 @@ img {
 }
 .section-bestpic .container .pics-area .best-month .grid-photo {
   display: grid;
+  /*                     @media (min-width: $min_mobile) and (max-width: $max_mobile) {
+
+                          grid-template-columns: repeat(3, 1fr);
+                      }
+                      @media (min-width: $max_tablet) {
+
+                          grid-template-columns: repeat(3, 1fr);
+                      }
+                      @media (min-width: $max_desktop) {
+
+                          grid-template-columns: repeat(5, 1fr);
+                      } */
   gap: 8px;
 }
-@media (min-width: 480px) {
+@media (min-width: 0px) {
   .section-bestpic .container .pics-area .best-month .grid-photo {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .section-bestpic .container .pics-area .best-month .grid-photo {
     grid-template-columns: repeat(3, 1fr);
   }

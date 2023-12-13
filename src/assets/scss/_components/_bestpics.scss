@@ -2,8 +2,6 @@
 
 .section-bestpic {
     background-color: $white;
-    font-family: archivo;
-
     .container {
 
         .main-title {
@@ -144,9 +142,9 @@
 
                 .grid-photo {
                     display: grid;
-                    @media (min-width: $max_mobile) {
+/*                     @media (min-width: $min_mobile) and (max-width: $max_mobile) {
                         
-                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-columns: repeat(3, 1fr);
                     }
                     @media (min-width: $max_tablet) {
                         
@@ -155,7 +153,19 @@
                     @media (min-width: $max_desktop) {
                         
                         grid-template-columns: repeat(5, 1fr);
+                    } */
+                    @media (min-width: $min_mobile) {
+                        
+                        grid-template-columns: repeat(3, 1fr);
                     }
+                    @media (min-width: $min_tablet) {
+                        
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                    @media (min-width: $max_desktop) {
+                        
+                        grid-template-columns: repeat(5, 1fr);
+                    } 
                     gap: 8px;
                     .image-box{
                         max-width: 300px;

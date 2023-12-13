@@ -1,0 +1,391 @@
+<!--LISTAGEM FOTOS CASEIRAS-->
+
+<div class="d-flex flex-direction-column gap-8 main-container">
+    <p class="text-h2 gray-3 m-0 p-0 text-white text-center">Todas acompanhantes com <span class="primary-pink">fotos
+            caseiras</span> da região Norte e Central</p>
+
+</div>
+
+<div class="filter-area mt-42 mb-24">
+
+    <div class="filter-container fs-20 fw-semibold lineheigth-24 gray-4 p-5">
+
+        <!-- btn filter -->
+        <div class="btn-filter d-block w-100 bg-white mb-10" onclick="openList('filter-list-id')">
+            <div class="text-icon d-flex justify-content-center flex-direction-row p-15">
+                <p class="fs-18 fw-bold primary-pink lineheigth-32 m-0 p-0">Filtrar por categoria</p>
+                <i class="fs-18 fw-bold primary-pink lineheigth-32 m-0 p-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M6 13H18V11H6M3 6V8H21V6M10 18H14V16H10V18Z" fill="#EC148E" />
+                    </svg>
+                </i>
+            </div>
+        </div>
+
+        <script>
+
+            //open List
+            function openList(name) {
+                const filterListBlock = document.getElementById(name);
+                if (filterListBlock && !filterListBlock.className.includes('opened')) {
+                    filterListBlock.className += ' opened'
+                } else {
+                    filterListBlock.className = filterListBlock.className.replace(' opened', '');
+                }
+            }
+
+        </script>
+
+        <!-- filter bar -->
+        <div class="filter-bar opened" id="filter-list-id">
+            <div class="item-area w-100 p-5">
+
+                <p class="title fw-light p-10 m-0">
+                    Filtrar por:
+                </p>
+
+
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M20.125 17C20.6983 17 21.1817 17.2 21.575 17.6C21.9683 18 22.1617 18.4667 22.155 19L14.125 22L7.12501 20V11H9.07501L16.345 13.69C16.865 13.8967 17.125 14.27 17.125 14.81C17.125 15.1233 17.0117 15.3967 16.785 15.63C16.5583 15.8633 16.2717 15.9867 15.925 16H13.125L11.375 15.33L11.045 16.27L13.125 17H20.125ZM16.125 3.23C16.8317 2.41 17.7317 2 18.825 2C19.7317 2 20.4983 2.33333 21.125 3C21.7517 3.66667 22.085 4.43333 22.125 5.3C22.125 5.98667 21.7917 6.80667 21.125 7.76C20.4583 8.71333 19.8017 9.51 19.155 10.15C18.5083 10.79 17.4983 11.74 16.125 13C14.7383 11.74 13.7183 10.79 13.065 10.15C12.4117 9.51 11.755 8.71333 11.095 7.76C10.435 6.80667 10.1117 5.98667 10.125 5.3C10.125 4.39333 10.4483 3.62667 11.095 3C11.7417 2.37333 12.5217 2.04 13.435 2C14.5017 2 15.3983 2.41 16.125 3.23ZM1.10901 11H5.12501V22H1.10901V11Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Travestis</p>
+                </div>
+
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M12.875 17.27L19.055 21L17.415 13.97L22.875 9.24L15.685 8.62L12.875 2L10.065 8.62L2.875 9.24L8.325 13.97L6.695 21L12.875 17.27Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Novidades</p>
+                </div>
+
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M22.5 7H20.5V2H18.5V4.34L12.5 6.91L6.5 4.34V2H4.5V7H2.5V9H4.55C4.8 11.25 6.69 13 9 13C10.42 13 11.68 12.33 12.5 11.3C13.33 12.33 14.58 13 16 13C18.31 13 20.2 11.25 20.45 9H22.5V7ZM9 11C7.62 11 6.5 9.88 6.5 8.5V6.5L11.5 8.65C11.4 9.96 10.33 11 9 11ZM18.5 8.5C18.5 9.88 17.38 11 16 11C14.67 11 13.6 9.96 13.5 8.65L18.5 6.5V8.5ZM2.5 15V17H3.5C6.47 17 8.93 19.17 9.41 22H15.59C16.07 19.17 18.53 17 21.5 17H22.5V15H2.5ZM14.09 20H10.91C10.44 18.84 9.71 17.82 8.79 17H16.21C15.29 17.82 14.56 18.84 14.09 20Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Massagistas</p>
+                </div>
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M18.965 11.77L20.435 18.1L14.875 14.74L9.315 18.1L10.775 11.77L5.875 7.5L12.345 6.96L14.875 1L17.405 6.96L23.875 7.5L18.965 11.77ZM2.875 12.43C3.065 12.43 3.255 12.37 3.425 12.26L6.625 10.15L5.055 8.79L2.325 10.59C1.864 10.89 1.736 11.5 2.035 12C2.235 12.27 2.555 12.43 2.875 12.43ZM2.035 21.55C2.235 21.84 2.555 22 2.875 22C3.065 22 3.255 21.95 3.425 21.84L7.535 19.13L7.875 17.76L8.185 16.31L2.325 20.16C1.864 20.47 1.736 21.09 2.035 21.55ZM2.325 15.38C1.864 15.68 1.736 16.3 2.035 16.76C2.235 17.06 2.555 17.21 2.875 17.21C3.065 17.21 3.255 17.16 3.425 17.05L8.845 13.5L9.115 12.31L8.195 11.5L2.325 15.38Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Vende Conteúdo</p>
+                </div>
+                <div class="item">
+                    <div class="icon p-0 m-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                            <path
+                                d="M23.625 12L21.185 9.22004L21.525 5.54004L17.915 4.72004L16.025 1.54004L12.625 3.00004L9.225 1.54004L7.335 4.72004L3.725 5.53004L4.065 9.21004L1.625 12L4.065 14.78L3.725 18.47L7.335 19.29L9.225 22.47L12.625 21L16.025 22.46L17.915 19.28L21.525 18.46L21.185 14.78L23.625 12ZM13.625 17H11.625V15H13.625V17ZM13.625 13H11.625V7.00004H13.625V13Z"
+                                fill="#EC148E" />
+                        </svg>
+                    </div>
+                    <p class="m-0 p-0">Com Vídeos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row mt-15 mb-24 card-list-default ">
+
+    <div class="col-50 col-md-33 col-lg-25 p-15">
+        <a class="d-block w-100 card-profile" href="#">
+            <div class="card-image position-relative">
+
+                <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                    <p class="p-0 m-0"> Premium </p>
+                </div>
+
+                <div class="selo hot">
+                    <i class="hot-post"></i>
+                </div>
+
+                <div class="selo cam">
+                    <i class="show-sexy"></i>
+                </div>
+
+
+                <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                    src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                    title="Rayane Marquezine, Vila Velha ES - Carioca" alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+            </div>
+            <div class="d-flex flex-direction-column card-description">
+                <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="col-50 col-md-33 col-lg-25 p-15">
+        <a class="d-block w-100 card-profile" href="#">
+            <div class="card-image position-relative">
+
+                <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                    <p class="p-0 m-0"> Premium </p>
+                </div>
+
+                <div class="selo hot">
+                    <i class="hot-post"></i>
+                </div>
+
+                <div class="selo cam">
+                    <i class="show-sexy"></i>
+                </div>
+
+
+                <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                    src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                    title="Rayane Marquezine, Vila Velha ES - Carioca" alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+            </div>
+            <div class="d-flex flex-direction-column card-description">
+                <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-50 col-md-33 col-lg-25 p-15">
+        <a class="d-block w-100 card-profile" href="#">
+            <div class="card-image position-relative">
+
+                <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                    <p class="p-0 m-0"> Premium </p>
+                </div>
+
+                <div class="selo hot">
+                    <i class="hot-post"></i>
+                </div>
+
+                <div class="selo cam">
+                    <i class="show-sexy"></i>
+                </div>
+
+
+                <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                    src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                    title="Rayane Marquezine, Vila Velha ES - Carioca" alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+            </div>
+            <div class="d-flex flex-direction-column card-description">
+                <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-50 col-md-33 col-lg-25 p-15">
+        <a class="d-block w-100 card-profile" href="#">
+            <div class="card-image position-relative">
+
+                <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                    <p class="p-0 m-0"> Premium </p>
+                </div>
+
+                <div class="selo hot">
+                    <i class="hot-post"></i>
+                </div>
+
+                <div class="selo cam">
+                    <i class="show-sexy"></i>
+                </div>
+
+
+                <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                    src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                    title="Rayane Marquezine, Vila Velha ES - Carioca" alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+            </div>
+            <div class="d-flex flex-direction-column card-description">
+                <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                    been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+
+
+<div class="main-container">
+    <div class="d-flex flex-direction-column gap-8">
+        <p class="text-h2 gray-3 m-0 p-0 text-white text-center">Massagistas e terapeutas profissionais com <span
+                class="primary-pink"> fotos caseiras </span> da região Norte e Central</p>
+    </div>
+    <div class="row mt-15 mb-15 card-list-default ">
+
+        <div class="col-50 col-md-33 col-lg-25 p-15">
+            <a class="d-block w-100 card-profile" href="#">
+                <div class="card-image position-relative">
+
+                    <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                        <p class="p-0 m-0"> Premium </p>
+                    </div>
+
+                    <div class="selo hot">
+                        <i class="hot-post"></i>
+                    </div>
+
+                    <div class="selo cam">
+                        <i class="show-sexy"></i>
+                    </div>
+
+
+                    <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                        src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                        title="Rayane Marquezine, Vila Velha ES - Carioca"
+                        alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+                </div>
+                <div class="d-flex flex-direction-column card-description">
+                    <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                    <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                    <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-50 col-md-33 col-lg-25 p-15">
+            <a class="d-block w-100 card-profile" href="#">
+                <div class="card-image position-relative">
+
+                    <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                        <p class="p-0 m-0"> Premium </p>
+                    </div>
+
+                    <div class="selo hot">
+                        <i class="hot-post"></i>
+                    </div>
+
+                    <div class="selo cam">
+                        <i class="show-sexy"></i>
+                    </div>
+
+
+                    <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                        src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                        title="Rayane Marquezine, Vila Velha ES - Carioca"
+                        alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+                </div>
+                <div class="d-flex flex-direction-column card-description">
+                    <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                    <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                    <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-50 col-md-33 col-lg-25 p-15">
+            <a class="d-block w-100 card-profile" href="#">
+                <div class="card-image position-relative">
+
+                    <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                        <p class="p-0 m-0"> Premium </p>
+                    </div>
+
+                    <div class="selo hot">
+                        <i class="hot-post"></i>
+                    </div>
+
+                    <div class="selo cam">
+                        <i class="show-sexy"></i>
+                    </div>
+
+
+                    <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                        src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                        title="Rayane Marquezine, Vila Velha ES - Carioca"
+                        alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+                </div>
+                <div class="d-flex flex-direction-column card-description">
+                    <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                    <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                    <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-50 col-md-33 col-lg-25 p-15">
+            <a class="d-block w-100 card-profile" href="#">
+                <div class="card-image position-relative">
+
+                    <div class="premium left-0 right-0 top-0 position-absolute m-auto bg-premium-gold">
+                        <p class="p-0 m-0"> Premium </p>
+                    </div>
+
+                    <div class="selo hot">
+                        <i class="hot-post"></i>
+                    </div>
+
+                    <div class="selo cam">
+                        <i class="show-sexy"></i>
+                    </div>
+
+
+                    <img class="w-100 h-100 position-absolute top-0 left-0 right-0"
+                        src="https://static.ilhadoprazer.com.br/acompanhantes/laura-vassallo-93482/feed-acompanhante-laura-vassallo-feed_16981776155008535.jpeg"
+                        title="Rayane Marquezine, Vila Velha ES - Carioca"
+                        alt="Rayane Marquezine, Vila Velha ES - Carioca">
+
+                </div>
+                <div class="d-flex flex-direction-column card-description">
+                    <span class="fs-24 lineheigth-24 fw-bold gray-3">Maria</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Jardim da Penha</span>
+                    <span class="fs-18 lineheigth-24 gray-5">Vila Velha</span>
+                    <span class="fs-18 lineheigth-24 fw-bold gray-3">R$ 200,00 a R$ 400,00</span>
+                    <span class="mobile-text gray-3 m-0 p-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer too</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>

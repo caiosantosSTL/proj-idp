@@ -18,6 +18,7 @@ $white: #fff;
 $black: #000;
 $gradient: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
 $font-color: #4E4B59;
+$premium-gold: #F90;
 
 
 
@@ -168,4 +169,8 @@ $font-color: #4E4B59;
 
 .bg-font-color {
     background-color: $font-color;
+}
+
+.bg-premium-gold{
+    background-color: $premium-gold;
 }
