@@ -3301,7 +3301,7 @@ img {
 }
 @media (min-width: 768px) {
   .section-bestpic .container .pics-area .best-month .grid-photo {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media (min-width: 1200px) {
