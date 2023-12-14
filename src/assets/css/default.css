@@ -3442,7 +3442,7 @@ img {
 .dark .section-blog {
   background-color: #272530;
 }
-.dark .section-blog .btn-area .btn-next svg path, .dark .section-blog .btn-area .btn-back svg path {
+.dark .section-blog .btn-area-blog .btn-next svg path, .dark .section-blog .btn-area-blog .btn-back svg path {
   fill: #fff;
 }
 
