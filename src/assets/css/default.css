@@ -3723,6 +3723,11 @@ img {
   background-color: red;
   margin: 0 auto;
 }
+.section-about2 .profile-area .photo-area .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .section-about2 .profile-area .photo-area .text-detail {
   font-size: 20px;
   font-style: normal;
@@ -4247,6 +4252,11 @@ img {
   border-radius: 8px;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+.section-gofans .container .cards-area .card-profile .photo-post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .section-gofans .container .cards-area .card-profile .bottom .link {
   font-size: 18px;
