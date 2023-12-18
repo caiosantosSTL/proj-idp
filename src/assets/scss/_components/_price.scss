@@ -1,0 +1,116 @@
+
+
+.section-price {
+    background-color: $white;
+
+    .container-price {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 1500px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        gap: 26px;
+
+        .title {
+            
+        }
+
+        .card-info {
+            display: flex;
+            flex-direction: row;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            padding: 16px;
+            border-radius: 6px;
+            background-color: $section;
+
+            .icon {}
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+
+        }
+
+        .grid-price-info {
+            display: grid;
+            @media (min-width: $max_mobile){
+                grid-template-columns: repeat(1, auto);
+            }
+            @media (min-width: $max_tablet){
+                
+                grid-template-columns: repeat(2, auto);
+            }
+            @media (min-width: $max_desktop){
+                
+                grid-template-columns: repeat(3, auto);
+            }
+            gap: 20px;
+            .card-price {
+                display: flex;
+                height: auto;
+                width: 100%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+
+                .t1 {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+
+                .t2 {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                }
+
+                .text-area {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    text-align: justify;
+                    text-transform: lowercase;
+                    
+                }
+            }
+        }
+
+        .payment {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+
+        }
+    }
+}
+
+
+
+.dark{
+    .section-price {
+        background-color: $dark-secondary;
+    
+        .container-price {
+
+            .card-info {
+
+                background-color: $dark-primary;
+    
+
+            }
+    
+        }
+    }
+}

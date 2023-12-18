@@ -1,0 +1,138 @@
+
+
+.section-about2 {
+    background-color: $section;
+
+    .profile-area {
+
+        display: grid;
+
+        @media (min-width: $max_tablet) {
+            grid-template-columns: repeat(1, auto);
+        }
+
+        @media (min-width: $max_desktop) {
+            //grid-template-columns: repeat(2, auto);
+            grid-template-columns: 1fr 2fr;
+            
+        }
+
+        gap: 16px;
+
+        .photo-area {
+            //background-color: rgb(222, 113, 113);
+
+            @media (min-width: $max_tablet) {
+
+                max-width: 100%;
+            }
+
+            @media (min-width: $max_desktop) {
+
+                max-width: 600px;
+            }
+
+            width: 100%;
+            height: auto;
+
+            .photo {
+                //width: 100%;
+                //max-width: 400px;
+                max-width: 600px;
+                height: 600px;
+                background-color: red;
+                margin: 0 auto;
+            }
+
+            .text-detail {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+            }
+        }
+
+        .profile-text-area {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-left: 1px solid rgb(178, 178, 178);
+            //max-width: 200px;
+            width: 100%;
+            min-width: 80px;
+            padding-left: 16px;
+            gap: 16px;
+
+            .about-me {
+
+
+                .grid-attributes {
+                    display: grid;
+                    gap: 16px;
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: repeat(2, auto);
+                    }
+
+                    @media (min-width: $max_tablet) {
+
+                        grid-template-columns: repeat(3, auto);
+                    }
+
+                    .item {
+                        display: flex;
+                        //width: 200px;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        gap: 8px;
+
+                    }
+                }
+            }
+
+            .about-service {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                .detail {
+                    width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+
+                }
+
+                .grid-time {
+                    display: grid;
+
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: repeat(2, auto);
+                    }
+
+                    @media (min-width: $max_tablet) {
+
+                        grid-template-columns: repeat(4, auto);
+                    }
+
+                    .time {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 4px;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.dark{
+    .section-about2 {
+        background-color: $gray-3;
+
+    }
+}

@@ -1,0 +1,30 @@
+
+
+.section-owner {
+    background-color: $section;
+
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    margin-top: 80px;
+    .container-owner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        max-width: 450px;
+        gap: 8px;
+
+    }
+}
+
+.dark{
+
+    .section-owner {
+        background-color: $dark-primary;
+    }
+}
