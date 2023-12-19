@@ -25,45 +25,49 @@
 @import "_partials/cols-caio";
 @import "_partials/cards";
 
+// COMMONS
+@import "../scss/_components/_common/footer";
+@import "../scss/_components/_common/header";
 
 // COMPONENTS
-@import "_components/svg";
-@import "_components/container";
-@import "_components/header";
-@import "_components/content";
-@import "_components/footer";
-@import "_components/lista_destaque";
-@import "_components/lista_profissional";
-@import "_components/lista_profissional";
-@import "_components/_top_page";
+@import "../scss/_components/_default/svg";
+@import "../scss/_components/_default/container";
+@import "../scss/_components/_default/content";
+@import "../scss/_components/_default/lista_destaque";
+@import "../scss/_components/_default/lista_profissional";
+@import "../scss/_components/_default/lista_profissional";
+@import "../scss/_components/_default/_top_page";
 
 
 // COMPONENTES CAIO
-@import "_components/newsletter.scss";
-@import "_components/questions";
-@import "_components/share-friends";
-@import "_components/join-text";
-@import "_components/tags";
-@import "_components/carousel";
-@import "_components/filter";
-@import "_components/recent";
-@import "_components/homevideo";
-@import "_components/homephoto";
-@import "_components/comments";
-@import "_components/bestpics";
-@import "_components/blog";
-//profile
-@import "_components/fixed-bar";
-@import "_components/info";
-@import "_components/notification";
-@import "_components/about";
-@import "_components/about2";
-@import "_components/price";
-@import "_components/legalnotice";
-@import "_components/gallery";
-@import "_components/gofans";
+@import "_components/_default/newsletter.scss";
+@import "_components/_default/questions";
+@import "_components/_default/share-friends";
+@import "_components/_default/join-text";
+@import "_components/_default/tags";
+@import "_components/_default/carousel";
+@import "_components/_default/filter";
+@import "_components/_default/recent";
+@import "_components/_default/homevideo";
+@import "_components/_default/homephoto";
+@import "_components/_default/comments";
+@import "_components/_default/bestpics";
+@import "_components/_default/blog";
 
-@import "_components/owner";
+// compoenetes caio
+//profile
+@import "_components/_profile/fixed-bar";
+@import "_components/_profile/info";
+@import "_components/_profile/notification";
+@import "_components/_profile/about";
+@import "_components/_profile/about2";
+@import "_components/_profile/price";
+@import "_components/_profile/legalnotice";
+@import "_components/_profile/gallery";
+@import "_components/_profile/gofans";
+@import "_components/_profile/feed_idp";
+@import "_components/_profile/owner"; 
+
 
 body {
 

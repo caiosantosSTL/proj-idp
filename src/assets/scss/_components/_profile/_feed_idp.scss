@@ -1,0 +1,171 @@
+
+.section-homephoto2{
+
+    .filter {
+        display: grid;
+
+        @media (min-width: $max_mobile) {
+            grid-template-rows: 1fr 1fr;
+        }
+
+        @media (min-width: $max_tablet) {
+            grid-template-rows: 1fr 1fr;
+        }
+        @media (min-width: $max_desktop) {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .btn-filter-area {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            @media (min-width: $max_tablet) {
+                width: 1fr; 
+            }
+            @media (min-width: $max_desktop) {
+                max-width: 445px; 
+            }
+            justify-content: center;
+            align-items: center;
+
+            .desktop-h4 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                color: $primary-pink;
+            }
+
+            .btn-all {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 6px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid $gray-5;
+                cursor: pointer;
+
+                .desktop-btn {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .btn-photo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 6px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid $gray-5;
+                cursor: pointer;
+
+                .desktop-btn {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .btn-videos {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 6px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid $gray-5;
+                cursor: pointer;
+
+                .desktop-btn {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 24px;
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+        }
+
+        .btn-order-area {
+            display: flex;
+            flex-direction: row;
+            gap: 6px;
+            justify-content: center;
+            align-items: center;
+
+            .desktop-h4 {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                color: $primary-pink;
+            }
+
+            .btn-data {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 6px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid $gray-5;
+                cursor: pointer;
+                .desktop-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .btn-like {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                gap: 6px;
+                padding: 8px;
+                border-radius: 8px;
+                border: 1px solid $gray-5;
+                cursor: pointer;
+                .desktop-h4 {
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: $gray-5;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+}
