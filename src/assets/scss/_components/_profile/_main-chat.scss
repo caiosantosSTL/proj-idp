@@ -1,0 +1,162 @@
+
+
+.section-mainchat {
+    background-color: $white;
+
+    .container-mainchat {
+        width: 100%;
+        .title {
+
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .comment-area {
+            .title {
+
+            }
+            .input-btn{
+/*                 display: flex;
+                flex-direction: row; */
+                display: grid;
+                @media (min-width: $max_mobile) {
+                    grid-template-columns: 1fr; 
+                }
+                @media (min-width: $max_tablet) {
+                     
+                    grid-template-columns: 3fr 1fr;
+                }
+                gap: 8px;
+                .text-input{
+                    border-radius: 8px;
+                    height: auto;
+                    //width: 80%;
+                    margin: 0; 
+                    padding: 16px;
+                    font-size: medium;
+                    border: 1px solid var(--color-gray-05, #C6C5CE);
+                    &:focus{
+                        outline: none;
+                    }
+
+                }
+                .btn-pink{
+                    background-color: $primary-pink;
+                    border-radius: 8px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    .desktop-btn {
+                        /* Fonts Web/Button */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        /* 133.333% */
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        color: $white;
+                    }
+                }
+            }
+            .commentaries{
+                .title{
+
+                }
+                .filter{
+                    display: grid;
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: 2fr 1fr;
+                    }
+                    @media (min-width: $max_tablet) {
+                        grid-template-columns: 4fr 1fr;
+                    }
+
+                    .btn-filter-area{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 6px;
+                        .btn-data, .btn-like{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            gap: 6px;
+                            padding: 8px;
+                            border-radius: 8px;
+                            border: 1px solid $gray-5;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+                .commentaries-cards{
+
+                }
+            }
+        }
+    }
+}
+
+
+.dark{
+    .section-mainchat {
+        background-color: $dark-secondary;
+    
+        .container-mainchat {
+
+    
+            .comment-area {
+    
+
+                .input-btn{
+
+                    .text-input{
+
+                        border: 1px solid $white;
+                        color: $white;
+                        background-color: $dark-primary;
+                        &:focus{
+                            
+                        }
+    
+                    }
+
+                }
+                .commentaries{
+
+                    .filter{
+
+                        color: $white;
+                        .btn-filter-area{
+
+                            color: $white;
+                            .btn-data{
+
+                                border: 1px solid $white;
+
+                            }
+                            .btn-like{
+
+                                border: 1px solid $white;
+
+                            }
+                        }
+                    }
+                    .commentaries-cards{
+
+
+                    }
+                }
+            }
+        }
+    }
+}
