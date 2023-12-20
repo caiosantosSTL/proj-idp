@@ -3,7 +3,7 @@
 .card-dropdown {
         
     border-radius: 6px;
-    background-color: $white;
+    background-color: $section;
     .area-top {
         padding: 24px;
         gap: 16px;
@@ -41,7 +41,7 @@
     }
 }
 
-@mixin bar-box($color, $fontColor: $gray-4) {
+/* @mixin bar-box($color, $fontColor: $gray-4) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -69,18 +69,13 @@
 
 
 }
-
+ */
 
 .section-security {
     background-color: $white;
-    font-family: archivo;
-
-    padding-top: 64px;
-    padding-bottom: 64px;
     
-    .container {
-        max-width: 1500px;
-        margin: 0 auto;
+    .container-security {
+
         .title {
             display: flex;
             flex-direction: row;
@@ -97,7 +92,7 @@
             }
         }
 
-        .level-bar {
+/*         .level-bar {
             display: flex;
             flex-direction: row;
             justify-content: start;
@@ -123,7 +118,7 @@
 
                 @include bar-box(#42B786);
             }
-        }
+        } */
 
         .bar1 {
             .desktop-h3 {

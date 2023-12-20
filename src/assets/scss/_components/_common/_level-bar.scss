@@ -1,0 +1,58 @@
+
+@mixin bar-box($color, $fontColor: $gray-4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .bar {
+        width: 56px;
+        height: 8px;
+        background-color: $color;
+        border-radius: 100px;
+    }
+
+    .text-box {
+        width: 56px;
+        text-align: center;
+        margin:0;
+        padding: 0;
+
+        .text {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px;
+            color: $fontColor;
+        }
+    }
+
+
+}
+
+
+.level-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+
+    .bar-box-red{
+        
+        @include bar-box(#EA4D4D);
+    }
+    .bar-box-orange{
+
+        @include bar-box(#F1982F);
+    }
+    .bar-box-yellow{
+
+        @include bar-box(#F5C855);
+    }
+    .bar-box-softgreen{
+
+        @include bar-box(#6BDAAB);
+    }
+    .bar-box-green{
+
+        @include bar-box(#42B786);
+    }
+}

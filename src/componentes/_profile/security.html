@@ -1,7 +1,7 @@
 
 
-<section class="section-security">
-    <div class="container">
+<section class="section-security main-container-64-p">
+    <div class="container-security container">
         <div class="title">
             <i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -18,7 +18,7 @@
 
                 </div>
                 <div class="text-box">
-                    <p class="text">Porco confiável</p>
+                    <p class="text">Pouco confiável</p>
                 </div>
             </div>
             <div class="bar-box-orange">
@@ -55,17 +55,18 @@
             </div>
         </div>
         <div class="bar1">
+
             <p class="desktop-h3">Motivos que diminuem a confiança do anúncio</p>
             <div class="card-dropdown">
-                <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">01</p>
-                            <p class="text-title">Perfil pendente de autenticação facial. Não acessa a plataforma
+                <div class="">
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">01</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Perfil pendente de autenticação facial. Não acessa a plataforma
                                 com frequência.</p>
                         </div>
 
-                        <div class="btn" onclick="openCardFirst(); openIconX();">
+                        <div class="btn-dd m-0 p-0" onclick="openCardFirst(); openIconX();">
                             <i class="icon-plusx" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -81,7 +82,7 @@
                         </div>
                     </div>
                     <div class="area-text text-box01" style="display: none;">
-                        <p class="mobile-h4">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -90,52 +91,19 @@
 
                 </div>
             </div>
-            <script>
-                function openCardFirst() {
-            
-                    var areaText = document.querySelector('.text-box01');
-                    if (areaText.style.display === 'none' || areaText.style.display === '') {
-                        areaText.style.display = 'block';
-                    } else {
-                        areaText.style.display = 'none';
-                    }
-            
-                }
-            
-                function openIconX() {
-                    var iconPlusX = document.querySelector('.icon-plusx');
-                    var iconMinusX = document.querySelector('.icon-minusx');
-            
-            
-                    if (iconPlusX.style.display === 'block') {
-                        iconPlusX.style.display = 'none';
-                    } else {
-                        iconPlusX.style.display = 'block';
-                    }
-            
-            
-            
-                    if (iconMinusX.style.display === 'block') {
-                        iconMinusX.style.display = 'none';
-                    } else {
-                        iconMinusX.style.display = 'block';
-                    }
-            
-                }
-            
-            </script>
+<!-- script -->
         </div>
         <div class="bar-list-area">
             <p class="desktop-h3">Motivos que aumentam a confiança do anúncio</p>
             <div class="card-dropdown">
-                <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">01</p>
-                            <p class="text-title">Mídia de comparação enviada há 1 mês</p>
+                <div class="">
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">01</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Mídia de comparação enviada há 1 mês</p>
                         </div>
 
-                        <div class="btn" onclick="openCardGroup('text-box1'); openIcon('icon-plus', 'icon-minus');">
+                        <div class="btn-dd m-0 p-0" onclick="openCardGroup('text-box1'); openIcon('icon-plus', 'icon-minus');">
                             <i class="icon-plus" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                     fill="none">
@@ -150,8 +118,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box1">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box1" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -162,15 +130,15 @@
             </div>
 
             <div class="card-dropdown">
-                <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">02</p>
-                            <p class="text-title">Nenhuma foto ou vídeo deletados por serem considerados falsos no
+                <div class="">
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">02</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Nenhuma foto ou vídeo deletados por serem considerados falsos no
                                 último mês</p>
                         </div>
 
-                        <div class="btn"
+                        <div class="btn-dd m-0 p-0"
                             onclick="openCardGroup('text-box2'); openIcon('icon-plus2', 'icon-minus2');">
                             <i class="icon-plus2" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -186,8 +154,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box2">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box2" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -198,14 +166,14 @@
             </div>
 
             <div class="card-dropdown">
-                <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">03</p>
-                            <p class="text-title">Perfil criado há mais de 12 meses</p>
+                <div class="">
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">03</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Perfil criado há mais de 12 meses</p>
                         </div>
 
-                        <div class="btn"
+                        <div class="btn-dd m-0 p-0"
                             onclick="openCardGroup('text-box3'); openIcon('icon-plus3', 'icon-minus3');">
                             <i class="icon-plus3" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -221,8 +189,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box3">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box3" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -233,14 +201,14 @@
             </div>
 
             <div class="card-dropdown">
-                <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">04</p>
-                            <p class="text-title">Documentação verificada</p>
+                <div class="">
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">04</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Documentação verificada</p>
                         </div>
 
-                        <div class="btn"
+                        <div class="btn-dd m-0 p-0"
                             onclick="openCardGroup('text-box4'); openIcon('icon-plus4', 'icon-minus4');">
                             <i class="icon-plus4" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -256,8 +224,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box4">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box4" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -269,13 +237,13 @@
 
             <div class="card-dropdown">
                 <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">05</p>
-                            <p class="text-title">Mídia de comparação verificada</p>
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">05</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Mídia de comparação verificada</p>
                         </div>
 
-                        <div class="btn"
+                        <div class="btn-dd m-0 p-0"
                             onclick="openCardGroup('text-box5'); openIcon('icon-plus5', 'icon-minus5');">
                             <i class="icon-plus5" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -291,8 +259,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box5">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box5" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -304,13 +272,13 @@
 
             <div class="card-dropdown">
                 <div class="container">
-                    <div class="area-top">
-                        <div class="title">
-                            <p class="number">06</p>
-                            <p class="text-title">Telefone sem alteração há mais de 12 meses</p>
+                    <div class="area-top row justify-content-space-between">
+                        <div class="title row">
+                            <p class="number fs-24 fw-bold primary-pink m-0 p-0">06</p>
+                            <p class="text-title text-white m-0 p-0 gray-4 fs-20">Telefone sem alteração há mais de 12 meses</p>
                         </div>
 
-                        <div class="btn"
+                        <div class="btn-dd m-0 p-0"
                             onclick="openCardGroup('text-box6'); openIcon('icon-plus6', 'icon-minus6');">
                             <i class="icon-plus6" style="display: block;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -326,8 +294,8 @@
                             </i>
                         </div>
                     </div>
-                    <div class="area-text text-box6">
-                        <p class="mobile-h4">
+                    <div class="area-text text-box6" style="display: none;">
+                        <p class="mobile-h4 text-white gray-5 px-26">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
                             has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer too
@@ -341,3 +309,39 @@
         </div>
     </div>
 </section>
+
+
+<script>
+    function openCardFirst() {
+
+        var areaText = document.querySelector('.text-box01');
+        if (areaText.style.display === 'none' || areaText.style.display === '') {
+            areaText.style.display = 'block';
+        } else {
+            areaText.style.display = 'none';
+        }
+
+    }
+
+    function openIconX() {
+        var iconPlusX = document.querySelector('.icon-plusx');
+        var iconMinusX = document.querySelector('.icon-minusx');
+
+
+        if (iconPlusX.style.display === 'block') {
+            iconPlusX.style.display = 'none';
+        } else {
+            iconPlusX.style.display = 'block';
+        }
+
+
+
+        if (iconMinusX.style.display === 'block') {
+            iconMinusX.style.display = 'none';
+        } else {
+            iconMinusX.style.display = 'block';
+        }
+
+    }
+
+</script>
