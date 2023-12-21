@@ -4085,8 +4085,6 @@ img {
 
 .section-gallery {
   background-color: #fff;
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 .section-gallery .container-gallery {
   display: flex;
@@ -4118,12 +4116,8 @@ img {
   gap: 10px;
   max-height: 56px;
 }
-@media (max-width: 768px) {
-  .section-gallery .container-gallery .box-btn .btn-grid {
-    display: none;
-  }
-}
-.section-gallery .container-gallery .box-btn .btn-grid, .section-gallery .container-gallery .box-btn .btn-expand, .section-gallery .container-gallery .box-btn .btn-compact {
+.section-gallery .container-gallery .box-btn .btn-expand,
+.section-gallery .container-gallery .box-btn .btn-compact {
   display: flex;
 }
 .section-gallery .container-gallery .box-btn .btn-action {
@@ -4166,10 +4160,21 @@ img {
 }
 .section-gallery .container-gallery .grid-area-photo img {
   object-fit: cover;
+  border-radius: 4px;
   width: 99%;
   height: 98%;
 }
 
+@media (min-width: 768px) {
+  .btn-grid {
+    display: flex;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .btn-grid {
+    display: none;
+  }
+}
 .col-pic {
   display: inline-block;
   width: auto;
@@ -4195,21 +4200,6 @@ img {
   fill: #EC148E;
 }
 .dark .section-gallery .container-gallery .box-btn .btn-active .desktop-btn {
-  color: #EC148E;
-}
-.dark .section-gallery .container-gallery .box-btn-2 {
-  background-color: #1C1B23;
-}
-.dark .section-gallery .container-gallery .box-btn-2 .btn-action svg path {
-  fill: #fff;
-}
-.dark .section-gallery .container-gallery .box-btn-2 .btn-action:hover svg path {
-  fill: #EC148E;
-}
-.dark .section-gallery .container-gallery .box-btn-2 .btn-active svg path {
-  fill: #EC148E;
-}
-.dark .section-gallery .container-gallery .box-btn-2 .btn-active .desktop-btn {
   color: #EC148E;
 }
 
