@@ -36,7 +36,7 @@
             gap: 10px;
             max-height: 56px;
 
-            
+
             .btn-expand,
             .btn-compact {
                 display: flex;
@@ -114,13 +114,13 @@
 
 }
 
-@media (min-width: 768px) {
-    .btn-grid {
+
+.btn-grid {
+    @media (min-width: $min_tablet) {
         display: flex;
     }
-}
-@media (min-width: 0px) and (max-width:768px) {
-    .btn-grid{
+
+    @media (min-width: $min_mobile) and (max-width: $min_tablet) {
         display: none;
     }
 }
