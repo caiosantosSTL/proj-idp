@@ -1,6 +1,4 @@
 
-
-
 <section class="section-gallery">
     <div class="container-gallery container">
         <div class="top-icon-text">
@@ -16,8 +14,10 @@
         <div class="title">
             <p class="text-h2 gray-3 text-white p-0 m-0">Ensaio profissional</p>
         </div>
+
+
         <div class="box-btn">
-            <div id="btn-grid1-id" class="btn-action" onclick="changeGrid('flex');">
+            <div class="btn-action btn-grid" onclick="grid()">
                 <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M3 11H11V3H3M3 21H11V13H3M13 21H21V13H13M13 3V11H21V3" fill="#C6C5CE" />
@@ -25,7 +25,7 @@
                 </i>
                 <p class="desktop-btn gray-3 m-0 p-0 text-white">Grid</p>
             </div>
-            <div id="btn-compact1-id" class="btn-action" onclick="changeGrid(5); ">
+            <div class="btn-action btn-compact" onclick="compact()">
                 <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -35,7 +35,7 @@
                 </i>
                 <p class="desktop-btn gray-3 m-0 p-0 text-white">Compacto</p>
             </div>
-            <div id="btn-expand1-id" class="btn-action" onclick="changeGrid(1);">
+            <div class="btn-action btn-expand" onclick="expand()">
                 <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path
@@ -46,71 +46,46 @@
                 <p class="desktop-btn gray-3 m-0 p-0 text-white">Expandido</p>
             </div>
         </div>
-        <!-- ggg -->
-        <div class="box-btn-2">
-            <div id="btn-grid2-id" class="btn-action" onclick="changeGrid(1);">
-                <i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 11H11V3H3M3 21H11V13H3M13 21H21V13H13M13 3V11H21V3" fill="#C6C5CE" />
-                    </svg>
-                </i>
-                <p class="desktop-btn gray-3 m-0 p-0 text-white">Expandido</p>
-            </div>
-            <div id="btn-compact2-id" class="btn-action" onclick="changeGrid(2);">
-                <i>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                        <path
-                            d="M14 14H19V16H16V19H14V14ZM5 14H10V19H8V16H5V14ZM8 5H10V10H5V8H8V5ZM19 8V10H14V5H16V8H19Z"
-                            fill="#C6C5CE" />
-                    </svg>
-                </i>
-                <p class="desktop-btn gray-3 m-0 p-0 text-white">Compacto</p>
-            </div>
 
-        </div>
+
         <div class="grid-area-photo">
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/15835031/pexels-photo-15835031/free-photo-of-carros-veiculos-automoveis-cidade.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox vertical col-lg-3">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92634.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/18927240/pexels-photo-18927240/free-photo-of-arquitetura-lindo-bonito-atraente.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox vertical col-lg-3">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92636.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/15835031/pexels-photo-15835031/free-photo-of-carros-veiculos-automoveis-cidade.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox vertical col-lg-3">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92637.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/18927240/pexels-photo-18927240/free-photo-of-arquitetura-lindo-bonito-atraente.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox vertical col-lg-3">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92638.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/15835031/pexels-photo-15835031/free-photo-of-carros-veiculos-automoveis-cidade.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox horizontal col-lg-6">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92639.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/2387870/pexels-photo-2387870.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox horizontal col-lg-6">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92641.jpg"
                     alt="">
             </div>
-            <div class="pic-box">
-                <img src="https://images.pexels.com/photos/19090808/pexels-photo-19090808/free-photo-of-budapeste-lote-grupo-porcao.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            <div class="picbox horizontal col-lg-6">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92709.jpg"
+                    alt="">
+            </div>
+            <div class="picbox vertical col-lg-3">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/esther-millani-94174/acompanhante-esther-millani-92710.jpg"
                     alt="">
             </div>
 
         </div>
+
         <script>
-            function changeGrid(columns) {
-                if (columns === 'flex') {
-                    document.querySelector('.grid-area-photo').style.display = 'flex';
-                } else {
-                    document.querySelector('.grid-area-photo').style.display = 'grid';
-                    document.querySelector('.grid-area-photo').style.gridTemplateColumns = `repeat(${columns}, 1fr)`;
-                }
-            }
-        </script>
-        <script>
-            var sectionGallery = document.querySelector('.section-galery');
+            var sectionGallery = document.querySelector('.section-gallery');
             var btnActionList = sectionGallery.querySelectorAll('.btn-action');
 
             btnActionList.forEach(btnAction => {
@@ -121,5 +96,59 @@
             })
 
         </script>
+
+
     </div>
 </section>
+
+
+<script>
+    function compact() {
+
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.remove('col-lg-3')
+                div.classList.remove('col-12')
+                div.classList.add('col-pic')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.remove('col-lg-6')
+                div.classList.remove('col-12')
+                div.classList.add('col-pic')
+            }
+        })
+    }
+
+    function grid() {
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.add('col-lg-3')
+                div.classList.remove('col-pic')
+                div.classList.remove('col-12')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.add('col-lg-6')
+                div.classList.remove('col-pic')
+                div.classList.remove('col-12')
+            }
+        })
+    }
+
+    function expand() {
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.remove('col-lg-3')
+                div.classList.remove('col-pic')
+                div.classList.add('col-12')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.remove('col-lg-6')
+                div.classList.remove('col-pic')
+                div.classList.add('col-12')
+            }
+        })
+    }
+</script>

@@ -4107,6 +4107,8 @@ img {
   justify-content: center;
 }
 .section-gallery .container-gallery .box-btn {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   padding: 8px;
@@ -4116,24 +4118,15 @@ img {
   gap: 10px;
   max-height: 56px;
 }
-@media (min-width: 0px) {
-  .section-gallery .container-gallery .box-btn {
+@media (max-width: 768px) {
+  .section-gallery .container-gallery .box-btn .btn-grid {
     display: none;
   }
 }
-@media (min-width: 1024px) {
-  .section-gallery .container-gallery .box-btn {
-    display: none;
-  }
-}
-@media (min-width: 1200px) {
-  .section-gallery .container-gallery .box-btn {
-    display: flex;
-    flex-direction: row;
-  }
+.section-gallery .container-gallery .box-btn .btn-grid, .section-gallery .container-gallery .box-btn .btn-expand, .section-gallery .container-gallery .box-btn .btn-compact {
+  display: flex;
 }
 .section-gallery .container-gallery .box-btn .btn-action {
-  display: flex;
   flex-direction: row;
   gap: 6px;
   padding: 8px;
@@ -4166,123 +4159,24 @@ img {
   /* 133.333% */
   color: #EC148E;
 }
-.section-gallery .container-gallery .box-btn-2 {
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 8px;
-  border-radius: 6px;
-  background-color: #fff;
-  box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.2);
-  gap: 10px;
-  min-height: 56px;
-}
-@media (min-width: 480px) {
-  .section-gallery .container-gallery .box-btn-2 {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1024px) {
-  .section-gallery .container-gallery .box-btn-2 {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 1200px) {
-  .section-gallery .container-gallery .box-btn-2 {
-    display: none;
-  }
-}
-.section-gallery .container-gallery .box-btn-2 .btn-action {
-  display: flex;
-  flex-direction: row;
-  gap: 6px;
-  padding: 8px;
-  margin: 0px;
-  cursor: pointer;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-action svg path {
-  fill: #C6C5CE;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-action:hover svg path {
-  fill: #EC148E;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-action .desktop-btn {
-  /* Fonts Web/Button */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  /* 133.333% */
-  color: #3F3C4A;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  padding: 8px;
-  cursor: pointer;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-active svg path {
-  fill: #EC148E;
-}
-.section-gallery .container-gallery .box-btn-2 .btn-active .desktop-btn {
-  /* Fonts Web/Button */
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 24px;
-  /* 133.333% */
-  color: #EC148E;
-}
 .section-gallery .container-gallery .grid-area-photo {
-  gap: 16px;
-}
-@media (min-width: 480px) {
-  .section-gallery .container-gallery .grid-area-photo {
-    display: grid;
-    grid-template-columns: repeat(1, 2fr);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 1024px) {
-  .section-gallery .container-gallery .grid-area-photo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 1200px) {
-  .section-gallery .container-gallery .grid-area-photo {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-wrap: wrap;
-  }
-}
-.section-gallery .container-gallery .grid-area-photo .pic-box {
-  max-width: 800px;
-  height: auto;
-  border-radius: 8px;
   display: flex;
-  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-@media (min-width: 1200px) {
-  .section-gallery .container-gallery .grid-area-photo .pic-box {
-    flex: 1 1 300px;
-    overflow: hidden;
-  }
-}
-.section-gallery .container-gallery .grid-area-photo .pic-box img {
-  width: 100%;
-  max-height: 100%;
-  border-radius: 8px;
+.section-gallery .container-gallery .grid-area-photo img {
   object-fit: cover;
+  width: 99%;
+  height: 98%;
+}
+
+.col-pic {
+  display: inline-block;
+  width: auto;
+  max-width: initial;
+  flex: none;
+  height: 100px;
+  max-height: 100px;
 }
 
 .dark .section-gallery {

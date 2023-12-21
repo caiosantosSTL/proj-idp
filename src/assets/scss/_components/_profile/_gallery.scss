@@ -1,5 +1,3 @@
-
-
 .section-gallery {
     background-color: $white;
     padding-top: 64px;
@@ -27,21 +25,8 @@
         }
 
         .box-btn {
-            @media (min-width: $min_mobile) {
-
-                display: none;
-            }
-
-            @media (min-width: $max_tablet) {
-
-                display: none;
-            }
-
-            @media (min-width: $max_desktop) {
-
-                display: flex;
-                flex-direction: row;
-            }
+            display: flex;
+            flex-direction: row;
 
             justify-content: center;
             flex-wrap: wrap;
@@ -52,8 +37,18 @@
             gap: 10px;
             max-height: 56px;
 
-            .btn-action {
+            @media (max-width: 768px) {
+                .btn-grid {
+                    display: none;
+                }
+            }
+
+            .btn-grid, .btn-expand, .btn-compact{
                 display: flex;
+            }
+
+            .btn-action {
+                
                 flex-direction: row;
                 //align-items: center;
                 gap: 6px;
@@ -106,149 +101,37 @@
 
         }
 
-        .box-btn-2 {
-            @media (min-width: $max_mobile) {
-                display: flex;
-                flex-direction: row;
-            }
-
-            @media (min-width: $max_tablet) {
-                display: flex;
-                flex-direction: row;
-            }
-
-            @media (min-width: $max_desktop) {
-                display: none;
-            }
-
-            justify-content: center;
-            flex-wrap: wrap;
-            padding: 8px;
-            border-radius: 6px;
-            background-color: $white;
-            box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);
-            gap: 10px;
-            min-height: 56px;
-
-            .btn-action {
-                display: flex;
-                flex-direction: row;
-                //align-items: center;
-                gap: 6px;
-                padding: 8px;
-                margin: 0px;
-                cursor: pointer;
-
-                svg {
-                    path {
-                        fill: $gray-6;
-                    }
-                }
-
-                &:hover {
-                    svg {
-                        path {
-                            fill: $primary-pink;
-                        }
-                    }
-                }
-
-                .desktop-btn {
-                    /* Fonts Web/Button */
-
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 24px;
-                    /* 133.333% */
-                    color: $gray-3;
-                }
-
-            }
-
-            .btn-active {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 6px;
-                padding: 8px;
-                cursor: pointer;
-
-                svg {
-                    path {
-                        fill: $primary-pink;
-                    }
-                }
-
-                .desktop-btn {
-                    /* Fonts Web/Button */
-
-                    font-size: 18px;
-                    font-style: normal;
-                    font-weight: 600;
-                    line-height: 24px;
-                    /* 133.333% */
-                    color: $primary-pink;
-                }
-            }
-        }
 
         .grid-area-photo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
 
-            @media (min-width: $max_mobile) {
-                display: grid;
-                grid-template-columns: repeat(1, 2fr);
 
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap; 
-            }
-
-            @media (min-width: $max_tablet) {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap; 
-            }
-
-            @media (min-width: $max_desktop) {
-                display: flex;
-                flex-direction: row;
-                align-items: stretch;
-                flex-wrap: wrap; 
-
-            }
-
-            gap: 16px;
-
-            .pic-box {
-
-                max-width: 800px;
-                height: auto;
-                border-radius: 8px;
-                display: flex;
-                align-items: start;
-
-                @media (min-width: $max_desktop) {
-                    flex: 1 1 300px;
-                    overflow: hidden;
-                    
-                } 
-                img {
-                    width: 100%;
-                    max-height: 100%;
-                    border-radius: 8px;
-                    object-fit: cover;
-                }
+            img {
+                object-fit: cover;
+                width: 99%;
+                height: 98%;
             }
         }
     }
+
 }
 
 
-.dark{
+
+.col-pic {
+    display: inline-block;
+    width: auto;
+    max-width: initial;
+    flex: none;
+    height: 100px;
+    max-height: 100px;
+
+}
+
+
+.dark {
     .section-gallery {
         background-color: $dark-secondary;
 
