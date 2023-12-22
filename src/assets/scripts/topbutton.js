@@ -27,4 +27,16 @@
           btnWts.style.display = "none";
           btnPhone.style.display = "none";
         }
+
+        var heroPhone = document.querySelector('.phone-block')
+        var heroWts = document.querySelector('.whatsapp-block')
+        if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+          heroPhone.style.display = "none";
+          heroWts.style.display = "none";
+        } else {
+          heroPhone.style.display = "block";
+          heroWts.style.display = "block";
+        }
+
+
       }
