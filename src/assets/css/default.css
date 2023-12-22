@@ -1862,51 +1862,51 @@ footer .copyright {
   text-decoration: underline;
 }
 
-.dark header {
+.dark .header {
   background-color: #151419;
 }
 @media (max-width: 1200px) {
-  .dark header .container .header-content .input-group.show::before {
+  .dark .header .container .header-content .input-group.show::before {
     background-color: #151419;
   }
 }
-.dark header .container .btn {
+.dark .header .container .btn {
   background-color: #3F3C4A;
 }
-.dark header .container .btn-group .icons-btn .btn-flex {
+.dark .header .container .btn-group .icons-btn .btn-flex {
   background-color: #3F3C4A;
 }
-.dark header .container .btn-group .icons-btn .btn-flex svg path {
+.dark .header .container .btn-group .icons-btn .btn-flex svg path {
   fill: #fff;
 }
-.dark header .container .btn-group .dropdown:hover {
+.dark .header .container .btn-group .dropdown:hover {
   background-color: #878787;
 }
-.dark header .container .btn-group .dropdown svg path {
+.dark .header .container .btn-group .dropdown svg path {
   fill: #fff;
 }
-.dark header .modal-menu .menu-section .menu-options {
+.dark .header .modal-menu .menu-section .menu-options {
   background-color: #1C1B23;
 }
-.dark header .modal-menu .menu-section .menu-options p {
+.dark .header .modal-menu .menu-section .menu-options p {
   color: #C6C5CE;
 }
-.dark header .modal-menu .menu-section .main-menu-view .navigation a {
+.dark .header .modal-menu .menu-section .main-menu-view .navigation a {
   color: #C6C5CE;
 }
-.dark header .modal-menu .menu-section .main-menu-view .navigation a:hover {
+.dark .header .modal-menu .menu-section .main-menu-view .navigation a:hover {
   color: #EC148E;
 }
-.dark header .modal-menu .menu-section .main-menu-view .navigation a > span svg path {
+.dark .header .modal-menu .menu-section .main-menu-view .navigation a > span svg path {
   fill: #C6C5CE;
 }
-.dark header .modal-menu .menu-section .main-menu-view .navigation .menu-title {
+.dark .header .modal-menu .menu-section .main-menu-view .navigation .menu-title {
   color: #fff;
 }
-.dark header .use-location svg path {
+.dark .header .use-location svg path {
   fill: #fff;
 }
-.dark header .use-location a {
+.dark .header .use-location a {
   color: #fff;
 }
 
