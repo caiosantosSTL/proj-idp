@@ -3,7 +3,7 @@
 .section-gofans {
     background-color: $white;
     
-    .container {
+    .container-gofans {
         @media (min-width: $min_mobile) {
             max-width: calc(1500px - 90%);
         }
@@ -17,11 +17,6 @@
         }
         margin: 0 auto;
         overflow: scroll;
-
-
-        .title {
-
-        }
 
         .cards-area {
             display: flex;

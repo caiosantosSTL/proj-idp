@@ -1653,7 +1653,7 @@ footer .copyright {
 
 .header {
   background-color: #fff;
-  z-index: 2;
+  z-index: 3;
 }
 .header .container .header-content {
   gap: 15px;
@@ -3636,7 +3636,7 @@ img {
 .fixedbar-sticky {
   position: sticky;
   top: 88px;
-  z-index: 1;
+  z-index: 2;
 }
 
 .section-fixedbar {
@@ -4219,26 +4219,26 @@ img {
 .section-gofans {
   background-color: #fff;
 }
-.section-gofans .container {
+.section-gofans .container-gofans {
   margin: 0 auto;
   overflow: scroll;
 }
 @media (min-width: 0px) {
-  .section-gofans .container {
+  .section-gofans .container-gofans {
     max-width: calc(1500px - 90%);
   }
 }
 @media (min-width: 768px) {
-  .section-gofans .container {
+  .section-gofans .container-gofans {
     max-width: calc(1500px - 50%);
   }
 }
 @media (min-width: 1200px) {
-  .section-gofans .container {
+  .section-gofans .container-gofans {
     max-width: 1500px;
   }
 }
-.section-gofans .container .cards-area {
+.section-gofans .container-gofans .cards-area {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -4247,7 +4247,7 @@ img {
   column-gap: 32px;
   transition: transform 0.5s ease;
 }
-.section-gofans .container .cards-area .card-profile {
+.section-gofans .container-gofans .cards-area .card-profile {
   display: flex;
   flex-direction: column;
   height: auto;
@@ -4257,42 +4257,42 @@ img {
   padding: 24px;
 }
 @media (min-width: 0px) {
-  .section-gofans .container .cards-area .card-profile {
+  .section-gofans .container-gofans .cards-area .card-profile {
     flex: 1 1 550px;
   }
 }
 @media (min-width: 1024px) {
-  .section-gofans .container .cards-area .card-profile {
+  .section-gofans .container-gofans .cards-area .card-profile {
     flex: 1 0 550px;
   }
 }
 @media (min-width: 1200px) {
-  .section-gofans .container .cards-area .card-profile {
+  .section-gofans .container-gofans .cards-area .card-profile {
     flex: 1 0 550px;
   }
 }
-.section-gofans .container .cards-area .card-profile .top {
+.section-gofans .container-gofans .cards-area .card-profile .top {
   display: flex;
   flex-direction: row;
   gap: 6px;
 }
-.section-gofans .container .cards-area .card-profile .top .photo-profile {
+.section-gofans .container-gofans .cards-area .card-profile .top .photo-profile {
   height: auto;
   width: 150px;
   border-radius: 4px;
   background-color: #262626;
 }
-.section-gofans .container .cards-area .card-profile .top .text-area-gofans {
+.section-gofans .container-gofans .cards-area .card-profile .top .text-area-gofans {
   display: flex;
   flex-direction: column;
 }
-.section-gofans .container .cards-area .card-profile .top .text-area-gofans .name-time {
+.section-gofans .container-gofans .cards-area .card-profile .top .text-area-gofans .name-time {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
-.section-gofans .container .cards-area .card-profile .photo-post {
+.section-gofans .container-gofans .cards-area .card-profile .photo-post {
   width: 100%;
   height: 280px;
   background-color: #d5b06c;
@@ -4300,12 +4300,12 @@ img {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.section-gofans .container .cards-area .card-profile .photo-post img {
+.section-gofans .container-gofans .cards-area .card-profile .photo-post img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.section-gofans .container .cards-area .card-profile .bottom .link {
+.section-gofans .container-gofans .cards-area .card-profile .bottom .link {
   font-size: 18px;
   font-style: normal;
   font-weight: 600;
@@ -4357,17 +4357,23 @@ img {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  row-gap: 16px;
 }
 .section-homephoto2 .filter .btn-filter-area {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
   gap: 6px;
-  justify-content: center;
   align-items: center;
-  width: 485px;
+  min-width: 485px;
 }
 .section-homephoto2 .filter .btn-filter-area .filter-text {
-  width: 90px;
+  min-width: 100px;
+}
+.section-homephoto2 .filter .btn-filter-area .btn-block {
+  display: flex;
+  gap: 8px;
 }
 .section-homephoto2 .filter .btn-filter-area .btn-all, .section-homephoto2 .filter .btn-filter-area .btn-photo, .section-homephoto2 .filter .btn-filter-area .btn-videos {
   display: flex;
@@ -4389,10 +4395,27 @@ img {
 .section-homephoto2 .filter .btn-order-area {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 6px;
-  justify-content: center;
   align-items: center;
-  width: 350px;
+  min-width: 350px;
+}
+@media (min-width: 0px) {
+  .section-homephoto2 .filter .btn-order-area {
+    justify-content: start;
+  }
+}
+@media (min-width: 768px) {
+  .section-homephoto2 .filter .btn-order-area {
+    justify-content: end;
+  }
+}
+.section-homephoto2 .filter .btn-order-area .order-text {
+  min-width: 100px;
+}
+.section-homephoto2 .filter .btn-order-area .btn-block-order {
+  display: flex;
+  gap: 8px;
 }
 .section-homephoto2 .filter .btn-order-area .btn-data, .section-homephoto2 .filter .btn-order-area .btn-like {
   display: flex;

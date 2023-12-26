@@ -6,17 +6,24 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        row-gap: 16px;
 
         .btn-filter-area {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: start;
             gap: 6px;
-            justify-content: center;
             align-items: center;
-            width: 485px;
+            min-width: 485px;
+
             
             .filter-text{
-                width: 90px;
+                min-width: 100px;
+            }
+            .btn-block{
+                display: flex;
+                gap: 8px;
             }
             .btn-all, .btn-photo, .btn-videos {
                 display: flex;
@@ -42,11 +49,26 @@
         .btn-order-area {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             gap: 6px;
-            justify-content: center;
+            @media (min-width: $min_mobile) {
+                justify-content: start; 
+            }
+            @media (min-width: $min_tablet) {
+                justify-content: end;
+                
+            }
             align-items: center;
-            width: 350px;
+            min-width: 350px;
 
+            .order-text{
+                min-width: 100px;
+            }
+
+            .btn-block-order{
+                display: flex;
+                gap: 8px;
+            }
             .btn-data, .btn-like  {
                 display: flex;
                 flex-direction: row;
