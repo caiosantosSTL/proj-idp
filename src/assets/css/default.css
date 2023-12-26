@@ -1061,6 +1061,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   text-align: center;
 }
 
+.border-right {
+  border-right: 1px solid var(--Color-Gray-05, #C6C5CE);
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -3906,7 +3910,8 @@ img {
 }
 .section-about2 .profile-area .profile-text-area .about-me .grid-attributes {
   display: grid;
-  gap: 16px;
+  row-gap: 24px;
+  column-gap: 32px;
 }
 @media (min-width: 480px) {
   .section-about2 .profile-area .profile-text-area .about-me .grid-attributes {
@@ -4030,6 +4035,7 @@ img {
   line-height: 24px;
   text-align: justify;
   text-transform: lowercase;
+  margin-right: 16px;
 }
 .section-price .container-price .payment {
   display: flex;
