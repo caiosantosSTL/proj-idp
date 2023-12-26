@@ -7,12 +7,15 @@
     .area-top {
         padding: 24px;
         gap: 16px;
+        flex-wrap: nowrap;
         .title{
             display: flex;
             gap: 16px;
+            flex-wrap: nowrap;
             .text-title{
                 display: flex;
                 align-items: center;
+                min-width: 300px;
             }
         }
         .btn-dd{

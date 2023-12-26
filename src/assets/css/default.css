@@ -4408,14 +4408,17 @@ img {
 .card-dropdown .area-top {
   padding: 24px;
   gap: 16px;
+  flex-wrap: nowrap;
 }
 .card-dropdown .area-top .title {
   display: flex;
   gap: 16px;
+  flex-wrap: nowrap;
 }
 .card-dropdown .area-top .title .text-title {
   display: flex;
   align-items: center;
+  min-width: 300px;
 }
 .card-dropdown .area-top .btn-dd:hover {
   cursor: pointer;
