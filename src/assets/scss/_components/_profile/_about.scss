@@ -25,6 +25,10 @@
             display: grid;
             gap: 16px;
 
+            @media (min-width: $min_mobile) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             @media (min-width: $max_tablet) {
                 grid-template-columns: repeat(2, 1fr);
             }

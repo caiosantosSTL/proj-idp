@@ -71,7 +71,7 @@
                 </div>
                 <div class="commentaries-cards">
 
-                    <div class="comment-card">
+                    <div class="comment-card m-8 mb-16">
                         <div class="name-time">
                             <p class="mobile-h3 gray-5 m-0 p-0 text-white">Jorge</p>
                             <p class="mini-text1 gray-5 m-0 p-0 text-white">Há 3 Dias</p>
@@ -105,7 +105,92 @@
                         </div>
                     </div>
                     <!-- res card -->
-                    <div id="answer-id" class="comment-card" style="display: none;">
+                    <div id="answer-id" class="comment-card m-8 mb-16" style="display: none;">
+
+                        <div class="name-time-res">
+                            <div class="icon-name">
+                                <div class="icon-response">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18"
+                                        viewBox="0 0 16 18" fill="none">
+                                        <path
+                                            d="M16 12L10.5 17.5L9.08 16.09L12.17 13H6.5C2.91 13 0 10.09 0 6.5V0H2V6.5C2 9 4 11 6.5 11H12.17L9.09 7.91L10.5 6.5L16 12Z"
+                                            fill="#524F5F" />
+                                    </svg>
+                                </div>
+                                <p class="mobile-h3 gray-5 m-0 p-0 text-white">Jones</p>
+                            </div>
+                            <p class="mini-text1 gray-5 m-0 p-0 text-white">Há 3 Dias</p>
+                        </div>
+                        <div class="content">
+                            <p class="mobile-h4 gray-3 m-0 p-0 text-white">Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                        <div class="like-answer">
+                            <div class="like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none">
+                                        <path
+                                            d="M12.6665 21.35L11.2165 20.03C6.0665 15.36 2.6665 12.27 2.6665 8.5C2.6665 5.41 5.0865 3 8.1665 3C9.9065 3 11.5765 3.81 12.6665 5.08C13.7565 3.81 15.4265 3 17.1665 3C20.2465 3 22.6665 5.41 22.6665 8.5C22.6665 12.27 19.2665 15.36 14.1165 20.03L12.6665 21.35Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <p class="mobile-h3 gray-5 m-0 p-0 text-white">40</p>
+                            </div>
+                            <div class="answer">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 3C17.5 3 22 6.58 22 11C22 15.42 17.5 19 12 19C10.76 19 9.57 18.82 8.47 18.5C5.55 21 2 21 2 21C4.33 18.67 4.7 17.1 4.75 16.5C3.05 15.07 2 13.13 2 11C2 6.58 6.5 3 12 3ZM17 12V10H15V12H17ZM13 12V10H11V12H13ZM9 12V10H7V12H9Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <p class="mobile-h3 gray-5 m-0 p-0 text-white">Responder</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="commentaries-cards">
+
+                    <div class="comment-card m-8 mb-16">
+                        <div class="name-time">
+                            <p class="mobile-h3 gray-5 m-0 p-0 text-white">Jorge</p>
+                            <p class="mini-text1 gray-5 m-0 p-0 text-white">Há 3 Dias</p>
+                        </div>
+                        <div class="content">
+                            <p class="mobile-h4 gray-3 m-0 p-0 text-white">Lorem ipsum dolor sit amet ...</p>
+                        </div>
+                        <div class="like-answer">
+                            <div class="like">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                        viewBox="0 0 25 24" fill="none">
+                                        <path
+                                            d="M12.6665 21.35L11.2165 20.03C6.0665 15.36 2.6665 12.27 2.6665 8.5C2.6665 5.41 5.0865 3 8.1665 3C9.9065 3 11.5765 3.81 12.6665 5.08C13.7565 3.81 15.4265 3 17.1665 3C20.2465 3 22.6665 5.41 22.6665 8.5C22.6665 12.27 19.2665 15.36 14.1165 20.03L12.6665 21.35Z"
+                                            fill="#EC148E" />
+                                    </svg>
+                                </i>
+                                <p class="mobile-h3 gray-5 m-0 p-0 text-white">40</p>
+                            </div>
+                            <div class="answer" onclick="openAnswer()">
+                                <i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path
+                                            d="M12 3C17.5 3 22 6.58 22 11C22 15.42 17.5 19 12 19C10.76 19 9.57 18.82 8.47 18.5C5.55 21 2 21 2 21C4.33 18.67 4.7 17.1 4.75 16.5C3.05 15.07 2 13.13 2 11C2 6.58 6.5 3 12 3ZM17 12V10H15V12H17ZM13 12V10H11V12H13ZM9 12V10H7V12H9Z"
+                                            fill="#7A7786" />
+                                    </svg>
+                                </i>
+                                <p class="mobile-h3 gray-5 m-0 p-0 text-white">Responder</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- res card -->
+                    <div id="answer-id" class="comment-card m-8 mb-16" style="display: none;">
 
                         <div class="name-time-res">
                             <div class="icon-name">

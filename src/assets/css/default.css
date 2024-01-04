@@ -508,6 +508,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   margin-bottom: 8px;
 }
 
+.m-8 {
+  margin: 8px;
+}
+
 .m-10 {
   margin: 10px;
 }
@@ -1368,6 +1372,11 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
     grid-template-columns: repeat(3, auto);
   }
 }
+@media (min-width: 1200px) {
+  .grid-c2-lg {
+    grid-template-columns: repeat(2, auto);
+  }
+}
 @media (min-width: 768px) and (max-width: 1200px) {
   .grid-c2 {
     grid-template-columns: repeat(2, auto);
@@ -1428,6 +1437,7 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
+  margin-top: 8px;
 }
 .social-area .action-area .top .btn-action {
   display: flex;
@@ -1504,7 +1514,6 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   display: flex;
   flex-direction: column;
   background-color: #F1F0F5;
-  margin: 8px;
   padding-inline: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -2824,6 +2833,7 @@ footer .copyright {
   flex-wrap: wrap;
   justify-content: space-around;
   border-bottom: 1px solid var(--color-gray-05, #C6C5CE);
+  margin-top: 8px;
 }
 .social-area .action-area .top .btn-action {
   display: flex;
@@ -2900,7 +2910,6 @@ footer .copyright {
   display: flex;
   flex-direction: column;
   background-color: #F1F0F5;
-  margin: 8px;
   padding-inline: 16px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -3679,6 +3688,11 @@ img {
 }
 @media (min-width: 768px) {
   .section-fixedbar .container-fixedbar .item {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1025px) {
+  .section-fixedbar .container-fixedbar .item {
     flex-direction: row;
   }
 }
@@ -3803,6 +3817,11 @@ img {
 .section-about .container-about .card-icon-square-area {
   display: grid;
   gap: 16px;
+}
+@media (min-width: 0px) {
+  .section-about .container-about .card-icon-square-area {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1024px) {
   .section-about .container-about .card-icon-square-area {
@@ -4373,7 +4392,7 @@ img {
 }
 .section-homephoto2 .filter .btn-filter-area .btn-block {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 .section-homephoto2 .filter .btn-filter-area .btn-all, .section-homephoto2 .filter .btn-filter-area .btn-photo, .section-homephoto2 .filter .btn-filter-area .btn-videos {
   display: flex;
@@ -4382,9 +4401,9 @@ img {
   justify-content: center;
   width: 100%;
   gap: 6px;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
-  border: 1px solid #7A7786;
+  border: 1px solid #C6C5CE;
   cursor: pointer;
 }
 .section-homephoto2 .filter .btn-filter-area .btn-all i, .section-homephoto2 .filter .btn-filter-area .btn-photo i, .section-homephoto2 .filter .btn-filter-area .btn-videos i {
@@ -4415,7 +4434,7 @@ img {
 }
 .section-homephoto2 .filter .btn-order-area .btn-block-order {
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 .section-homephoto2 .filter .btn-order-area .btn-data, .section-homephoto2 .filter .btn-order-area .btn-like {
   display: flex;
@@ -4424,9 +4443,9 @@ img {
   justify-content: center;
   width: 100%;
   gap: 6px;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
-  border: 1px solid #7A7786;
+  border: 1px solid #C6C5CE;
   cursor: pointer;
 }
 
@@ -4801,7 +4820,7 @@ img {
 .section-mainchat .container-mainchat .comment-area .commentaries .filter .btn-filter-area {
   display: flex;
   flex-direction: row;
-  gap: 6px;
+  gap: 10px;
 }
 .section-mainchat .container-mainchat .comment-area .commentaries .filter .btn-filter-area .btn-data, .section-mainchat .container-mainchat .comment-area .commentaries .filter .btn-filter-area .btn-like {
   display: flex;
@@ -4810,9 +4829,9 @@ img {
   justify-content: center;
   width: 100%;
   gap: 6px;
-  padding: 8px;
+  padding: 12px;
   border-radius: 8px;
-  border: 1px solid #7A7786;
+  border: 1px solid #C6C5CE;
   cursor: pointer;
 }
 .dark .section-mainchat {
@@ -5033,25 +5052,24 @@ img {
   color: #C6C5CE;
 }
 
-.whatsapp-btn {
-  background-color: #EC148E;
+.whatsapp-btn, .phone-btn {
   border-radius: 8px;
   display: block;
-  position: fixed;
-  bottom: 82px;
-  right: 110px;
   padding: 12px;
   cursor: pointer;
   z-index: 3;
 }
-.whatsapp-btn .icon-text {
+.whatsapp-btn .icon-text, .phone-btn .icon-text {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.whatsapp-btn .icon-text p {
+.whatsapp-btn .icon-text i svg path, .phone-btn .icon-text i svg path {
+  fill: #fff;
+}
+.whatsapp-btn .icon-text p, .phone-btn .icon-text p {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
@@ -5059,54 +5077,51 @@ img {
   margin: 0;
   padding: 0;
 }
-@media (min-width: 480px) {
-  .whatsapp-btn .icon-text p {
+@media (min-width: 0px) {
+  .whatsapp-btn .icon-text p, .phone-btn .icon-text p {
     font-size: 14px;
   }
 }
-@media (min-width: 1024px) {
-  .whatsapp-btn .icon-text p {
+@media (min-width: 768px) {
+  .whatsapp-btn .icon-text p, .phone-btn .icon-text p {
     font-size: 24px;
+  }
+}
+
+.whatsapp-btn {
+  background-color: #EC148E;
+  position: fixed;
+}
+@media (min-width: 0px) {
+  .whatsapp-btn {
+    bottom: 82px;
+    right: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .whatsapp-btn {
+    margin-right: 104px;
+    padding: 24px;
+    bottom: 20px;
+    right: 285px;
   }
 }
 
 .phone-btn {
   background-color: #C21F25;
-  border-radius: 8px;
-  display: block;
   position: fixed;
-  bottom: 20px;
-  right: 110px;
-  padding: 12px;
-  cursor: pointer;
-  z-index: 3;
 }
-.phone-btn .icon-text {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.phone-btn .icon-text i svg path {
-  fill: #fff;
-}
-.phone-btn .icon-text p {
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-@media (min-width: 480px) {
-  .phone-btn .icon-text p {
-    font-size: 14px;
+@media (min-width: 0px) {
+  .phone-btn {
+    bottom: 20px;
+    right: 110px;
   }
 }
-@media (min-width: 1024px) {
-  .phone-btn .icon-text p {
-    font-size: 24px;
+@media (min-width: 768px) {
+  .phone-btn {
+    padding: 24px;
+    bottom: 20px;
+    right: 110px;
   }
 }
 

@@ -82,7 +82,7 @@
                     .btn-filter-area{
                         display: flex;
                         flex-direction: row;
-                        gap: 6px;
+                        gap: 10px;
                         .btn-data, .btn-like{
                             display: flex;
                             flex-direction: row;
@@ -90,9 +90,9 @@
                             justify-content: center;
                             width: 100%;
                             gap: 6px;
-                            padding: 8px;
+                            padding: 12px;
                             border-radius: 8px;
-                            border: 1px solid $gray-5;
+                            border: 1px solid $gray-6;
                             cursor: pointer;
                         }
 

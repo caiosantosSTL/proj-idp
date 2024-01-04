@@ -23,7 +23,7 @@
             }
             .btn-block{
                 display: flex;
-                gap: 8px;
+                gap: 10px;
             }
             .btn-all, .btn-photo, .btn-videos {
                 display: flex;
@@ -32,9 +32,9 @@
                 justify-content: center;
                 width: 100%;
                 gap: 6px;
-                padding: 8px;
+                padding: 12px;
                 border-radius: 8px;
-                border: 1px solid $gray-5;
+                border: 1px solid $gray-6;
                 cursor: pointer;
                 i{
                     display: flex;
@@ -67,7 +67,7 @@
 
             .btn-block-order{
                 display: flex;
-                gap: 8px;
+                gap: 10px;
             }
             .btn-data, .btn-like  {
                 display: flex;
@@ -76,9 +76,9 @@
                 justify-content: center;
                 width: 100%;
                 gap: 6px;
-                padding: 8px;
+                padding: 12px;
                 border-radius: 8px;
-                border: 1px solid $gray-5;
+                border: 1px solid $gray-6;
                 cursor: pointer;
             }
 

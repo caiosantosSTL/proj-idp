@@ -33,6 +33,10 @@
                 flex-direction: column;
             } 
             @media (min-width: $min_tablet) {
+                flex-direction: column;
+                
+            }
+            @media (min-width: $min_desktop) {
                 flex-direction: row;
                 
             }
