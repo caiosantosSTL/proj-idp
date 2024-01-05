@@ -59,12 +59,12 @@
     }
     .whatsapp-block{
         //top: 185px;
-        top: 35%;
+        top: 30%;
         right: 0px;
     }
     .phone-block {
         //top: 335px;
-        top: 55%;
+        top: 45%;
         right: 0px;
     }
 }
@@ -86,6 +86,9 @@
                 }
             };
         }
+    }
+    .whatsapp-block, .phone-block{
+        background-color: $dark-secondary;
     }
 
     .top-page{
