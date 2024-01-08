@@ -5036,51 +5036,50 @@ img {
   content: "";
 }
 
-/* @media (max-width: 576px) {
-    .desktop{
-        display: none;
-    }
-
+.container-absolute {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
 }
-@media (min-width: 577px) {
-    .mobile{
-        display: none;
-    }
 
-} */
-.pic-area-profile {
+.profile-image {
   width: 100%;
   max-width: 100%;
   overflow: hidden;
   height: auto;
+  position: static;
 }
-.pic-area-profile::before {
+.profile-image::before {
   content: "";
   display: block;
 }
-@media (max-width: 576px) {
-  .pic-area-profile::before {
-    padding-top: 138.4615384615%;
+@media (min-width: 0px) and (max-width: 576px) {
+  .profile-image::before {
+    aspect-ratio: 0.5;
   }
 }
 @media (min-width: 577px) {
-  .pic-area-profile::before {
-    padding-top: 47.8723404255%;
+  .profile-image::before {
+    aspect-ratio: 1.7777777778;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
-  .pic-area-profile .mobile {
+  .profile-image .mobile {
     display: block;
   }
-  .pic-area-profile .desktop {
+  .profile-image .desktop {
     display: none;
   }
 }
 @media (min-width: 577px) {
-  .pic-area-profile .mobile {
+  .profile-image .mobile {
     display: none;
   }
-  .pic-area-profile .desktop {
+  .profile-image .desktop {
     display: block;
   }
 }

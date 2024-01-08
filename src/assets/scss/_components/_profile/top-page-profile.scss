@@ -21,34 +21,36 @@
     }
 }
 
-/* @media (max-width: 576px) {
-    .desktop{
-        display: none;
-    }
-    
+
+.container-absolute{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
 }
-@media (min-width: 577px) {
-    .mobile{
-        display: none;
-    }
-    
-} */
 
 
-.pic-area-profile{
+.profile-image{
     width: 100%;
     max-width: 100%;
     overflow: hidden;
     height: auto;
+    //margin-top: 45px;
+    position: static;
     &::before{
         content: "";
         display: block;
-        @media (max-width: 576px) {
-            padding-top: calc(180 / 130 * 100%);
+        @media (min-width: 0px) and (max-width: 576px) {
+            //padding-top: calc(180 / 130 * 100%);
+            aspect-ratio: (0.5);
 
         }
         @media (min-width: 577px) {
-            padding-top: calc(225 / 470 * 100%);
+            //padding-top: calc(225 / 470 * 100%);
+            aspect-ratio: (16/9);
         }
     }
     @media (min-width: 0px) and (max-width: 576px) {
