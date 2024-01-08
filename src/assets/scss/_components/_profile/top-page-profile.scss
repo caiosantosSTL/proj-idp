@@ -1,7 +1,7 @@
 
 .breadcrumb{
     backdrop-filter: blur(10px);
-    position: relative;
+    position: absolute;
     z-index: 1;
     > ul {        
         list-style: none;        
@@ -21,36 +21,33 @@
     }
 }
 
-
+.container-hero{
+    max-width: 1500px;
+    min-width: 375px;
+    margin: 0 auto;
+}
 .container-absolute{
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    right: 0;
-    left: 0;
     bottom: 0;
-    height: 100%;
+
 }
 
 
 .profile-image{
     width: 100%;
-    max-width: 100%;
+    //max-width: 100%;
     overflow: hidden;
     height: auto;
-    //margin-top: 45px;
     position: static;
     &::before{
         content: "";
         display: block;
-        @media (min-width: 0px) and (max-width: 576px) {
-            //padding-top: calc(180 / 130 * 100%);
-            aspect-ratio: (0.5);
+        @media (max-width: 576px) {
+            padding-top: calc(180 / 130 * 100%);
 
         }
         @media (min-width: 577px) {
-            //padding-top: calc(225 / 470 * 100%);
-            aspect-ratio: (16/9);
+            padding-top: calc(225 / 470 * 100%);
         }
     }
     @media (min-width: 0px) and (max-width: 576px) {
@@ -102,6 +99,11 @@
 
 .box-hero{
     position: relative;
+    .block-wp{
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
     .whatsapp-block, .phone-block {
         display: flex;
         padding: 16px;
@@ -110,19 +112,20 @@
         align-items: center;
         gap: 16px;
 
-        position: absolute;
+        //position: absolute;
         background-color: $white;
         border-radius: 6px 0px 0px 6px;
+        margin-bottom: 10px;
 
     }
-    .whatsapp-block{
+    .whatsapp-blockx{
         //top: 185px;
-        top: 458px;
+        top: 35%;
         right: 0px;
     }
-    .phone-block {
+    .phone-blockx {
         //top: 335px;
-        top: 552px;
+        top: 50%;
         right: 0px;
     }
 }

@@ -5020,7 +5020,7 @@ img {
 
 .breadcrumb {
   backdrop-filter: blur(10px);
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .breadcrumb > ul {
@@ -5036,19 +5036,19 @@ img {
   content: "";
 }
 
+.container-hero {
+  max-width: 1500px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
 .container-absolute {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  right: 0;
-  left: 0;
   bottom: 0;
-  height: 100%;
 }
 
 .profile-image {
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
   height: auto;
   position: static;
@@ -5057,14 +5057,14 @@ img {
   content: "";
   display: block;
 }
-@media (min-width: 0px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .profile-image::before {
-    aspect-ratio: 0.5;
+    padding-top: 138.4615384615%;
   }
 }
 @media (min-width: 577px) {
   .profile-image::before {
-    aspect-ratio: 1.7777777778;
+    padding-top: 47.8723404255%;
   }
 }
 @media (min-width: 0px) and (max-width: 576px) {
@@ -5109,6 +5109,11 @@ img {
 .box-hero {
   position: relative;
 }
+.box-hero .block-wp {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
 .box-hero .whatsapp-block, .box-hero .phone-block {
   display: flex;
   padding: 16px;
@@ -5116,16 +5121,16 @@ img {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  position: absolute;
   background-color: #fff;
   border-radius: 6px 0px 0px 6px;
+  margin-bottom: 10px;
 }
-.box-hero .whatsapp-block {
-  top: 458px;
+.box-hero .whatsapp-blockx {
+  top: 35%;
   right: 0px;
 }
-.box-hero .phone-block {
-  top: 552px;
+.box-hero .phone-blockx {
+  top: 50%;
   right: 0px;
 }
 
