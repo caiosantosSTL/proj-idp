@@ -1,5 +1,8 @@
 
 .breadcrumb{
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 1;
     > ul {        
         list-style: none;        
         li {                     
@@ -17,6 +20,58 @@
         };
     }
 }
+
+/* @media (max-width: 576px) {
+    .desktop{
+        display: none;
+    }
+    
+}
+@media (min-width: 577px) {
+    .mobile{
+        display: none;
+    }
+    
+} */
+
+
+.pic-area-profile{
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    height: auto;
+    &::before{
+        content: "";
+        display: block;
+        @media (max-width: 576px) {
+            padding-top: calc(180 / 130 * 100%);
+
+        }
+        @media (min-width: 577px) {
+            padding-top: calc(225 / 470 * 100%);
+        }
+    }
+    @media (min-width: 0px) and (max-width: 576px) {
+        .mobile{
+            display: block;
+        }
+        .desktop{
+            display: none;
+        }
+        
+    }
+    @media (min-width: 577px){
+        .mobile{
+            display: none;
+        }
+        .desktop{
+            display: block;
+        }
+    }
+}
+
+
+
 .top-page{
     margin-top: 88px;
     background-color: $section;    
@@ -60,12 +115,12 @@
     }
     .whatsapp-block{
         //top: 185px;
-        top: 30%;
+        top: 458px;
         right: 0px;
     }
     .phone-block {
         //top: 335px;
-        top: 45%;
+        top: 552px;
         right: 0px;
     }
 }
