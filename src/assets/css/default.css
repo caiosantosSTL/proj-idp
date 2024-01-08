@@ -745,6 +745,10 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   gap: 32px;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .btn {
   min-width: 120px;
   color: #fff;
@@ -5034,6 +5038,7 @@ img {
 .top-page .box-500 {
   max-width: 600px;
   padding: 250px 30px 30px 30px;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .top-page .box-500 {

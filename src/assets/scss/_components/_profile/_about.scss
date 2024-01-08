@@ -48,11 +48,9 @@
 
             .card-icon-square {
                 display: flex;
-                //width: 224px;
-                //max-width: 100%;
-                //height: 280px;
                 height: 100%;
                 padding: 16px;
+                //padding-top: 50%;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
@@ -105,6 +103,7 @@
         &::after {
             content: "";
             display: block;
+            
             padding-top: 35%;
             //padding-top: calc((800 / 800) * 100%);
         }
