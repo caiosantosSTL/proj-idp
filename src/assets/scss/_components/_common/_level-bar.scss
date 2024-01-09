@@ -56,3 +56,29 @@
         @include bar-box(#42B786);
     }
 }
+
+.dark{
+    .level-bar {
+
+        .bar-box-red{
+            
+            @include bar-box(#EA4D4D, $white);
+        }
+        .bar-box-orange{
+
+            @include bar-box(#F1982F, $white);
+        }
+        .bar-box-yellow{
+
+            @include bar-box(#F5C855, $white);
+        }
+        .bar-box-softgreen{
+
+            @include bar-box(#6BDAAB, $white);
+        }
+        .bar-box-green{
+
+            @include bar-box(#42B786, $white);
+        } 
+    }
+}

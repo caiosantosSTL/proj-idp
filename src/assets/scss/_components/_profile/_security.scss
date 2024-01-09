@@ -45,35 +45,6 @@
     }
 }
 
-/* @mixin bar-box($color, $fontColor: $gray-4) {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .bar {
-        width: 56px;
-        height: 8px;
-        background-color: $color;
-        border-radius: 100px;
-    }
-
-    .text-box {
-        width: 56px;
-        text-align: center;
-        margin:0;
-        padding: 0;
-
-        .text {
-            font-size: 12px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 14px;
-            color: $fontColor;
-        }
-    }
-
-
-}
- */
 
 .section-security {
     background-color: $white;
@@ -99,38 +70,9 @@
             }
         }
 
-/*         .level-bar {
-            display: flex;
-            flex-direction: row;
-            justify-content: start;
-            gap: 10px;
-
-            .bar-box-red{
-                
-                @include bar-box(#EA4D4D);
-            }
-            .bar-box-orange{
-
-                @include bar-box(#F1982F);
-            }
-            .bar-box-yellow{
-
-                @include bar-box(#F5C855);
-            }
-            .bar-box-softgreen{
-
-                @include bar-box(#6BDAAB);
-            }
-            .bar-box-green{
-
-                @include bar-box(#42B786);
-            }
-        } */
 
         .bar1 {
-            
             .desktop-h3 {
-                /* Fonts Web/H3 */
 
                 font-size: 24px;
                 font-style: normal;
@@ -139,23 +81,20 @@
                 /* 133.333% */
                 color: $gray-4;
             }
-            //@include card-dropdown();
         }
         .bar-list-area{
             display: flex;
             flex-direction: column;
             gap: 16px;
             .desktop-h3 {
-                /* Fonts Web/H3 */
 
                 font-size: 24px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 32px;
-                /* 133.333% */
                 color: $gray-4;
             }
-            //@include card-dropdown();
+
         }
 
     }
@@ -175,36 +114,13 @@
                 }
             }
     
-            .level-bar {
 
-                .bar-box-red{
-                    
-                    @include bar-box(#EA4D4D, $white);
-                }
-                .bar-box-orange{
-
-                    @include bar-box(#F1982F, $white);
-                }
-                .bar-box-yellow{
-
-                    @include bar-box(#F5C855, $white);
-                }
-                .bar-box-softgreen{
-
-                    @include bar-box(#6BDAAB, $white);
-                }
-                .bar-box-green{
-
-                    @include bar-box(#42B786, $white);
-                } 
-            }
     
             .bar1 {
                 .desktop-h3 {
 
                     color: $white;
                 }
-                //@include card-dropdown-dark();
             }
             .bar-list-area{
 
@@ -212,7 +128,6 @@
 
                     color: $white;
                 }
-                //@include card-dropdown-dark();
             }
     
         }
