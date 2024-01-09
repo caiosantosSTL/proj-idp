@@ -3562,7 +3562,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #524F5F;
 }
 .level-bar .bar-box-orange {
   display: flex;
@@ -3586,7 +3585,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #524F5F;
 }
 .level-bar .bar-box-yellow {
   display: flex;
@@ -3610,7 +3608,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #524F5F;
 }
 .level-bar .bar-box-softgreen {
   display: flex;
@@ -3634,7 +3631,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #524F5F;
 }
 .level-bar .bar-box-green {
   display: flex;
@@ -3658,7 +3654,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #524F5F;
 }
 
 .dark .level-bar .bar-box-red {
@@ -3683,7 +3678,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #fff;
 }
 .dark .level-bar .bar-box-orange {
   display: flex;
@@ -3707,7 +3701,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #fff;
 }
 .dark .level-bar .bar-box-yellow {
   display: flex;
@@ -3731,7 +3724,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #fff;
 }
 .dark .level-bar .bar-box-softgreen {
   display: flex;
@@ -3755,7 +3747,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #fff;
 }
 .dark .level-bar .bar-box-green {
   display: flex;
@@ -3779,7 +3770,6 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
-  color: #fff;
 }
 
 .fixedbar-sticky {

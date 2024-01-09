@@ -1,5 +1,5 @@
 
-@mixin bar-box($color, $fontColor: $gray-4) {
+@mixin bar-box($color) {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -21,12 +21,12 @@
             font-style: normal;
             font-weight: 500;
             line-height: 14px;
-            color: $fontColor;
         }
     }
 
 
 }
+
 
 
 .level-bar {
@@ -62,23 +62,23 @@
 
         .bar-box-red{
             
-            @include bar-box(#EA4D4D, $white);
+            @include bar-box(#EA4D4D);
         }
         .bar-box-orange{
 
-            @include bar-box(#F1982F, $white);
+            @include bar-box(#F1982F);
         }
         .bar-box-yellow{
 
-            @include bar-box(#F5C855, $white);
+            @include bar-box(#F5C855);
         }
         .bar-box-softgreen{
 
-            @include bar-box(#6BDAAB, $white);
+            @include bar-box(#6BDAAB);
         }
         .bar-box-green{
 
-            @include bar-box(#42B786, $white);
+            @include bar-box(#42B786);
         } 
     }
 }
