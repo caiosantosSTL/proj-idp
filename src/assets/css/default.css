@@ -284,6 +284,13 @@ UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
   line-height: 24px;
 }
 
+.desktop2-btn {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+
 .mobile-h1 {
   font-size: 32px;
   font-style: normal;
@@ -4650,134 +4657,134 @@ img {
 .dark .section-security {
   background-color: #272530;
 }
-.dark .section-security .container .title .desktop-h2 {
+.dark .section-security .container-security .title-security .desktop-h2 {
   color: #fff;
 }
-.dark .section-security .container .level-bar .bar-box-red {
+.dark .section-security .container-security .level-bar .bar-box-red {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.dark .section-security .container .level-bar .bar-box-red .bar {
+.dark .section-security .container-security .level-bar .bar-box-red .bar {
   width: 56px;
   height: 8px;
   background-color: #EA4D4D;
   border-radius: 100px;
 }
-.dark .section-security .container .level-bar .bar-box-red .text-box {
+.dark .section-security .container-security .level-bar .bar-box-red .text-box {
   width: 56px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.dark .section-security .container .level-bar .bar-box-red .text-box .text {
+.dark .section-security .container-security .level-bar .bar-box-red .text-box .text {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
   color: #fff;
 }
-.dark .section-security .container .level-bar .bar-box-orange {
+.dark .section-security .container-security .level-bar .bar-box-orange {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.dark .section-security .container .level-bar .bar-box-orange .bar {
+.dark .section-security .container-security .level-bar .bar-box-orange .bar {
   width: 56px;
   height: 8px;
   background-color: #F1982F;
   border-radius: 100px;
 }
-.dark .section-security .container .level-bar .bar-box-orange .text-box {
+.dark .section-security .container-security .level-bar .bar-box-orange .text-box {
   width: 56px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.dark .section-security .container .level-bar .bar-box-orange .text-box .text {
+.dark .section-security .container-security .level-bar .bar-box-orange .text-box .text {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
   color: #fff;
 }
-.dark .section-security .container .level-bar .bar-box-yellow {
+.dark .section-security .container-security .level-bar .bar-box-yellow {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.dark .section-security .container .level-bar .bar-box-yellow .bar {
+.dark .section-security .container-security .level-bar .bar-box-yellow .bar {
   width: 56px;
   height: 8px;
   background-color: #F5C855;
   border-radius: 100px;
 }
-.dark .section-security .container .level-bar .bar-box-yellow .text-box {
+.dark .section-security .container-security .level-bar .bar-box-yellow .text-box {
   width: 56px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.dark .section-security .container .level-bar .bar-box-yellow .text-box .text {
+.dark .section-security .container-security .level-bar .bar-box-yellow .text-box .text {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
   color: #fff;
 }
-.dark .section-security .container .level-bar .bar-box-softgreen {
+.dark .section-security .container-security .level-bar .bar-box-softgreen {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.dark .section-security .container .level-bar .bar-box-softgreen .bar {
+.dark .section-security .container-security .level-bar .bar-box-softgreen .bar {
   width: 56px;
   height: 8px;
   background-color: #6BDAAB;
   border-radius: 100px;
 }
-.dark .section-security .container .level-bar .bar-box-softgreen .text-box {
+.dark .section-security .container-security .level-bar .bar-box-softgreen .text-box {
   width: 56px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.dark .section-security .container .level-bar .bar-box-softgreen .text-box .text {
+.dark .section-security .container-security .level-bar .bar-box-softgreen .text-box .text {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
   color: #fff;
 }
-.dark .section-security .container .level-bar .bar-box-green {
+.dark .section-security .container-security .level-bar .bar-box-green {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.dark .section-security .container .level-bar .bar-box-green .bar {
+.dark .section-security .container-security .level-bar .bar-box-green .bar {
   width: 56px;
   height: 8px;
   background-color: #42B786;
   border-radius: 100px;
 }
-.dark .section-security .container .level-bar .bar-box-green .text-box {
+.dark .section-security .container-security .level-bar .bar-box-green .text-box {
   width: 56px;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-.dark .section-security .container .level-bar .bar-box-green .text-box .text {
+.dark .section-security .container-security .level-bar .bar-box-green .text-box .text {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
   line-height: 14px;
   color: #fff;
 }
-.dark .section-security .container .bar1 .desktop-h3 {
-  color: #F1F0F5;
+.dark .section-security .container-security .bar1 .desktop-h3 {
+  color: #fff;
 }
-.dark .section-security .container .bar-list-area .desktop-h3 {
-  color: #F1F0F5;
+.dark .section-security .container-security .bar-list-area .desktop-h3 {
+  color: #fff;
 }
 
 .section-owner {

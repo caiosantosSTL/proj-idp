@@ -166,9 +166,9 @@
     .section-security {
         background-color: $dark-secondary;
         
-        .container {
+        .container-security {
 
-            .title {
+            .title-security {
     
                 .desktop-h2 {
                     color: $white;
@@ -202,7 +202,7 @@
             .bar1 {
                 .desktop-h3 {
 
-                    color: $section;
+                    color: $white;
                 }
                 //@include card-dropdown-dark();
             }
@@ -210,7 +210,7 @@
 
                 .desktop-h3 {
 
-                    color: $section;
+                    color: $white;
                 }
                 //@include card-dropdown-dark();
             }
