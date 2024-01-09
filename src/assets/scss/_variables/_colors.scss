@@ -163,6 +163,12 @@ $premium-gold: #F90;
     background-color: $black;
 }
 
+.dark{
+    .darkmode-bg-dark-secundary{
+        background-color: $dark-secondary;
+    }
+}
+
 .bg-gradient {
     background: $gradient;
 }
