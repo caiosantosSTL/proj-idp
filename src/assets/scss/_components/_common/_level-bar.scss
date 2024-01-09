@@ -49,6 +49,10 @@
             .bar-box-green{
                 background-color: #42B786
             };
+
+            .bar-box-darkgreen{
+                background-color: #00874f
+            };
                 
             
              > .subtitle {
@@ -75,7 +79,7 @@
 
     .bar-percent-20{
         .bar-box{            
-            .bar-box-red{
+            .bar-box-red, .bar-box-orange{
                 &::after{
                     width:0;
                 }                
@@ -85,32 +89,7 @@
 
     .bar-percent-30{
         .bar-box{            
-            .bar-box-red{
-                &::after{
-                    width:0;
-                }                
-            }
             .bar-box-orange{
-                &::after{
-                    width:50%;
-                } 
-            }
-        }        
-    }
-
-    .bar-percent-40{
-        .bar-box{            
-            .bar-box-red, .bar-box-orange{
-                &::after{
-                    width:0;
-                }                
-            }
-        }        
-    }
-
-    .bar-percent-50{
-        .bar-box{            
-            .bar-box-red, .bar-box-orange{
                 &::after{
                     width:0;
                 }                
@@ -123,7 +102,7 @@
         }        
     }
 
-    .bar-percent-60{
+    .bar-percent-40{
         .bar-box{            
             .bar-box-red, .bar-box-orange, .bar-box-yellow{
                 &::after{
@@ -133,7 +112,7 @@
         }        
     }
 
-    .bar-percent-70{
+    .bar-percent-50{
         .bar-box{            
             .bar-box-red, .bar-box-orange, .bar-box-yellow{
                 &::after{
@@ -148,7 +127,7 @@
         }        
     }
 
-    .bar-percent-80{
+    .bar-percent-60{
         .bar-box{            
             .bar-box-red, .bar-box-orange, .bar-box-yellow, .bar-box-softgreen{
                 &::after{
@@ -157,14 +136,39 @@
             }
         }        
     }
-    .bar-percent-90{
+
+    .bar-percent-70{
         .bar-box{            
-            .bar-box-red, .bar-box-orange, .bar-box-yellow, .bar-box-softgreen{
+            .bar-box-red, .bar-box-orange, .bar-box-yellow, .bar-box-softgreen {
                 &::after{
                     width:0;
                 }                
             }
             .bar-box-green{
+                &::after{
+                    width:50%;
+                } 
+            }
+        }        
+    }
+
+    .bar-percent-80{
+        .bar-box{            
+            .bar-box-red, .bar-box-orange, .bar-box-yellow, .bar-box-softgreen, .bar-box-green{
+                &::after{
+                    width:0;
+                }                
+            }
+        }        
+    }
+    .bar-percent-90{
+        .bar-box{            
+            .bar-box-red, .bar-box-orange, .bar-box-yellow, .bar-box-softgreen, .bar-box-green{
+                &::after{
+                    width:0;
+                }                
+            }
+            .bar-box-darkgreen{
                 &::after{
                     width:50%;
                 } 
