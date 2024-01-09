@@ -4,6 +4,7 @@
         
     border-radius: 6px;
     background-color: $section;
+    min-width: 375px;
     .area-top {
         padding: 24px;
         gap: 16px;
@@ -15,7 +16,7 @@
             .text-title{
                 display: flex;
                 align-items: center;
-                min-width: 300px;
+                //min-width: 300px;
             }
         }
         .btn-dd{
@@ -76,10 +77,13 @@
 
 .section-security {
     background-color: $white;
+
     
     .container-security {
-
-        .title {
+        margin: 0 auto;
+        min-width: 360px;
+        max-width: 1500px;
+        .title-security {
             display: flex;
             flex-direction: row;
             gap: 10px;
@@ -124,6 +128,7 @@
         } */
 
         .bar1 {
+            
             .desktop-h3 {
                 /* Fonts Web/H3 */
 
