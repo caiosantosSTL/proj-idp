@@ -1,9 +1,15 @@
 header {
     background-color: $white;
-    z-index: 2;
-    ;
+    z-index: 2;    
     box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
-
+    transform: translateX(0);                           
+    transition:  transform 0.3s ease-in-out;
+    &.hideheader {       
+        transform: translateY(-100%);           
+    }
+    @media (max-width: $min_desktop) {
+        height: 160px;
+    }
     .container {
 
         .header-content {
@@ -34,36 +40,10 @@ header {
                     z-index: 1;
                     margin: 10px;
                     width: calc(100% - 20px);
-                    top: 87px;
+                    top: 80px;
                     left: 0;
                     right: 0;
                     min-width: 365px;
-                    opacity: 0;
-                    visibility: hidden;
-                    transition: visibility 0s linear 0s, opacity 0.2s linear 0s;
-
-                    &.show {
-                        visibility: visible;
-                        opacity: 1;
-                        z-index: 2;
-                        transform-style: preserve-3d;
-
-                        &::before {
-                            content: " ";
-                            display: block;
-                            width: calc(100% + 20px);
-                            height: 85px;
-                            position: fixed;
-                            background-color: $white;
-                            box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
-                            margin-left: -10px;
-                            margin-right: -10px;
-                            transform: translateZ(-5px);
-                            z-index: 3;
-                        }
-
-                    }
-
                     .input-text {
                         flex-grow: 1;
                         width: auto;
@@ -102,166 +82,167 @@ header {
             }
         }
     }
+}
 
-    .modal-menu {
-        & .modal {
-            .modal-container {
-                .modal-body {
-                    max-width: auto !important;
-                }
+
+.modal-menu {
+    & .modal {
+        .modal-container {
+            .modal-body {
+                max-width: auto !important;
+            }
+        }
+    }
+
+    .menu-section {
+
+        @media (min-width: $min_mobile) {
+            grid-template-columns: repeat(1, auto);
+        }
+
+        @media (min-width: $min_tablet) {
+
+            //grid-template-columns: repeat(5, auto);
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .menu-options {
+
+            background-color: $section;
+            text-align: center;
+            border-bottom-right-radius: 8px;
+            height: auto;
+            align-items: center;
+            order: 2;
+
+            @media (min-width: $min_mobile) {
+                order: 1;
+                border-bottom-right-radius: 0px;
+            }
+
+            >div {
+                flex-direction: column;
+                width: 80%;
+                padding: 16px;
             }
         }
 
-        .menu-section {
+        .main-menu {
+
+            flex-grow: 1;
+            width: 100%;
 
             @media (min-width: $min_mobile) {
-                grid-template-columns: repeat(1, auto);
+                order: 2;
             }
 
             @media (min-width: $min_tablet) {
-
-                //grid-template-columns: repeat(5, auto);
-                grid-template-columns: 2fr 1fr;
+                order: 1;
             }
 
-            .menu-options {
+            .main-menu-view {
+                display: flex;
+                /*flex-direction : row;*/
+                overflow: hidden;
 
-                background-color: $section;
-                text-align: center;
-                border-bottom-right-radius: 8px;
-                height: auto;
-                align-items: center;
-                order: 2;
+                .navigation {
+                    flex: 1;
+                    min-width: 100%;
+                    height: auto;
+                    padding: 30px 30px 0 30px;
+                    gap: 20px;
 
-                @media (min-width: $min_mobile) {
-                    order: 1;
-                    border-bottom-right-radius: 0px;
-                }
+                    a {
+                        display: flex;
+                        line-height: 30px;
 
-                >div {
-                    flex-direction: column;
-                    width: 80%;
-                    padding: 16px;
-                }
-            }
+                        >span {
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            @include fill_svg($gray-3);
 
-            .main-menu {
+                        }
 
-                flex-grow: 1;
-                width: 100%;
-
-                @media (min-width: $min_mobile) {
-                    order: 2;
-                }
-
-                @media (min-width: $min_tablet) {
-                    order: 1;
-                }
-
-                .main-menu-view {
-                    display: flex;
-                    /*flex-direction : row;*/
-                    overflow: hidden;
-
-                    .navigation {
-                        flex: 1;
-                        min-width: 100%;
-                        height: auto;
-                        padding: 30px 30px 0 30px;
-                        gap: 20px;
-
-                        a {
-                            display: flex;
-                            line-height: 30px;
-
+                        &:hover {
                             >span {
-                                display: inline-block;
-                                width: 30px;
-                                height: 30px;
-                                @include fill_svg($gray-3);
-
-                            }
-
-                            &:hover {
-                                >span {
-                                    @include fill_svg($primary-pink);
-                                }
-                            }
-                        }
-
-                        &.main-nav {
-                            transform: translateX(0);
-                            overflow: hidden;                            
-                            transition:  transform 0.3s ease-in-out;
-                            &.hide {
-                                transform: translateX(-100%);                                
-                            }
-                        }
-
-                        &.sub-nav {
-                            transform: translateX(-100%);
-                            transition: transform 0.3s ease-in-out;
-                            grid-template-columns: none !important;
-
-                            >div {
-                                display: none;
-                            }
-
-                            >.back-navigation {
-                                display: block;
-                            }
-
-                            &.hide {
-                                transform: translateX(0);
-                            }
-                        }
-
-                        .nav-main-grid {
-                            gap: 20px;
-
-                            @media (min-width: $min_mobile) {
-                                grid-template-columns: repeat(1, auto);
-                            }
-
-                            @media (min-width: $min_tablet) {
-                                grid-template-columns: repeat(3, auto);
-                            }
-
-                        }
-
-                        .nav-sub-grid {
-
-                            @media (min-width: $min_mobile) {
-                                grid-template-columns: repeat(1, auto);
-                            }
-
-                            @media (min-width: $min_tablet) {
-                                grid-template-columns: repeat(2, minmax(0, 1fr));
+                                @include fill_svg($primary-pink);
                             }
                         }
                     }
-                }
 
+                    &.main-nav {
+                        transform: translateX(0);
+                        overflow: hidden;                            
+                        transition:  transform 0.3s ease-in-out;
+                        &.hide {
+                            transform: translateX(-100%);                                
+                        }
+                    }
+
+                    &.sub-nav {
+                        transform: translateX(-100%);
+                        transition: transform 0.3s ease-in-out;
+                        grid-template-columns: none !important;
+
+                        >div {
+                            display: none;
+                        }
+
+                        >.back-navigation {
+                            display: block;
+                        }
+
+                        &.hide {
+                            transform: translateX(0);
+                        }
+                    }
+
+                    .nav-main-grid {
+                        gap: 20px;
+
+                        @media (min-width: $min_mobile) {
+                            grid-template-columns: repeat(1, auto);
+                        }
+
+                        @media (min-width: $min_tablet) {
+                            grid-template-columns: repeat(3, auto);
+                        }
+
+                    }
+
+                    .nav-sub-grid {
+
+                        @media (min-width: $min_mobile) {
+                            grid-template-columns: repeat(1, auto);
+                        }
+
+                        @media (min-width: $min_tablet) {
+                            grid-template-columns: repeat(2, minmax(0, 1fr));
+                        }
+                    }
+                }
             }
 
         }
 
     }
 
+}
 
-    .use-location {
-        padding: 8px 16px;
 
-        svg {
-            max-width: 20px;
-        }
+.use-location {
+    padding: 8px 16px;
 
-        a {
-            padding-left: 16px;
-            display: inline-block;
-            color: $primary-pink;
-            text-decoration: underline;
-        }
+    svg {
+        max-width: 20px;
+    }
+
+    a {
+        padding-left: 16px;
+        display: inline-block;
+        color: $primary-pink;
+        text-decoration: underline;
     }
 }
 
@@ -306,56 +287,56 @@ header {
                 }
             }
         }
+    }
 
 
-        .modal-menu {
+    .modal-menu {
            
     
-            .menu-section {
-    
-                .menu-options {
-                    background-color: $gray-1;
+        .menu-section {
 
-                    p {
+            .menu-options {
+                background-color: $gray-1;
+
+                p {
+                    color: $gray-6;
+                }
+            }
+        
+            .main-menu-view {
+                .navigation {
+
+                    a {
                         color: $gray-6;
+
+                        &:hover {
+                            color: $primary-pink
+                        }
+
+                        >span {
+                            @include fill_svg($gray-6);
+
+                        }
                     }
+
+                    .menu-title {
+                        color: $white;
+                    }
+
                 }
+            }
             
-                .main-menu-view {
-                    .navigation {
-
-                        a {
-                            color: $gray-6;
-
-                            &:hover {
-                                color: $primary-pink
-                            }
-
-                            >span {
-                                @include fill_svg($gray-6);
-
-                            }
-                        }
-
-                        .menu-title {
-                            color: $white;
-                        }
-
-                    }
-                }
-                
-            }
         }
+    }
 
 
 
-        .use-location {
+    .use-location {
 
-            @include fill_svg();
+        @include fill_svg();
 
-            a {
-                color: $white;
-            }
+        a {
+            color: $white;
         }
     }
 }

@@ -15,13 +15,16 @@
         }
     }
     .filter-bar {
-        display: none;
+        //display: none;
         background-color: $white;
         border-radius: 8px;
         box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);            
-        &.opened {
-            display: block;
-        }
+        @media (max-width: $max_tablet) {
+            display: none!important;
+            &.opened {
+                display: block !important;
+            }
+        }    
         .item-area {    
             display: flex;
             flex-direction: column;
@@ -81,4 +84,32 @@
             }
         }    
     }
+}
+
+.dark{
+    .filter-container { 
+        .btn-filter{
+            &.bg-white{
+             background-color: $gray-2;   
+            }
+            border-color: $gray-5;
+            .primary-pink{
+                color: $white;
+                @include fill_svg($white);
+            }
+            
+        }
+        .filter-bar {
+            background-color: $gray-1;
+            .item-area{
+                .title{
+                     color: $white;
+                }  
+                .item{
+                    color: $white;
+                }
+            }
+        }
+    }
+
 }

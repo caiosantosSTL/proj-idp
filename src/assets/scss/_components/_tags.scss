@@ -1,46 +1,15 @@
 
-.section-tags{
-    
-    margin-bottom: 32px;
-
-    .container{
-        display: flex;
-        flex-direction: column;
-        max-width: 1500px;
-        margin: 0 auto;
-        gap: 12px;
-        .title{
-
-        }
-        .tags-area{
-
-            .tag{
-                flex: 0 1 auto;
-                border-radius: 100px;
-                padding-inline: 12px;
-            }
-        }
+.section-tags{   
+    .tag{
+        flex: 0 1 auto;
+        border-radius: 100px;
+        padding-inline: 12px;
     }
 }
-
 .dark{
-    .section-tags{
-
-        
-
-        .container{
-
-            .title{
-
-            }
-            .tags-area{
-
-                .tag{
-
-                    background-color: $gray-4;
-
-                }
-            }
+    .section-tags{        
+        .tag{
+            background-color: $gray-4;
         }
     }
 }

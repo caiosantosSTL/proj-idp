@@ -1,7 +1,7 @@
 
 .breadcrumb{
     @media (max-width: $min_desktop) {
-        margin-top: 170px;
+        margin-top: 160px;
 
     }
     > ul {        
@@ -22,21 +22,19 @@
     }
 }
 .top-page{
-
     background-color: $section;    
     .box-500{
         max-width: 600px;
-        padding: 250px 30px 30px 30px;
+        padding: 80px 30px 80px 30px;
     }
-
     @media (max-width: $min_tablet) {
         .box-500{
-            max-width: 100%;
-            text-align: center;
-            max-width: 100%;
-            text-align: center;
+            max-width: 100% !important;
+            text-align: center!important;
+            max-width: 100%!important;
+            text-align: center!important;
             .fs-48{
-                font-size: 36px;
+                font-size: 36px!important;
             }
         }
     }
@@ -64,11 +62,11 @@
 
     .top-page{
         .dark-grey{
-            color: $white;
+            color: $white !important;
         }
         .gray-5{
-            color: $gray-6;
+            color: $gray-6 !important;
         }
-        background-color: $gray-1;
+        background-color: $gray-1 !important;
     }
 }

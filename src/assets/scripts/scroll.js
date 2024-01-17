@@ -5,17 +5,17 @@ function scrollToTop() {
 }
 
 var scrollDirection=0;
-// check if body top is greater than 20
+
 function toggleComponents() {
-  const searchBar = document.getElementById('searchbar');
+  const headerBar = document.getElementById('header');
   
   let currentScroll = window.scrollY ||  document.documentElement.scrollTop || document.body.scrollTop; // Get Current Scroll Value
-  var scrollUp = scrollDirection >= currentScroll || currentScroll <= 120;    
+  var scrollUp = scrollDirection >= currentScroll || currentScroll <= 160;    
   
-  if (scrollUp && !searchBar.className.includes("show")){
-    searchBar.className += ' show'
-  } else if (!scrollUp) {
-    searchBar.className =  searchBar.className.replace(' show', '')    
+  if (!scrollUp && !headerBar.className.includes("hideheader")){
+    headerBar.className += ' hideheader'
+  } else if (scrollUp) {
+    headerBar.className =  headerBar.className.replace(' hideheader', '')    
   }
 
   scrollDirection = currentScroll;
