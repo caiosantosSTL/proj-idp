@@ -21,36 +21,39 @@
 @import "_partials/cols";
 @import "_partials/grids";
 @import "_partials/slider";
-
-
-// PARTIALS CAIO
+@import "_partials/image";
 @import "_partials/cards";
 
 
-// COMPONENTS
+
+
+// COMPONENTS  SHARED
 @import "_components/svg";
 @import "_components/container";
 @import "_components/header";
 @import "_components/content";
 @import "_components/footer";
-@import "_components/lista_destaque";
-@import "_components/lista_profissional";
-@import "_components/_top_page";
 
-// COMPACTADOS
-@import "_components/ultimosfeeds";
-@import "_components/comments";
-@import "_components/feeds";
+
+//COMPONENTS DEFAULT
+@import "_components/top_page";
+@import "_components/filter";
+@import "_components/highlight_list.scss";
+@import "_components/professional_list";
+@import "_components/news";
+@import "_components/recent_feed_story";
+@import "_components/recent_feed";
+@import "_components/recent_videos";
+@import "_components/recent_comments";
+@import "_components/join_us";
+@import "_components/tags";
+@import "_components/most_accessed";
+
+
 
 
 
 // COMPONENTES CAIO
 @import "_components/newsletter.scss";
 @import "_components/questions";
-@import "_components/share-friends";
-@import "_components/join-text";
-@import "_components/tags";
-
-@import "_components/filter";
-@import "_components/recent";
-@import "_components/homevideo";
+@import "_components/share_friends";

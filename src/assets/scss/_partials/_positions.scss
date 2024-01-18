@@ -14,6 +14,14 @@
     position: static !important;
 }
 
+.p-8 {
+ padding: 8px;
+}
+
+.pt-80{
+    padding-top:80px;
+}
+
 .top-0 {
     top: 0 !important;
 }
@@ -340,4 +348,8 @@
 
 .gap-32{
     gap: 32px !important;
+}
+
+.gap-42{
+    gap: 42px !important;
 }

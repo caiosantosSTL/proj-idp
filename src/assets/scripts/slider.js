@@ -100,18 +100,24 @@ function ConfigSlider(container_name){
     // LINESTERS
     gesuredZone.addEventListener('touchstart', function(event) { 
         sliderArea = event.target.closest('.slider-area');
-        container_name = sliderArea.getAttribute("for")
-        container_config[container_name]['touchstartX'] = event.changedTouches[0].screenX; 
+        if (sliderArea){
+            container_name = sliderArea.getAttribute("for")
+            container_config[container_name]['touchstartX'] = event.changedTouches[0].screenX; 
+        }        
     }, false);
 
     gesuredZone.addEventListener('touchend', function(event) { 
         sliderArea = event.target.closest('.slider-area');
-        container_name = sliderArea.getAttribute("for")
-        container_config[container_name]['touchendX'] = event.changedTouches[0].screenX; handleGesure(container_name); 
+        if(sliderArea)
+        {
+            container_name = sliderArea.getAttribute("for")
+            container_config[container_name]['touchendX'] = event.changedTouches[0].screenX; handleGesure(container_name); 
+        }        
     }, false); 
 }
 
 ConfigSlider('section-commentary');
+
 
 
 

@@ -1,0 +1,55 @@
+.section-homevideo {
+    background-color: $white;
+    .cards-area {
+        .card-video {    
+            .card-container {
+                position: relative;
+                width: 95%;                
+                margin: 0 auto;
+                &::before {
+                    content: "";
+                    padding-top: calc((464 / 280) * 100%);                                 
+                    display: block;
+                }
+                img {                   
+                    border-radius: 4px;                   
+                }
+    
+                .play-icon {
+                    position: absolute;
+                    top: 35%;
+                    left: 40%;
+                    cursor: pointer;
+                }
+                
+                .text-box {
+                    & > div{
+                        background-color: $white;                    
+                        border-radius: 4px;
+                    }                    
+                }
+            }
+        }
+    }
+
+    .btn-seemore {
+        align-self: center;
+        padding: 6px;
+        cursor: pointer;
+    }
+}
+
+.dark{
+    .section-homevideo {
+        background-color: $dark-secondary;    
+        .cards-area {    
+            .card-video {
+                .text-box {
+                    & > div{
+                        background-color: $dark-secondary;
+                    }                    
+                }      
+            }
+        }    
+    }
+}
