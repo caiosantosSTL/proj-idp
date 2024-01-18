@@ -1,0 +1,33 @@
+// ------- grids
+
+.grid{
+    display: grid;    
+}
+
+@media (min-width: $max_desktop) {
+     
+    .grid-c3{
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (min-width: $max_desktop){
+
+    .grid-c2-lg{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: $min_tablet) and (max-width: $max_desktop){
+
+    .grid-c2{
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: $min_mobile) and (max-width: $min_tablet) {
+
+    .grid-c1{
+        grid-template-columns: repeat(1, auto);
+    }
+}

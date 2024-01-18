@@ -19,6 +19,7 @@
 @import "_partials/forms";
 @import "_partials/text";
 @import "_partials/cols";
+@import "_partials/grids";
 @import "_partials/slider";
 
 
@@ -34,12 +35,14 @@
 @import "_components/footer";
 @import "_components/lista_destaque";
 @import "_components/lista_profissional";
-@import "_components/lista_profissional";
 @import "_components/_top_page";
 
 // COMPACTADOS
 @import "_components/ultimosfeeds";
 @import "_components/comments";
+@import "_components/feeds";
+
+
 
 // COMPONENTES CAIO
 @import "_components/newsletter.scss";

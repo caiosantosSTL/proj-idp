@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+.text-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 // ==================== font style block
 
 // .desktop-h1 = fs-48 fs-normal fw-bold lineheigth-56 letter-space-negative-48
@@ -14,6 +19,7 @@
 // .mobile-h4 = fs-20 fs-normal fw-semibold lineheigth-24
 // .mobile-text = fs-16 fs-normal fw-semibold lineheigth-24
 // .mini-text1 = fs-14 fs-normal fw-semibold  lineheigth-16
+// .text-h4 = fs-normal fs-20 fw-lighbold lineheigth-24
 
 .text-h1 {
     font-style: normal;
@@ -62,14 +68,6 @@
         font-weight: 300;
         line-height: 32px;
     }
-}
-
-.text-h4 {
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 24px;
-
 }
 
 // ----------- global dark font
