@@ -1,0 +1,22 @@
+
+.section-newsletter{
+    & > .row{
+        margin: auto;
+        max-width: 800px;
+        width: 100%;
+    }
+    gap: 32px;
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;       
+        .icon-text{
+            gap: 8px;
+            > p{
+                align-self: center;
+            }
+        }
+    }
+
+
+}

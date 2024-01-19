@@ -1,18 +1,14 @@
 .section-questions{
-    .container-questions{
-        @media (max-width: $max_tablet) {
-            gap: 24px;
-        }
+    .section-questions{
         .text-area{
             .text-box{
                 max-width: 440px;
                 max-height: auto;
-            }
-        }
+            }            
+        }        
     }
     .icon-text-area{
         max-width: 350px;
-
         .item{
             gap: 32px;
             i{
@@ -26,7 +22,20 @@
     
     
     .list-dropdown-area{
-    
+        .border-text{
+                position: relative;
+                &::before{
+                    content: " ";
+                    border-top: 1px solid $gray-6;
+                    width: calc(100% - 30px);
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    top: -15px;
+                }
+                
+            
+        }
         .card-dropdown {
         
             border-radius: 6px;
@@ -72,10 +81,22 @@
 
         background-color: $gray-3;
 
-        .card-dropdown{
-            background-color: $dark-primary;
+         
+        .list-dropdown-area{
+            .border-text{                    
+                    &::before{
+                        border-top: 1px solid $gray-4;
+                    }
+                    
+                
+            }
+            .card-dropdown{
+                background-color: $dark-primary;
+                
 
+            }
         }
+       
     }
 
 }

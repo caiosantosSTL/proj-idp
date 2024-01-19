@@ -43,6 +43,3 @@ function SetDarkComponents(){
 
     IconPathElement.setAttribute('d', newD);
 }
-
-
-checkDarkMode();

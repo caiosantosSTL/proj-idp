@@ -1,0 +1,30 @@
+.section-blog {    
+    .card-blog{        
+        padding: 16px;
+        
+
+        @media (min-width: $min_mobile) {
+            flex: 0 0 100%;
+        }
+        @media (min-width: $min_tablet) {
+            flex: 0 0 50%;
+        }
+        @media (min-width: $min_desktop) {
+            
+            flex: 0 0 33%;
+        }
+
+        .card-image {
+            width: 100%;  
+            &::before {
+                padding-top: calc(423 / 729  * 100%);
+                width: 100%;
+                display: block;
+                content: ' ';
+            }         
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+}

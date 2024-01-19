@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+    <link rel="icon" href="assets/images/favicon.svg" type="image/x-icon">
+
+    <title>Index</title>
+
+
+    <script src="assets/scripts/darkmode.js"></script>
+    <script src="assets/scripts/modal.js"></script>
+    <script src="assets/scripts/subnav.js"></script>
+    <script src="assets/scripts/questionDropdown.js"></script>
+    <script src="assets/scripts/scroll.js"></script>
+    <script src="assets/scripts/filter.js"></script>    
+    <script src="assets/scripts/slider.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+</head>
+
+<body>
+
+    <section class="include" href="/componentes/common/header.html"></section>
+    
+    
+    
+    <section class="include" href="/componentes/common/footer.html"></section>
+
+    <!-- Top Button -->
+    <div class="top-btn position-fixed" id="top-btn-id" onclick="scrollToTop()">
+        <i>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M13.0001 20H11.0001V8L5.50008 13.5L4.08008 12.08L12.0001 4.16L19.9201 12.08L18.5001 13.5L13.0001 8V20Z"
+                    fill="#272530" />
+            </svg>
+        </i>
+    </div>
+
+
+    <script>
+        $(function () {
+            $(".include").each((index, elem) => {
+
+                $(elem).load("http://localhost:8000" + $(elem).attr('href'));
+
+
+            })
+        });
+    </script>
+
+
+</body>
