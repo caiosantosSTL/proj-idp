@@ -71,18 +71,7 @@
         }
 
 
-        .bar1 {
-            .desktop-h3 {
-
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 32px;
-                /* 133.333% */
-                color: $gray-4;
-            }
-        }
-        .bar-list-area{
+        .bar1, .bar-list-area {
             display: flex;
             flex-direction: column;
             gap: 16px;
@@ -92,9 +81,9 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 32px;
+                /* 133.333% */
                 color: $gray-4;
             }
-
         }
 
     }
@@ -116,14 +105,7 @@
     
 
     
-            .bar1 {
-                .desktop-h3 {
-
-                    color: $white;
-                }
-            }
-            .bar-list-area{
-
+            .bar1, .bar-list-area {
                 .desktop-h3 {
 
                     color: $white;

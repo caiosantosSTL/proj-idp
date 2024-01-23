@@ -4588,24 +4588,17 @@ img {
   line-height: 40px;
   color: #3F3C4A;
 }
-.section-security .container-security .bar1 .desktop-h3 {
+.section-security .container-security .bar1, .section-security .container-security .bar-list-area {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.section-security .container-security .bar1 .desktop-h3, .section-security .container-security .bar-list-area .desktop-h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 32px;
   /* 133.333% */
-  color: #524F5F;
-}
-.section-security .container-security .bar-list-area {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.section-security .container-security .bar-list-area .desktop-h3 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
   color: #524F5F;
 }
 
@@ -4615,10 +4608,7 @@ img {
 .dark .section-security .container-security .title-security .desktop-h2 {
   color: #fff;
 }
-.dark .section-security .container-security .bar1 .desktop-h3 {
-  color: #fff;
-}
-.dark .section-security .container-security .bar-list-area .desktop-h3 {
+.dark .section-security .container-security .bar1 .desktop-h3, .dark .section-security .container-security .bar-list-area .desktop-h3 {
   color: #fff;
 }
 
