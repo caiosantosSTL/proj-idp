@@ -1,0 +1,73 @@
+
+
+.section-services {
+    background-color: $white;
+
+    .container-services {
+        flex-wrap: wrap;
+        .card-info {
+            border-radius: 6px;
+            background-color: $section;
+        }
+
+        .grid-price-info {
+            display: grid;            
+            .card-price {                                      
+                .text-area {
+                    text-align: justify;
+                    text-transform: lowercase;
+                    
+                }                
+            }
+            @media (min-width: $max_mobile){
+                grid-template-columns: repeat(1, auto);
+            }
+
+            @media (max-width: $max_desktop) and (min-width: $min_tablet){                
+                grid-template-columns: repeat(2, auto);
+                .card-price {
+                    &:nth-child(2n-1) {
+                        border-right: 1px solid $gray-6;                       
+                    }
+                    &:last-child {
+                        border-right: none;                                        
+                    }                           
+                }                
+            }
+            @media (min-width: $max_desktop){                
+                grid-template-columns: repeat(3, auto);
+
+                .card-price {
+                    &:nth-child(3n-1) {
+                        border-right: 1px solid $gray-6;  
+                        border-left: 1px solid $gray-6;                                
+                    }
+                    &:last-child {
+                        border-right: none;                                        
+                    }                           
+                }
+            }                                
+        }
+    }
+}
+
+
+
+.dark{
+    .section-services {
+        background-color: $dark-secondary;
+    
+        .container-services {
+
+            .card-info{
+                background-color: $gray-3;
+            }
+
+            .card-price {
+                border-left-color: $gray-4 !important;        
+                border-right-color: $gray-4 !important;                        
+            }
+    
+        }
+    }
+}

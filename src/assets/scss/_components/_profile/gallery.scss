@@ -1,0 +1,119 @@
+.section-gallery {
+    background-color: $white;
+
+
+    
+    .container-gallery {
+        
+        .box-btn {
+            border-radius: 6px;
+            background-color: $white;
+            box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);
+            max-height: 56px;
+
+            .btn-expand,
+            .btn-compact {
+                display: flex;
+            }
+
+            .btn-action {
+
+                flex-direction: row;                
+                gap: 6px;
+                padding: 8px;
+                margin: 0px;
+                cursor: pointer;
+                font-weight: bold;
+
+                @include fill_svg($gray-6);
+
+                &:hover {
+                    > p {
+                        color: $primary-pink;
+                    }
+                    @include fill_svg($primary-pink)                    
+                }
+
+
+            }
+
+            .btn-active {
+                > p {
+                    color: $primary-pink;
+                }
+                @include fill_svg($primary-pink)    
+            }
+
+        }
+
+
+        .grid-area-photo {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+
+            img {
+                object-fit: cover;
+                border-radius: 4px;
+                width: 99%;
+                height: 98%;
+            }
+        }
+    }
+
+}
+
+
+.btn-grid {
+    @media (min-width: $min_tablet) {
+        display: flex;
+    }
+
+    @media (min-width: $min_mobile) and (max-width: $min_tablet) {
+        display: none;
+    }
+}
+
+
+.col-pic {
+    display: inline-block;
+    width: auto;
+    max-width: initial;
+    flex: none;
+    height: 100px;
+    max-height: 100px;
+
+}
+
+
+.dark {
+    .section-gallery {
+        background-color: $dark-secondary;
+
+        .container-gallery {
+
+
+            .box-btn {
+
+                background-color: $dark-primary;
+
+                .btn-action {
+                    @include fill_svg($white);     
+                    &:hover {
+                        > p {
+                            color: $primary-pink;
+                        }
+                        @include fill_svg($primary-pink)                    
+                    }                   
+                }      
+                .btn-active {
+                    > p {
+                        color: $primary-pink;
+                    }
+                    @include fill_svg($primary-pink)    
+                }         
+            }
+        }
+    }
+}

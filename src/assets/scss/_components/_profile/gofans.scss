@@ -1,0 +1,52 @@
+.section-gofans {    
+    .card-gofans{        
+        padding: 16px;
+        background-color: $section;
+        border-radius: 8px;
+        .header-area{
+            background-color: transparent!important;
+        }
+
+        @media (min-width: $min_mobile) {
+            flex: 0 0 100%;
+        }
+        @media (min-width: $min_tablet) {
+            flex: 0 0 70%;
+        }
+        @media (min-width: $min_desktop) {
+            
+            flex: 0 0 45%;
+        }
+
+        .card-image {
+            width: 100%;  
+            border: 1px solid $gray-6;
+            border-radius: 10px;
+            overflow: hidden;
+            &::before {
+                padding-top: calc(423 / 729  * 100%);
+                width: 100%;
+                display: block;
+                content: ' ';
+            }         
+            img{
+                border-radius: 10px;
+                filter: blur(10px);
+            }
+        }
+        .post-link{
+            text-decoration: underline;
+        }
+    }
+}
+
+.dark{
+    .section-gofans {    
+        .card-gofans{ 
+            background-color: $gray-3;
+            .card-image {
+                border: 1px solid $gray-1;
+            }
+        }
+    }
+}

@@ -31,12 +31,16 @@
 }
 
 .align-items-center{
-    align-items:center
-}
-.align-items-start{
-    align-items:start
+    align-items:center;
 }
 
+.align-items-start{
+    align-items:start;
+}
+
+.align-items-flex-start{
+    align-items:flex-start;
+}
 
 .col{
     position: relative;

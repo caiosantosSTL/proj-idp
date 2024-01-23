@@ -1,0 +1,81 @@
+
+
+<section class="legalnotice py-48">
+    <div class="container-legalnotice container d-flex flex-direction-column align-items-center pt-15 pb-15">
+        <div class="logo-area d-flex justify-content-center align-items-center gap-10">
+            <img class="w-100 h-auto" style="display: block;" src="../assets/images/LogosWhite.svg" alt="">
+        </div>
+        <div class="text-center">
+            <p class="fs-normal fs-20 fw-lighbold lineheigth-24 white mb-5 py-10">Fotos verificadas</p>
+        </div>
+        <div class="d-flex text-small" id="textSmall-id">
+            <p class="fs-normal fs-20 fw-lighbold lineheigth-24 white m-0 p-0">Garantimos informações corretas</p>
+        </div>
+        <div style="display: none;" class="text-area pt-15 pb-15" id="textArea-id">
+            <p><span class="fw-bold">Aviso legal</span></p>
+            <p>
+                O Ilha do Prazer trabalha para garantir informações corretas e completas sobre os serviços, mas os
+                perfis são criados e alimentados a partir da contribuição de terceiros que anunciam no Ilha do
+                Prazer.
+                Caso aconteça na hora do encontro se tratar de outra modelo, recuse imediatamente e denuncie.
+            </p>
+            <p>
+                Mídias de comparação é um sistema que o Ilha do Prazer usa visando gerar mais credibilidade aos
+                perfis.
+                Todas as mídias de comparação, juntamente ao ensaio profissional e documentação são enviadas e
+                analisadas por nossa equipe. Todos os perfis anunciados na plataforma são verificados para garantir
+                segurança para nossos visitantes.
+            </p>
+            <p>
+
+                O Ilha do Prazer não se responsabiliza por informações imprecisas ou incorretas disponibilizadas por
+                terceiros.
+            </p>
+            <p>
+                <span class="fw-bold">Como crio uma denúncia?</span>
+                Caso se depare com alguma irregularidade em algum perfil, você pode fazer uma denúncia para a nossa
+                plataforma.
+                O formulário deverá ser preenchido com informações completas da denúncia. Por exemplo, no caso de
+                informações falsas, é necessário indicar quais pontos estão as irregularidades no perfil, e a
+                imagens
+                comprobatórias da irregularidade.
+                <span class="fw-bold">Fazer denuncia agora!</span>
+            </p>
+            <p>
+                Lembrando que, apenas denunciar o perfil de um anunciante não garante a penalização do mesmo. Os
+                anúncios passam por um rigoroso processo de análise, e só após a averiguação pela nossa equipe, o
+                perfil
+                pode ser penalizado ou não.
+            </p>
+            <p>
+                As denúncias servem como auxílio na luta contra perfis fake e anunciantes irregulares. Assim,
+                construindo um mercado mais justo e contra a concorrência desleal no ramo de acompanhantes.
+            </p>
+        </div>
+        <script>
+            function btnAction() {
+                const textSmall = document.querySelector('#textSmall-id');
+                const textArea = document.querySelector('#textArea-id');
+                const btnText = document.querySelector('#btnText-id');
+
+                if (textSmall.style.display === 'flex') {
+                    textSmall.style.display = 'none';
+                    textArea.style.display = 'block';
+                    btnText.textContent = 'Fechar';
+
+                } else {
+                    textSmall.style.display = 'flex';
+                    textArea.style.display = 'none';
+                    btnText.textContent = 'Saiba mais';
+                }
+            }
+        </script>
+
+        <div class="d-flex flex-direction-column align-items-center p-15" id="btn-id">
+            <div onclick="btnAction()" class="btn btn-white">
+                <p id="btnText-id" class="primary-red">Saiba mais</p>
+            </div>
+        </div>
+
+    </div>
+</section>

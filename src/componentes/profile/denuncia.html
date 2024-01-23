@@ -1,0 +1,84 @@
+
+
+<section class="section-report mt-80 py-48">
+    <div class="container-report container">
+        <div class="title mb-16">
+            <p class="text-h2 gray-3 text-white m-0 p-0">
+                Quer fazer uma denúncia relacionada a este perfil?
+            </p>
+        </div>
+        <div class="text-area-report">
+            <p class="fs-20 fs-normal fw-semibold lineheigth-24 gray-5 text-white m-0 p-0">
+                Caso você queria fazer uma denúncia relacionado a este perfil, clique no botão abaixo para descrever
+                o
+                problema.
+                <br><br>
+                Caso se depare com alguma irregularidade em algum perfil, você pode fazer uma denúncia para a nossa
+                plataforma.
+                <br><br>
+                O formulário deverá ser preenchido com informações completas da denúncia. Por exemplo, no caso de
+                informações falsas, é necessário indicar quais pontos estão as irregularidades no perfil, e a
+                imagens
+                comprobatórias da irregularidade.
+                <br><br>
+                Lembrando que, apenas denunciar o perfil de um anunciante não garante a penalização do mesmo. Os
+                anúncios passam por um rigoroso processo de análise, e só após a averiguação pela nossa equipe, o
+                perfil
+                pode ser penalizado ou não.
+                <br><br>
+                As denúncias servem como auxílio na luta contra perfis fake e anunciantes irregulares. Assim,
+                construindo um mercado mais justo e contra a concorrência desleal no ramo de acompanhantes.
+            </p>
+        </div>
+        <div class="btn-report mt-24">
+            <div class="btn btn-pink" onclick="openForm()">
+                <p class="fs-18 fs-normal fw-bold lineheigth-24">Denunciar perfil</p>
+            </div>
+            <script>
+                function openForm() {
+                    const formArea = document.querySelector("#form-report-id");
+                    if (formArea.style.display === 'none') {
+                        formArea.style.display = 'block';
+                    } else {
+                        formArea.style.display = 'none';
+                    }
+                }
+            </script>
+        </div>
+
+        <div style="display: none;" class="form-report" id="form-report-id">
+            <div class="title">
+                <p class="fs-20 fs-normal fw-semibold lineheigth-24 gray-3 text-white">Denuncie esta perfil</p>
+            </div>
+            <form class="form-area" action="">
+                <div class="input-bar">
+                    <input class="input-text" type="text" placeholder="Seu nome">
+                </div>
+                <div class="input-bar">
+                    <input class="input-text" type="text" placeholder="Seu e-mail">
+
+                </div>
+                <div class="input-bar">
+                    <input class="input-text" type="text" placeholder="Sua denúncia">
+                </div>
+                <div class="btn-area">
+                    <div class="btn-submit white">
+                        <p class="fs-18 fs-normal fw-bold lineheigth-24 ">Enviar denúncia</p>
+                    </div>
+                    <div class="btn-submit-cancel">
+                        <p class="fs-18 fs-normal fw-bold lineheigth-24 gray-5">Cancelar</p>
+                    </div>
+                </div>
+            </form>
+            <div class="btn-complete">
+                <i class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 7.00009L9 19.0001L3.5 13.5001L4.91 12.0901L9 16.1701L19.59 5.59009L21 7.00009Z"
+                            fill="white" />
+                    </svg>
+                </i>
+                <p class="fs-18 fs-normal fw-bold lineheigth-24 white">Denuncia feita com sucesso!</p>
+            </div>
+        </div>
+    </div>
+</section>

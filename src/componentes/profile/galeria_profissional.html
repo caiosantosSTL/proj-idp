@@ -1,0 +1,146 @@
+
+<section class="section-gallery mt-80">
+    <div class="container-gallery container d-flex flex-direction-column justify-content-center align-items-center gap-16">
+        <div class="top-icon-text d-flex flex-direction-row align-items-center justify-content-center gap-6">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+                    <path
+                        d="M10.5 17L6.5 13L7.91 11.59L10.5 14.17L17.09 7.58L18.5 9M12.5 1L3.5 5V11C3.5 16.55 7.34 21.74 12.5 23C17.66 21.74 21.5 16.55 21.5 11V5L12.5 1Z"
+                        fill="#EC148E" />
+                </svg>
+            </i>
+            <p class="text-h4 gray-3 text-white p-0 m-0">Fotos verificadas </p>
+        </div>
+        <div class="flex-direction-column justify-content-center">
+            <p class="text-h2 gray-3 text-white p-0 m-0">Ensaio profissional</p>
+        </div>
+
+
+        <div class="box-btn d-flex flex-direction-row justify-content-center flex-wrap p-10 gap-10 ">
+            <div class="btn-action btn-grid" onclick="grid()">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 11H11V3H3M3 21H11V13H3M13 21H21V13H13M13 3V11H21V3" fill="#C6C5CE" />
+                    </svg>
+                </i>
+                <p class="desktop-btn gray-3 m-0 p-0 text-white">Grid</p>
+            </div>
+            <div class="btn-action btn-compact" onclick="compact()">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M14 14H19V16H16V19H14V14ZM5 14H10V19H8V16H5V14ZM8 5H10V10H5V8H8V5ZM19 8V10H14V5H16V8H19Z"
+                            fill="#C6C5CE" />
+                    </svg>
+                </i>
+                <p class="desktop-btn gray-3 m-0 p-0 text-white">Compacto</p>
+            </div>
+            <div class="btn-action btn-expand" onclick="expand()">
+                <i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M9.5 13.09L10.91 14.5L6.41 19H10V21H3V14H5V17.59L9.5 13.09ZM10.91 9.5L9.5 10.91L5 6.41V10H3V3H10V5H6.41L10.91 9.5ZM14.5 13.09L19 17.59V14H21V21H14V19H17.59L13.09 14.5L14.5 13.09ZM13.09 9.5L17.59 5H14V3H21V10H19V6.41L14.5 10.91L13.09 9.5Z"
+                            fill="#C6C5CE" />
+                    </svg>
+                </i>
+                <p class="desktop-btn gray-3 m-0 p-0 text-white">Expandido</p>
+            </div>
+        </div>
+
+
+        <div class="grid-area-photo">
+            <div class="picbox vertical col-lg-25">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85827.jpg"
+                    alt="">
+            </div>
+            <div class="picbox vertical col-lg-25">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85828.jpg"
+                    alt="">
+            </div>
+            <div class="picbox horizontal col-lg-50">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85829.jpg"
+                    alt="">
+            </div>
+            <div class="picbox vertical col-lg-25">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85830.jpg"
+                    alt="">
+            </div>
+            <div class="picbox vertical col-lg-25">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85831.jpg"
+                    alt="">
+            </div>
+            <div class="picbox horizontal col-lg-50">
+                <img src="https://static.ilhadoprazer.com.br/acompanhantes/helen-lima-85751/acompanhante-helen-lima-85832.jpg"
+                    alt="">
+            </div>
+
+        </div>
+
+        <script>
+            var sectionGallery = document.querySelector('.section-gallery');
+            var btnActionList = sectionGallery.querySelectorAll('.btn-action');
+
+            btnActionList.forEach(btnAction => {
+                btnAction.addEventListener('click', () => {
+                    document.querySelector('.btn-active')?.classList.remove('btn-active');
+                    btnAction.classList.add('btn-active');
+                })
+            })
+
+        </script>
+
+
+    </div>
+</section>
+
+
+<script>
+    function compact() {
+
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.remove('col-lg-25')
+                div.classList.remove('col-100')
+                div.classList.add('col-pic')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.remove('col-lg-50')
+                div.classList.remove('col-100')
+                div.classList.add('col-pic')
+            }
+        })
+    }
+
+    function grid() {
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.add('col-lg-25')
+                div.classList.remove('col-pic')
+                div.classList.remove('col-100')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.add('col-lg-50')
+                div.classList.remove('col-pic')
+                div.classList.remove('col-100')
+            }
+        })
+    }
+
+    function expand() {
+        var divs = document.querySelectorAll('.picbox')
+
+        divs.forEach((div) => {
+            if (div.classList.contains('vertical')) {
+                div.classList.remove('col-lg-25')
+                div.classList.remove('col-pic')
+                div.classList.add('col-100')
+            } else if (div.classList.contains('horizontal')) {
+                div.classList.remove('col-lg-50')
+                div.classList.remove('col-pic')
+                div.classList.add('col-100')
+            }
+        })
+    }
+</script>

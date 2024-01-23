@@ -1,0 +1,102 @@
+.section-feeds{
+
+    
+    .filter {
+
+        row-gap: 16px;
+
+        @media (max-width: $max_tablet) {
+            flex-direction: column !important;         
+        }
+    
+        .btn-filter-area {
+            
+            min-width: 375px;
+
+            
+            .filter-text{
+                min-width: 100px;
+            }
+            .btn-block{
+                display: flex;
+                gap: 10px;
+            }
+
+            ;
+            .btn-all, .btn-photo, .btn-videos {                
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                cursor: pointer;            
+            }
+
+        }
+
+        
+        .btn-order-area {
+            @media (max-width: $max_tablet) {
+                justify-content: start; 
+            }
+            //@media (min-width: $min_tablet) {
+            //    justify-content: end;
+            //    
+            //}
+            align-items: center;
+            min-width: 350px;
+
+            .order-text{
+                min-width: 100px;
+            }
+
+            .btn-block-order{
+                display: flex;
+                gap: 10px;
+            }
+            
+            .btn-data, .btn-like  {                
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .feed-post {
+        counter-increment: tile-item;
+        padding: 8px;
+        background-color: $white;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+        .image-post {
+            margin-right: 1.5rem;
+            width: 100%;
+            margin-bottom: .5rem;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: .5rem;     
+            &::before {
+                padding-top: calc(387 / 280 * 100%);
+                width: 100%;
+                display: block;
+                content: ' ';
+            }
+            & > img {
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 100%;
+                min-height: 100%;                            
+                -o-object-fit: cover;
+                object-fit: cover;                      
+            }
+        } 
+  }
+}
+.dark{
+    .section-feeds{
+        .feed-post {
+            background-color: $dark-primary;
+        }
+    }
+}
