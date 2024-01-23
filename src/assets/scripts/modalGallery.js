@@ -1,9 +1,9 @@
         // Obtém todas as imagens da galeria
         const imagens = document.querySelectorAll('.grid-area-photo .picbox img');
-        console.log('dskfls')
+
         // Obtém o modal e as imagens dentro dele
         const modal = document.getElementById('myModal');
-        const atualImg = document.querySelector('.atual');
+        const atualImg = document.querySelector('.current-pic');
 
 
         const goBtn = document.querySelector('.go');

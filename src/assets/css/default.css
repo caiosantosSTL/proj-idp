@@ -4230,7 +4230,7 @@ img {
   max-height: 100px;
 }
 
-.modal {
+.modal-g {
   display: none;
   position: fixed;
   z-index: 4;
@@ -4242,17 +4242,17 @@ img {
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.modal-content {
+.modal-content-g {
   display: flex;
   justify-content: space-around;
   height: 100%;
 }
 
-.modal-content {
+.modal-content-g {
   text-align: center;
 }
 
-.modal-content > img {
+.modal-content-g > img {
   display: inline-block;
   object-fit: contain;
   height: 100%;
@@ -4262,14 +4262,6 @@ img {
   margin-top: -3px;
   vertical-align: middle;
   background-color: transparent;
-}
-
-.anterior {
-  filter: blur(8px);
-}
-
-.proximo {
-  filter: blur(8px);
 }
 
 .close {
