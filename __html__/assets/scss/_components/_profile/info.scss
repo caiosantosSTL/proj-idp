@@ -1,0 +1,102 @@
+
+
+.section-info {
+    background-color: $section;
+    .profile-area {
+
+        display: grid;
+
+        @media (min-width: $max_tablet) {
+            grid-template-columns: repeat(1, auto);
+        }
+
+        @media (min-width: $max_desktop) {
+            //grid-template-columns: repeat(2, auto);
+            grid-template-columns: 1fr 2fr;
+            
+        }
+
+        gap: 16px;
+
+        .photo-area {
+            //background-color: rgb(222, 113, 113);
+
+            @media (min-width: $max_tablet) {
+
+                max-width: 100%;
+            }
+
+            @media (min-width: $max_desktop) {
+
+                max-width: 600px;
+            }
+
+            width: 100%;
+            height: auto;
+
+            .photo {
+                max-width: 600px;
+                height: 600px;                
+                margin: 0 auto;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }           
+        }
+
+        .profile-text-area {
+
+            @media (min-width: $max_tablet) {
+                border-left: 1px solid rgb(178, 178, 178);                        
+            }
+            
+            min-width: 80px;
+
+            .about-me {
+
+                .grid-attributes {
+                    display: grid;
+                    row-gap: 24px;
+                    column-gap: 32px;
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: repeat(2, auto);
+                    }
+
+                    @media (min-width: $max_tablet) {
+
+                        grid-template-columns: repeat(3, auto);
+                    }
+                   
+                }
+            }
+
+            .about-service {
+                
+
+                .grid-time {
+                    display: grid;
+
+                    @media (min-width: $max_mobile) {
+                        grid-template-columns: repeat(2, auto);
+                    }
+
+                    @media (min-width: $max_tablet) {
+
+                        grid-template-columns: repeat(4, auto);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+.dark{
+    .section-info {        
+        background-color: $gray-3;
+    }
+}

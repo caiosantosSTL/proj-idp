@@ -1,0 +1,56 @@
+
+.section-commentary {
+    background-color: $section;    
+    .container-comment {
+        padding: 20px;
+        .comment-area {           
+            .card-comment { 
+                background-color: $white;
+                padding: 16px;
+                flex: 1 0 336px;
+                .profile-photo {
+                    background-color: $gray-2;
+                    border-radius: 50%;
+                    width: 56px;
+                    height: 56px;
+                    overflow: hidden;
+                    > img{ 
+                        height: 100%;
+                        width: 100%;
+                        border-radius: 100%;
+                        object-fit: cover;
+                    }
+                }                
+            }
+        }
+    }    
+}
+
+.dark{        
+    .section-commentary {
+        background-color: $gray-3;
+        .gray-3 {
+            color: $white;
+            
+        }
+        .grey-5 {
+            color: $section;                
+        }
+        .container-comment {            
+            .comment-area {
+                .card-comment { 
+                    background-color: $gray-4;
+                    .text-name {
+                        color: $white;
+                    }
+                    .gray-5{
+                        color: $gray-6;
+                    }
+                    .gray-4{
+                        color: $white;
+                    }                                  
+                }               
+            }            
+        }
+    }    
+}

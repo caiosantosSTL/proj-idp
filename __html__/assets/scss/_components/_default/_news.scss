@@ -1,0 +1,16 @@
+.section-recent {
+    background-color: $section;
+    .card-recent{        
+        padding: 16px;
+        flex: 0 0 355px;
+    }
+}
+
+
+.dark {
+    .section-recent {
+        background-color: $gray-3;
+        
+    }
+
+}

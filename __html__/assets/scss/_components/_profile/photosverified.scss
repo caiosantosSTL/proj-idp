@@ -1,0 +1,36 @@
+
+
+
+.legalnotice {
+
+    background-image: $gradient;
+    color: $gray-5;
+
+    .container-legalnotice {
+
+        .logo-area {
+            max-height: 60px;
+            max-width: 175px;            
+            object-fit: cover;
+        }
+
+        .title-text {
+            display: flex;
+            align-self: center;
+        }
+
+        .text-small {
+            display: flex;
+            align-self: center;
+        }
+
+        .text-area {
+            
+            background-color: $white;
+            border-radius: 6px;
+            padding: 24px;
+        
+        }    
+
+    }
+}

@@ -1,0 +1,35 @@
+{
+  "short_name": "Ilha do Prazer",
+  "name": "Ilha do Prazer Acompanhantes",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#D7261C",
+  "background_color": "#000",
+  "icons": [
+    {
+      "src": "https://static.ilhadoprazer.com.br/assets/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "https://static.ilhadoprazer.com.br/assets/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "https://static.ilhadoprazer.com.br/assets/launcher-icon-3x.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "https://static.ilhadoprazer.com.br/assets/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://static.ilhadoprazer.com.br/assets/launcher-icon-5x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

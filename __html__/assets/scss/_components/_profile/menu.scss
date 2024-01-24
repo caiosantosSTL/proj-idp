@@ -1,0 +1,96 @@
+
+.fixedbar-sticky { 
+    transition:  transform 0.3s ease-in-out;  
+    &.pinned {    
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;  
+    }                              
+    &.hidebar {               
+        transform: translateY(-100%);           
+    }
+    &.scrolledup {               
+        transform: translateY(88px); 
+        @media (max-width: $min_desktop) {            
+          transform: translateY(160px);      
+        }            
+    }     
+}
+
+.section-fixedbar{
+    background-color: $white;    
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    .container-fixedbar{
+        display: flex;           
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        margin: 0 auto;
+        max-width: 1500px;
+        min-width: 375px;
+    
+        .item{
+            display: flex;
+            border-right: 1px solid $gray-6;
+            &:last-child{
+                border-right:none;
+            }
+            @media (min-width: $min_mobile) {
+                flex-direction: column;
+            } 
+
+            @media (min-width: $min_desktop) {
+                flex-direction: row;                
+            }
+            
+            align-items: center;
+            justify-content: center;
+            flex: 100%;
+            padding: 0;
+            margin: 0;
+            gap: 4px;
+            cursor: pointer;
+
+            .desktop-btn {
+                /* Fonts Web/Button */
+                @media (min-width: $min_mobile) {
+                    font-size: 9px;
+                }
+                
+                @media (min-width: $max_mobile) {
+                    font-size: 11px;
+                }
+
+                @media (min-width: $min_tablet) {
+                    font-size: 18px;                    
+                }
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;                
+            }
+
+            i{
+                @media (min-width: $min_tablet) {
+                    svg{
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+
+
+.dark{
+    .section-fixedbar{
+        background-color: $dark-bar-secondary;
+
+    }
+}

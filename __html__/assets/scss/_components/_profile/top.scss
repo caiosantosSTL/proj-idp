@@ -1,0 +1,136 @@
+.section-top {
+    margin-top: 88px;
+    min-width: 375px;
+
+    @media (max-width: $min_desktop) {
+        margin-top: 160px;
+
+    }
+
+    .breadcrumb {
+        backdrop-filter: blur(10px);
+        position: absolute;
+        z-index: 1;
+
+        >ul {
+            list-style: none;
+
+            li {
+                &::after {
+                    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M8.59003 16.58L13.17 12L8.59003 7.41L10 6L16 12L10 18L8.59003 16.58Z" fill="grey"/></svg>');
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+
+            li:last-child {
+                &::after {
+                    content: '';
+                }
+            }
+
+            ;
+        }
+    }
+
+
+    .profile-image {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        height: auto;
+
+        &:before {
+            content: "";
+            display: block;
+            padding-top: calc(225 / 470 * 100%);
+        }
+
+        .mobile,
+        .caseira {
+            display: none;
+        }
+
+        @media (max-width: $min_tablet) {
+
+
+            .fs-32 {
+                font-size: 24px !important;
+            }
+
+            .fs-24 {
+                font-size: 18px !important;
+            }
+
+        }
+
+        @media (max-width: $max_mobile) {
+            &:before {
+                padding-top: calc(180 / 130 * 100%);
+            }
+
+            .mobile {
+                display: block;
+            }
+
+            .desktop {
+                display: none;
+            }
+
+            .fs-32 {
+                font-size: 20px !important;
+            }
+
+            .fs-24 {
+                font-size: 16px !important;
+            }
+        }
+
+    }
+
+    .contact-top{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @media (max-width: $max_mobile) {
+            bottom: 30%;
+        }
+        margin: auto;
+        height: 180px;
+        >div{
+            background-color: #fff;
+            border-radius: 6px 0px 0px 6px;
+            padding: 16px;
+            margin: 10px 0 10px 5px;
+            svg{
+                width: 40px;
+                height: 40px;
+                @media (max-width: $max_mobile) {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+            @include fill_svg($primary-pink);
+        }
+    }
+}
+
+
+
+.dark{
+    .section-top {
+        .profile-image {
+            .bg-white {
+                background-color: $gray-2;
+            }
+        }
+
+        .contact-top{
+            >div{
+                background-color: $gray-1;                               
+            }
+        }
+    }
+}

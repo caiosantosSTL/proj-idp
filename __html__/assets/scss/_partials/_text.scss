@@ -1,0 +1,79 @@
+.text-center{
+    text-align: center;
+}
+
+.text-ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+// ==================== font style block
+
+// .desktop-h1 = fs-48 fs-normal fw-bold lineheigth-56 letter-space-negative-48
+// .desktop-h2, .mobile-h1 = fs-32 fs-normal fw-bold lineheigth-40
+// .desktop-h3 = fs-24 fs-normal fw-semibold lineheigth-32
+// .desktop-h4 = fs-20 fs-normal fw-semibold lineheigth-24
+// .desktop-btn = fs-18 fs-normal fw-bold lineheigth-24
+// .mobile-h2 = fs-24 fs-normal fw-bold lineheigth-32
+// .mobile-h3 = fs-18 fs-normal fw-semibold lineheigth-24
+// .mobile-h4 = fs-20 fs-normal fw-semibold lineheigth-24
+// .mobile-text = fs-16 fs-normal fw-semibold lineheigth-24
+// .mini-text1 = fs-14 fs-normal fw-semibold  lineheigth-16
+// .text-h4 = fs-normal fs-20 fw-lighbold lineheigth-24
+
+.text-h1 {
+    font-style: normal;
+
+    @media (min-width: $min_mobile) {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+
+    @media (min-width: $min_tablet) {
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 56px;
+        letter-spacing: -0.48px;
+    }
+}
+
+.text-h2 {
+    font-style: normal;
+
+    @media (min-width: $min_mobile) {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+    }
+
+    @media (min-width: $min_tablet) {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+    }
+}
+
+.text-h3 {
+    font-style: normal;
+
+    @media (min-width: $min_mobile) {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+    }
+
+    @media (min-width: $min_tablet) {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 32px;
+    }
+}
+
+// ----------- global dark font
+
+.dark {
+    .text-white {
+        color: $white;
+    }
+}

@@ -1,0 +1,31 @@
+
+
+.card-list-default {    
+    @media (max-width: $min_desktop) {
+        .p-15{
+            padding: 10px!important;
+        }        
+    } 
+    
+    @media (max-width: $min_tablet) {
+        .p-15{
+            padding: 5px!important
+        }        
+    }
+}
+
+
+.card-destaque{
+    .card-image{
+        width: 100%;
+        img{
+        border-radius: 7.22px;
+        }
+        &::before {
+            padding-top: calc(471 / 980 * 100%);
+            width: 100%;
+            display: block;
+            content: ' ';
+        }
+    }
+}

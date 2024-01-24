@@ -1,0 +1,182 @@
+
+
+.section-comments {
+    background-color: $white;
+
+    .filter {
+
+        row-gap: 16px;
+
+        @media (max-width: $max_tablet) {
+            flex-direction: column !important;         
+        }
+    
+        .btn-filter-area {
+            
+            min-width: 375px;
+
+            
+            .filter-text{
+                min-width: 100px;
+            }
+            .btn-block{
+                display: flex;
+                gap: 10px;
+            }
+
+            ;
+            .btn-all, .btn-photo, .btn-videos {                
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                cursor: pointer;            
+            }
+
+        }
+
+        
+        .btn-order-area {
+            @media (max-width: $max_tablet) {
+                justify-content: start; 
+            }
+            //@media (min-width: $min_tablet) {
+            //    justify-content: end;
+            //    
+            //}
+            align-items: center;
+            min-width: 350px;
+
+            .order-text{
+                min-width: 100px;
+            }
+
+            .btn-block-order{
+                display: flex;
+                gap: 10px;
+            }
+            
+            .btn-data, .btn-like  {                
+                border-radius: 8px;
+                border: 1px solid $gray-6;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .container-comments {
+        width: 100%;
+        .title {
+
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .comment-area {
+
+            .input-btn{
+                display: grid;
+                @media (min-width: $max_mobile) {
+                    grid-template-columns: 1fr; 
+                }
+                @media (min-width: $max_tablet) {
+                     
+                    grid-template-columns: 3fr 1fr;
+                }
+                gap: 8px;
+                .text-input{
+                    border-radius: 8px;
+                    height: auto;
+                    //width: 80%;
+                    margin: 0; 
+                    padding: 16px;
+                    font-size: medium;
+                    border: 1px solid var(--color-gray-05, #C6C5CE);
+                    &:focus{
+                        outline: none;
+                    }
+
+                }
+                .btn-pink{
+                    background-color: $primary-pink;
+                    border-radius: 8px;
+                    height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    .desktop-btn {
+                        /* Fonts Web/Button */
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        /* 133.333% */
+                        margin: 0;
+                        padding: 0;
+                        text-align: center;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.dark{
+    .section-comments {
+        background-color: $dark-secondary;
+    
+        .container-comments {
+
+    
+            .comment-area {
+    
+
+                .input-btn{
+
+                    .text-input{
+
+                        border: 1px solid $white;
+                        color: $white;
+                        background-color: $dark-primary;
+                        &:focus{
+                            
+                        }
+    
+                    }
+
+                }
+                .commentaries{
+
+                    .filter{
+
+                        color: $white;
+                        .btn-filter-area{
+
+                            color: $white;
+                            .btn-data{
+
+                                border: 1px solid $white;
+
+                            }
+                            .btn-like{
+
+                                border: 1px solid $white;
+
+                            }
+                        }
+                    }
+                    .commentaries-cards{
+
+
+                    }
+                }
+            }
+        }
+    }
+}

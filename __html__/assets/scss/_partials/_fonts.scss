@@ -1,0 +1,94 @@
+/*
+
+UTILIZAR GOOGLE FONTS API PARA MELHOR DESEMPENHO
+
+@font-face {
+    font-family: archivo !important;
+    src: url("../_font/archivo-font.ttf") !important;        
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100 !important;200 !important;300 !important;400 !important;600&display=swap');
+
+
+.fs-14{
+    font-size: 14px !important;
+}
+
+.fs-16{
+    font-size: 16px !important;
+}
+
+.fs-18{
+    font-size: 18px !important;
+}
+
+.fs-20{
+    font-size: 20px !important;
+}
+
+.fs-24{
+    font-size: 24px !important;
+}
+
+.fs-32{
+    font-size: 32px !important;
+}
+
+.fs-48{
+    font-size: 48px !important;
+}
+
+
+.fw-light{
+    font-weight: 100 !important;
+}
+
+.fw-normal{
+    font-weight: 200 !important;
+}
+
+.fw-lighbold{
+    font-weight: 300 !important;
+}
+
+.fw-semibold{
+    font-weight: 400 !important;
+}
+
+.fw-bold{
+    font-weight: 600 !important;
+}
+
+.fs-normal{
+    font-style: normal !important;
+}
+
+
+.lineheigth-16 {
+    line-height: 16px !important;
+}
+
+.lineheigth-24 {
+    line-height: 24px !important;
+}
+
+.lineheigth-32 {
+    line-height: 32px !important;
+}
+
+.lineheigth-40 {
+    line-height: 40px !important;
+}
+
+.lineheigth-56 {
+    line-height: 56px !important;
+}
+
+
+
+.letter-space-negative-48{
+    letter-spacing: -0.48px !important;
+}
+

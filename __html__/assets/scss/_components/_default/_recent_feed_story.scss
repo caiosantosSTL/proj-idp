@@ -1,0 +1,265 @@
+
+
+.section-ultimos-feeds {
+    @media (max-width: $min_tablet) {
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+    }    
+    .icon-area {        
+        overflow-y: scroll;        
+        height: 185px;
+        .icon-card {
+            margin: 15px;
+            height: 100px;            
+            min-width: 100px;
+            max-width: 100px;
+            .image {
+                border-radius: 100px;
+                border: 4px solid $primary-pink;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                //background-color: rgb(181, 53, 53);
+                cursor: pointer;
+                img {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        @media (max-width: $min_tablet) {
+            justify-content: start;
+            gap: 5px;
+            .icon-card {
+                margin: 8px;
+                height: 84px;            
+                min-width: 84px;
+                max-width: 84px;
+            }
+            .name  {
+                & > p{
+                    font-size: 14px !important;  
+                    line-height: 13px !important;  
+                }
+                
+            }
+        }
+
+        @media (max-width: $max_mobile) {            
+            gap: 3px;
+            .icon-card {
+                margin: 5px;
+                height: 64px;            
+                min-width: 64px;
+                max-width: 64px;
+                .image{
+                    border: 3px solid $primary-pink;
+                }
+            }
+            .name  {
+                & > p{
+                    font-size: 12px !important;    
+                    line-height: 13px !important;
+                }
+                
+            }
+        }
+       
+    }
+
+    // ---------------------------- modal part
+    .modal-carousel {
+        display: none;
+        position: fixed;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+
+        .back{
+            filter: blur(8px);
+            cursor: pointer;
+            transform: scale(0.8); 
+            @media (min-width: $min_mobile) {
+                display: none;
+            }
+            @media (min-width: $min_tablet) {
+                display: none;
+            }
+            @media (min-width: $max_desktop) {
+                display: block;
+            }
+        }
+        .next{
+            filter: blur(8px);
+            cursor: pointer;
+            transform: scale(0.8);
+            @media (min-width: $min_mobile) {
+                display: none;
+            }
+            @media (min-width: $min_tablet) {
+                display: none;
+            }
+            @media (min-width: $max_desktop) {
+                display: block;
+            }
+        }
+
+        .container-modal {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 16px;
+            padding-top: 112px;
+            
+            .modalcard {
+                
+                .container-card {
+                    //background-color: red;
+                    max-width: 350px;
+                    //max-height: 650px;
+                    height: 650px;
+                    //height: 650px;
+                    //width: 350px;
+                    position: relative;
+
+                    .picture {
+                        height: 100%;
+                        width: 100%;
+
+                        img {
+                            border-radius: 8px;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .top {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        position: absolute;
+                        top: 0;
+                        width: 100%;
+                        border-bottom: 1px solid $white;
+                        //padding: 6px;
+
+                        .area-profile {
+                            display: flex;
+                            flex-direction: row;
+                            gap: 8px;
+                            align-items: center;
+
+                            .image-profile {
+                                height: 70px;
+                                width: 70px;
+                                background-color: rgb(34, 34, 34);
+                                border-radius: 8px;
+                                margin-bottom: 6px;
+                                margin-top: 6px;
+                                margin-left: 6px;
+                            }
+                        }
+
+                        .name {
+                            .mini-text {
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 600;
+                                line-height: 16px;
+                                color: $white;
+                            }
+                        }
+
+                    }
+
+                    .bottom {
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+
+                        //padding: 6px;
+                        .box {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            padding: 6px;
+
+                            .comment {
+                                display: flex;
+                                align-items: center;
+
+                                .inputx {
+                                    padding: 6px;
+                                    border-radius: 10px;
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                            }
+
+                            .share {
+                                border-radius: 6px;
+                                border: 1px solid $white;
+                                padding: 12px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .items-absolute{
+            .close{
+                position: absolute;
+                top: 15px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .backBtn{
+                position: absolute;
+                top: 435px;
+                left: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .nextBtn{
+                position: absolute;
+                top: 435px;
+                right: 35px;
+                color: #f1f1f1;
+                font-size: 40px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.dark{
+    .section-ultimos-feeds {        
+        .container {    
+            .icon-area {
+                .icon-card {    
+                    .name {
+                        .mobile-text {
+                            color: $section;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}

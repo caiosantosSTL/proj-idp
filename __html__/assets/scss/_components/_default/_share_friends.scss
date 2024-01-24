@@ -1,0 +1,38 @@
+.section-share{
+    .logo-area{
+        max-height: 100%;
+        max-width: 385px;
+        object-fit: cover;
+        margin: 0 auto;
+        align-self: center;
+        .i{            
+            width: 100%;
+            height: auto;
+        }
+    }
+    .text-area{
+        margin: 0 auto;
+        @media (min-width: $max_desktop) {
+            
+            max-width: 500px;
+            text-align: start;
+        }
+        text-align: center;
+
+        .icons{
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            @media (min-width: $min_mobile){
+                justify-content: center;
+            }
+            @media (min-width: $min_tablet){
+                justify-content: center;
+            }
+            @media (min-width: $max_desktop){
+                justify-content: start;
+
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+.filter-container {    
+    .btn-filter {
+        border: 1px solid $primary-pink;
+        border-radius: 6px;        
+        cursor: pointer;
+        .text-icon {
+            align-items: center;
+            gap: 8px;
+            i {
+                svg {
+                vertical-align: middle;
+                }  
+        
+            }          
+        }
+    }
+    .filter-bar {
+        //display: none;
+        background-color: $white;
+        border-radius: 8px;
+        box-shadow: 3px 5px 15px 0px rgba(39, 37, 48, 0.20);            
+        @media (max-width: $max_tablet) {
+            display: none!important;
+            &.opened {
+                display: block !important;
+            }
+        }    
+        .item-area {    
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: start;            
+            width: 100%;
+            .item {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                text-align: center;
+                gap: 15px;
+                padding: 15px;
+                border-radius: 0px;
+                border-bottom: 1px solid $gray-6;
+                &:hover {
+                    background-color: $primary-pink;
+                    cursor: pointer;
+                    border-radius: 0px;
+                    color: $white;
+                    @include fill_svg($white);
+                }                
+            }  
+            .item:last-child{
+                border-bottom: none;
+            }          
+        }
+    }
+
+    @media (min-width: $max_tablet) {
+        display: flex;
+        justify-content: center;
+        .btn-filter {
+            display: none;
+        }
+        
+        .filter-bar {
+            display: block;            
+            border-radius: 100px;                                    
+            .item-area {                
+                flex-direction: row;                
+                justify-content: space-around;
+                gap: 20px;
+                .title{
+                    display: none;
+                }        
+                .item {
+                    padding: 8px 16px;
+                    height: 40px;
+                    justify-content: space-between;                                        
+                    border-radius: 50px;
+                    border-bottom: none;
+                    &:hover {
+                        border-radius: 50px;
+                    }                    
+                }               
+            }
+        }    
+    }
+}
+
+.dark{
+    .filter-container { 
+        .btn-filter{
+            &.bg-white{
+             background-color: $gray-2;   
+            }
+            border-color: $gray-5;
+            .primary-pink{
+                color: $white;
+                @include fill_svg($white);
+            }
+            
+        }
+        .filter-bar {
+            background-color: $gray-1;
+            .item-area{
+                .title{
+                     color: $white;
+                }  
+                .item{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+}

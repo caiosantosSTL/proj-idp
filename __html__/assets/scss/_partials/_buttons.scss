@@ -1,0 +1,108 @@
+.btn{
+    //height: 50px;
+    min-width: 120px;
+    color: $white;
+    border-radius: 6px;
+    border: 1.5px solid $white;
+    display: inline-block;
+    cursor: pointer;
+    //padding: 10px;
+    padding-inline: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    >span,
+    >div,
+    >p {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+    }
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.btn-block {
+    display: block;
+}
+
+
+.btn-area {
+    display: flex;
+    flex-direction: row;
+
+    @media (min-width: $min_mobile) {
+        flex-wrap: wrap;
+    }
+
+    width: 100%;
+    gap: 8px;
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-pink {
+    background-color: $primary-pink;
+}
+
+.btn-white {
+    color: $black;
+    background-color: $white;
+}
+
+.btn-border {
+    background-color: transparent;
+}
+
+.btn-border-gray {
+    color: $gray-4;
+    border: 1.5px solid $gray-6;
+    background-color: transparent;
+}
+
+.btn-small{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-back {
+    text-decoration: none !important;
+
+    svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include fill_svg($gray-5);    
+
+    &:hover {
+        @include fill_svg($primary-pink);
+    }
+}
+
+.dark {
+    .btn {
+        border: 1.5px solid $gray-3;
+    }
+
+    .btn-border-gray {
+        color: $gray-6;
+        border: 1.5px solid $gray-5;
+    }
+}

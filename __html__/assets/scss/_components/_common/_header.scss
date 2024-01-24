@@ -1,0 +1,342 @@
+header {
+    background-color: $white;
+    z-index: 2;    
+    box-shadow: 0px 15px 15px 0px rgba(0, 0, 0, 0.1);
+    transform: translateX(0);                           
+    transition:  transform 0.3s ease-in-out;
+    &.hideheader {       
+        transform: translateY(-100%);           
+    }
+    @media (max-width: $min_desktop) {
+        height: 160px;
+    }
+    .container {
+
+        .header-content {
+            gap: 15px;
+
+            .logo {
+                min-width: 180px;
+            }
+
+            .input-group {
+
+                min-width: 500px;
+
+                .btn-location,
+                .btn-estate {
+                    svg {
+                        vertical-align: middle;
+                    }
+                }
+
+                .btn-estate {
+                    min-width: 105px;
+                }
+
+                @media (max-width: $min_desktop) {
+                    position: fixed;
+                    justify-content: space-between;
+                    z-index: 1;
+                    margin: 10px;
+                    width: calc(100% - 20px);
+                    top: 80px;
+                    left: 0;
+                    right: 0;
+                    min-width: 365px;
+                    .input-text {
+                        flex-grow: 1;
+                        width: auto;
+                        max-width: none;
+                    }
+                }
+            }
+
+            .btn-group {
+                gap: 8px;
+                align-items: center;
+
+                .icons-btn {
+                    width: auto;
+                    align-items: center;
+                    justify-self: center;
+                    gap: 8px;
+
+                    .btn-flex {
+                        justify-self: center;
+                        background-color: $section;
+                        border-radius: 50px;
+                        cursor: pointer;
+                    }
+                }
+
+                .dropdown {
+                    max-width: 40%;
+                    border-radius: 5px;
+
+                    &:hover {
+                        background-color: $gray-hover;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.modal-menu {
+    & .modal {
+        .modal-container {
+            .modal-body {
+                max-width: auto !important;
+            }
+        }
+    }
+
+    .menu-section {
+
+        @media (min-width: $min_mobile) {
+            grid-template-columns: repeat(1, auto);
+        }
+
+        @media (min-width: $max_tablet) {
+
+            //grid-template-columns: repeat(5, auto);
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .menu-options {
+
+            background-color: $section;
+            text-align: center;
+            border-bottom-right-radius: 8px;
+            height: auto;
+            align-items: center;
+            order: 2;
+
+            @media (min-width: $min_mobile) {
+                order: 1;
+                border-bottom-right-radius: 0px;
+            }
+
+            >div {
+                flex-direction: column;
+                width: 80%;
+                padding: 16px;
+            }
+        }
+
+        .main-menu {
+
+            flex-grow: 1;
+            width: 100%;
+
+            @media (min-width: $min_mobile) {
+                order: 2;
+            }
+
+            @media (min-width: $max_tablet) {
+                order: 1;
+            }
+
+            .main-menu-view {
+                display: flex;
+                /*flex-direction : row;*/
+                overflow: hidden;
+
+                .navigation {
+                    flex: 1;
+                    min-width: 100%;
+                    height: auto;
+                    padding: 30px 30px 0 30px;
+                    gap: 20px;
+
+                    a {
+                        display: flex;
+                        line-height: 30px;
+
+                        >span {
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            @include fill_svg($gray-3);
+
+                        }
+
+                        &:hover {
+                            >span {
+                                @include fill_svg($primary-pink);
+                            }
+                        }
+                    }
+
+                    &.main-nav {
+                        transform: translateX(0);
+                        overflow: hidden;                            
+                        transition:  transform 0.3s ease-in-out;
+                        &.hide {
+                            transform: translateX(-100%);                                
+                        }
+                    }
+
+                    &.sub-nav {
+                        transform: translateX(-100%);
+                        transition: transform 0.3s ease-in-out;
+                        grid-template-columns: none !important;
+
+                        >div {
+                            display: none;
+                        }
+
+                        >.back-navigation {
+                            display: block;
+                        }
+
+                        &.hide {
+                            transform: translateX(0);
+                        }
+                    }
+
+                    .nav-main-grid {
+                        gap: 20px;
+
+                        @media (min-width: $min_mobile) {
+                            grid-template-columns: repeat(1, auto);
+                        }
+
+                        @media (min-width: $max_tablet) {
+                            grid-template-columns: repeat(3, auto);
+                        }
+
+                    }
+
+                    .nav-sub-grid {
+
+                        @media (min-width: $min_mobile) {
+                            grid-template-columns: repeat(1, auto);
+                        }
+
+                        @media (min-width: $max_tablet) {
+                            grid-template-columns: repeat(2, minmax(0, 1fr));
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+
+.use-location {
+    padding: 8px 16px;
+
+    svg {
+        max-width: 20px;
+    }
+
+    a {
+        padding-left: 16px;
+        display: inline-block;
+        color: $primary-pink;
+        text-decoration: underline;
+    }
+}
+
+.dark {
+    header {
+        background-color: $dark-bar-secondary;
+
+        .container {
+
+            .header-content {
+                .input-group {
+
+                    @media (max-width: $min_desktop) {
+                        &.show {
+                            &::before {
+                                background-color: $dark-bar-secondary;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                background-color: $gray-3;
+            }
+
+            .btn-group {
+                .icons-btn {
+                    .btn-flex {
+                        background-color: $gray-3;
+                        @include fill_svg();
+                    }
+                }
+
+                .dropdown {
+                    &:hover {
+                        background-color: $gray-hover;
+                    }
+
+                    @include fill_svg();
+                }
+            }
+        }
+    }
+
+
+    .modal-menu {
+           
+    
+        .menu-section {
+
+            .menu-options {
+                background-color: $gray-1;
+
+                p {
+                    color: $gray-6;
+                }
+            }
+        
+            .main-menu-view {
+                .navigation {
+
+                    a {
+                        color: $gray-6;
+
+                        &:hover {
+                            color: $primary-pink
+                        }
+
+                        >span {
+                            @include fill_svg($gray-6);
+
+                        }
+                    }
+
+                    .menu-title {
+                        color: $white;
+                    }
+
+                }
+            }
+            
+        }
+    }
+
+
+
+    .use-location {
+
+        @include fill_svg();
+
+        a {
+            color: $white;
+        }
+    }
+}

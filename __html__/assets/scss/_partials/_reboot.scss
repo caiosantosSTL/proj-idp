@@ -1,0 +1,31 @@
+html {
+  box-sizing: border-box;  
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+* {
+  transition: background-color 0.5s;
+  outline: none;
+}
+
+a {
+  color: $gray-3;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body {
+
+  // FONTE PADRÃO PARA TODA PÁGINA
+  font-family: 'Archivo', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: normal;
+
+  padding: 0;
+  margin: 0;
+  
+}

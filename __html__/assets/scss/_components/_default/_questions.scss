@@ -1,0 +1,102 @@
+.section-questions{
+    .section-questions{
+        .text-area{
+            .text-box{
+                max-width: 440px;
+                max-height: auto;
+            }            
+        }        
+    }
+    .icon-text-area{
+        max-width: 350px;
+        .item{
+            gap: 32px;
+            i{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    
+    
+    .list-dropdown-area{
+        .border-text{
+                position: relative;
+                &::before{
+                    content: " ";
+                    border-top: 1px solid $gray-6;
+                    width: calc(100% - 30px);
+                    position: absolute;
+                    left: 15px;
+                    right: 15px;
+                    top: -15px;
+                }
+                
+            
+        }
+        .card-dropdown {
+        
+            border-radius: 6px;
+            background-color: $white;
+            .area-top {
+                padding: 24px;
+                gap: 16px;
+                .title{
+                    display: flex;
+                    gap: 16px;
+                    .text-title{
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+                .btn-dd{
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+        
+            }
+
+            @for $i from 1 through 5{
+                .area-text#{$i}{
+                    > p{
+                        padding-inline: 26px;
+                    }
+                }
+            } 
+        
+        }
+    }
+
+}
+
+
+
+
+
+.dark {
+    .section-questions {
+
+        background-color: $gray-3;
+
+         
+        .list-dropdown-area{
+            .border-text{                    
+                    &::before{
+                        border-top: 1px solid $gray-4;
+                    }
+                    
+                
+            }
+            .card-dropdown{
+                background-color: $dark-primary;
+                
+
+            }
+        }
+       
+    }
+
+}

@@ -1,0 +1,177 @@
+$primary-red: #C21F25;
+$primary-pink: #EC148E;
+
+$gray-1: #1C1B23;
+$gray-2: #272530;
+$gray-3: #3F3C4A;
+$gray-4: #524F5F;
+$gray-5: #7A7786;
+$gray-6: #C6C5CE;
+$gray-hover: rgb(135, 135, 135);
+$section: #F1F0F5;
+$dark-primary: #1C1B23;
+$dark-secondary: #272530;
+$dark-bar: #15141A;
+$dark-bar-secondary: #151419;
+$dark-grey: #3F3C4A;
+$white: #fff;
+$black: #000;
+$gradient: linear-gradient(266deg, #EC148E 4.3%, #C21F25 109.08%);
+$font-color: #4E4B59;
+
+
+
+.primary-red {
+    color: $primary-red;
+}
+
+.primary-pink {
+    color: $primary-pink;
+}
+
+.gray-1 {
+    color: $gray-1;
+}
+
+.gray-2 {
+    color: $gray-2;
+}
+
+.gray-3 {
+    color: $gray-3;
+}
+
+.gray-4 {
+    color: $gray-4;
+}
+
+.gray-5 {
+    color: $gray-5;
+}
+
+.gray-6 {
+    color: $gray-6;
+}
+
+.gray-hover {
+    color: $gray-hover;
+}
+
+.section {
+    color: $section;
+}
+
+.dark-primary {
+    color: $dark-primary;
+}
+
+.dark-secondary {
+    color: $dark-secondary;
+}
+
+.dark-bar {
+    color: $dark-bar;
+}
+
+.dark-bar-secondary {
+    color: $dark-bar-secondary;
+}
+
+.dark-grey {
+    color: $dark-grey;
+}
+
+.white {
+    color: $white;
+}
+
+.black {
+    color: $black;
+}
+
+.gradient {
+    color: $gradient;
+}
+
+.font-color {
+    color: $font-color;
+}
+
+
+.bg-primary-pink {
+    background-color: $primary-pink;
+}
+
+.bg-gray-1 {
+    background-color: $gray-1;
+}
+
+.bg-gray-2 {
+    background-color: $gray-2;
+}
+
+.bg-gray-3 {
+    background-color: $gray-3;
+}
+
+.bg-gray-4 {
+    background-color: $gray-4;
+}
+
+.bg-gray-5 {
+    background-color: $gray-5;
+}
+
+.bg-gray-6 {
+    background-color: $gray-6;
+}
+
+.bg-gray-hover {
+    background-color: $gray-hover;
+}
+
+.bg-section {
+    background-color: $section;
+}
+
+.bg-dark-primary {
+    background-color: $dark-primary;
+}
+
+.bg-dark-secondary {
+    background-color: $dark-secondary;
+}
+
+.bg-dark-bar {
+    background-color: $dark-bar;
+}
+
+.bg-dark-bar-secondary {
+    background-color: $dark-bar-secondary;
+}
+
+.bg-dark-grey {
+    background-color: $dark-grey;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-black {
+    background-color: $black;
+}
+
+.bg-gradient {
+    background: $gradient;
+}
+
+.bg-font-color {
+    background-color: $font-color;
+}
+
+.dark{
+    .bg-section {
+        background-color: $gray-3;
+    }    
+}

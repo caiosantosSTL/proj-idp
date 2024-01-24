@@ -1,0 +1,15 @@
+
+.section-tags{   
+    .tag{
+        flex: 0 1 auto;
+        border-radius: 100px;
+        padding-inline: 12px;
+    }
+}
+.dark{
+    .section-tags{        
+        .tag{
+            background-color: $gray-4;
+        }
+    }
+}
