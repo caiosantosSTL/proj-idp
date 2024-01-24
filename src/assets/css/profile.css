@@ -1976,8 +1976,213 @@ footer .copyright {
     font-size: 16px !important;
   }
 }
+.section-top .contact-top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 180px;
+}
+@media (max-width: 480px) {
+  .section-top .contact-top {
+    bottom: 30%;
+  }
+}
+.section-top .contact-top > div {
+  background-color: #fff;
+  border-radius: 6px 0px 0px 6px;
+  padding: 16px;
+  margin: 10px 0 10px 5px;
+}
+.section-top .contact-top > div svg {
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 480px) {
+  .section-top .contact-top > div svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+.section-top .contact-top > div svg path {
+  fill: #EC148E;
+}
 
 .dark .section-top .profile-image .bg-white {
+  background-color: #272530;
+}
+.dark .section-top .contact-top > div {
+  background-color: #1C1B23;
+}
+
+.fixedbar-sticky {
+  transition: transform 0.3s ease-in-out;
+}
+.fixedbar-sticky.pinned {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+.fixedbar-sticky.hidebar {
+  transform: translateY(-100%);
+}
+.fixedbar-sticky.scrolledup {
+  transform: translateY(88px);
+}
+@media (max-width: 1025px) {
+  .fixedbar-sticky.scrolledup {
+    transform: translateY(160px);
+  }
+}
+
+.section-fixedbar {
+  background-color: #fff;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.section-fixedbar .container-fixedbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  margin: 0 auto;
+  max-width: 1500px;
+  min-width: 375px;
+}
+.section-fixedbar .container-fixedbar .item {
+  display: flex;
+  border-right: 1px solid #C6C5CE;
+  align-items: center;
+  justify-content: center;
+  flex: 100%;
+  padding: 0;
+  margin: 0;
+  gap: 4px;
+  cursor: pointer;
+}
+.section-fixedbar .container-fixedbar .item:last-child {
+  border-right: none;
+}
+@media (min-width: 0px) {
+  .section-fixedbar .container-fixedbar .item {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1025px) {
+  .section-fixedbar .container-fixedbar .item {
+    flex-direction: row;
+  }
+}
+.section-fixedbar .container-fixedbar .item .desktop-btn {
+  /* Fonts Web/Button */
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+@media (min-width: 0px) {
+  .section-fixedbar .container-fixedbar .item .desktop-btn {
+    font-size: 9px;
+  }
+}
+@media (min-width: 480px) {
+  .section-fixedbar .container-fixedbar .item .desktop-btn {
+    font-size: 11px;
+  }
+}
+@media (min-width: 768px) {
+  .section-fixedbar .container-fixedbar .item .desktop-btn {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  .section-fixedbar .container-fixedbar .item i svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.dark .section-fixedbar {
+  background-color: #151419;
+}
+
+.contact-bar {
+  position: fixed;
+  right: 60px;
+  bottom: 14px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px 0 0 10px;
+}
+.contact-bar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -45px;
+  border-radius: 100%;
+  padding: 25px;
+  width: 85px;
+  height: 85px;
+  z-index: 1000;
+  background-color: #fff;
+}
+.contact-bar .btn-contact {
+  display: flex;
+  width: 230px;
+  right: 70px;
+  border-radius: 10px 0 0 10px;
+  padding: 0.35rem 0.35rem !important;
+}
+.contact-bar .btn-contact svg path {
+  fill: #fff;
+}
+.contact-bar .btn-contact span {
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  padding-left: 10px;
+}
+.contact-bar > .wpp {
+  background-color: #0dc143;
+  margin-bottom: 5px;
+}
+.contact-bar > .disk {
+  background-color: #EC148E;
+}
+@media (min-width: 1025px) {
+  .contact-bar {
+    display: flex;
+  }
+  .contact-bar .btn-contact {
+    height: 76px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-bar .btn-contact > span {
+    font-size: 24px;
+  }
+  .contact-bar .btn-contact:last-child {
+    border-radius: 0 0 0 0;
+    margin-left: 5px;
+    padding-right: 30px !important;
+  }
+  .contact-bar .btn-contact:first-child {
+    border-radius: 10px 0 0 10px;
+    margin-left: 0;
+  }
+  .contact-bar > .wpp {
+    margin-bottom: 0px;
+  }
+}
+
+.dark .contact-bar {
+  background-color: #272530;
+}
+.dark .contact-bar:after {
   background-color: #272530;
 }
 
