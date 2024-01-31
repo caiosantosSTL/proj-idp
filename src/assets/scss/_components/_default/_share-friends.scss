@@ -34,6 +34,47 @@
                 justify-content: start;
 
             }
+
+            .share{
+                display: block;
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                    svg{
+                        fill: $premium-gold;
+                    }
+                    .popover-content{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 22px;
+                        svg{
+                            fill: $primary-pink;
+                        }
+                        .icon-share{
+
+                            &:hover{
+                                svg{
+                                    fill: $premium-gold;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+
+                .popover-content{
+                    position: absolute;
+                    display: none;
+                    top: 100%;
+                    background-color: #f9f9f9;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                    color: $primary-pink;
+
+                }
+            }
         }
     }
 }

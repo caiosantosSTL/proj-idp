@@ -2406,6 +2406,38 @@ footer .copyright {
     justify-content: start;
   }
 }
+.section-share .text-area .icons .share {
+  display: block;
+  position: relative;
+}
+.section-share .text-area .icons .share:hover {
+  cursor: pointer;
+}
+.section-share .text-area .icons .share:hover svg {
+  fill: #F90;
+}
+.section-share .text-area .icons .share:hover .popover-content {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+.section-share .text-area .icons .share:hover .popover-content svg {
+  fill: #EC148E;
+}
+.section-share .text-area .icons .share:hover .popover-content .icon-share:hover svg {
+  fill: #F90;
+}
+.section-share .text-area .icons .share .popover-content {
+  position: absolute;
+  display: none;
+  top: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #EC148E;
+}
 
 .section-jointext .text-box {
   max-width: 466px;
